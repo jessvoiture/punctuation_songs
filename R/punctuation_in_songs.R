@@ -17,6 +17,11 @@ df <- df %>%
     'nat "king" cole' ~ "nat king cole",
     .default = performer
   )) %>%
+  mutate(title = case_match(
+    title,
+    "the children's marching song (nick nack taddy whack)" ~ "the children's marching song (nick nack paddy whack)",
+    .default = title
+  )) %>%
   group_by(title, performer) %>%
   filter(chart_week == min(chart_week)) %>%
   ungroup() %>%
@@ -29,7 +34,11 @@ count_unique_songs_per_year <- df %>%
   summarise(count_new_songs_in_year = n(), .groups = "drop_last") 
 
 ggplot(count_unique_songs_per_year, aes(x = year, y = count_new_songs_in_year)) +
-  geom_col()
+  geom_col() +
+  theme_minimal() +
+  labs(
+    title = "New charting songs per year"
+  )
 
 with_paratheses <- df %>%
   filter(!is.na(parantheses_content)) %>%
@@ -44,7 +53,8 @@ with_paratheses <- df %>%
   summarise(count_with_punc = n()) %>%
   ungroup() %>%
   left_join(count_unique_songs_per_year, by = "year") %>%
-  mutate(percent_with_punc = count_with_punc / count_new_songs_in_year * 100)
+  mutate(percent_with_punc = count_with_punc / count_new_songs_in_year * 100) %>%
+  complete(year = full_seq(1958:2025, 1), fill = list(value = 0))
 
 ggplot(with_paratheses, aes(x = year, y = percent_with_punc)) +
   geom_col() +
@@ -57,20 +67,22 @@ question <- df %>%
   summarise(count_with_punc = n()) %>%
   ungroup() %>%
   left_join(count_unique_songs_per_year, by = "year") %>%
-  mutate(percent_with_punc = count_with_punc / count_new_songs_in_year * 100)
+  mutate(percent_with_punc = count_with_punc / count_new_songs_in_year * 100) %>%
+  complete(year = full_seq(1958:2025, 1), fill = list(value = 0))
 
 ggplot(question, aes(x = year, y = percent_with_punc)) +
   geom_col() +
   theme_minimal() +
   labs(title = "Billboard charting songs with ? in them")
 
-exlamation <- df %>%
+exclamation <- df %>%
   filter(str_detect(title, "\\!")) %>%
   group_by(year) %>%
   summarise(count_with_punc = n()) %>%
   ungroup() %>%
   left_join(count_unique_songs_per_year, by = "year") %>%
-  mutate(percent_with_punc = count_with_punc / count_new_songs_in_year * 100)
+  mutate(percent_with_punc = count_with_punc / count_new_songs_in_year * 100) %>%
+  complete(year = full_seq(1958:2025, 1), fill = list(value = 0))
 
 ggplot(exlamation, aes(x = year, y = percent_with_punc)) +
   geom_col() +
@@ -83,7 +95,8 @@ contractions <- df %>%
   summarise(count_with_punc = n()) %>%
   ungroup() %>%
   left_join(count_unique_songs_per_year, by = "year") %>%
-  mutate(percent_with_punc = count_with_punc / count_new_songs_in_year * 100)
+  mutate(percent_with_punc = count_with_punc / count_new_songs_in_year * 100) %>%
+  complete(year = full_seq(1958:2025, 1), fill = list(value = 0))
 
 phonetic_elisions <- df %>%
   filter(str_detect(title, " '|' ")) %>%
@@ -91,7 +104,8 @@ phonetic_elisions <- df %>%
   summarise(count_with_punc = n()) %>%
   ungroup() %>%
   left_join(count_unique_songs_per_year, by = "year") %>%
-  mutate(percent_with_punc = count_with_punc / count_new_songs_in_year * 100)
+  mutate(percent_with_punc = count_with_punc / count_new_songs_in_year * 100) %>%
+  complete(year = full_seq(1958:2025, 1), fill = list(value = 0))
 
 apostrophe <- df %>%
   filter(str_detect(title, "'")) %>%
@@ -99,12 +113,51 @@ apostrophe <- df %>%
   summarise(count_with_punc = n()) %>%
   ungroup() %>%
   left_join(count_unique_songs_per_year, by = "year") %>%
-  mutate(percent_with_punc = count_with_punc / count_new_songs_in_year * 100)
+  mutate(percent_with_punc = count_with_punc / count_new_songs_in_year * 100) %>%
+  complete(year = full_seq(1958:2025, 1), fill = list(value = 0))
 
 ggplot(contractions, aes(x = year, y = percent_with_punc)) +
   geom_col() +
   theme_minimal() +
-  labs(title = "Billboard charting songs with apostrophes in them")
+  labs(title = "Billboard charting songs with contractions in them")
+
+colon <- df %>%
+  filter(str_detect(title, ":")) %>%
+  group_by(year) %>%
+  summarise(count_with_punc = n()) %>%
+  ungroup() %>%
+  left_join(count_unique_songs_per_year, by = "year") %>%
+  mutate(percent_with_punc = count_with_punc / count_new_songs_in_year * 100) %>%
+  complete(year = full_seq(1958:2025, 1), fill = list(value = 0))
+
+ggplot(colon, aes(x = year, y = percent_with_punc)) +
+  geom_col() +
+  theme_minimal() +
+  labs(title = "Billboard charting songs with : in them")
+
+period <- df %>%
+  filter(str_detect(title, "\\.")) %>%
+  group_by(year) %>%
+  summarise(count_with_punc = n()) %>%
+  ungroup() %>%
+  left_join(count_unique_songs_per_year, by = "year") %>%
+  mutate(percent_with_punc = count_with_punc / count_new_songs_in_year * 100) %>%
+  complete(year = full_seq(1958:2025, 1), fill = list(value = 0))
+
+ggplot(period, aes(x = year, y = percent_with_punc)) +
+  geom_col() +
+  theme_minimal() +
+  labs(title = "Billboard charting songs with : in them")
 
 
-
+df_all_punctuation <- data.frame(
+  year = c(1958:2025),
+  parantheses_pct = with_paratheses$percent_with_punc, 
+  exclamation_pct = exclamation$percent_with_punc,
+  question_pct = question$percent_with_punc,
+  apostrophe_pct = apostrophe$percent_with_punc,
+  contraction_pct = contractions$percent_with_punc,
+  phonetic_elision_pct = phonetic_elisions$percent_with_punc,
+  period_pct = period$percent_with_punc
+) %>%
+  mutate(across(everything(), ~replace_na(., 0)))

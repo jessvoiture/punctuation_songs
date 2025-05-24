@@ -1,0 +1,682 @@
+[
+  {
+    "year": 1958,
+    "parantheses_pct": 5.6818,
+    "exclamation_pct": 0.2841,
+    "question_pct": 0.8523,
+    "apostrophe_pct": 12.5,
+    "contraction_pct": 9.9432,
+    "phonetic_elision_pct": 1.1364,
+    "period_pct": 1.1364
+  },
+  {
+    "year": 1959,
+    "parantheses_pct": 5.9337,
+    "exclamation_pct": 0.8726,
+    "question_pct": 0.349,
+    "apostrophe_pct": 18.3246,
+    "contraction_pct": 15.7068,
+    "phonetic_elision_pct": 2.4433,
+    "period_pct": 1.2216
+  },
+  {
+    "year": 1960,
+    "parantheses_pct": 7.4576,
+    "exclamation_pct": 0.1695,
+    "question_pct": 0.678,
+    "apostrophe_pct": 18.4746,
+    "contraction_pct": 13.5593,
+    "phonetic_elision_pct": 4.9153,
+    "period_pct": 0.8475
+  },
+  {
+    "year": 1961,
+    "parantheses_pct": 7.7372,
+    "exclamation_pct": 0.146,
+    "question_pct": 0.438,
+    "apostrophe_pct": 18.9781,
+    "contraction_pct": 15.7664,
+    "phonetic_elision_pct": 2.7737,
+    "period_pct": 1.0219
+  },
+  {
+    "year": 1962,
+    "parantheses_pct": 8.5329,
+    "exclamation_pct": 1.0479,
+    "question_pct": 0.8982,
+    "apostrophe_pct": 20.0599,
+    "contraction_pct": 14.8204,
+    "phonetic_elision_pct": 4.3413,
+    "period_pct": 1.3473
+  },
+  {
+    "year": 1963,
+    "parantheses_pct": 5.8912,
+    "exclamation_pct": 2.1148,
+    "question_pct": 0.7553,
+    "apostrophe_pct": 20.6949,
+    "contraction_pct": 17.9758,
+    "phonetic_elision_pct": 3.1722,
+    "period_pct": 1.6616
+  },
+  {
+    "year": 1964,
+    "parantheses_pct": 8.6471,
+    "exclamation_pct": 0.5579,
+    "question_pct": 0.9763,
+    "apostrophe_pct": 23.5704,
+    "contraction_pct": 20.5021,
+    "phonetic_elision_pct": 3.3473,
+    "period_pct": 1.1158
+  },
+  {
+    "year": 1965,
+    "parantheses_pct": 8.7819,
+    "exclamation_pct": 1.2748,
+    "question_pct": 0.8499,
+    "apostrophe_pct": 23.2295,
+    "contraction_pct": 20.6799,
+    "phonetic_elision_pct": 2.5496,
+    "period_pct": 0.7082
+  },
+  {
+    "year": 1966,
+    "parantheses_pct": 8.5135,
+    "exclamation_pct": 0.8108,
+    "question_pct": 0.9459,
+    "apostrophe_pct": 21.8919,
+    "contraction_pct": 18.6486,
+    "phonetic_elision_pct": 2.973,
+    "period_pct": 1.6216
+  },
+  {
+    "year": 1967,
+    "parantheses_pct": 6.6576,
+    "exclamation_pct": 0.6793,
+    "question_pct": 0.5435,
+    "apostrophe_pct": 20.5163,
+    "contraction_pct": 16.3043,
+    "phonetic_elision_pct": 3.2609,
+    "period_pct": 0.6793
+  },
+  {
+    "year": 1968,
+    "parantheses_pct": 7.8056,
+    "exclamation_pct": 0.2946,
+    "question_pct": 0.1473,
+    "apostrophe_pct": 20.324,
+    "contraction_pct": 15.3166,
+    "phonetic_elision_pct": 3.8292,
+    "period_pct": 2.651
+  },
+  {
+    "year": 1969,
+    "parantheses_pct": 8.2459,
+    "exclamation_pct": 0.5997,
+    "question_pct": 0.2999,
+    "apostrophe_pct": 21.2894,
+    "contraction_pct": 18.7406,
+    "phonetic_elision_pct": 2.9985,
+    "period_pct": 1.0495
+  },
+  {
+    "year": 1970,
+    "parantheses_pct": 9.7946,
+    "exclamation_pct": 0,
+    "question_pct": 1.1058,
+    "apostrophe_pct": 18.3254,
+    "contraction_pct": 15.3239,
+    "phonetic_elision_pct": 2.5276,
+    "period_pct": 1.1058
+  },
+  {
+    "year": 1971,
+    "parantheses_pct": 8.4967,
+    "exclamation_pct": 0.3268,
+    "question_pct": 0.1634,
+    "apostrophe_pct": 23.2026,
+    "contraction_pct": 21.2418,
+    "phonetic_elision_pct": 2.1242,
+    "period_pct": 2.451
+  },
+  {
+    "year": 1972,
+    "parantheses_pct": 7.3756,
+    "exclamation_pct": 0,
+    "question_pct": 0.8576,
+    "apostrophe_pct": 21.2693,
+    "contraction_pct": 17.3242,
+    "phonetic_elision_pct": 4.4597,
+    "period_pct": 0.8576
+  },
+  {
+    "year": 1973,
+    "parantheses_pct": 8.1028,
+    "exclamation_pct": 0.7905,
+    "question_pct": 0.3953,
+    "apostrophe_pct": 20.751,
+    "contraction_pct": 16.6008,
+    "phonetic_elision_pct": 4.5455,
+    "period_pct": 1.1858
+  },
+  {
+    "year": 1974,
+    "parantheses_pct": 9.5142,
+    "exclamation_pct": 0.2024,
+    "question_pct": 0.4049,
+    "apostrophe_pct": 24.6964,
+    "contraction_pct": 19.0283,
+    "phonetic_elision_pct": 6.0729,
+    "period_pct": 2.0243
+  },
+  {
+    "year": 1975,
+    "parantheses_pct": 9.5324,
+    "exclamation_pct": 0,
+    "question_pct": 0.7194,
+    "apostrophe_pct": 19.7842,
+    "contraction_pct": 14.0288,
+    "phonetic_elision_pct": 5.036,
+    "period_pct": 2.1583
+  },
+  {
+    "year": 1976,
+    "parantheses_pct": 8.7786,
+    "exclamation_pct": 0.1908,
+    "question_pct": 0.1908,
+    "apostrophe_pct": 20.9924,
+    "contraction_pct": 15.8397,
+    "phonetic_elision_pct": 4.3893,
+    "period_pct": 1.9084
+  },
+  {
+    "year": 1977,
+    "parantheses_pct": 8.9744,
+    "exclamation_pct": 0.4274,
+    "question_pct": 0.4274,
+    "apostrophe_pct": 21.1538,
+    "contraction_pct": 16.453,
+    "phonetic_elision_pct": 4.7009,
+    "period_pct": 1.7094
+  },
+  {
+    "year": 1978,
+    "parantheses_pct": 5.2154,
+    "exclamation_pct": 0.2268,
+    "question_pct": 0.4535,
+    "apostrophe_pct": 21.0884,
+    "contraction_pct": 16.5533,
+    "phonetic_elision_pct": 3.1746,
+    "period_pct": 1.3605
+  },
+  {
+    "year": 1979,
+    "parantheses_pct": 6.6253,
+    "exclamation_pct": 0,
+    "question_pct": 0.4141,
+    "apostrophe_pct": 21.118,
+    "contraction_pct": 14.9068,
+    "phonetic_elision_pct": 3.9337,
+    "period_pct": 1.0352
+  },
+  {
+    "year": 1980,
+    "parantheses_pct": 5.5556,
+    "exclamation_pct": 0.6667,
+    "question_pct": 0.6667,
+    "apostrophe_pct": 20.2222,
+    "contraction_pct": 15.3333,
+    "phonetic_elision_pct": 4,
+    "period_pct": 1.3333
+  },
+  {
+    "year": 1981,
+    "parantheses_pct": 7.561,
+    "exclamation_pct": 0,
+    "question_pct": 0.2439,
+    "apostrophe_pct": 20,
+    "contraction_pct": 16.0976,
+    "phonetic_elision_pct": 3.6585,
+    "period_pct": 0.2439
+  },
+  {
+    "year": 1982,
+    "parantheses_pct": 5.3613,
+    "exclamation_pct": 0,
+    "question_pct": 0.2331,
+    "apostrophe_pct": 16.0839,
+    "contraction_pct": 12.1212,
+    "phonetic_elision_pct": 3.7296,
+    "period_pct": 1.1655
+  },
+  {
+    "year": 1983,
+    "parantheses_pct": 4.5455,
+    "exclamation_pct": 0,
+    "question_pct": 1.1364,
+    "apostrophe_pct": 17.7273,
+    "contraction_pct": 14.7727,
+    "phonetic_elision_pct": 2.5,
+    "period_pct": 2.0455
+  },
+  {
+    "year": 1984,
+    "parantheses_pct": 4.4084,
+    "exclamation_pct": 0.232,
+    "question_pct": 0.9281,
+    "apostrophe_pct": 15.3132,
+    "contraction_pct": 13.6891,
+    "phonetic_elision_pct": 1.3921,
+    "period_pct": 1.1601
+  },
+  {
+    "year": 1985,
+    "parantheses_pct": 5.4455,
+    "exclamation_pct": 0,
+    "question_pct": 0.495,
+    "apostrophe_pct": 12.6238,
+    "contraction_pct": 9.6535,
+    "phonetic_elision_pct": 2.9703,
+    "period_pct": 1.2376
+  },
+  {
+    "year": 1986,
+    "parantheses_pct": 5.303,
+    "exclamation_pct": 0.5051,
+    "question_pct": 1.5152,
+    "apostrophe_pct": 14.1414,
+    "contraction_pct": 11.8687,
+    "phonetic_elision_pct": 2.0202,
+    "period_pct": 1.0101
+  },
+  {
+    "year": 1987,
+    "parantheses_pct": 5.4124,
+    "exclamation_pct": 0.2577,
+    "question_pct": 0.7732,
+    "apostrophe_pct": 20.3608,
+    "contraction_pct": 18.8144,
+    "phonetic_elision_pct": 1.5464,
+    "period_pct": 0.5155
+  },
+  {
+    "year": 1988,
+    "parantheses_pct": 3.9474,
+    "exclamation_pct": 0.5263,
+    "question_pct": 1.5789,
+    "apostrophe_pct": 16.0526,
+    "contraction_pct": 13.6842,
+    "phonetic_elision_pct": 2.8947,
+    "period_pct": 0.5263
+  },
+  {
+    "year": 1989,
+    "parantheses_pct": 4.1558,
+    "exclamation_pct": 0.5195,
+    "question_pct": 0.7792,
+    "apostrophe_pct": 18.1818,
+    "contraction_pct": 14.2857,
+    "phonetic_elision_pct": 2.3377,
+    "period_pct": 0.5195
+  },
+  {
+    "year": 1990,
+    "parantheses_pct": 4.5093,
+    "exclamation_pct": 0.7958,
+    "question_pct": 1.061,
+    "apostrophe_pct": 16.7109,
+    "contraction_pct": 13.5279,
+    "phonetic_elision_pct": 2.6525,
+    "period_pct": 1.061
+  },
+  {
+    "year": 1991,
+    "parantheses_pct": 4.2105,
+    "exclamation_pct": 0.2632,
+    "question_pct": 1.3158,
+    "apostrophe_pct": 16.0526,
+    "contraction_pct": 13.9474,
+    "phonetic_elision_pct": 2.1053,
+    "period_pct": 1.3158
+  },
+  {
+    "year": 1992,
+    "parantheses_pct": 4.4693,
+    "exclamation_pct": 1.9553,
+    "question_pct": 1.3966,
+    "apostrophe_pct": 17.8771,
+    "contraction_pct": 15.0838,
+    "phonetic_elision_pct": 3.352,
+    "period_pct": 1.3966
+  },
+  {
+    "year": 1993,
+    "parantheses_pct": 6.1584,
+    "exclamation_pct": 1.173,
+    "question_pct": 1.173,
+    "apostrophe_pct": 19.0616,
+    "contraction_pct": 14.6628,
+    "phonetic_elision_pct": 4.9853,
+    "period_pct": 2.346
+  },
+  {
+    "year": 1994,
+    "parantheses_pct": 6.5089,
+    "exclamation_pct": 0.8876,
+    "question_pct": 1.1834,
+    "apostrophe_pct": 18.3432,
+    "contraction_pct": 13.9053,
+    "phonetic_elision_pct": 2.9586,
+    "period_pct": 1.7751
+  },
+  {
+    "year": 1995,
+    "parantheses_pct": 6.6265,
+    "exclamation_pct": 1.2048,
+    "question_pct": 1.506,
+    "apostrophe_pct": 16.2651,
+    "contraction_pct": 12.3494,
+    "phonetic_elision_pct": 3.6145,
+    "period_pct": 1.2048
+  },
+  {
+    "year": 1996,
+    "parantheses_pct": 6.5359,
+    "exclamation_pct": 0.6536,
+    "question_pct": 0,
+    "apostrophe_pct": 23.2026,
+    "contraction_pct": 17.6471,
+    "phonetic_elision_pct": 4.902,
+    "period_pct": 2.9412
+  },
+  {
+    "year": 1997,
+    "parantheses_pct": 3.9755,
+    "exclamation_pct": 0.6116,
+    "question_pct": 0.9174,
+    "apostrophe_pct": 20.4893,
+    "contraction_pct": 16.8196,
+    "phonetic_elision_pct": 2.7523,
+    "period_pct": 1.2232
+  },
+  {
+    "year": 1998,
+    "parantheses_pct": 5.0704,
+    "exclamation_pct": 0.5634,
+    "question_pct": 1.6901,
+    "apostrophe_pct": 20.2817,
+    "contraction_pct": 14.9296,
+    "phonetic_elision_pct": 5.0704,
+    "period_pct": 1.9718
+  },
+  {
+    "year": 1999,
+    "parantheses_pct": 5.1613,
+    "exclamation_pct": 1.6129,
+    "question_pct": 1.6129,
+    "apostrophe_pct": 17.4194,
+    "contraction_pct": 15.1613,
+    "phonetic_elision_pct": 1.6129,
+    "period_pct": 1.9355
+  },
+  {
+    "year": 2000,
+    "parantheses_pct": 6.3291,
+    "exclamation_pct": 1.2658,
+    "question_pct": 0.9494,
+    "apostrophe_pct": 17.0886,
+    "contraction_pct": 14.557,
+    "phonetic_elision_pct": 1.5823,
+    "period_pct": 1.8987
+  },
+  {
+    "year": 2001,
+    "parantheses_pct": 5.9028,
+    "exclamation_pct": 1.3889,
+    "question_pct": 1.0417,
+    "apostrophe_pct": 17.7083,
+    "contraction_pct": 14.2361,
+    "phonetic_elision_pct": 3.4722,
+    "period_pct": 1.3889
+  },
+  {
+    "year": 2002,
+    "parantheses_pct": 5.9603,
+    "exclamation_pct": 1.3245,
+    "question_pct": 0.9934,
+    "apostrophe_pct": 16.2252,
+    "contraction_pct": 11.5894,
+    "phonetic_elision_pct": 3.3113,
+    "period_pct": 0.9934
+  },
+  {
+    "year": 2003,
+    "parantheses_pct": 4.886,
+    "exclamation_pct": 2.2801,
+    "question_pct": 1.9544,
+    "apostrophe_pct": 15.9609,
+    "contraction_pct": 12.0521,
+    "phonetic_elision_pct": 2.6059,
+    "period_pct": 1.9544
+  },
+  {
+    "year": 2004,
+    "parantheses_pct": 3.6304,
+    "exclamation_pct": 0.9901,
+    "question_pct": 1.3201,
+    "apostrophe_pct": 12.8713,
+    "contraction_pct": 10.231,
+    "phonetic_elision_pct": 0.9901,
+    "period_pct": 0.9901
+  },
+  {
+    "year": 2005,
+    "parantheses_pct": 5.5233,
+    "exclamation_pct": 0.8721,
+    "question_pct": 0.5814,
+    "apostrophe_pct": 18.314,
+    "contraction_pct": 13.9535,
+    "phonetic_elision_pct": 4.0698,
+    "period_pct": 1.1628
+  },
+  {
+    "year": 2006,
+    "parantheses_pct": 5.4645,
+    "exclamation_pct": 0.2732,
+    "question_pct": 0.2732,
+    "apostrophe_pct": 13.9344,
+    "contraction_pct": 9.5628,
+    "phonetic_elision_pct": 3.5519,
+    "period_pct": 1.0929
+  },
+  {
+    "year": 2007,
+    "parantheses_pct": 5.1136,
+    "exclamation_pct": 0.2841,
+    "question_pct": 0.2841,
+    "apostrophe_pct": 15.625,
+    "contraction_pct": 11.9318,
+    "phonetic_elision_pct": 3.4091,
+    "period_pct": 1.4205
+  },
+  {
+    "year": 2008,
+    "parantheses_pct": 1.9465,
+    "exclamation_pct": 0.7299,
+    "question_pct": 0.2433,
+    "apostrophe_pct": 13.8686,
+    "contraction_pct": 11.1922,
+    "phonetic_elision_pct": 2.1898,
+    "period_pct": 0.7299
+  },
+  {
+    "year": 2009,
+    "parantheses_pct": 3.9627,
+    "exclamation_pct": 0.2331,
+    "question_pct": 0.2331,
+    "apostrophe_pct": 13.7529,
+    "contraction_pct": 11.4219,
+    "phonetic_elision_pct": 2.331,
+    "period_pct": 0.6993
+  },
+  {
+    "year": 2010,
+    "parantheses_pct": 5.2743,
+    "exclamation_pct": 0.8439,
+    "question_pct": 0.6329,
+    "apostrophe_pct": 11.8143,
+    "contraction_pct": 9.0717,
+    "phonetic_elision_pct": 2.5316,
+    "period_pct": 1.4768
+  },
+  {
+    "year": 2011,
+    "parantheses_pct": 3.719,
+    "exclamation_pct": 0.4132,
+    "question_pct": 0.2066,
+    "apostrophe_pct": 10.9504,
+    "contraction_pct": 9.0909,
+    "phonetic_elision_pct": 0.8264,
+    "period_pct": 1.8595
+  },
+  {
+    "year": 2012,
+    "parantheses_pct": 3.3058,
+    "exclamation_pct": 0.551,
+    "question_pct": 0.551,
+    "apostrophe_pct": 11.5702,
+    "contraction_pct": 8.5399,
+    "phonetic_elision_pct": 2.2039,
+    "period_pct": 1.1019
+  },
+  {
+    "year": 2013,
+    "parantheses_pct": 3.4121,
+    "exclamation_pct": 0.7874,
+    "question_pct": 0.5249,
+    "apostrophe_pct": 8.9239,
+    "contraction_pct": 7.3491,
+    "phonetic_elision_pct": 1.5748,
+    "period_pct": 2.0997
+  },
+  {
+    "year": 2014,
+    "parantheses_pct": 2.7701,
+    "exclamation_pct": 0.831,
+    "question_pct": 1.108,
+    "apostrophe_pct": 12.1884,
+    "contraction_pct": 8.0332,
+    "phonetic_elision_pct": 3.8781,
+    "period_pct": 0.831
+  },
+  {
+    "year": 2015,
+    "parantheses_pct": 1.7857,
+    "exclamation_pct": 0,
+    "question_pct": 0.2551,
+    "apostrophe_pct": 8.6735,
+    "contraction_pct": 7.1429,
+    "phonetic_elision_pct": 1.5306,
+    "period_pct": 1.0204
+  },
+  {
+    "year": 2016,
+    "parantheses_pct": 2.1951,
+    "exclamation_pct": 0.2439,
+    "question_pct": 0.4878,
+    "apostrophe_pct": 8.5366,
+    "contraction_pct": 7.561,
+    "phonetic_elision_pct": 0.7317,
+    "period_pct": 2.6829
+  },
+  {
+    "year": 2017,
+    "parantheses_pct": 0.6623,
+    "exclamation_pct": 0.2208,
+    "question_pct": 0.4415,
+    "apostrophe_pct": 5.7395,
+    "contraction_pct": 4.1943,
+    "phonetic_elision_pct": 1.5453,
+    "period_pct": 3.7528
+  },
+  {
+    "year": 2018,
+    "parantheses_pct": 4.0336,
+    "exclamation_pct": 1.1765,
+    "question_pct": 0.5042,
+    "apostrophe_pct": 5.7143,
+    "contraction_pct": 5.042,
+    "phonetic_elision_pct": 0.6723,
+    "period_pct": 0.5042
+  },
+  {
+    "year": 2019,
+    "parantheses_pct": 0.5792,
+    "exclamation_pct": 0.3861,
+    "question_pct": 0.3861,
+    "apostrophe_pct": 7.1429,
+    "contraction_pct": 6.1776,
+    "phonetic_elision_pct": 0.5792,
+    "period_pct": 1.1583
+  },
+  {
+    "year": 2020,
+    "parantheses_pct": 2.2255,
+    "exclamation_pct": 0.7418,
+    "question_pct": 0.4451,
+    "apostrophe_pct": 4.7478,
+    "contraction_pct": 3.7092,
+    "phonetic_elision_pct": 0.7418,
+    "period_pct": 1.7804
+  },
+  {
+    "year": 2021,
+    "parantheses_pct": 2.4465,
+    "exclamation_pct": 0.4587,
+    "question_pct": 0.3058,
+    "apostrophe_pct": 12.5382,
+    "contraction_pct": 11.0092,
+    "phonetic_elision_pct": 0.7645,
+    "period_pct": 2.1407
+  },
+  {
+    "year": 2022,
+    "parantheses_pct": 3.3228,
+    "exclamation_pct": 0.4747,
+    "question_pct": 0.7911,
+    "apostrophe_pct": 6.8038,
+    "contraction_pct": 6.1709,
+    "phonetic_elision_pct": 0.1582,
+    "period_pct": 1.1076
+  },
+  {
+    "year": 2023,
+    "parantheses_pct": 1.6181,
+    "exclamation_pct": 0.9709,
+    "question_pct": 0.6472,
+    "apostrophe_pct": 13.2686,
+    "contraction_pct": 11.9741,
+    "phonetic_elision_pct": 0.9709,
+    "period_pct": 1.7799
+  },
+  {
+    "year": 2024,
+    "parantheses_pct": 3.0449,
+    "exclamation_pct": 0.8013,
+    "question_pct": 1.2821,
+    "apostrophe_pct": 6.5705,
+    "contraction_pct": 5.609,
+    "phonetic_elision_pct": 0.8013,
+    "period_pct": 1.6026
+  },
+  {
+    "year": 2025,
+    "parantheses_pct": 0.7968,
+    "exclamation_pct": 0,
+    "question_pct": 0,
+    "apostrophe_pct": 6.3745,
+    "contraction_pct": 5.5777,
+    "phonetic_elision_pct": 0.3984,
+    "period_pct": 0.3984
+  }
+]
