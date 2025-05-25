@@ -3,12 +3,13 @@
 
   const options = [
     "parantheses",
-    "exclamation mark",
-    "question mark",
-    "period",
-    "apostrophe",
-    "phonetic elision",
-    "contraction/possession",
+    "an apostrophe",
+    // "a contraction/possession",
+    // "a phonetic elision",
+    "a comma",
+    "a period",
+    "an exclamation mark",
+    "a question mark",
   ];
 </script>
 
@@ -21,22 +22,34 @@
 
 <style>
   select {
-    font-size: 20px; /* Change the font size of the dropdown */
+    font-size: 24px;
+    font-weight: bold;
   }
 
   option {
-    font-size: 20px; /* Change the font size of the dropdown options */
+    font-size: 14px;
   }
 
   select {
-    padding: 8px 32px 8px 4px; /* Add some padding for better appearance */
-    border-radius: 5px; /* Rounded corners */
-    border: 1px solid #ccc; /* Light border */
-    background-color: #f9f9f9; /* Light background color */
-    appearance: none; /* Remove default browser styling for better control */
+    padding: 4px 32px 4px 4px;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    border-radius: 8px 8px 0 0;
+    background-color: #fff;
+    appearance: none;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 6'%3E%3Cpath d='M1 1 L5 5 L9 1' stroke='%23000' fill='none' stroke-width='1.5'/%3E%3C/svg%3E"); /* Custom arrow */
     background-repeat: no-repeat;
-    background-position: right 8px center; /* Position the arrow */
-    background-size: 10px; /* Size of the arrow */
+    background-position: right 8px center;
+    background-size: 10px;
+    transition: background-color 0.3s ease;
+  }
+
+  select:hover {
+    background-color: #f6f6f6;
+  }
+
+  select:focus {
+    border-radius: 8px;
+    background-color: #f6f6f6;
   }
 </style>

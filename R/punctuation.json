@@ -7,7 +7,8 @@
     "apostrophe_pct": 12.5,
     "contraction_pct": 9.9432,
     "phonetic_elision_pct": 1.1364,
-    "period_pct": 1.1364
+    "period_pct": 1.1364,
+    "comma_pct": 3.6932
   },
   {
     "year": 1959,
@@ -17,7 +18,8 @@
     "apostrophe_pct": 18.3246,
     "contraction_pct": 15.7068,
     "phonetic_elision_pct": 2.4433,
-    "period_pct": 1.2216
+    "period_pct": 1.2216,
+    "comma_pct": 3.8394
   },
   {
     "year": 1960,
@@ -27,7 +29,8 @@
     "apostrophe_pct": 18.4746,
     "contraction_pct": 13.5593,
     "phonetic_elision_pct": 4.9153,
-    "period_pct": 0.8475
+    "period_pct": 0.8475,
+    "comma_pct": 2.5424
   },
   {
     "year": 1961,
@@ -37,7 +40,8 @@
     "apostrophe_pct": 18.9781,
     "contraction_pct": 15.7664,
     "phonetic_elision_pct": 2.7737,
-    "period_pct": 1.0219
+    "period_pct": 1.0219,
+    "comma_pct": 3.9416
   },
   {
     "year": 1962,
@@ -47,7 +51,8 @@
     "apostrophe_pct": 20.0599,
     "contraction_pct": 14.8204,
     "phonetic_elision_pct": 4.3413,
-    "period_pct": 1.3473
+    "period_pct": 1.3473,
+    "comma_pct": 2.6946
   },
   {
     "year": 1963,
@@ -57,7 +62,8 @@
     "apostrophe_pct": 20.6949,
     "contraction_pct": 17.9758,
     "phonetic_elision_pct": 3.1722,
-    "period_pct": 1.6616
+    "period_pct": 1.6616,
+    "comma_pct": 5.287
   },
   {
     "year": 1964,
@@ -67,7 +73,8 @@
     "apostrophe_pct": 23.5704,
     "contraction_pct": 20.5021,
     "phonetic_elision_pct": 3.3473,
-    "period_pct": 1.1158
+    "period_pct": 1.1158,
+    "comma_pct": 4.463
   },
   {
     "year": 1965,
@@ -77,7 +84,8 @@
     "apostrophe_pct": 23.2295,
     "contraction_pct": 20.6799,
     "phonetic_elision_pct": 2.5496,
-    "period_pct": 0.7082
+    "period_pct": 0.7082,
+    "comma_pct": 4.2493
   },
   {
     "year": 1966,
@@ -87,7 +95,8 @@
     "apostrophe_pct": 21.8919,
     "contraction_pct": 18.6486,
     "phonetic_elision_pct": 2.973,
-    "period_pct": 1.6216
+    "period_pct": 1.6216,
+    "comma_pct": 4.0541
   },
   {
     "year": 1967,
@@ -97,7 +106,8 @@
     "apostrophe_pct": 20.5163,
     "contraction_pct": 16.3043,
     "phonetic_elision_pct": 3.2609,
-    "period_pct": 0.6793
+    "period_pct": 0.6793,
+    "comma_pct": 5.4348
   },
   {
     "year": 1968,
@@ -107,7 +117,8 @@
     "apostrophe_pct": 20.324,
     "contraction_pct": 15.3166,
     "phonetic_elision_pct": 3.8292,
-    "period_pct": 2.651
+    "period_pct": 2.651,
+    "comma_pct": 3.9764
   },
   {
     "year": 1969,
@@ -117,7 +128,8 @@
     "apostrophe_pct": 21.2894,
     "contraction_pct": 18.7406,
     "phonetic_elision_pct": 2.9985,
-    "period_pct": 1.0495
+    "period_pct": 1.0495,
+    "comma_pct": 4.7976
   },
   {
     "year": 1970,
@@ -127,7 +139,8 @@
     "apostrophe_pct": 18.3254,
     "contraction_pct": 15.3239,
     "phonetic_elision_pct": 2.5276,
-    "period_pct": 1.1058
+    "period_pct": 1.1058,
+    "comma_pct": 4.4234
   },
   {
     "year": 1971,
@@ -137,7 +150,8 @@
     "apostrophe_pct": 23.2026,
     "contraction_pct": 21.2418,
     "phonetic_elision_pct": 2.1242,
-    "period_pct": 2.451
+    "period_pct": 2.451,
+    "comma_pct": 4.5752
   },
   {
     "year": 1972,
@@ -147,7 +161,8 @@
     "apostrophe_pct": 21.2693,
     "contraction_pct": 17.3242,
     "phonetic_elision_pct": 4.4597,
-    "period_pct": 0.8576
+    "period_pct": 0.8576,
+    "comma_pct": 3.9451
   },
   {
     "year": 1973,
@@ -157,7 +172,8 @@
     "apostrophe_pct": 20.751,
     "contraction_pct": 16.6008,
     "phonetic_elision_pct": 4.5455,
-    "period_pct": 1.1858
+    "period_pct": 1.1858,
+    "comma_pct": 3.9526
   },
   {
     "year": 1974,
@@ -167,7 +183,8 @@
     "apostrophe_pct": 24.6964,
     "contraction_pct": 19.0283,
     "phonetic_elision_pct": 6.0729,
-    "period_pct": 2.0243
+    "period_pct": 2.0243,
+    "comma_pct": 4.0486
   },
   {
     "year": 1975,
@@ -177,7 +194,8 @@
     "apostrophe_pct": 19.7842,
     "contraction_pct": 14.0288,
     "phonetic_elision_pct": 5.036,
-    "period_pct": 2.1583
+    "period_pct": 2.1583,
+    "comma_pct": 2.1583
   },
   {
     "year": 1976,
@@ -187,7 +205,8 @@
     "apostrophe_pct": 20.9924,
     "contraction_pct": 15.8397,
     "phonetic_elision_pct": 4.3893,
-    "period_pct": 1.9084
+    "period_pct": 1.9084,
+    "comma_pct": 4.1985
   },
   {
     "year": 1977,
@@ -197,7 +216,8 @@
     "apostrophe_pct": 21.1538,
     "contraction_pct": 16.453,
     "phonetic_elision_pct": 4.7009,
-    "period_pct": 1.7094
+    "period_pct": 1.7094,
+    "comma_pct": 2.9915
   },
   {
     "year": 1978,
@@ -207,7 +227,8 @@
     "apostrophe_pct": 21.0884,
     "contraction_pct": 16.5533,
     "phonetic_elision_pct": 3.1746,
-    "period_pct": 1.3605
+    "period_pct": 1.3605,
+    "comma_pct": 3.6281
   },
   {
     "year": 1979,
@@ -217,7 +238,8 @@
     "apostrophe_pct": 21.118,
     "contraction_pct": 14.9068,
     "phonetic_elision_pct": 3.9337,
-    "period_pct": 1.0352
+    "period_pct": 1.0352,
+    "comma_pct": 3.3126
   },
   {
     "year": 1980,
@@ -227,7 +249,8 @@
     "apostrophe_pct": 20.2222,
     "contraction_pct": 15.3333,
     "phonetic_elision_pct": 4,
-    "period_pct": 1.3333
+    "period_pct": 1.3333,
+    "comma_pct": 1.3333
   },
   {
     "year": 1981,
@@ -237,7 +260,8 @@
     "apostrophe_pct": 20,
     "contraction_pct": 16.0976,
     "phonetic_elision_pct": 3.6585,
-    "period_pct": 0.2439
+    "period_pct": 0.2439,
+    "comma_pct": 1.7073
   },
   {
     "year": 1982,
@@ -247,7 +271,8 @@
     "apostrophe_pct": 16.0839,
     "contraction_pct": 12.1212,
     "phonetic_elision_pct": 3.7296,
-    "period_pct": 1.1655
+    "period_pct": 1.1655,
+    "comma_pct": 1.6317
   },
   {
     "year": 1983,
@@ -257,7 +282,8 @@
     "apostrophe_pct": 17.7273,
     "contraction_pct": 14.7727,
     "phonetic_elision_pct": 2.5,
-    "period_pct": 2.0455
+    "period_pct": 2.0455,
+    "comma_pct": 1.1364
   },
   {
     "year": 1984,
@@ -267,7 +293,8 @@
     "apostrophe_pct": 15.3132,
     "contraction_pct": 13.6891,
     "phonetic_elision_pct": 1.3921,
-    "period_pct": 1.1601
+    "period_pct": 1.1601,
+    "comma_pct": 1.8561
   },
   {
     "year": 1985,
@@ -277,7 +304,8 @@
     "apostrophe_pct": 12.6238,
     "contraction_pct": 9.6535,
     "phonetic_elision_pct": 2.9703,
-    "period_pct": 1.2376
+    "period_pct": 1.2376,
+    "comma_pct": 0.7426
   },
   {
     "year": 1986,
@@ -287,7 +315,8 @@
     "apostrophe_pct": 14.1414,
     "contraction_pct": 11.8687,
     "phonetic_elision_pct": 2.0202,
-    "period_pct": 1.0101
+    "period_pct": 1.0101,
+    "comma_pct": 1.2626
   },
   {
     "year": 1987,
@@ -297,7 +326,8 @@
     "apostrophe_pct": 20.3608,
     "contraction_pct": 18.8144,
     "phonetic_elision_pct": 1.5464,
-    "period_pct": 0.5155
+    "period_pct": 0.5155,
+    "comma_pct": 1.2887
   },
   {
     "year": 1988,
@@ -307,7 +337,8 @@
     "apostrophe_pct": 16.0526,
     "contraction_pct": 13.6842,
     "phonetic_elision_pct": 2.8947,
-    "period_pct": 0.5263
+    "period_pct": 0.5263,
+    "comma_pct": 3.1579
   },
   {
     "year": 1989,
@@ -317,7 +348,8 @@
     "apostrophe_pct": 18.1818,
     "contraction_pct": 14.2857,
     "phonetic_elision_pct": 2.3377,
-    "period_pct": 0.5195
+    "period_pct": 0.5195,
+    "comma_pct": 0.2597
   },
   {
     "year": 1990,
@@ -327,7 +359,8 @@
     "apostrophe_pct": 16.7109,
     "contraction_pct": 13.5279,
     "phonetic_elision_pct": 2.6525,
-    "period_pct": 1.061
+    "period_pct": 1.061,
+    "comma_pct": 0.7958
   },
   {
     "year": 1991,
@@ -337,7 +370,8 @@
     "apostrophe_pct": 16.0526,
     "contraction_pct": 13.9474,
     "phonetic_elision_pct": 2.1053,
-    "period_pct": 1.3158
+    "period_pct": 1.3158,
+    "comma_pct": 1.3158
   },
   {
     "year": 1992,
@@ -347,7 +381,8 @@
     "apostrophe_pct": 17.8771,
     "contraction_pct": 15.0838,
     "phonetic_elision_pct": 3.352,
-    "period_pct": 1.3966
+    "period_pct": 1.3966,
+    "comma_pct": 1.676
   },
   {
     "year": 1993,
@@ -357,7 +392,8 @@
     "apostrophe_pct": 19.0616,
     "contraction_pct": 14.6628,
     "phonetic_elision_pct": 4.9853,
-    "period_pct": 2.346
+    "period_pct": 2.346,
+    "comma_pct": 1.4663
   },
   {
     "year": 1994,
@@ -367,7 +403,8 @@
     "apostrophe_pct": 18.3432,
     "contraction_pct": 13.9053,
     "phonetic_elision_pct": 2.9586,
-    "period_pct": 1.7751
+    "period_pct": 1.7751,
+    "comma_pct": 2.3669
   },
   {
     "year": 1995,
@@ -377,7 +414,8 @@
     "apostrophe_pct": 16.2651,
     "contraction_pct": 12.3494,
     "phonetic_elision_pct": 3.6145,
-    "period_pct": 1.2048
+    "period_pct": 1.2048,
+    "comma_pct": 1.506
   },
   {
     "year": 1996,
@@ -387,7 +425,8 @@
     "apostrophe_pct": 23.2026,
     "contraction_pct": 17.6471,
     "phonetic_elision_pct": 4.902,
-    "period_pct": 2.9412
+    "period_pct": 2.9412,
+    "comma_pct": 1.634
   },
   {
     "year": 1997,
@@ -397,7 +436,8 @@
     "apostrophe_pct": 20.4893,
     "contraction_pct": 16.8196,
     "phonetic_elision_pct": 2.7523,
-    "period_pct": 1.2232
+    "period_pct": 1.2232,
+    "comma_pct": 2.7523
   },
   {
     "year": 1998,
@@ -407,7 +447,8 @@
     "apostrophe_pct": 20.2817,
     "contraction_pct": 14.9296,
     "phonetic_elision_pct": 5.0704,
-    "period_pct": 1.9718
+    "period_pct": 1.9718,
+    "comma_pct": 1.9718
   },
   {
     "year": 1999,
@@ -417,7 +458,8 @@
     "apostrophe_pct": 17.4194,
     "contraction_pct": 15.1613,
     "phonetic_elision_pct": 1.6129,
-    "period_pct": 1.9355
+    "period_pct": 1.9355,
+    "comma_pct": 1.2903
   },
   {
     "year": 2000,
@@ -427,7 +469,8 @@
     "apostrophe_pct": 17.0886,
     "contraction_pct": 14.557,
     "phonetic_elision_pct": 1.5823,
-    "period_pct": 1.8987
+    "period_pct": 1.8987,
+    "comma_pct": 1.5823
   },
   {
     "year": 2001,
@@ -437,7 +480,8 @@
     "apostrophe_pct": 17.7083,
     "contraction_pct": 14.2361,
     "phonetic_elision_pct": 3.4722,
-    "period_pct": 1.3889
+    "period_pct": 1.3889,
+    "comma_pct": 2.0833
   },
   {
     "year": 2002,
@@ -447,7 +491,8 @@
     "apostrophe_pct": 16.2252,
     "contraction_pct": 11.5894,
     "phonetic_elision_pct": 3.3113,
-    "period_pct": 0.9934
+    "period_pct": 0.9934,
+    "comma_pct": 1.6556
   },
   {
     "year": 2003,
@@ -457,7 +502,8 @@
     "apostrophe_pct": 15.9609,
     "contraction_pct": 12.0521,
     "phonetic_elision_pct": 2.6059,
-    "period_pct": 1.9544
+    "period_pct": 1.9544,
+    "comma_pct": 2.6059
   },
   {
     "year": 2004,
@@ -467,7 +513,8 @@
     "apostrophe_pct": 12.8713,
     "contraction_pct": 10.231,
     "phonetic_elision_pct": 0.9901,
-    "period_pct": 0.9901
+    "period_pct": 0.9901,
+    "comma_pct": 1.3201
   },
   {
     "year": 2005,
@@ -477,7 +524,8 @@
     "apostrophe_pct": 18.314,
     "contraction_pct": 13.9535,
     "phonetic_elision_pct": 4.0698,
-    "period_pct": 1.1628
+    "period_pct": 1.1628,
+    "comma_pct": 1.1628
   },
   {
     "year": 2006,
@@ -487,7 +535,8 @@
     "apostrophe_pct": 13.9344,
     "contraction_pct": 9.5628,
     "phonetic_elision_pct": 3.5519,
-    "period_pct": 1.0929
+    "period_pct": 1.0929,
+    "comma_pct": 1.0929
   },
   {
     "year": 2007,
@@ -497,7 +546,8 @@
     "apostrophe_pct": 15.625,
     "contraction_pct": 11.9318,
     "phonetic_elision_pct": 3.4091,
-    "period_pct": 1.4205
+    "period_pct": 1.4205,
+    "comma_pct": 1.4205
   },
   {
     "year": 2008,
@@ -507,7 +557,8 @@
     "apostrophe_pct": 13.8686,
     "contraction_pct": 11.1922,
     "phonetic_elision_pct": 2.1898,
-    "period_pct": 0.7299
+    "period_pct": 0.7299,
+    "comma_pct": 0.7299
   },
   {
     "year": 2009,
@@ -517,7 +568,8 @@
     "apostrophe_pct": 13.7529,
     "contraction_pct": 11.4219,
     "phonetic_elision_pct": 2.331,
-    "period_pct": 0.6993
+    "period_pct": 0.6993,
+    "comma_pct": 1.1655
   },
   {
     "year": 2010,
@@ -527,7 +579,8 @@
     "apostrophe_pct": 11.8143,
     "contraction_pct": 9.0717,
     "phonetic_elision_pct": 2.5316,
-    "period_pct": 1.4768
+    "period_pct": 1.4768,
+    "comma_pct": 1.8987
   },
   {
     "year": 2011,
@@ -537,7 +590,8 @@
     "apostrophe_pct": 10.9504,
     "contraction_pct": 9.0909,
     "phonetic_elision_pct": 0.8264,
-    "period_pct": 1.8595
+    "period_pct": 1.8595,
+    "comma_pct": 1.0331
   },
   {
     "year": 2012,
@@ -547,7 +601,8 @@
     "apostrophe_pct": 11.5702,
     "contraction_pct": 8.5399,
     "phonetic_elision_pct": 2.2039,
-    "period_pct": 1.1019
+    "period_pct": 1.1019,
+    "comma_pct": 0.551
   },
   {
     "year": 2013,
@@ -557,7 +612,8 @@
     "apostrophe_pct": 8.9239,
     "contraction_pct": 7.3491,
     "phonetic_elision_pct": 1.5748,
-    "period_pct": 2.0997
+    "period_pct": 2.0997,
+    "comma_pct": 1.0499
   },
   {
     "year": 2014,
@@ -567,7 +623,8 @@
     "apostrophe_pct": 12.1884,
     "contraction_pct": 8.0332,
     "phonetic_elision_pct": 3.8781,
-    "period_pct": 0.831
+    "period_pct": 0.831,
+    "comma_pct": 1.108
   },
   {
     "year": 2015,
@@ -577,7 +634,8 @@
     "apostrophe_pct": 8.6735,
     "contraction_pct": 7.1429,
     "phonetic_elision_pct": 1.5306,
-    "period_pct": 1.0204
+    "period_pct": 1.0204,
+    "comma_pct": 1.2755
   },
   {
     "year": 2016,
@@ -587,7 +645,8 @@
     "apostrophe_pct": 8.5366,
     "contraction_pct": 7.561,
     "phonetic_elision_pct": 0.7317,
-    "period_pct": 2.6829
+    "period_pct": 2.6829,
+    "comma_pct": 0.9756
   },
   {
     "year": 2017,
@@ -597,7 +656,8 @@
     "apostrophe_pct": 5.7395,
     "contraction_pct": 4.1943,
     "phonetic_elision_pct": 1.5453,
-    "period_pct": 3.7528
+    "period_pct": 3.7528,
+    "comma_pct": 0.2208
   },
   {
     "year": 2018,
@@ -607,7 +667,8 @@
     "apostrophe_pct": 5.7143,
     "contraction_pct": 5.042,
     "phonetic_elision_pct": 0.6723,
-    "period_pct": 0.5042
+    "period_pct": 0.5042,
+    "comma_pct": 1.0084
   },
   {
     "year": 2019,
@@ -617,7 +678,8 @@
     "apostrophe_pct": 7.1429,
     "contraction_pct": 6.1776,
     "phonetic_elision_pct": 0.5792,
-    "period_pct": 1.1583
+    "period_pct": 1.1583,
+    "comma_pct": 0.7722
   },
   {
     "year": 2020,
@@ -627,7 +689,8 @@
     "apostrophe_pct": 4.7478,
     "contraction_pct": 3.7092,
     "phonetic_elision_pct": 0.7418,
-    "period_pct": 1.7804
+    "period_pct": 1.7804,
+    "comma_pct": 1.0386
   },
   {
     "year": 2021,
@@ -637,7 +700,8 @@
     "apostrophe_pct": 12.5382,
     "contraction_pct": 11.0092,
     "phonetic_elision_pct": 0.7645,
-    "period_pct": 2.1407
+    "period_pct": 2.1407,
+    "comma_pct": 0.6116
   },
   {
     "year": 2022,
@@ -647,7 +711,8 @@
     "apostrophe_pct": 6.8038,
     "contraction_pct": 6.1709,
     "phonetic_elision_pct": 0.1582,
-    "period_pct": 1.1076
+    "period_pct": 1.1076,
+    "comma_pct": 1.1076
   },
   {
     "year": 2023,
@@ -657,7 +722,8 @@
     "apostrophe_pct": 13.2686,
     "contraction_pct": 11.9741,
     "phonetic_elision_pct": 0.9709,
-    "period_pct": 1.7799
+    "period_pct": 1.7799,
+    "comma_pct": 1.9417
   },
   {
     "year": 2024,
@@ -667,7 +733,8 @@
     "apostrophe_pct": 6.5705,
     "contraction_pct": 5.609,
     "phonetic_elision_pct": 0.8013,
-    "period_pct": 1.6026
+    "period_pct": 1.6026,
+    "comma_pct": 1.1218
   },
   {
     "year": 2025,
@@ -677,6 +744,7 @@
     "apostrophe_pct": 6.3745,
     "contraction_pct": 5.5777,
     "phonetic_elision_pct": 0.3984,
-    "period_pct": 0.3984
+    "period_pct": 0.3984,
+    "comma_pct": 1.1952
   }
 ]

@@ -24,5 +24,33 @@
 
 <svelte:window on:resize={resize} bind:scrollY={y} />
 
-<Title />
-<BarChart data={punctuation} {screenWidth} {screenHeight} />
+<main>
+  <div class="container">
+    <div class="chart-wrapper">
+      <Title />
+      <BarChart data={punctuation} {screenWidth} {screenHeight} />
+    </div>
+  </div>
+</main>
+
+<style>
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    align-content: flex-start;
+  }
+
+  .chart-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 24px;
+    flex-basis: auto;
+    width: fit-content;
+  }
+</style>

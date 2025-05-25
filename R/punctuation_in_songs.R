@@ -3,6 +3,7 @@ require(dplyr)
 require(ggplot2)
 require(janitor)
 require(stringr)
+require(jsonlite)
 
 years_which_might_be_in_paratheses <- as.character(1940:2024)
 
@@ -135,6 +136,20 @@ ggplot(colon, aes(x = year, y = percent_with_punc)) +
   theme_minimal() +
   labs(title = "Billboard charting songs with : in them")
 
+comma <- df %>%
+  filter(str_detect(title, ",")) %>%
+  group_by(year) %>%
+  summarise(count_with_punc = n()) %>%
+  ungroup() %>%
+  left_join(count_unique_songs_per_year, by = "year") %>%
+  mutate(percent_with_punc = count_with_punc / count_new_songs_in_year * 100) %>%
+  complete(year = full_seq(1958:2025, 1), fill = list(value = 0))
+
+ggplot(comma, aes(x = year, y = percent_with_punc)) +
+  geom_col() +
+  theme_minimal() +
+  labs(title = "Billboard charting songs with comma in them")
+
 period <- df %>%
   filter(str_detect(title, "\\.")) %>%
   group_by(year) %>%
@@ -161,3 +176,31 @@ df_all_punctuation <- data.frame(
   period_pct = period$percent_with_punc
 ) %>%
   mutate(across(everything(), ~replace_na(., 0)))
+
+
+
+# export ------------------------------------------------------------------
+
+nested_df <- df_bb %>%
+  group_by(year) %>%
+  summarise(albums = list(data.frame(
+    album, 
+    album_release_date, 
+    type, 
+    first_album_release_date, 
+    days_since_first_release, 
+    days_since_last_release, 
+    notes,
+    album_image,
+    artist_decade_debut,
+    peak_pos,
+    wks_on_chart,
+    isBestAlbum,
+    wks_on_chart_norm
+  ))) %>%
+  ungroup()
+
+j <- toJSON(df_all_punctuation, pretty = TRUE)
+cat(j)
+
+write_json(df_all_punctuation, path = "punctuation.json", pretty = TRUE)
