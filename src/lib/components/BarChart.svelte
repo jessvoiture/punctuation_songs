@@ -29,7 +29,7 @@
     width = 0.9 * screenWidth;
   } else {
     height = 0.75 * screenHeight;
-    width = 0.6 * screenWidth;
+    width = 0.55 * screenWidth;
   }
 
   let padding = { top: 20, right: 0, bottom: 30, left: 40 };

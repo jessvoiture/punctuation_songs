@@ -40,13 +40,13 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    height: calc(100vh - 32px);
+    height: calc(100vh - 40px);
     width: 100%;
     flex-direction: row;
     align-content: flex-start;
-    gap: 72px;
-    padding-left: 32px;
-    margin-top: 32px;
+    gap: 168px;
+    padding-left: 40px;
+    margin-top: 40px;
     max-width: 100%;
     box-sizing: border-box;
   }

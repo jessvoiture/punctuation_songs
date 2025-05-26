@@ -8,7 +8,7 @@
     Percent of songs with <Dropdown />
   </h1>
 
-  <h2>New charting songs on the Billboard Hot 100</h2>
+  <h2>Songs with selected punctuation  as a percent of new charting songs on the Billboard Hot 100 per year</h2>
 </div>
 
 <style>
@@ -31,5 +31,7 @@
     font-size: 20px;
     font-family: sans-serif;
     font-weight: normal;
+    color: #8c8c8c;
+    line-height: 1.2;
   }
 </style>

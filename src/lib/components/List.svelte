@@ -42,30 +42,32 @@ console.log("test", highlightParentheses("This is a test (with parentheses) and 
       </button>
     </div>
 
-    {#if showingSongList}
-      <div id="list" class="body-text" transition:fade>
-        {#each showingData as year}
-          {#if year.count_with_punc > 0}
-            <div class="year-group">
-              <div class="year-header">{year.year}: {year.count_with_punc} songs ({Math.round(year.percent_with_punc * 10) / 10}% of charting songs)</div>
+    <div class="song-list-wrapper">
+        {#if showingSongList}
+            <div id="list" class="body-text" transition:fade>
+                {#each showingData as year}
+                    {#if year.count_with_punc > 0}
+                        <div class="year-group">
+                            <div class="year-header">{year.year}: {year.count_with_punc} songs ({Math.round(year.percent_with_punc * 10) / 10}% of charting songs)</div>
+                            <div class="song-list">
+                                {#each year.songs as song}
+                                    <div class="song-item">
+                                        <div class="song-title">
+                                            {@html highlightBySelectedOption(song.title_og, $selectedOption)}
+                                        </div>
 
-              <div class="song-list">
-                {#each year.songs as song}
-                  <div class="song-item">
-                    <div class="song-title">
-                      {@html highlightBySelectedOption(song.title_og, $selectedOption)}
-                    </div>
-                    <div class="song-performer">
-                      {song.performer_og}
-                    </div>
-                  </div>
+                                        <div class="song-performer">
+                                            {song.performer_og}
+                                        </div>
+                                    </div>
+                                {/each}
+                            </div>
+                        </div>
+                    {/if}
                 {/each}
-              </div>
             </div>
-          {/if}
-        {/each}
-      </div>
-    {/if}
+        {/if}
+    </div>
   </div>
 </div>
 
@@ -90,10 +92,10 @@ console.log("test", highlightParentheses("This is a test (with parentheses) and 
     padding-bottom: 16px;
     background-color: #fff;
     font-size: 16px;
-    max-width: 300px;
     display: flex;
     flex-direction: column;
     gap: 16px;
+    padding-right: 80px;
   }
 
   .details {
@@ -103,17 +105,21 @@ console.log("test", highlightParentheses("This is a test (with parentheses) and 
     flex-direction: column;
   }
 
+  .song-list-wrapper {
+    margin-bottom: 48px;
+    overflow-y: auto;
+    max-height: 100%; 
+    padding-right: 40px;
+  }
+
   #list {
     display: flex;
     flex-direction: column;
     gap: 24px;
-    margin-bottom: 48px;
-    overflow-y: auto;
-    max-height: 100%; 
-    padding-right: 32px;
   }
 
-  .song-list {
+  #song-list {
+    max-width: 350px;
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -171,4 +177,6 @@ console.log("test", highlightParentheses("This is a test (with parentheses) and 
     padding: 2px 4px;
     border-radius: 4px;
   }
+
+  
 </style>
