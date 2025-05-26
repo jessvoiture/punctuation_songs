@@ -40,13 +40,15 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    height: 100vh;
-    width: 100vw;
+    height: calc(100vh - 32px);
+    width: 100%;
     flex-direction: row;
     align-content: flex-start;
     gap: 72px;
-    margin-left: 32px;
+    padding-left: 32px;
     margin-top: 32px;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 
   .chart-wrapper {

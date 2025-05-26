@@ -1,6 +1,7 @@
 <script>
   import { fade, slide } from "svelte/transition";
   import { selectedOption } from "../../stores";
+  import { highlightBySelectedOption } from "../../utils/highlightRegex.js";
 
   export let data;
 
@@ -10,11 +11,18 @@
   let showingData = data.find((d) => d.type === "parantheses")?.years || [];
   $: showingData = data.find((d) => d.type === $selectedOption)?.years || [];
 
+  $: buttonText = showingSongList ? "Hide songs" : "Show songs";
+
   function toggleSongList() {
     showingSongList = !showingSongList;
   }
 
-  $: buttonText = showingSongList ? "Hide songs" : "Show songs";
+  function highlightParentheses(str, className = 'highlight') {
+    return str.replace(/\([^)]*\)/g, match => `<span class="${className}">${match}</span>`);
+}
+
+console.log("test", highlightParentheses("This is a test (with parentheses) and more text (another one)."));
+
 </script>
 
 <div class="details-wrapper">
@@ -30,8 +38,7 @@
 
       <button on:click={toggleSongList} class="toggle-button">
         {buttonText}
-        <i class="material-icons"> arrow_downward </i>
-        <!-- <span class="chevron">{showingSongList ? "▲" : "▼"}</span> -->
+        <i class="material-icons chevron" class:opened={showingSongList}> keyboard_arrow_down </i>
       </button>
     </div>
 
@@ -40,13 +47,13 @@
         {#each showingData as year}
           {#if year.count_with_punc > 0}
             <div class="year-group">
-              <div class="year-header">{year.year}</div>
+              <div class="year-header">{year.year}: {year.count_with_punc} songs ({Math.round(year.percent_with_punc * 10) / 10}% of charting songs)</div>
 
               <div class="song-list">
                 {#each year.songs as song}
                   <div class="song-item">
                     <div class="song-title">
-                      {song.title_og}
+                      {@html highlightBySelectedOption(song.title_og, $selectedOption)}
                     </div>
                     <div class="song-performer">
                       {song.performer_og}
@@ -79,7 +86,10 @@
   .details-header {
     position: sticky;
     top: 0;
-    background-color: white;
+    box-shadow: 0 0px 10px 10px #fff;
+    padding-bottom: 16px;
+    background-color: #fff;
+    font-size: 16px;
   }
 
   .details {
@@ -94,6 +104,7 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
+    margin-bottom: 100%
   }
 
   .song-list {
@@ -126,6 +137,11 @@
     align-items: center;
     gap: 8px;
     cursor: pointer;
+    gap: 4px;
+    padding: 4px 8px;
+    border-radius: 8px;
+    justify-content: space-between;
+    width: 120px;
   }
 
   .toggle-button:hover {
@@ -133,9 +149,20 @@
   }
 
   .chevron {
-    font-size: 14px;
+    font-size: 16px;
     color: inherit;
     background: none;
     border: none;
+    transition: transform 0.5s ease;
+  }
+
+  .opened {
+    transform: rotate(-180deg);
+  }
+
+  .highlight {
+    background-color: #baeaff;
+    padding: 2px 4px;
+    border-radius: 4px;
   }
 </style>
