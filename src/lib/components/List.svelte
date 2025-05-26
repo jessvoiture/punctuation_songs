@@ -81,22 +81,25 @@ console.log("test", highlightParentheses("This is a test (with parentheses) and 
     align-items: flex-start;
     height: 100%;
     flex-grow: 1;
+    overflow: hidden;
   }
 
   .details-header {
     position: sticky;
     top: 0;
-    box-shadow: 0 0px 10px 10px #fff;
     padding-bottom: 16px;
     background-color: #fff;
     font-size: 16px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
   }
 
   .details {
     width: 100%;
-    max-width: 350px;
+    height: 100%;
     display: flex;
-    gap: 16px;
     flex-direction: column;
   }
 
@@ -104,7 +107,10 @@ console.log("test", highlightParentheses("This is a test (with parentheses) and 
     display: flex;
     flex-direction: column;
     gap: 24px;
-    margin-bottom: 100%
+    margin-bottom: 48px;
+    overflow-y: auto;
+    max-height: 100%; 
+    padding-right: 32px;
   }
 
   .song-list {
