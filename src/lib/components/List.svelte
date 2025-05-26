@@ -30,7 +30,8 @@
 
       <button on:click={toggleSongList} class="toggle-button">
         {buttonText}
-        <span class="chevron">{showingSongList ? "▲" : "▼"}</span>
+        <i class="material-icons"> arrow_downward </i>
+        <!-- <span class="chevron">{showingSongList ? "▲" : "▼"}</span> -->
       </button>
     </div>
 
@@ -76,7 +77,9 @@
   }
 
   .details-header {
-    position: fixed;
+    position: sticky;
+    top: 0;
+    background-color: white;
   }
 
   .details {
