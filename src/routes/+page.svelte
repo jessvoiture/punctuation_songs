@@ -1,6 +1,7 @@
 <script>
   import { browser } from "$app/environment";
   import BarChart from "$lib/components/BarChart.svelte";
+  import List from "$lib/components/List.svelte";
   import Title from "$lib/components/Title.svelte";
 
   export let data;
@@ -26,24 +27,26 @@
 
 <svelte:window on:resize={resize} bind:scrollY={y} />
 
-<main>
-  <div class="container">
-    <div class="chart-wrapper">
-      <Title />
-      <BarChart data={songs} {screenWidth} {screenHeight} />
-    </div>
+<div class="container">
+  <div class="chart-wrapper">
+    <Title />
+    <BarChart data={songs} {screenWidth} {screenHeight} />
   </div>
-</main>
+  <List data={songs} />
+</div>
 
 <style>
   .container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     height: 100vh;
-    width: 100%;
-    flex-direction: column;
+    width: 100vw;
+    flex-direction: row;
     align-content: flex-start;
+    gap: 72px;
+    margin-left: 32px;
+    margin-top: 32px;
   }
 
   .chart-wrapper {
