@@ -19,6 +19,10 @@
   let yticks;
   let xticks;
   let rectWidth;
+  let showingData = data;
+  let yExtent;
+
+  $: console.log("selected Option", $selectedOption);
 
   $: if (screenWidth <= 1000) {
     height = 0.7 * screenHeight;
@@ -31,17 +35,20 @@
   let padding = { top: 20, right: 0, bottom: 30, left: 40 };
   $: innerWidth = width - padding.left - padding.right;
   $: innerHeight = height - padding.top - padding.bottom;
-  $: rectWidth = innerWidth / data.length - 1;
 
   $: tweenedY = tweened(
-    data.map((d) => d.parantheses_pct),
+    data
+      .find((item) => item.type == "parantheses")
+      .years.map((d) => d.percent_with_punc),
     { duration: 2000, easing: cubicInOut }
   );
   $: yMax = max($tweenedY);
 
-  $: xScale = scaleLinear()
-    .domain(extent(data, (d) => d.year))
-    .range([0, innerWidth]);
+  $: showingData = data.find((d) => d.type === $selectedOption)?.years || [];
+  $: yExtent = extent(showingData.map((d) => d.year));
+  $: rectWidth = innerWidth / showingData.length - 1;
+
+  $: xScale = scaleLinear().domain([1958, 2025]).range([0, innerWidth]);
 
   $: yScale = scaleLinear()
     .domain([0, yMax * 1.2])
@@ -50,22 +57,11 @@
   $: yticks = yScale.ticks(3);
   $: xticks = xScale.ticks(4);
 
-  $: if ($selectedOption == "parantheses") {
-    tweenedY.set(data.map((d) => d.parantheses_pct));
-  } else if ($selectedOption == "an exclamation mark") {
-    tweenedY.set(data.map((d) => d.exclamation_pct));
-  } else if ($selectedOption == "a question mark") {
-    tweenedY.set(data.map((d) => d.question_pct));
-  } else if ($selectedOption == "a period") {
-    tweenedY.set(data.map((d) => d.period_pct));
-  } else if ($selectedOption == "an apostrophe") {
-    tweenedY.set(data.map((d) => d.apostrophe_pct));
-  } else if ($selectedOption == "a phonetic elision") {
-    tweenedY.set(data.map((d) => d.phonetic_elision_pct));
-  } else if ($selectedOption == "a contraction/possession") {
-    tweenedY.set(data.map((d) => d.contraction_pct));
-  } else if ($selectedOption == "a comma") {
-    tweenedY.set(data.map((d) => d.comma_pct));
+  $: {
+    const selectedData = data.find((item) => item.type === $selectedOption);
+    if (selectedData) {
+      tweenedY.set(selectedData.years.map((d) => d.percent_with_punc));
+    }
   }
 </script>
 
@@ -104,7 +100,7 @@
       </g>
 
       <g class="bars" transform={`translate(${padding.left}, 0)`}>
-        {#each data as d, i}
+        {#each showingData as d, i}
           <rect
             x={xScale(d.year)}
             y={yScale($tweenedY[i])}

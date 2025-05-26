@@ -87,6 +87,20 @@
         ]
       },
       {
+        "year": 1963,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
         "year": 1964,
         "percent_with_punc": 0.2789,
         "count_with_punc": 2,
@@ -216,6 +230,20 @@
             "title_og": "The Rain, The Park & Other Things",
             "performer_og": "The Cowsills",
             "chart_week": "1967-09-30"
+          }
+        ]
+      },
+      {
+        "year": 1968,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
           }
         ]
       },
@@ -444,6 +472,20 @@
         ]
       },
       {
+        "year": 1974,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
         "year": 1975,
         "percent_with_punc": 1.4388,
         "count_with_punc": 8,
@@ -535,6 +577,20 @@
         ]
       },
       {
+        "year": 1977,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
         "year": 1978,
         "percent_with_punc": 0.2268,
         "count_with_punc": 1,
@@ -580,6 +636,20 @@
             "title_og": "You're The Only Woman (You & I)",
             "performer_og": "Ambrosia",
             "chart_week": "1980-07-12"
+          }
+        ]
+      },
+      {
+        "year": 1981,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
           }
         ]
       },
@@ -668,6 +738,20 @@
         ]
       },
       {
+        "year": 1987,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
         "year": 1988,
         "percent_with_punc": 0.5263,
         "count_with_punc": 2,
@@ -720,6 +804,20 @@
             "title_og": "This & That",
             "performer_og": "Michael Penn",
             "chart_week": "1990-04-28"
+          }
+        ]
+      },
+      {
+        "year": 1991,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
           }
         ]
       },
@@ -972,6 +1070,20 @@
             "title_og": "Left & Right",
             "performer_og": "D'Angelo Featuring Method Man And Redman",
             "chart_week": "1999-12-11"
+          }
+        ]
+      },
+      {
+        "year": 2000,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
           }
         ]
       },
@@ -39059,6 +39171,174 @@
     "type": "asterisk",
     "years": [
       {
+        "year": 1958,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1959,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1960,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1961,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1962,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1963,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1964,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1965,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1966,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1967,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1968,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1969,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
         "year": 1970,
         "percent_with_punc": 0.158,
         "count_with_punc": 1,
@@ -39069,6 +39349,384 @@
             "title_og": "Song From M*A*S*H",
             "performer_og": "Al DeLory",
             "chart_week": "1970-06-13"
+          }
+        ]
+      },
+      {
+        "year": 1971,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1972,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1973,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1974,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1975,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1976,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1977,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1978,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1979,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1980,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1981,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1982,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1983,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1984,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1985,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1986,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1987,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1988,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1989,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1990,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1991,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1992,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1993,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1994,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1995,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1996,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1997,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
           }
         ]
       },
@@ -39223,6 +39881,20 @@
             "title_og": "Love Me Or Hate Me (F**k You!!!!)",
             "performer_og": "Lady Sovereign",
             "chart_week": "2006-10-28"
+          }
+        ]
+      },
+      {
+        "year": 2007,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
           }
         ]
       },
@@ -39694,12 +40366,54 @@
             "chart_week": "2024-10-26"
           }
         ]
+      },
+      {
+        "year": 2025,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
       }
     ]
   },
   {
     "type": "colons",
     "years": [
+      {
+        "year": 1958,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1959,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
       {
         "year": 1960,
         "percent_with_punc": 0.1695,
@@ -39711,6 +40425,90 @@
             "title_og": "Over The Mountain; Across The Sea",
             "performer_og": "Johnnie & Joe",
             "chart_week": "1960-09-26"
+          }
+        ]
+      },
+      {
+        "year": 1961,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1962,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1963,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1964,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1965,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1966,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
           }
         ]
       },
@@ -39771,6 +40569,34 @@
         ]
       },
       {
+        "year": 1970,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1971,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
         "year": 1972,
         "percent_with_punc": 0.1715,
         "count_with_punc": 1,
@@ -39781,6 +40607,34 @@
             "title_og": "Suite: Man And Woman",
             "performer_og": "Tony Cole",
             "chart_week": "1972-10-28"
+          }
+        ]
+      },
+      {
+        "year": 1973,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1974,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
           }
         ]
       },
@@ -39799,6 +40653,48 @@
         ]
       },
       {
+        "year": 1976,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1977,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1978,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
         "year": 1979,
         "percent_with_punc": 0.207,
         "count_with_punc": 1,
@@ -39813,6 +40709,62 @@
         ]
       },
       {
+        "year": 1980,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1981,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1982,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1983,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
         "year": 1984,
         "percent_with_punc": 0.232,
         "count_with_punc": 1,
@@ -39823,6 +40775,160 @@
             "title_og": "Medley: Love Songs Are Back Again",
             "performer_og": "Band Of Gold",
             "chart_week": "1984-10-13"
+          }
+        ]
+      },
+      {
+        "year": 1985,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1986,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1987,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1988,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1989,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1990,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1991,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1992,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1993,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1994,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1995,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
           }
         ]
       },
@@ -39848,6 +40954,118 @@
         ]
       },
       {
+        "year": 1997,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1998,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1999,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 2000,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 2001,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 2002,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 2003,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 2004,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
         "year": 2005,
         "percent_with_punc": 0.2907,
         "count_with_punc": 1,
@@ -39858,6 +41076,48 @@
             "title_og": "Charlie Last Name: Wilson",
             "performer_og": "Charlie Wilson",
             "chart_week": "2005-08-06"
+          }
+        ]
+      },
+      {
+        "year": 2006,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 2007,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 2008,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
           }
         ]
       },
@@ -39890,6 +41150,34 @@
         ]
       },
       {
+        "year": 2011,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 2012,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
         "year": 2013,
         "percent_with_punc": 0.5249,
         "count_with_punc": 2,
@@ -39911,6 +41199,20 @@
         ]
       },
       {
+        "year": 2014,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
         "year": 2015,
         "percent_with_punc": 0.2551,
         "count_with_punc": 1,
@@ -39921,6 +41223,20 @@
             "title_og": "John Cougar, John Deere, John 3:16",
             "performer_og": "Keith Urban",
             "chart_week": "2015-06-27"
+          }
+        ]
+      },
+      {
+        "year": 2016,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
           }
         ]
       },
@@ -39953,6 +41269,34 @@
         ]
       },
       {
+        "year": 2019,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 2020,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
         "year": 2021,
         "percent_with_punc": 0.1529,
         "count_with_punc": 1,
@@ -39963,6 +41307,20 @@
             "title_og": "Lo Siento BB:/",
             "performer_og": "Tainy, Bad Bunny & Julieta Venegas",
             "chart_week": "2021-10-23"
+          }
+        ]
+      },
+      {
+        "year": 2022,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
           }
         ]
       },
@@ -40005,6 +41363,20 @@
             "title_og": "Memphis; The Blues",
             "performer_og": "Zach Bryan Featuring John Moreland",
             "chart_week": "2024-07-20"
+          }
+        ]
+      },
+      {
+        "year": 2025,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
           }
         ]
       }
@@ -49133,6 +50505,20 @@
         ]
       },
       {
+        "year": 2000,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
         "year": 2001,
         "percent_with_punc": 1.0417,
         "count_with_punc": 3,
@@ -49157,6 +50543,20 @@
             "title_og": "When God-Fearin' Women Get The Blues",
             "performer_og": "Martina McBride",
             "chart_week": "2001-09-15"
+          }
+        ]
+      },
+      {
+        "year": 2002,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
           }
         ]
       },
@@ -49231,6 +50631,20 @@
         ]
       },
       {
+        "year": 2007,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
         "year": 2008,
         "percent_with_punc": 0.7299,
         "count_with_punc": 3,
@@ -49301,6 +50715,20 @@
         ]
       },
       {
+        "year": 2011,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
         "year": 2012,
         "percent_with_punc": 0.2755,
         "count_with_punc": 1,
@@ -49325,6 +50753,20 @@
             "title_og": "Wu-Tang Forever",
             "performer_og": "Drake",
             "chart_week": "2013-09-28"
+          }
+        ]
+      },
+      {
+        "year": 2014,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
           }
         ]
       },
@@ -49593,6 +51035,48 @@
     "type": "ellipses",
     "years": [
       {
+        "year": 1958,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1959,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1960,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
         "year": 1961,
         "percent_with_punc": 0.146,
         "count_with_punc": 1,
@@ -49621,6 +51105,20 @@
         ]
       },
       {
+        "year": 1963,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
         "year": 1964,
         "percent_with_punc": 0.1395,
         "count_with_punc": 1,
@@ -49645,6 +51143,48 @@
             "title_og": "......And Roses And Roses",
             "performer_og": "Andy Williams",
             "chart_week": "1965-04-03"
+          }
+        ]
+      },
+      {
+        "year": 1966,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1967,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1968,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
           }
         ]
       },
@@ -49705,6 +51245,20 @@
         ]
       },
       {
+        "year": 1973,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
         "year": 1974,
         "percent_with_punc": 0.2024,
         "count_with_punc": 1,
@@ -49754,6 +51308,34 @@
         ]
       },
       {
+        "year": 1977,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1978,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
         "year": 1979,
         "percent_with_punc": 0.207,
         "count_with_punc": 1,
@@ -49785,6 +51367,20 @@
             "title_og": "First...Be A Woman",
             "performer_og": "Lenore O'malley",
             "chart_week": "1980-07-26"
+          }
+        ]
+      },
+      {
+        "year": 1981,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
           }
         ]
       },
@@ -49845,6 +51441,20 @@
         ]
       },
       {
+        "year": 1985,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
         "year": 1986,
         "percent_with_punc": 0.5051,
         "count_with_punc": 2,
@@ -49862,6 +51472,90 @@
             "title_og": "You Know I Love You ... Don't You?",
             "performer_og": "Howard Jones",
             "chart_week": "1986-10-18"
+          }
+        ]
+      },
+      {
+        "year": 1987,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1988,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1989,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1990,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1991,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1992,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
           }
         ]
       },
@@ -50118,6 +51812,34 @@
         ]
       },
       {
+        "year": 2004,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 2005,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
         "year": 2006,
         "percent_with_punc": 0.2732,
         "count_with_punc": 1,
@@ -50181,6 +51903,20 @@
         ]
       },
       {
+        "year": 2010,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
         "year": 2011,
         "percent_with_punc": 0.2066,
         "count_with_punc": 1,
@@ -50230,6 +51966,20 @@
         ]
       },
       {
+        "year": 2014,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
         "year": 2015,
         "percent_with_punc": 0.2551,
         "count_with_punc": 1,
@@ -50275,6 +52025,20 @@
             "title_og": "...Ready For It?",
             "performer_og": "Taylor Swift",
             "chart_week": "2017-09-23"
+          }
+        ]
+      },
+      {
+        "year": 2018,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
           }
         ]
       },
@@ -50382,11 +52146,25 @@
             "chart_week": "2024-11-30"
           }
         ]
+      },
+      {
+        "year": 2025,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
       }
     ]
   },
   {
-    "type": "exlamation",
+    "type": "exclamation",
     "years": [
       {
         "year": 1958,
@@ -50886,6 +52664,20 @@
         ]
       },
       {
+        "year": 1970,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
         "year": 1971,
         "percent_with_punc": 0.3268,
         "count_with_punc": 2,
@@ -50903,6 +52695,20 @@
             "title_og": "Hey! Love/Over And Over",
             "performer_og": "The Delfonics",
             "chart_week": "1971-06-19"
+          }
+        ]
+      },
+      {
+        "year": 1972,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
           }
         ]
       },
@@ -50956,6 +52762,20 @@
         ]
       },
       {
+        "year": 1975,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
         "year": 1976,
         "percent_with_punc": 0.1908,
         "count_with_punc": 1,
@@ -51005,6 +52825,20 @@
         ]
       },
       {
+        "year": 1979,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
         "year": 1980,
         "percent_with_punc": 0.6667,
         "count_with_punc": 3,
@@ -51033,6 +52867,48 @@
         ]
       },
       {
+        "year": 1981,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1982,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1983,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
         "year": 1984,
         "percent_with_punc": 0.232,
         "count_with_punc": 1,
@@ -51043,6 +52919,20 @@
             "title_og": "Doctor! Doctor!",
             "performer_og": "Thompson Twins",
             "chart_week": "1984-05-26"
+          }
+        ]
+      },
+      {
+        "year": 1985,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
           }
         ]
       },
@@ -51845,6 +53735,20 @@
         ]
       },
       {
+        "year": 2015,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
         "year": 2016,
         "percent_with_punc": 0.2439,
         "count_with_punc": 1,
@@ -52135,6 +54039,20 @@
             "title_og": "Let It Snow! Let It Snow! Let It Snow!",
             "performer_og": "Dean Martin",
             "chart_week": "2024-12-07"
+          }
+        ]
+      },
+      {
+        "year": 2025,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
           }
         ]
       }
@@ -70060,6 +71978,20 @@
         ]
       },
       {
+        "year": 1996,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
         "year": 1997,
         "percent_with_punc": 0.9174,
         "count_with_punc": 3,
@@ -70835,6 +72767,20 @@
             "chart_week": "2024-12-07"
           }
         ]
+      },
+      {
+        "year": 2025,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
       }
     ]
   },
@@ -70940,6 +72886,20 @@
         ]
       },
       {
+        "year": 1963,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
         "year": 1964,
         "percent_with_punc": 0.1395,
         "count_with_punc": 1,
@@ -71027,6 +72987,34 @@
             "title_og": "Lara's Theme from \"Dr. Zhivago\"",
             "performer_og": "Roger Williams",
             "chart_week": "1966-06-25"
+          }
+        ]
+      },
+      {
+        "year": 1967,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1968,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
           }
         ]
       },
@@ -71157,6 +73145,20 @@
         ]
       },
       {
+        "year": 1974,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
         "year": 1975,
         "percent_with_punc": 0.5396,
         "count_with_punc": 3,
@@ -71269,6 +73271,20 @@
         ]
       },
       {
+        "year": 1979,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
         "year": 1980,
         "percent_with_punc": 0.2222,
         "count_with_punc": 1,
@@ -71297,6 +73313,20 @@
         ]
       },
       {
+        "year": 1982,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
         "year": 1983,
         "percent_with_punc": 0.2273,
         "count_with_punc": 1,
@@ -71307,6 +73337,20 @@
             "title_og": "Where Everybody Knows Your Name (The Theme From \"Cheers\")",
             "performer_og": "Gary Portnoy",
             "chart_week": "1983-04-30"
+          }
+        ]
+      },
+      {
+        "year": 1984,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
           }
         ]
       },
@@ -73005,6 +75049,76 @@
         ]
       },
       {
+        "year": 1998,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1999,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 2000,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 2001,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 2002,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
         "year": 2003,
         "percent_with_punc": 0.3257,
         "count_with_punc": 1,
@@ -73015,6 +75129,34 @@
             "title_og": "Roc Ya Body \"Mic Check 1,2\"",
             "performer_og": "M.V.P. (Most Valuable Playas) Featuring Stagga Lee",
             "chart_week": "2003-10-18"
+          }
+        ]
+      },
+      {
+        "year": 2004,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 2005,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
           }
         ]
       },
@@ -73033,6 +75175,230 @@
         ]
       },
       {
+        "year": 2007,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 2008,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 2009,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 2010,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 2011,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 2012,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 2013,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 2014,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 2015,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 2016,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 2017,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 2018,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 2019,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 2020,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 2021,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 2022,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
         "year": 2023,
         "percent_with_punc": 0.1618,
         "count_with_punc": 1,
@@ -73045,12 +75411,166 @@
             "chart_week": "2023-12-02"
           }
         ]
+      },
+      {
+        "year": 2024,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 2025,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
       }
     ]
   },
   {
     "type": "slash",
     "years": [
+      {
+        "year": 1958,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1959,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1960,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1961,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1962,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1963,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1964,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1965,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1966,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
       {
         "year": 1967,
         "percent_with_punc": 0.4076,
@@ -74872,6 +77392,20 @@
         ]
       },
       {
+        "year": 2000,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
         "year": 2001,
         "percent_with_punc": 0.3472,
         "count_with_punc": 1,
@@ -74882,6 +77416,34 @@
             "title_og": "Never Too Far/Hero Medley",
             "performer_og": "Mariah Carey",
             "chart_week": "2001-12-29"
+          }
+        ]
+      },
+      {
+        "year": 2002,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 2003,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
           }
         ]
       },
@@ -74910,6 +77472,20 @@
             "title_og": "Cry Baby/Piece Of My Heart",
             "performer_og": "Melissa Etheridge & Joss Stone",
             "chart_week": "2005-04-02"
+          }
+        ]
+      },
+      {
+        "year": 2006,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
           }
         ]
       },
@@ -75187,6 +77763,20 @@
         ]
       },
       {
+        "year": 2015,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
         "year": 2016,
         "percent_with_punc": 0.2439,
         "count_with_punc": 1,
@@ -75197,6 +77787,20 @@
             "title_og": "With You Tonight / Hasta El Amanecer",
             "performer_og": "Nicky Jam",
             "chart_week": "2016-06-11"
+          }
+        ]
+      },
+      {
+        "year": 2017,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
           }
         ]
       },
@@ -75346,6 +77950,20 @@
             "chart_week": "2024-02-10"
           }
         ]
+      },
+      {
+        "year": 2025,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
       }
     ]
   },
@@ -75367,6 +77985,384 @@
         ]
       },
       {
+        "year": 1959,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1960,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1961,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1962,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1963,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1964,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1965,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1966,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1967,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1968,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1969,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1970,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1971,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1972,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1973,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1974,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1975,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1976,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1977,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1978,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1979,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1980,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1981,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1982,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1983,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1984,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1985,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
         "year": 1986,
         "percent_with_punc": 0.2525,
         "count_with_punc": 1,
@@ -75377,6 +78373,118 @@
             "title_og": "Money$ Too Tight (To Mention)",
             "performer_og": "Simply Red",
             "chart_week": "1986-07-19"
+          }
+        ]
+      },
+      {
+        "year": 1987,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1988,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1989,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1990,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1991,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1992,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1993,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1994,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
           }
         ]
       },
@@ -75395,6 +78503,216 @@
         ]
       },
       {
+        "year": 1996,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1997,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1998,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 1999,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 2000,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 2001,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 2002,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 2003,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 2004,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 2005,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 2006,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 2007,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 2008,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 2009,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 2010,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
         "year": 2011,
         "percent_with_punc": 0.2066,
         "count_with_punc": 1,
@@ -75405,6 +78723,20 @@
             "title_og": "Dance (A$$)",
             "performer_og": "Big Sean Featuring Nicki Minaj",
             "chart_week": "2011-10-22"
+          }
+        ]
+      },
+      {
+        "year": 2012,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
           }
         ]
       },
@@ -75479,6 +78811,20 @@
         ]
       },
       {
+        "year": 2017,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
         "year": 2018,
         "percent_with_punc": 0.1681,
         "count_with_punc": 1,
@@ -75535,6 +78881,20 @@
         ]
       },
       {
+        "year": 2022,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
         "year": 2023,
         "percent_with_punc": 0.1618,
         "count_with_punc": 1,
@@ -75545,6 +78905,34 @@
             "title_og": "Ca$h $hit",
             "performer_og": "Gunna",
             "chart_week": "2023-07-01"
+          }
+        ]
+      },
+      {
+        "year": 2024,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 2025,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
           }
         ]
       }

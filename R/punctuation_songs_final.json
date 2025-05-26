@@ -40384,7 +40384,7 @@
     ]
   },
   {
-    "type": "colons",
+    "type": "colon",
     "years": [
       {
         "year": 1958,
@@ -40411,20 +40411,6 @@
             "title_og": null,
             "performer_og": null,
             "chart_week": null
-          }
-        ]
-      },
-      {
-        "year": 1960,
-        "percent_with_punc": 0.1695,
-        "count_with_punc": 1,
-        "songs": [
-          {
-            "title": "over the mountain; across the sea",
-            "performer": "johnnie & joe",
-            "title_og": "Over The Mountain; Across The Sea",
-            "performer_og": "Johnnie & Joe",
-            "chart_week": "1960-09-26"
           }
         ]
       },
@@ -40513,62 +40499,6 @@
         ]
       },
       {
-        "year": 1967,
-        "percent_with_punc": 0.1359,
-        "count_with_punc": 1,
-        "songs": [
-          {
-            "title": "wanted: lover, no experience necessary",
-            "performer": "laura lee",
-            "title_og": "Wanted: Lover, No Experience Necessary",
-            "performer_og": "Laura Lee",
-            "chart_week": "1967-12-02"
-          }
-        ]
-      },
-      {
-        "year": 1968,
-        "percent_with_punc": 0.2946,
-        "count_with_punc": 2,
-        "songs": [
-          {
-            "title": "7:30 guided tour",
-            "performer": "the five americans",
-            "title_og": "7:30 Guided Tour",
-            "performer_og": "The Five Americans",
-            "chart_week": "1968-01-27"
-          },
-          {
-            "title": "destination: anywhere",
-            "performer": "the marvelettes",
-            "title_og": "Destination: Anywhere",
-            "performer_og": "The Marvelettes",
-            "chart_week": "1968-10-05"
-          }
-        ]
-      },
-      {
-        "year": 1969,
-        "percent_with_punc": 0.2999,
-        "count_with_punc": 2,
-        "songs": [
-          {
-            "title": "ain't got no; i got life",
-            "performer": "nina simone",
-            "title_og": "Ain't Got No; I Got Life",
-            "performer_og": "Nina Simone",
-            "chart_week": "1969-01-04"
-          },
-          {
-            "title": "suite: judy blue eyes",
-            "performer": "crosby, stills & nash",
-            "title_og": "Suite: Judy Blue Eyes",
-            "performer_og": "Crosby, Stills & Nash",
-            "chart_week": "1969-10-04"
-          }
-        ]
-      },
-      {
         "year": 1970,
         "percent_with_punc": 0,
         "count_with_punc": 0,
@@ -40597,20 +40527,6 @@
         ]
       },
       {
-        "year": 1972,
-        "percent_with_punc": 0.1715,
-        "count_with_punc": 1,
-        "songs": [
-          {
-            "title": "suite: man and woman",
-            "performer": "tony cole",
-            "title_og": "Suite: Man And Woman",
-            "performer_og": "Tony Cole",
-            "chart_week": "1972-10-28"
-          }
-        ]
-      },
-      {
         "year": 1973,
         "percent_with_punc": 0,
         "count_with_punc": 0,
@@ -40635,20 +40551,6 @@
             "title_og": null,
             "performer_og": null,
             "chart_week": null
-          }
-        ]
-      },
-      {
-        "year": 1975,
-        "percent_with_punc": 0.1799,
-        "count_with_punc": 1,
-        "songs": [
-          {
-            "title": "ding dong; ding dong",
-            "performer": "george harrison",
-            "title_og": "Ding Dong; Ding Dong",
-            "performer_og": "George Harrison",
-            "chart_week": "1975-01-11"
           }
         ]
       },
@@ -40691,20 +40593,6 @@
             "title_og": null,
             "performer_og": null,
             "chart_week": null
-          }
-        ]
-      },
-      {
-        "year": 1979,
-        "percent_with_punc": 0.207,
-        "count_with_punc": 1,
-        "songs": [
-          {
-            "title": "5:15",
-            "performer": "the who",
-            "title_og": "5:15",
-            "performer_og": "The Who",
-            "chart_week": "1979-09-29"
           }
         ]
       },
@@ -40761,20 +40649,6 @@
             "title_og": null,
             "performer_og": null,
             "chart_week": null
-          }
-        ]
-      },
-      {
-        "year": 1984,
-        "percent_with_punc": 0.232,
-        "count_with_punc": 1,
-        "songs": [
-          {
-            "title": "medley: love songs are back again",
-            "performer": "band of gold",
-            "title_og": "Medley: Love Songs Are Back Again",
-            "performer_og": "Band Of Gold",
-            "chart_week": "1984-10-13"
           }
         ]
       },
@@ -40933,27 +40807,6 @@
         ]
       },
       {
-        "year": 1996,
-        "percent_with_punc": 0.6536,
-        "count_with_punc": 2,
-        "songs": [
-          {
-            "title": "theme from mission: impossible (from \"mission: impossible\")",
-            "performer": "adam clayton & larry mullen",
-            "title_og": "Theme From Mission: Impossible (From \"Mission: Impossible\")",
-            "performer_og": "Adam Clayton & Larry Mullen",
-            "chart_week": "1996-05-11"
-          },
-          {
-            "title": "wu-wear: the garment renaissance (from \"high school high\")",
-            "performer": "rza feat. method man & cappadonna",
-            "title_og": "Wu-Wear: The Garment Renaissance (From \"High School High\")",
-            "performer_og": "RZA Feat. Method Man & Cappadonna",
-            "chart_week": "1996-08-17"
-          }
-        ]
-      },
-      {
         "year": 1997,
         "percent_with_punc": 0,
         "count_with_punc": 0,
@@ -41066,20 +40919,6 @@
         ]
       },
       {
-        "year": 2005,
-        "percent_with_punc": 0.2907,
-        "count_with_punc": 1,
-        "songs": [
-          {
-            "title": "charlie last name: wilson",
-            "performer": "charlie wilson",
-            "title_og": "Charlie Last Name: Wilson",
-            "performer_og": "Charlie Wilson",
-            "chart_week": "2005-08-06"
-          }
-        ]
-      },
-      {
         "year": 2006,
         "percent_with_punc": 0,
         "count_with_punc": 0,
@@ -41122,34 +40961,6 @@
         ]
       },
       {
-        "year": 2009,
-        "percent_with_punc": 0.2331,
-        "count_with_punc": 1,
-        "songs": [
-          {
-            "title": "lol :-)",
-            "performer": "trey songz featuring gucci mane & soulja boy tell'em",
-            "title_og": "LOL :-)",
-            "performer_og": "Trey Songz Featuring Gucci Mane & Soulja Boy Tell'em",
-            "chart_week": "2009-09-19"
-          }
-        ]
-      },
-      {
-        "year": 2010,
-        "percent_with_punc": 0.211,
-        "count_with_punc": 1,
-        "songs": [
-          {
-            "title": "we are the world 25: for haiti",
-            "performer": "artists for haiti",
-            "title_og": "We Are The World 25: For Haiti",
-            "performer_og": "Artists For Haiti",
-            "chart_week": "2010-02-27"
-          }
-        ]
-      },
-      {
         "year": 2011,
         "percent_with_punc": 0,
         "count_with_punc": 0,
@@ -41178,27 +40989,6 @@
         ]
       },
       {
-        "year": 2013,
-        "percent_with_punc": 0.5249,
-        "count_with_punc": 2,
-        "songs": [
-          {
-            "title": "bellas finals: price tag / don't you (forget about me)...",
-            "performer": "the barden bellas",
-            "title_og": "Bellas Finals: Price Tag / Don't You (Forget About Me)...",
-            "performer_og": "The Barden Bellas",
-            "chart_week": "2013-01-12"
-          },
-          {
-            "title": "riff off: mickey / like a virgin / hit me with your best shot...",
-            "performer": "the barden bellas, the treblemakers & the bu harmonics",
-            "title_og": "Riff Off: Mickey / Like A Virgin / Hit Me With Your Best Shot...",
-            "performer_og": "The Barden Bellas, The Treblemakers & The BU Harmonics",
-            "chart_week": "2013-01-19"
-          }
-        ]
-      },
-      {
         "year": 2014,
         "percent_with_punc": 0,
         "count_with_punc": 0,
@@ -41213,20 +41003,6 @@
         ]
       },
       {
-        "year": 2015,
-        "percent_with_punc": 0.2551,
-        "count_with_punc": 1,
-        "songs": [
-          {
-            "title": "john cougar, john deere, john 3:16",
-            "performer": "keith urban",
-            "title_og": "John Cougar, John Deere, John 3:16",
-            "performer_og": "Keith Urban",
-            "chart_week": "2015-06-27"
-          }
-        ]
-      },
-      {
         "year": 2016,
         "percent_with_punc": 0,
         "count_with_punc": 0,
@@ -41237,34 +41013,6 @@
             "title_og": null,
             "performer_og": null,
             "chart_week": null
-          }
-        ]
-      },
-      {
-        "year": 2017,
-        "percent_with_punc": 0.2208,
-        "count_with_punc": 1,
-        "songs": [
-          {
-            "title": "4:44",
-            "performer": "jay-z",
-            "title_og": "4:44",
-            "performer_og": "JAY-Z",
-            "chart_week": "2017-07-29"
-          }
-        ]
-      },
-      {
-        "year": 2018,
-        "percent_with_punc": 0.1681,
-        "count_with_punc": 1,
-        "songs": [
-          {
-            "title": "sunflower (spider-man: into the spider-verse)",
-            "performer": "post malone & swae lee",
-            "title_og": "Sunflower (Spider-Man: Into The Spider-Verse)",
-            "performer_og": "Post Malone & Swae Lee",
-            "chart_week": "2018-11-03"
           }
         ]
       },
@@ -41297,20 +41045,6 @@
         ]
       },
       {
-        "year": 2021,
-        "percent_with_punc": 0.1529,
-        "count_with_punc": 1,
-        "songs": [
-          {
-            "title": "lo siento bb:/",
-            "performer": "tainy, bad bunny & julieta venegas",
-            "title_og": "Lo Siento BB:/",
-            "performer_og": "Tainy, Bad Bunny & Julieta Venegas",
-            "chart_week": "2021-10-23"
-          }
-        ]
-      },
-      {
         "year": 2022,
         "percent_with_punc": 0,
         "count_with_punc": 0,
@@ -41321,6 +41055,291 @@
             "title_og": null,
             "performer_og": null,
             "chart_week": null
+          }
+        ]
+      },
+      {
+        "year": 2025,
+        "percent_with_punc": 0,
+        "count_with_punc": 0,
+        "songs": [
+          {
+            "title": null,
+            "performer": null,
+            "title_og": null,
+            "performer_og": null,
+            "chart_week": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "colons",
+    "years": [
+      {
+        "year": 1960,
+        "percent_with_punc": 0.1695,
+        "count_with_punc": 1,
+        "songs": [
+          {
+            "title": "over the mountain; across the sea",
+            "performer": "johnnie & joe",
+            "title_og": "Over The Mountain; Across The Sea",
+            "performer_og": "Johnnie & Joe",
+            "chart_week": "1960-09-26"
+          }
+        ]
+      },
+      {
+        "year": 1967,
+        "percent_with_punc": 0.1359,
+        "count_with_punc": 1,
+        "songs": [
+          {
+            "title": "wanted: lover, no experience necessary",
+            "performer": "laura lee",
+            "title_og": "Wanted: Lover, No Experience Necessary",
+            "performer_og": "Laura Lee",
+            "chart_week": "1967-12-02"
+          }
+        ]
+      },
+      {
+        "year": 1968,
+        "percent_with_punc": 0.2946,
+        "count_with_punc": 2,
+        "songs": [
+          {
+            "title": "7:30 guided tour",
+            "performer": "the five americans",
+            "title_og": "7:30 Guided Tour",
+            "performer_og": "The Five Americans",
+            "chart_week": "1968-01-27"
+          },
+          {
+            "title": "destination: anywhere",
+            "performer": "the marvelettes",
+            "title_og": "Destination: Anywhere",
+            "performer_og": "The Marvelettes",
+            "chart_week": "1968-10-05"
+          }
+        ]
+      },
+      {
+        "year": 1969,
+        "percent_with_punc": 0.2999,
+        "count_with_punc": 2,
+        "songs": [
+          {
+            "title": "ain't got no; i got life",
+            "performer": "nina simone",
+            "title_og": "Ain't Got No; I Got Life",
+            "performer_og": "Nina Simone",
+            "chart_week": "1969-01-04"
+          },
+          {
+            "title": "suite: judy blue eyes",
+            "performer": "crosby, stills & nash",
+            "title_og": "Suite: Judy Blue Eyes",
+            "performer_og": "Crosby, Stills & Nash",
+            "chart_week": "1969-10-04"
+          }
+        ]
+      },
+      {
+        "year": 1972,
+        "percent_with_punc": 0.1715,
+        "count_with_punc": 1,
+        "songs": [
+          {
+            "title": "suite: man and woman",
+            "performer": "tony cole",
+            "title_og": "Suite: Man And Woman",
+            "performer_og": "Tony Cole",
+            "chart_week": "1972-10-28"
+          }
+        ]
+      },
+      {
+        "year": 1975,
+        "percent_with_punc": 0.1799,
+        "count_with_punc": 1,
+        "songs": [
+          {
+            "title": "ding dong; ding dong",
+            "performer": "george harrison",
+            "title_og": "Ding Dong; Ding Dong",
+            "performer_og": "George Harrison",
+            "chart_week": "1975-01-11"
+          }
+        ]
+      },
+      {
+        "year": 1979,
+        "percent_with_punc": 0.207,
+        "count_with_punc": 1,
+        "songs": [
+          {
+            "title": "5:15",
+            "performer": "the who",
+            "title_og": "5:15",
+            "performer_og": "The Who",
+            "chart_week": "1979-09-29"
+          }
+        ]
+      },
+      {
+        "year": 1984,
+        "percent_with_punc": 0.232,
+        "count_with_punc": 1,
+        "songs": [
+          {
+            "title": "medley: love songs are back again",
+            "performer": "band of gold",
+            "title_og": "Medley: Love Songs Are Back Again",
+            "performer_og": "Band Of Gold",
+            "chart_week": "1984-10-13"
+          }
+        ]
+      },
+      {
+        "year": 1996,
+        "percent_with_punc": 0.6536,
+        "count_with_punc": 2,
+        "songs": [
+          {
+            "title": "theme from mission: impossible (from \"mission: impossible\")",
+            "performer": "adam clayton & larry mullen",
+            "title_og": "Theme From Mission: Impossible (From \"Mission: Impossible\")",
+            "performer_og": "Adam Clayton & Larry Mullen",
+            "chart_week": "1996-05-11"
+          },
+          {
+            "title": "wu-wear: the garment renaissance (from \"high school high\")",
+            "performer": "rza feat. method man & cappadonna",
+            "title_og": "Wu-Wear: The Garment Renaissance (From \"High School High\")",
+            "performer_og": "RZA Feat. Method Man & Cappadonna",
+            "chart_week": "1996-08-17"
+          }
+        ]
+      },
+      {
+        "year": 2005,
+        "percent_with_punc": 0.2907,
+        "count_with_punc": 1,
+        "songs": [
+          {
+            "title": "charlie last name: wilson",
+            "performer": "charlie wilson",
+            "title_og": "Charlie Last Name: Wilson",
+            "performer_og": "Charlie Wilson",
+            "chart_week": "2005-08-06"
+          }
+        ]
+      },
+      {
+        "year": 2009,
+        "percent_with_punc": 0.2331,
+        "count_with_punc": 1,
+        "songs": [
+          {
+            "title": "lol :-)",
+            "performer": "trey songz featuring gucci mane & soulja boy tell'em",
+            "title_og": "LOL :-)",
+            "performer_og": "Trey Songz Featuring Gucci Mane & Soulja Boy Tell'em",
+            "chart_week": "2009-09-19"
+          }
+        ]
+      },
+      {
+        "year": 2010,
+        "percent_with_punc": 0.211,
+        "count_with_punc": 1,
+        "songs": [
+          {
+            "title": "we are the world 25: for haiti",
+            "performer": "artists for haiti",
+            "title_og": "We Are The World 25: For Haiti",
+            "performer_og": "Artists For Haiti",
+            "chart_week": "2010-02-27"
+          }
+        ]
+      },
+      {
+        "year": 2013,
+        "percent_with_punc": 0.5249,
+        "count_with_punc": 2,
+        "songs": [
+          {
+            "title": "bellas finals: price tag / don't you (forget about me)...",
+            "performer": "the barden bellas",
+            "title_og": "Bellas Finals: Price Tag / Don't You (Forget About Me)...",
+            "performer_og": "The Barden Bellas",
+            "chart_week": "2013-01-12"
+          },
+          {
+            "title": "riff off: mickey / like a virgin / hit me with your best shot...",
+            "performer": "the barden bellas, the treblemakers & the bu harmonics",
+            "title_og": "Riff Off: Mickey / Like A Virgin / Hit Me With Your Best Shot...",
+            "performer_og": "The Barden Bellas, The Treblemakers & The BU Harmonics",
+            "chart_week": "2013-01-19"
+          }
+        ]
+      },
+      {
+        "year": 2015,
+        "percent_with_punc": 0.2551,
+        "count_with_punc": 1,
+        "songs": [
+          {
+            "title": "john cougar, john deere, john 3:16",
+            "performer": "keith urban",
+            "title_og": "John Cougar, John Deere, John 3:16",
+            "performer_og": "Keith Urban",
+            "chart_week": "2015-06-27"
+          }
+        ]
+      },
+      {
+        "year": 2017,
+        "percent_with_punc": 0.2208,
+        "count_with_punc": 1,
+        "songs": [
+          {
+            "title": "4:44",
+            "performer": "jay-z",
+            "title_og": "4:44",
+            "performer_og": "JAY-Z",
+            "chart_week": "2017-07-29"
+          }
+        ]
+      },
+      {
+        "year": 2018,
+        "percent_with_punc": 0.1681,
+        "count_with_punc": 1,
+        "songs": [
+          {
+            "title": "sunflower (spider-man: into the spider-verse)",
+            "performer": "post malone & swae lee",
+            "title_og": "Sunflower (Spider-Man: Into The Spider-Verse)",
+            "performer_og": "Post Malone & Swae Lee",
+            "chart_week": "2018-11-03"
+          }
+        ]
+      },
+      {
+        "year": 2021,
+        "percent_with_punc": 0.1529,
+        "count_with_punc": 1,
+        "songs": [
+          {
+            "title": "lo siento bb:/",
+            "performer": "tainy, bad bunny & julieta venegas",
+            "title_og": "Lo Siento BB:/",
+            "performer_og": "Tainy, Bad Bunny & Julieta Venegas",
+            "chart_week": "2021-10-23"
           }
         ]
       },
@@ -41363,20 +41382,6 @@
             "title_og": "Memphis; The Blues",
             "performer_og": "Zach Bryan Featuring John Moreland",
             "chart_week": "2024-07-20"
-          }
-        ]
-      },
-      {
-        "year": 2025,
-        "percent_with_punc": 0,
-        "count_with_punc": 0,
-        "songs": [
-          {
-            "title": null,
-            "performer": null,
-            "title_og": null,
-            "performer_og": null,
-            "chart_week": null
           }
         ]
       }

@@ -3,13 +3,18 @@
 
   const options = [
     "parantheses",
-    "an apostrophe",
-    // "a contraction/possession",
-    // "a phonetic elision",
-    "a comma",
-    "a period",
-    "an exclamation mark",
-    "a question mark",
+    "apostrophe",
+    "comma",
+    "period",
+    "exclamation",
+    "question",
+    "slash",
+    "dash",
+    "ellipses",
+    "colons",
+    "quote",
+    "asterisk",
+    "ampersand",
   ];
 </script>
 

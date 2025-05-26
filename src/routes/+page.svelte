@@ -6,6 +6,8 @@
   export let data;
 
   let punctuation = data.punctuation;
+  let songs = data.songs;
+  console.log(songs);
 
   let y = 0;
 
@@ -28,7 +30,7 @@
   <div class="container">
     <div class="chart-wrapper">
       <Title />
-      <BarChart data={punctuation} {screenWidth} {screenHeight} />
+      <BarChart data={songs} {screenWidth} {screenHeight} />
     </div>
   </div>
 </main>

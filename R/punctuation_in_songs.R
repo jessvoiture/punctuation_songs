@@ -11,6 +11,8 @@ df <- read_csv("data/hot-100-current.csv")
 
 df <- df %>%
   mutate(parantheses_content = str_match(title, "\\(([^)]+)\\)")[,2]) %>%
+  mutate(title_og = title,
+         performer_og = performer) %>%
   mutate(title = tolower(title),
          performer = tolower(performer)) %>%
   mutate(performer = case_match(
@@ -49,7 +51,7 @@ parantheses <- df %>%
     ) | parantheses_content %in% years_which_might_be_in_paratheses
   ) %>%
   filter(!has_keywords) %>%
-  select(title, performer, chart_week, year) %>%
+  select(title, performer, title_og, performer_og, chart_week, year) %>%
   mutate(type = "parantheses")
   
 parantheses_pct <- parantheses %>%
@@ -72,7 +74,7 @@ ggplot(parantheses_pct, aes(x = year, y = percent_with_punc)) +
 
 question <- df %>%
   filter(str_detect(title, "\\?")) %>%
-  select(title, performer, chart_week, year) %>%
+  select(title, performer, title_og, performer_og, chart_week, year) %>%
   mutate(type = "question")
 
 question_pct <- question %>%
@@ -95,8 +97,8 @@ ggplot(question_pct, aes(x = year, y = percent_with_punc)) +
 
 exclamation <- df %>%
   filter(str_detect(title, "\\!")) %>%
-  select(title, performer, chart_week, year) %>%
-  mutate(type = "exlamation")
+  select(title, performer, title_og, performer_og, chart_week, year) %>%
+  mutate(type = "exclamation")
 
 exclamation_pct <- exclamation %>%
   group_by(year, type) %>%
@@ -118,7 +120,7 @@ ggplot(exclamation_pct, aes(x = year, y = percent_with_punc)) +
 
 apostrophe <- df %>%
   filter(str_detect(title, "'")) %>%
-  select(title, performer, chart_week, year) %>%
+  select(title, performer, title_og, performer_og, chart_week, year) %>%
   mutate(type = "apostrophe")
 
 apostrophe_pct <- apostrophe %>%
@@ -141,7 +143,7 @@ ggplot(apostrophe_pct, aes(x = year, y = percent_with_punc)) +
 
 colon <- df %>%
   filter(str_detect(title, ":") | str_detect(title, ";")) %>%
-  select(title, performer, chart_week, year) %>%
+  select(title, performer, title_og, performer_og, chart_week, year) %>%
   mutate(type = "colons")
 
 colon_pct <- colon %>%
@@ -154,7 +156,7 @@ colon_pct <- colon %>%
            fill = list(
              percent_with_punc = 0, 
              count_with_punc = 0,
-             type = "colon")) %>%
+             type = "colons")) %>%
   select(year, type, count_with_punc, percent_with_punc)
 
 ggplot(colon_pct, aes(x = year, y = percent_with_punc)) +
@@ -164,7 +166,7 @@ ggplot(colon_pct, aes(x = year, y = percent_with_punc)) +
 
 comma <- df %>%
   filter(str_detect(title, ",")) %>%
-  select(title, performer, chart_week, year) %>%
+  select(title, performer, title_og, performer_og, chart_week, year) %>%
   mutate(type = "comma")
  
 comma_pct <- comma %>%
@@ -187,7 +189,7 @@ ggplot(comma_pct, aes(x = year, y = percent_with_punc)) +
 
 period <- df %>%
   filter(str_detect(title, "\\.")) %>%
-  select(title, performer, chart_week, year) %>%
+  select(title, performer,title_og, performer_og,  chart_week, year) %>%
   mutate(type = "period")
 
 period_pct <- period %>%
@@ -210,7 +212,7 @@ ggplot(period_pct, aes(x = year, y = percent_with_punc)) +
 
 usd <- df %>%
   filter(str_detect(title, "\\$")) %>%
-  select(title, performer, chart_week, year) %>%
+  select(title, performer, title_og, performer_og, chart_week, year) %>%
   mutate(type = "usd")
 
 usd_pct <- usd %>%
@@ -233,7 +235,7 @@ ggplot(usd_pct, aes(x = year, y = percent_with_punc)) +
 
 amper <- df %>%
   filter(str_detect(title, "\\&")) %>%
-  select(title, performer, chart_week, year) %>%
+  select(title, performer, title_og, performer_og, chart_week, year) %>%
   mutate(type = "ampersand")
 
 amper_pct <- amper %>%
@@ -256,7 +258,7 @@ ggplot(amper_pct, aes(x = year, y = percent_with_punc)) +
 
 hash <- df %>%
   filter(str_detect(title, "#")) %>%
-  select(title, performer, chart_week, year) %>%
+  select(title, performer, title_og, performer_og, chart_week, year) %>%
   mutate(type = "hash")
 
 hash_pct <- hash %>%
@@ -279,7 +281,7 @@ ggplot(hash_pct, aes(x = year, y = percent_with_punc)) +
 
 dash <- df %>%
   filter(str_detect(title, "-")) %>%
-  select(title, performer, chart_week, year) %>%
+  select(title, performer, title_og, performer_og, chart_week, year) %>%
   mutate(type = "dash")
 
 dash_pct <- dash %>%
@@ -302,7 +304,7 @@ ggplot(dash_pct, aes(x = year, y = percent_with_punc)) +
 
 slash <- df %>%
   filter(str_detect(title, "/")) %>%
-  select(title, performer, chart_week, year) %>%
+  select(title, performer, title_og, performer_og, chart_week, year) %>%
   mutate(type = "slash")
 
 slash_pct <- slash %>%
@@ -325,7 +327,7 @@ ggplot(slash_pct, aes(x = year, y = percent_with_punc)) +
 
 asterisk <- df %>%
   filter(str_detect(title, "\\*")) %>%
-  select(title, performer, chart_week, year) %>%
+  select(title, performer, title_og, performer_og, chart_week, year) %>%
   mutate(type = "asterisk")
 
 asterisk_pct <- asterisk %>%
@@ -348,7 +350,7 @@ ggplot(asterisk_pct, aes(x = year, y = percent_with_punc)) +
 
 quote <- df %>%
   filter(str_detect(title, '"')) %>%
-  select(title, performer, chart_week, year) %>%
+  select(title, performer, title_og, performer_og, chart_week, year) %>%
   mutate(type = "quote")
 
 quote_pct <- quote %>%
@@ -371,7 +373,7 @@ ggplot(quote_pct, aes(x = year, y = percent_with_punc)) +
 
 ellipses <- df %>%
   filter(str_detect(title, fixed('...'))) %>%
-  select(title, performer, chart_week, year) %>%
+  select(title, performer, title_og, performer_og, chart_week, year) %>%
   mutate(type = "ellipses")
 
 ellipses_pct <- ellipses %>%
@@ -423,15 +425,8 @@ df_pcts <- rbind(
   asterisk_pct, quote_pct, colon_pct, ellipses_pct
 )
 
-df_all <- df_songs %>%
-  left_join(df_pcts, by =c("year", "type"))
-
-nested_df <- df_all %>%
-  group_by(year, type, count_with_punc, percent_with_punc) %>%
-  summarise(songs = list(data.frame(
-    title, performer, chart_week
-  ))) %>%
-  ungroup()
+df_all <- df_pcts %>%
+  left_join(df_songs, by =c("year", "type"))
 
 nested_json <- df_all %>%
   group_by(type, year, count_with_punc, percent_with_punc) %>%
@@ -440,6 +435,8 @@ nested_json <- df_all %>%
       lapply(seq_along(title), function(i) list(
         title = unbox(title[i]),
         performer = unbox(performer[i]),
+        title_og = unbox(title_og[i]),
+        performer_og = unbox(performer_og[i]),
         chart_week = unbox(chart_week[i])
       ))
     ),
