@@ -1,0 +1,46 @@
+[
+  {
+    "type": "A",
+    "years": [
+      {
+        "year": 1958,
+        "percent": 10,
+        "names": [
+          {
+            "name": "John",
+            "age": 30
+          },
+          {
+            "name": "Mary",
+            "age": 25
+          }
+        ]
+      },
+      {
+        "year": 1959,
+        "percent": 20,
+        "names": [
+          {
+            "name": "Alice",
+            "age": 40
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "B",
+    "years": [
+      {
+        "year": 1958,
+        "percent": 15,
+        "names": [
+          {
+            "name": "Bob",
+            "age": 35
+          }
+        ]
+      }
+    ]
+  }
+]
