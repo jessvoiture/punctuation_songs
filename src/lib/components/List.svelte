@@ -1,6 +1,6 @@
 <script>
   import { fade, slide } from "svelte/transition";
-  import { selectedOption } from "../../stores";
+  import { selectedOption, isDataHovered, hoveredData, clickedYear, hoveredDataYear } from "../../stores";
   import { highlightBySelectedOption } from "../../utils/highlightRegex.js";
 
   export let data;
@@ -13,13 +13,41 @@
 
   $: buttonText = showingSongList ? "Hide songs" : "Show songs";
 
+  $: clickedYear.subscribe((year) => {
+      if (year) {
+        scrollToYear(year);
+      }
+  });
+
   function toggleSongList() {
     showingSongList = !showingSongList;
   }
 
   function highlightParentheses(str, className = 'highlight') {
     return str.replace(/\([^)]*\)/g, match => `<span class="${className}">${match}</span>`);
-}
+  }
+
+  function scrollToYear(year) {
+    showingSongList = true;
+
+    setTimeout(() => {
+      const element = document.getElementById(`year-${year}`);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }, 500);
+  }
+
+  function onMouseover(year) {
+    hoveredDataYear.set(year);
+    isDataHovered.set(true);
+    console.log("Hovered year:", year);
+  }
+
+  function onMouseout() {
+    hoveredDataYear.set(undefined);
+    isDataHovered.set(false)
+  }
 
 </script>
 
@@ -36,6 +64,7 @@
         {buttonText}
         <i class="material-icons chevron" class:opened={showingSongList}> keyboard_arrow_down </i>
       </button>
+
     </div>
 
     <div class="song-list-wrapper">
@@ -43,8 +72,13 @@
             <div id="list" class="body-text" transition:fade>
                 {#each showingData as year}
                     {#if year.count_with_punc > 0}
-                        <div class="year-group">
-                            <div class="year-header">{year.year}: {year.count_with_punc} songs ({Math.round(year.percent_with_punc * 10) / 10}% of charting songs)</div>
+                        <div 
+                          class="year-group" 
+                          on:mouseover={() => onMouseover(year.year)} 
+                          on:mouseout={onMouseout}
+                          class:hovered={$hoveredDataYear === year.year}
+                        >
+                            <div class="year-header" id="year-{year.year}">{year.year}: {year.count_with_punc} songs ({Math.round(year.percent_with_punc * 10) / 10}% of charting songs)</div>
                             <div class="song-list">
                                 {#each year.songs as song}
                                     <div class="song-item">
@@ -112,6 +146,20 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
+  }
+
+  .year-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+  }
+
+  .hovered {
+    background-color: #f6f6f6;
   }
 
   .song-list {

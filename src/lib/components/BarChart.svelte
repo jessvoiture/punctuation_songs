@@ -4,7 +4,7 @@
   import { cubicOut, cubicInOut } from "svelte/easing";
   import { tweened } from "svelte/motion";
 
-  import { selectedOption, hoveredData, isDataHovered, mouseX, mouseY } from "../../stores";
+  import { selectedOption, hoveredData, hoveredDataYear, isDataHovered, mouseX, mouseY, clickedYear } from "../../stores";
   import Tooltip from "./Tooltip.svelte";
 
   export let data;
@@ -65,6 +65,7 @@
 
   const handleMouseover = function (event, d) {
 		hoveredData.set(d);
+    hoveredDataYear.set(d.year)
 		mouseX.set(event.clientX);
 		mouseY.set(event.clientY);
 		isDataHovered.set(true);
@@ -76,6 +77,7 @@
 		const centerX = rect.left + rect.width / 2;
 		const centerY = rect.top + rect.height / 2;
 		hoveredData.set(d);
+    hoveredDataYear.set(d.year);
 		mouseX.set(centerX);
 		mouseY.set(centerY);
 		isDataHovered.set(true);
@@ -83,8 +85,13 @@
 
 	const handleMouseout = function () {
 		hoveredData.set(undefined);
+    hoveredDataYear.set(undefined);
 		isDataHovered.set(false);
 	};
+
+  const onClick = function (d) {
+    clickedYear.set(d.year);
+  };
 </script>
 
 <div class="bar-chart">
@@ -130,7 +137,7 @@
             width={rectWidth}
             height={innerHeight - yScale($tweenedY[i])}
             fill={$isDataHovered ? 
-                    $hoveredData.year == d.year ? 
+                    $hoveredDataYear == d.year ? 
                       "#2f88b5" : 
                       "#7cb4cf" : 
                     "#7cb4cf"}
@@ -146,6 +153,14 @@
             }}
             on:blur={function () {
               handleMouseout();
+            }}
+            on:click={function () {
+              onClick(d);
+            }}
+            on:keydown={function (event) {
+              if (event.key === "Enter" || event.key === " ") {
+                onClick(d);
+              }
             }}
           />
         {/each}
