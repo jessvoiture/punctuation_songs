@@ -1,3 +1,7 @@
 import { writable, readable } from "svelte/store";
 
 export const selectedOption = writable("parantheses");
+export const hoveredData = writable(undefined);
+export const mouseX = writable(undefined);
+export const mouseY = writable(undefined);
+export const isDataHovered = writable(false);

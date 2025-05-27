@@ -4,7 +4,8 @@
   import { cubicOut, cubicInOut } from "svelte/easing";
   import { tweened } from "svelte/motion";
 
-  import { selectedOption } from "../../stores";
+  import { selectedOption, hoveredData, isDataHovered, mouseX, mouseY } from "../../stores";
+  import Tooltip from "./Tooltip.svelte";
 
   export let data;
   export let screenWidth;
@@ -21,8 +22,6 @@
   let rectWidth;
   let showingData = data;
   let yExtent;
-
-  $: console.log("selected Option", $selectedOption);
 
   $: if (screenWidth <= 1000) {
     height = 0.7 * screenHeight;
@@ -63,6 +62,29 @@
       tweenedY.set(selectedData.years.map((d) => d.percent_with_punc));
     }
   }
+
+  const handleMouseover = function (event, d) {
+		hoveredData.set(d);
+		mouseX.set(event.clientX);
+		mouseY.set(event.clientY);
+		isDataHovered.set(true);
+    console.log(d)
+	};
+
+	const handleFocus = function (event, d) {
+		const rect = event.target.getBoundingClientRect();
+		const centerX = rect.left + rect.width / 2;
+		const centerY = rect.top + rect.height / 2;
+		hoveredData.set(d);
+		mouseX.set(centerX);
+		mouseY.set(centerY);
+		isDataHovered.set(true);
+	};
+
+	const handleMouseout = function () {
+		hoveredData.set(undefined);
+		isDataHovered.set(false);
+	};
 </script>
 
 <div class="bar-chart">
@@ -107,13 +129,39 @@
             id={d.year}
             width={rectWidth}
             height={innerHeight - yScale($tweenedY[i])}
-            fill="steelblue"
+            fill={$isDataHovered ? 
+                    $hoveredData.year == d.year ? 
+                      "#2f88b5" : 
+                      "#7cb4cf" : 
+                    "#7cb4cf"}
+            aria-label="Data point for the album, {d.album} by {d.artist}."
+            on:mouseover={function (event) {
+              handleMouseover(event, d);
+            }}
+            on:mouseout={function () {
+              handleMouseout();
+            }}
+            on:focus={function (event) {
+              handleFocus(event, d);
+            }}
+            on:blur={function () {
+              handleMouseout();
+            }}
           />
         {/each}
       </g>
     </g>
   </svg>
 </div>
+
+<!-- Tooltip -->
+{#if ($hoveredData != undefined) & $isDataHovered}
+	<Tooltip
+		{screenHeight}
+		{screenWidth}
+		data={showingData}
+	/>
+{/if}
 
 <style>
   text {
