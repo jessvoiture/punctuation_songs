@@ -8,7 +8,6 @@
 
   let punctuation = data.punctuation;
   let songs = data.songs;
-  console.log(songs);
 
   let y = 0;
 

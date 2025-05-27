@@ -21,8 +21,6 @@
     return str.replace(/\([^)]*\)/g, match => `<span class="${className}">${match}</span>`);
 }
 
-console.log("test", highlightParentheses("This is a test (with parentheses) and more text (another one)."));
-
 </script>
 
 <div class="details-wrapper">
@@ -30,9 +28,7 @@ console.log("test", highlightParentheses("This is a test (with parentheses) and 
     <div class="details-header">
       <div id="commentary" class="body-text">
         <p>
-          This chart shows the percentage of punctuation marks used in the text
-          over the years. The data is based on a sample of texts from 1958 to
-          2025.
+          Intelligent insight.
         </p>
       </div>
 
@@ -118,7 +114,7 @@ console.log("test", highlightParentheses("This is a test (with parentheses) and 
     gap: 24px;
   }
 
-  #song-list {
+  .song-list {
     max-width: 350px;
     display: flex;
     flex-direction: column;
