@@ -91,6 +91,7 @@
 
   const onClick = function (d) {
     clickedYear.set(d.year);
+    event.target.blur();
   };
 </script>
 
