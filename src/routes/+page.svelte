@@ -31,21 +31,22 @@
     <Title />
     <BarChart data={songs} {screenWidth} {screenHeight} />
   </div>
-  <List data={songs} />
+
+  {#if screenWidth > 860}
+    <List data={songs} />
+  {/if}
 </div>
 
 <style>
   .container {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    height: calc(100vh - 40px);
     width: 100%;
+    height: calc(100vh - 40px);
+    margin-top: 40px;
     flex-direction: row;
     align-content: flex-start;
-    gap: 168px;
-    padding-left: 40px;
-    margin-top: 40px;
+    gap: 10%;
     max-width: 100%;
     box-sizing: border-box;
   }
@@ -58,5 +59,38 @@
     gap: 24px;
     flex-basis: auto;
     width: fit-content;
+  }
+
+  @media (max-width: 860px) {
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      height: 100%;
+      width: 100%;
+      flex-direction: row;
+      align-content: flex-start;
+      gap: 10%;
+    }
+
+    .chart-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      flex-basis: auto;
+      width: fit-content;
+      max-width: 90%;
+    }
+  }
+
+  @media (min-width: 861px) {
+    .container {
+      align-items: flex-start;
+      padding-left: 40px;
+    }
+
+    .chart-wrapper {
+      max-width: 60%;
+    }
   }
 </style>

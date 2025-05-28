@@ -1,6 +1,12 @@
 <script>
   import { fade, slide } from "svelte/transition";
-  import { selectedOption, isDataHovered, hoveredData, clickedYear, hoveredDataYear } from "../../stores";
+  import {
+    selectedOption,
+    isDataHovered,
+    hoveredData,
+    clickedYear,
+    hoveredDataYear,
+  } from "../../stores";
   import { highlightBySelectedOption } from "../../utils/highlightRegex.js";
 
   export let data;
@@ -14,17 +20,20 @@
   $: buttonText = showingSongList ? "Hide songs" : "Show songs";
 
   $: clickedYear.subscribe((year) => {
-      if (year) {
-        scrollToYear(year);
-      }
+    if (year) {
+      scrollToYear(year);
+    }
   });
 
   function toggleSongList() {
     showingSongList = !showingSongList;
   }
 
-  function highlightParentheses(str, className = 'highlight') {
-    return str.replace(/\([^)]*\)/g, match => `<span class="${className}">${match}</span>`);
+  function highlightParentheses(str, className = "highlight") {
+    return str.replace(
+      /\([^)]*\)/g,
+      (match) => `<span class="${className}">${match}</span>`,
+    );
   }
 
   function scrollToYear(year) {
@@ -46,57 +55,64 @@
 
   function onMouseout() {
     hoveredDataYear.set(undefined);
-    isDataHovered.set(false)
+    isDataHovered.set(false);
   }
-
 </script>
 
 <div class="details-wrapper">
   <div class="details">
     <div class="details-header">
       <div id="commentary" class="body-text">
-        <p>
-          Intelligent insight.
-        </p>
+        <p>Intelligent insight.</p>
       </div>
 
       <button on:click={toggleSongList} class="toggle-button">
         {buttonText}
-        <i class="material-icons chevron" class:opened={showingSongList}> keyboard_arrow_down </i>
+        <i class="material-icons chevron" class:opened={showingSongList}>
+          keyboard_arrow_down
+        </i>
       </button>
-
     </div>
 
     <div class="song-list-wrapper">
-        {#if showingSongList}
-            <div id="list" class="body-text" transition:fade>
-                {#each showingData as year}
-                    {#if year.count_with_punc > 0}
-                        <div 
-                          class="year-group" 
-                          on:mouseover={() => onMouseover(year.year)} 
-                          on:mouseout={onMouseout}
-                          class:hovered={$hoveredDataYear === year.year}
-                        >
-                            <div class="year-header" id="year-{year.year}">{year.year}: {year.count_with_punc} songs ({Math.round(year.percent_with_punc * 10) / 10}% of charting songs)</div>
-                            <div class="song-list">
-                                {#each year.songs as song}
-                                    <div class="song-item">
-                                        <div class="song-title">
-                                            {@html highlightBySelectedOption(song.title_og, $selectedOption)}
-                                        </div>
+      {#if showingSongList}
+        <div id="list" class="body-text" transition:fade>
+          {#each showingData as year}
+            <!-- svelte-ignore a11y_mouse_events_have_key_events -->
+            {#if year.count_with_punc > 0}
+              <!-- svelte-ignore a11y_no_static_element_interactions -->
+              <div
+                class="year-group"
+                on:mouseover={() => onMouseover(year.year)}
+                on:mouseout={onMouseout}
+                class:hovered={$hoveredDataYear === year.year}
+              >
+                <div class="year-header" id="year-{year.year}">
+                  {year.year}: {year.count_with_punc} songs ({Math.round(
+                    year.percent_with_punc * 10,
+                  ) / 10}% of charting songs)
+                </div>
+                <div class="song-list">
+                  {#each year.songs as song}
+                    <div class="song-item">
+                      <div class="song-title">
+                        {@html highlightBySelectedOption(
+                          song.title_og,
+                          $selectedOption,
+                        )}
+                      </div>
 
-                                        <div class="song-performer">
-                                            {song.performer_og}
-                                        </div>
-                                    </div>
-                                {/each}
-                            </div>
-                        </div>
-                    {/if}
-                {/each}
-            </div>
-        {/if}
+                      <div class="song-performer">
+                        {song.performer_og}
+                      </div>
+                    </div>
+                  {/each}
+                </div>
+              </div>
+            {/if}
+          {/each}
+        </div>
+      {/if}
     </div>
   </div>
 </div>
@@ -138,7 +154,7 @@
   .song-list-wrapper {
     margin-bottom: 48px;
     overflow-y: auto;
-    max-height: 100%; 
+    max-height: 100%;
     padding-right: 40px;
   }
 
@@ -215,12 +231,4 @@
   .opened {
     transform: rotate(-180deg);
   }
-
-  .highlight {
-    background-color: #baeaff;
-    padding: 2px 4px;
-    border-radius: 4px;
-  }
-
-  
 </style>

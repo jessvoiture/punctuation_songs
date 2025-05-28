@@ -20,6 +20,7 @@
 
 <select bind:value={$selectedOption}>
   <option value="paratheses" disabled>Select an option</option>
+
   {#each options as option}
     <option value={option}>{option}</option>
   {/each}
