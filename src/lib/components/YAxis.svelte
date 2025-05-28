@@ -1,6 +1,7 @@
 <script>
   export let yScale;
   export let yticks;
+  export let width;
 </script>
 
 <g class="y-axis">

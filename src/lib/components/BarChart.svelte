@@ -76,7 +76,7 @@
 <div class="bar-chart">
   <svg {width} {height}>
     <g transform={`translate(0, ${padding.top})`}>
-      <YAxis {yScale} {yticks} />
+      <YAxis {yScale} {yticks} {width} />
 
       <g class="x-axis" transform={`translate(${padding.left}, 0)`}>
         {#each xticks as t}

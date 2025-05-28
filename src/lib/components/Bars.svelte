@@ -58,10 +58,10 @@
     <!-- svelte-ignore a11y_no_noninteractive_element_interactions -->
     <rect
       x={xScale(d.year)}
-      y={yScale($tweenedY[i])}
+      y={yScale(tweenedY[i])}
       id={d.year}
       width={rectWidth}
-      height={innerHeight - yScale($tweenedY[i])}
+      height={innerHeight - yScale(tweenedY[i])}
       fill={"#58b8db"}
       class={"chart-bar"}
       class:hovered={$isDataHovered & ($hoveredDataYear == d.year)}
