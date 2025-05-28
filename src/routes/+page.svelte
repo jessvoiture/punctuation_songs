@@ -3,6 +3,7 @@
   import BarChart from "$lib/components/BarChart.svelte";
   import List from "$lib/components/List.svelte";
   import Title from "$lib/components/Title.svelte";
+  import ListDrawer from "$lib/components/ListDrawer.svelte";
 
   export let data;
 
@@ -32,8 +33,10 @@
     <BarChart data={songs} {screenWidth} {screenHeight} />
   </div>
 
-  {#if screenWidth > 860}
-    <List data={songs} />
+  {#if screenWidth >= 860}
+    <List data={songs} {screenWidth} />
+  {:else if screenWidth < 860}
+    <ListDrawer data={songs} {screenHeight} />
   {/if}
 </div>
 
@@ -42,9 +45,6 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    height: calc(100vh - 40px);
-    margin-top: 40px;
-    flex-direction: row;
     align-content: flex-start;
     gap: 10%;
     max-width: 100%;
@@ -65,12 +65,13 @@
     .container {
       display: flex;
       justify-content: center;
-      align-items: flex-start;
+      align-items: center;
       height: 100%;
       width: 100%;
-      flex-direction: row;
-      align-content: flex-start;
+      flex-direction: column;
+      align-content: center;
       gap: 10%;
+      margin-top: 32px;
     }
 
     .chart-wrapper {
@@ -86,7 +87,10 @@
   @media (min-width: 861px) {
     .container {
       align-items: flex-start;
+      flex-direction: row;
       padding-left: 40px;
+      height: calc(100vh - 40px);
+      margin-top: 40px;
     }
 
     .chart-wrapper {
