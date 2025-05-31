@@ -4,6 +4,8 @@
   import List from "$lib/components/List.svelte";
   import Title from "$lib/components/Title.svelte";
   import ListDrawer from "$lib/components/ListDrawer.svelte";
+  import SmallMultiples from "$lib/components/SmallMultiples.svelte";
+  import { selectedOption } from "../stores";
 
   export let data;
 
@@ -30,7 +32,12 @@
 <div class="container">
   <div class="chart-wrapper">
     <Title />
-    <BarChart data={songs} {screenWidth} {screenHeight} />
+
+    {#if $selectedOption == "any punc"}
+      <SmallMultiples data={songs} {screenHeight} {screenWidth} />
+    {:else}
+      <BarChart data={songs} {screenWidth} {screenHeight} />
+    {/if}
   </div>
 
   {#if screenWidth >= 860}

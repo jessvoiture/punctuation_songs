@@ -2,6 +2,7 @@
   import { selectedOption } from "../../stores";
 
   const options = [
+    "any punc",
     "parantheses",
     "apostrophe",
     "comma",
@@ -19,7 +20,7 @@
 </script>
 
 <select bind:value={$selectedOption}>
-  <option value="paratheses" disabled>Select an option</option>
+  <option value="any punc" disabled>Select an option</option>
 
   {#each options as option}
     <option value={option}>{option}</option>
