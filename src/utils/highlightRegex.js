@@ -1,12 +1,12 @@
 export function highlightBySelectedOption(
   str,
   selectedOption,
-  className = "highlight"
+  className = "highlight",
 ) {
   let regex;
 
   switch (selectedOption) {
-    case "parantheses":
+    case "parentheses":
       regex = /\([^)]*\)/g;
       break;
     case "apostrophe":
@@ -34,7 +34,7 @@ export function highlightBySelectedOption(
       regex = /(\.\.\.|…)/g;
       break;
     case "colons":
-      regex = /:/g;
+      regex = /[;:]/g;
       break;
     case "quote":
       regex = /["“”]/g;
@@ -51,6 +51,6 @@ export function highlightBySelectedOption(
 
   return str.replace(
     regex,
-    (match) => `<span class="${className}">${match}</span>`
+    (match) => `<span class="${className}">${match}</span>`,
   );
 }

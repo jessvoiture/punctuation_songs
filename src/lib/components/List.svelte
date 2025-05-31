@@ -10,11 +10,12 @@
   import YearsSongList from "./YearsSongList.svelte";
 
   export let data;
+  export let screenWidth;
 
   let showingSongList = false;
   let buttonText = "Show songs";
 
-  let showingData = data.find((d) => d.type === "parantheses")?.years || [];
+  let showingData = data.find((d) => d.type === "parentheses")?.years || [];
   $: showingData = data.find((d) => d.type === $selectedOption)?.years || [];
 
   $: buttonText = showingSongList ? "Hide songs" : "Show songs";
@@ -62,7 +63,7 @@
         <div class="body-text list" transition:fade>
           <!-- for each year -->
           {#each showingData as year}
-            <YearsSongList {year} />
+            <YearsSongList {year} {screenWidth} />
           {/each}
         </div>
       {/if}

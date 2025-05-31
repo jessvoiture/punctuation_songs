@@ -29,7 +29,8 @@ df <- df %>%
   filter(chart_week == min(chart_week)) %>%
   ungroup() %>%
   mutate(year = year(chart_week),
-         month_year = as.Date(format(chart_week, "%Y-%m-01")))
+         month_year = as.Date(format(chart_week, "%Y-%m-01"))) %>%
+  mutate(title = str_replace_all(title, "\\.\\s*\\.\\s*\\.", "..."))
 
 count_unique_songs_per_year <- df %>%
   group_by(year) %>%
@@ -42,17 +43,21 @@ ggplot(count_unique_songs_per_year, aes(x = year, y = count_new_songs_in_year)) 
     title = "New charting songs per year"
   )
 
+song_length <- df %>%
+  mutate(song_char_count = str_count(title_og)) %>%
+  group_by(year) %>%
+  summarise(avg_song_length = mean(song_char_count))
+
+ggplot(song_length, aes(x = year, y = avg_song_length)) +
+  geom_col() +
+  theme_minimal() +
+  labs(title = "Average song length in characters")
+
+
 parantheses <- df %>%
   filter(!is.na(parantheses_content)) %>%
-  mutate(
-    has_keywords = str_detect(
-      str_to_lower(parantheses_content),
-      "featuring|with|from|version|remix|theme|remastered|feat."
-    ) | parantheses_content %in% years_which_might_be_in_paratheses
-  ) %>%
-  filter(!has_keywords) %>%
   select(title, performer, title_og, performer_og, chart_week, year) %>%
-  mutate(type = "parantheses")
+  mutate(type = "parentheses")
   
 parantheses_pct <- parantheses %>%
   group_by(year, type) %>%
@@ -64,13 +69,44 @@ parantheses_pct <- parantheses %>%
            fill = list(
              percent_with_punc = 0, 
              count_with_punc = 0,
-             type = "parantheses")) %>%
+             type = "parentheses")) %>%
   select(year, type, count_with_punc, percent_with_punc)
 
 ggplot(parantheses_pct, aes(x = year, y = percent_with_punc)) +
   geom_col() +
   theme_minimal() +
   labs(title = "Billboard charting songs with paratheses in them")
+
+parantheses_no_keywords <- parantheses %>%
+  mutate(parantheses_content = str_match(title, "\\(([^)]+)\\)")[,2]) %>%
+  mutate(
+    has_keywords = str_detect(
+      str_to_lower(parantheses_content),
+      "featuring|with|from|version|remix|theme|remastered|feat."
+    ) | parantheses_content %in% years_which_might_be_in_paratheses
+  ) %>%
+  filter(!has_keywords) %>%
+  select(title, performer, title_og, performer_og, chart_week, year) %>%
+  mutate(type = "parantheses_no_keywords")
+
+parantheses_no_keywords_pct <- parantheses_no_keywords %>%
+  group_by(year, type) %>%
+  summarise(count_with_punc = n()) %>%
+  ungroup() %>%
+  left_join(count_unique_songs_per_year, by = "year") %>%
+  mutate(percent_with_punc = count_with_punc / count_new_songs_in_year * 100) %>%
+  complete(year = full_seq(1958:2025, 1), 
+           fill = list(
+             percent_with_punc = 0, 
+             count_with_punc = 0,
+             type = "parantheses_no_keywords")) %>%
+  select(year, type, count_with_punc, percent_with_punc)
+
+ggplot(parantheses_no_keywords_pct, aes(x = year, y = percent_with_punc)) +
+  geom_col() +
+  theme_minimal() +
+  labs(title = "Billboard charting songs with paratheses in them")
+
 
 question <- df %>%
   filter(str_detect(title, "\\?")) %>%
@@ -397,6 +433,7 @@ ggplot(ellipses_pct, aes(x = year, y = percent_with_punc)) +
 df_all_punctuation <- data.frame(
   year = c(1958:2025),
   parantheses_pct = parantheses_pct$percent_with_punc, 
+  parantheses_no_keywords_pct = parantheses_no_keywords_pct$percent_with_punc,
   exclamation_pct = exclamation_pct$percent_with_punc,
   question_pct = question_pct$percent_with_punc,
   apostrophe_pct = apostrophe_pct$percent_with_punc,
@@ -414,13 +451,13 @@ df_all_punctuation <- data.frame(
   mutate(across(everything(), ~replace_na(., 0)))
 
 df_songs <- rbind(
-  parantheses, exclamation, question, apostrophe, 
+  parantheses, parantheses_no_keywords, exclamation, question, apostrophe, 
   period, comma, usd, amper, dash, slash, 
   asterisk, quote, colon, ellipses
 )
 
 df_pcts <- rbind(
-  parantheses_pct, exclamation_pct, question_pct, apostrophe_pct,
+  parantheses_pct, parantheses_no_keywords_pct, exclamation_pct, question_pct, apostrophe_pct,
   period_pct, comma_pct, usd_pct, amper_pct, dash_pct, slash_pct,
   asterisk_pct, quote_pct, colon_pct, ellipses_pct
 )

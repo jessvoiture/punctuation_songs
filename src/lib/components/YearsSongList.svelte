@@ -7,12 +7,11 @@
 
   let isScreenWide = screenWidth > 860;
   $: isScreenWide = screenWidth > 860;
+  $: console.log(screenWidth);
 
   function onMouseover(year) {
     hoveredDataYear.set(year);
     isDataHovered.set(true);
-    console.log("Hovered year:", year);
-    console.log(year.year);
   }
 
   function onMouseout() {

@@ -22,6 +22,8 @@
   export let screenWidth;
   export let screenHeight;
 
+  console.log(data);
+
   let tweenedY;
   let yMax;
   let height;
@@ -47,7 +49,7 @@
 
   $: tweenedY = tweened(
     data
-      .find((item) => item.type == "parantheses")
+      .find((item) => item.type == "parentheses")
       .years.map((d) => d.percent_with_punc),
     { duration: 2000, easing: cubicInOut },
   );
@@ -56,7 +58,7 @@
   $: showingData = data.find((d) => d.type === $selectedOption)?.years || [];
   $: yExtent = extent(showingData.map((d) => d.year));
 
-  $: xScale = scaleLinear().domain([1958, 2025]).range([0, innerWidth]);
+  $: xScale = scaleLinear().domain([1958, 2026]).range([0, innerWidth]);
 
   $: yScale = scaleLinear()
     .domain([0, yMax * 1.2])
