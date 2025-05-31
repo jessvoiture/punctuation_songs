@@ -1,10 +1,11 @@
 <script>
   import { tweened } from "svelte/motion";
   import { cubicOut } from "svelte/easing";
+  import { fade } from "svelte/transition";
 
   import List from "./List.svelte";
   import YearsSongList from "./YearsSongList.svelte";
-  import { selectedOption } from "../../stores";
+  import { selectedOption, clickedYear } from "../../stores";
 
   export let data;
   export let screenHeight;
@@ -17,33 +18,54 @@
 
   $: expandedHeight = screenHeight * 0.95;
 
-  let isExpanded = false;
+  let isDrawerExpanded = false;
   let drawerHeight = tweened(collapsedHeight, {
     duration: 300,
     easing: cubicOut,
   });
 
   function toggleDrawer() {
-    isExpanded = !isExpanded;
-    drawerHeight.set(isExpanded ? expandedHeight : collapsedHeight);
+    isDrawerExpanded = !isDrawerExpanded;
+    drawerHeight.set(isDrawerExpanded ? expandedHeight : collapsedHeight);
+  }
+
+  $: clickedYear.subscribe((year) => {
+    if (year) {
+      scrollToYear(year);
+    }
+  });
+
+  function scrollToYear(year) {
+    toggleDrawer();
+
+    setTimeout(() => {
+      const element = document.getElementById(`year-${year}`);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }, 500);
   }
 </script>
+
+{#if isDrawerExpanded}
+  <div class="overlay" transition:fade></div>
+{/if}
 
 <div class="drawer" style="height: {$drawerHeight}px;">
   <button
     class="drawer-toggle"
     on:click={toggleDrawer}
-    aria-expanded={isExpanded}
+    aria-expanded={isDrawerExpanded}
   >
     <span class="drawer-label"
-      >{isExpanded ? "Hide Details" : "Show Details"}</span
+      >{isDrawerExpanded ? "Hide Details" : "Show Details"}</span
     >
-    <i class="material-icons toggle-icon" class:expanded={isExpanded}>
+    <i class="material-icons toggle-icon" class:expanded={isDrawerExpanded}>
       expand_less
     </i>
   </button>
 
-  {#if isExpanded}
+  {#if isDrawerExpanded}
     <div class="drawer-content">
       {#each showingData as year}
         <YearsSongList {year} />
@@ -60,21 +82,22 @@
     width: 100%;
     background-color: #fff;
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
     transition: height 0.3s ease;
     border-top: 1px solid #ddd;
     font-family: sans-serif;
+    z-index: 10000;
+  }
+
+  .drawer-content {
+    padding: 20px;
+    overflow-y: auto;
+    max-height: calc(95vh - 60px);
   }
 
   .drawer-label {
     font-size: 16px;
     font-weight: bold;
   }
-  .drawer-content {
-    padding: 20px;
-    overflow-y: auto;
-  }
-
   .toggle-icon {
     font-size: 20px;
     transform: rotate(0deg);
@@ -96,5 +119,17 @@
     width: 100%;
     padding: 10px 20px;
     cursor: pointer;
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    z-index: 10; /* Ensure it sits behind the drawer */
+    opacity: 1;
+    pointer-events: none; /* Prevent interaction when invisible */
   }
 </style>

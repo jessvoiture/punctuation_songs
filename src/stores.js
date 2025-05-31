@@ -7,3 +7,4 @@ export const mouseX = writable(undefined);
 export const mouseY = writable(undefined);
 export const isDataHovered = writable(false);
 export const clickedYear = writable(undefined);
+export const isDrawerExpanded = writable(false);
