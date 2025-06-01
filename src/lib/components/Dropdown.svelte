@@ -19,8 +19,6 @@
 </script>
 
 <select bind:value={$selectedOption}>
-  <option value="parentheses" disabled>Select an option</option>
-
   {#each options as option}
     <option value={option}>{option}</option>
   {/each}
