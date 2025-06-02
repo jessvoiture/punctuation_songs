@@ -29,7 +29,7 @@
 
 <div class="container">
   <div class="chart-wrapper">
-    <Title />
+    <Title {screenWidth} />
     <BarChart data={songs} {screenWidth} {screenHeight} />
   </div>
 

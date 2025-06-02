@@ -32,6 +32,7 @@
 
   option {
     font-size: 14px;
+    color: #000;
   }
 
   select {

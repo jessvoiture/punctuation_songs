@@ -35,6 +35,8 @@
   let showingData = data;
   let yExtent;
 
+  $: console.log("showingData:", showingData);
+
   $: if (screenWidth <= 860) {
     height = 0.6 * screenHeight;
     width = 0.9 * screenWidth;
@@ -76,32 +78,34 @@
 </script>
 
 <div class="bar-chart">
-  <svg {width} {height}>
-    <g transform={`translate(0, ${padding.top})`}>
-      <YAxis {yScale} {yticks} {width} />
+  {#if showingData.length > 0 && width > 0 && height > 0}
+    <svg {width} {height}>
+      <g transform={`translate(0, ${padding.top})`}>
+        <YAxis {yScale} {yticks} {width} />
 
-      <g class="x-axis" transform={`translate(${padding.left}, 0)`}>
-        {#each xticks as t}
-          <text
-            x={xScale(t) + 5}
-            y={innerHeight + 20}
-            text-anchor="middle"
-            fill="black">{t}</text
-          >
-        {/each}
+        <g class="x-axis" transform={`translate(${padding.left}, 0)`}>
+          {#each xticks as t}
+            <text
+              x={xScale(t) + 5}
+              y={innerHeight + 20}
+              text-anchor="middle"
+              fill="black">{t}</text
+            >
+          {/each}
+        </g>
+
+        <Bars
+          tweenedY={$tweenedY}
+          {xScale}
+          {yScale}
+          {showingData}
+          paddingLeft={padding.left}
+          {innerWidth}
+          {innerHeight}
+        />
       </g>
-
-      <Bars
-        tweenedY={$tweenedY}
-        {xScale}
-        {yScale}
-        {showingData}
-        paddingLeft={padding.left}
-        {innerWidth}
-        {innerHeight}
-      />
-    </g>
-  </svg>
+    </svg>
+  {/if}
 </div>
 
 <!-- Tooltip -->
