@@ -6,6 +6,7 @@
     hoveredData,
     clickedYear,
     hoveredDataYear,
+    includeKeywordsParantheses,
   } from "../../stores";
   import YearsSongList from "./YearsSongList.svelte";
 
@@ -40,6 +41,8 @@
       }
     }, 500);
   }
+
+  $: console.log($includeKeywordsParantheses);
 </script>
 
 <div class="details-wrapper">
@@ -47,6 +50,14 @@
     <!-- this is for intelligent insight and the expand song list button -->
     <div class="details-header">
       <div id="commentary" class="body-text">Intelligent insight.</div>
+
+      {#if $selectedOption === "parentheses"}
+        <label>
+          <input type="checkbox" bind:checked={$includeKeywordsParantheses} />
+          Hide songs where parentheses are used for attribution, feature credit,
+          or version
+        </label>
+      {/if}
 
       <button on:click={toggleSongList} class="toggle-button">
         {buttonText}

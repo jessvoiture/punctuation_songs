@@ -1,4 +1,5 @@
 <script>
+  import { selectedMetric } from "../../stores";
   export let yScale;
   export let yticks;
   export let width;
@@ -13,8 +14,12 @@
       y={yScale(t) - 12}
       text-anchor="start"
       fill="#2c2c2c"
-      class="y-axis-text">{t}%</text
-    >
+      class="y-axis-text"
+      >{t}
+      {#if $selectedMetric === "Percent"}
+        %
+      {/if}
+    </text>
   {/each}
 </g>
 

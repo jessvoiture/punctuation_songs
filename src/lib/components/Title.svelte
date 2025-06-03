@@ -1,19 +1,44 @@
 <script>
   import Dropdown from "./Dropdown.svelte";
-  import { selectedOption } from "../../stores";
+  import { selectedOption, selectedMetric } from "../../stores";
 
   export let screenWidth;
+
+  const punc_options = [
+    "parentheses",
+    "apostrophe",
+    "comma",
+    "period",
+    "exclamation",
+    "question",
+    "slash",
+    "dash",
+    "ellipses",
+    "colons",
+    "quote",
+    "asterisk",
+    "ampersand",
+  ];
+
+  const metric_options = ["Percent", "Number"];
+
+  $: console.log($selectedMetric);
 </script>
 
 {#if screenWidth > 0}
   <div class="header">
     <h1 class="title">
-      Percent of songs with <Dropdown />
+      <Dropdown value={selectedMetric} options={metric_options} /> of songs with
+      <Dropdown value={selectedOption} options={punc_options} />
     </h1>
 
     <h2>
-      Songs with selected punctuation as a percent of new charting songs on the
-      Billboard Hot 100 per year
+      {#if $selectedMetric === "Percent"}
+        Percent of
+      {:else}
+        Number of
+      {/if}
+      new charting songs per year in the Billboard Hot 100 with {$selectedOption}
     </h2>
   </div>
 {/if}

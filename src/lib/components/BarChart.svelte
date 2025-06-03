@@ -7,12 +7,14 @@
 
   import {
     selectedOption,
+    selectedMetric,
     hoveredData,
     hoveredDataYear,
     isDataHovered,
     mouseX,
     mouseY,
     clickedYear,
+    includeKeywordsParantheses,
   } from "../../stores";
   import Tooltip from "./Tooltip.svelte";
   import Bars from "./Bars.svelte";
@@ -69,10 +71,27 @@
   $: yticks = yScale.ticks(3);
   $: xticks = xScale.ticks(4);
 
+  $: console.log(showingData);
+
   $: {
-    const selectedData = data.find((item) => item.type === $selectedOption);
+    let selectedData;
+
+    if ($includeKeywordsParantheses) {
+      selectedData = data.find(
+        (item) => item.type === "parantheses_no_keywords",
+      );
+
+      console.log(data);
+    } else {
+      selectedData = data.find((item) => item.type === $selectedOption);
+    }
+
     if (selectedData) {
-      tweenedY.set(selectedData.years.map((d) => d.percent_with_punc));
+      if ($selectedMetric == "Percent") {
+        tweenedY.set(selectedData.years.map((d) => d.percent_with_punc));
+      } else if ($selectedMetric == "Number") {
+        tweenedY.set(selectedData.years.map((d) => d.count_with_punc));
+      }
     }
   }
 </script>

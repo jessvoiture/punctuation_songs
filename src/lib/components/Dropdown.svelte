@@ -1,24 +1,9 @@
 <script>
-  import { selectedOption } from "../../stores";
-
-  const options = [
-    "parentheses",
-    "apostrophe",
-    "comma",
-    "period",
-    "exclamation",
-    "question",
-    "slash",
-    "dash",
-    "ellipses",
-    "colons",
-    "quote",
-    "asterisk",
-    "ampersand",
-  ];
+  export let value; // Store passed as a prop
+  export let options; // Dropdown options
 </script>
 
-<select bind:value={$selectedOption}>
+<select bind:value={$value}>
   {#each options as option}
     <option value={option}>{option}</option>
   {/each}
