@@ -5,6 +5,7 @@
 
   import List from "./List.svelte";
   import YearsSongList from "./YearsSongList.svelte";
+  import Insight from "./Insight.svelte";
   import { selectedOption, clickedYear } from "../../stores";
 
   export let data;
@@ -67,9 +68,13 @@
 
   {#if isDrawerExpanded}
     <div class="drawer-content">
-      {#each showingData as year}
-        <YearsSongList {year} />
-      {/each}
+      <Insight />
+
+      <div class="song-list-wrapper">
+        {#each showingData as year}
+          <YearsSongList {year} />
+        {/each}
+      </div>
     </div>
   {/if}
 </div>
@@ -89,9 +94,12 @@
   }
 
   .drawer-content {
-    padding: 20px;
+    padding: 8px 20px 20px 20px;
     overflow-y: auto;
     max-height: calc(95vh - 60px);
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
   }
 
   .drawer-label {
