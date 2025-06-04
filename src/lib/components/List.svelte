@@ -41,8 +41,6 @@
       }
     }, 500);
   }
-
-  $: console.log($includeKeywordsParantheses);
 </script>
 
 <div class="details-wrapper">

@@ -24,8 +24,6 @@
   export let screenWidth;
   export let screenHeight;
 
-  console.log(data);
-
   let tweenedY;
   let yMax;
   let height;
@@ -36,8 +34,6 @@
   let xticks;
   let showingData = data;
   let yExtent;
-
-  $: console.log("showingData:", showingData);
 
   $: if (screenWidth <= 860) {
     height = 0.6 * screenHeight;
@@ -71,17 +67,13 @@
   $: yticks = yScale.ticks(3);
   $: xticks = xScale.ticks(4);
 
-  $: console.log(showingData);
-
   $: {
     let selectedData;
 
-    if ($includeKeywordsParantheses) {
+    if ($includeKeywordsParantheses && $selectedOption === "parentheses") {
       selectedData = data.find(
         (item) => item.type === "parantheses_no_keywords",
       );
-
-      console.log(data);
     } else {
       selectedData = data.find((item) => item.type === $selectedOption);
     }

@@ -21,8 +21,6 @@
   ];
 
   const metric_options = ["Percent", "Number"];
-
-  $: console.log($selectedMetric);
 </script>
 
 {#if screenWidth > 0}
