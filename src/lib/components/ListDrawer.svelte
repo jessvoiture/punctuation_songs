@@ -11,7 +11,7 @@
   export let screenHeight;
 
   let expandedHeight = screenHeight * 0.95;
-  let collapsedHeight = 60;
+  let collapsedHeight = 50;
 
   let showingData = data.find((d) => d.type === "parantheses")?.years || [];
   $: showingData = data.find((d) => d.type === $selectedOption)?.years || [];
@@ -117,7 +117,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 10px 20px;
+    padding: 15px 20px;
     cursor: pointer;
   }
 

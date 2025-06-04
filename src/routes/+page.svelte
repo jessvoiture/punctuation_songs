@@ -61,17 +61,18 @@
     width: fit-content;
   }
 
+  /* small screens */
   @media (max-width: 860px) {
     .container {
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100%;
+      height: calc(100vh - 80px);
       width: 100%;
       flex-direction: column;
       align-content: center;
       gap: 10%;
-      margin-top: 32px;
+      margin-top: 16px;
     }
 
     .chart-wrapper {
@@ -84,6 +85,7 @@
     }
   }
 
+  /* big screens */
   @media (min-width: 861px) {
     .container {
       align-items: flex-start;
