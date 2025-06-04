@@ -65,7 +65,7 @@
   @media (max-width: 860px) {
     .container {
       display: flex;
-      justify-content: center;
+      justify-content: start;
       align-items: center;
       height: calc(100vh - 80px);
       width: 100%;
@@ -78,7 +78,7 @@
     .chart-wrapper {
       display: flex;
       flex-direction: column;
-      gap: 24px;
+      gap: 12px;
       flex-basis: auto;
       width: fit-content;
       max-width: 90%;
