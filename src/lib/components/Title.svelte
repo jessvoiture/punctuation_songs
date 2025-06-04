@@ -49,19 +49,4 @@
     gap: 8px;
     width: 100%;
   }
-
-  h1 {
-    margin: 0;
-    font-size: 24px;
-    font-family: sans-serif;
-  }
-
-  h2 {
-    margin: 0;
-    font-size: 20px;
-    font-family: sans-serif;
-    font-weight: normal;
-    color: #8c8c8c;
-    line-height: 1.2;
-  }
 </style>

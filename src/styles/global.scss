@@ -16,3 +16,38 @@ text {
 button {
   color: #000;
 }
+
+h1 {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+h2 {
+  margin: 0;
+  font-family: sans-serif;
+  font-weight: normal;
+  color: #8c8c8c;
+  line-height: 1.2;
+}
+
+/* small screens */
+@media (max-width: 860px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+}
+
+/* big screens */
+@media (min-width: 861px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+}

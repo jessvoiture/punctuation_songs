@@ -36,7 +36,7 @@
   let yExtent;
 
   $: if (screenWidth <= 860) {
-    height = 0.6 * screenHeight;
+    height = screenHeight - 240;
     width = 0.9 * screenWidth;
   } else {
     height = 0.75 * screenHeight;
