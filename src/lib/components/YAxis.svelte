@@ -15,10 +15,7 @@
       text-anchor="start"
       fill="#2c2c2c"
       class="y-axis-text"
-      >{t}
-      {#if $selectedMetric === "Percent"}
-        %
-      {/if}
+      >{t}{#if $selectedMetric === "Percent"}%{/if}
     </text>
   {/each}
 </g>
