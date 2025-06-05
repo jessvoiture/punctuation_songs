@@ -19,6 +19,7 @@
   import Tooltip from "./Tooltip.svelte";
   import Bars from "./Bars.svelte";
   import YAxis from "./YAxis.svelte";
+  import StackedBars from "./StackedBars.svelte";
 
   export let data;
   export let screenWidth;
@@ -105,15 +106,26 @@
           {/each}
         </g>
 
-        <Bars
-          tweenedY={$tweenedY}
-          {xScale}
-          {yScale}
-          {showingData}
-          paddingLeft={padding.left}
-          {innerWidth}
-          {innerHeight}
-        />
+        <g class="bars" transform={`translate(${padding.left}, 0)`}>
+          {#if $selectedMetric == "Percent"}
+            <Bars
+              tweenedY={$tweenedY}
+              {xScale}
+              {yScale}
+              {showingData}
+              {innerWidth}
+              {innerHeight}
+            />
+          {:else if $selectedMetric == "Number"}
+            <StackedBars
+              tweenedY={$tweenedY}
+              {xScale}
+              {showingData}
+              {innerWidth}
+              {innerHeight}
+            />
+          {/if}
+        </g>
       </g>
     </svg>
   {/if}

@@ -13,7 +13,6 @@
   export let xScale;
   export let yScale;
   export let showingData;
-  export let paddingLeft;
   export let innerWidth;
   export let innerHeight;
 
@@ -53,43 +52,43 @@
   };
 </script>
 
-<g class="bars" transform={`translate(${paddingLeft}, 0)`}>
-  {#each showingData as d, i}
-    <!-- svelte-ignore a11y_no_noninteractive_element_interactions -->
-    <rect
-      x={xScale(d.year)}
-      y={yScale(tweenedY[i])}
-      id={d.year}
-      width={rectWidth}
-      height={innerHeight - yScale(tweenedY[i])}
-      fill={"#58b8db"}
-      class={"chart-bar"}
-      class:hovered={$isDataHovered & ($hoveredDataYear == d.year)}
-      aria-label="{d.percent_with_punc}% of songs in {d.year} contain {$selectedOption}."
-      role="graphics-object"
-      on:mouseover={function (event) {
-        handleMouseover(event, d);
-      }}
-      on:mouseout={function () {
-        handleMouseout();
-      }}
-      on:focus={function (event) {
-        handleFocus(event, d);
-      }}
-      on:blur={function () {
-        handleMouseout();
-      }}
-      on:click={function (event) {
-        onClick(event, d);
-      }}
-      on:keydown={function (event) {
-        if (event.key === "Enter" || event.key === " ") {
-          onClick(d);
-        }
-      }}
-    />
-  {/each}
-</g>
+{#each showingData as d, i}
+  <!-- svelte-ignore a11y_no_noninteractive_element_interactions -->
+  <rect
+    in:slide={{ delay: 500 + j * 100 }}
+    out:fade={{ duration: 800 }}
+    x={xScale(d.year)}
+    y={yScale(tweenedY[i])}
+    id={d.year}
+    width={rectWidth}
+    height={innerHeight - yScale(tweenedY[i])}
+    fill={"#58b8db"}
+    class={"chart-bar"}
+    class:hovered={$isDataHovered & ($hoveredDataYear == d.year)}
+    aria-label="{d.percent_with_punc}% of songs in {d.year} contain {$selectedOption}."
+    role="graphics-object"
+    on:mouseover={function (event) {
+      handleMouseover(event, d);
+    }}
+    on:mouseout={function () {
+      handleMouseout();
+    }}
+    on:focus={function (event) {
+      handleFocus(event, d);
+    }}
+    on:blur={function () {
+      handleMouseout();
+    }}
+    on:click={function (event) {
+      onClick(event, d);
+    }}
+    on:keydown={function (event) {
+      if (event.key === "Enter" || event.key === " ") {
+        onClick(d);
+      }
+    }}
+  />
+{/each}
 
 <style>
   .chart-bar {

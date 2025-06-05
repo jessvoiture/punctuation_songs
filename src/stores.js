@@ -10,3 +10,4 @@ export const isDataHovered = writable(false);
 export const clickedYear = writable(undefined);
 export const isDrawerExpanded = writable(false);
 export const includeKeywordsParantheses = writable(false);
+export const showingData = writable([])
