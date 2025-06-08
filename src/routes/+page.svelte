@@ -4,6 +4,7 @@
   import List from "$lib/components/List.svelte";
   import Title from "$lib/components/Title.svelte";
   import ListDrawer from "$lib/components/ListDrawer.svelte";
+  import ListWrapper from "$lib/components/ListWrapper.svelte";
   import { selectedOption, includeKeywordsParantheses } from "../stores.js";
   import { slide } from "svelte/transition";
 
@@ -35,11 +36,7 @@
     <BarChart data={songs} {screenWidth} {screenHeight} />
   </div>
 
-  {#if screenWidth >= 860}
-    <List data={songs} {screenWidth} />
-  {:else if screenWidth < 860}
-    <ListDrawer data={songs} {screenHeight} />
-  {/if}
+  <ListWrapper {screenWidth} data={songs} {screenHeight} />
 </div>
 
 <style>

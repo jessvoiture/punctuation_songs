@@ -8,14 +8,14 @@
   import ParenthesesToggle from "./ParenthesesToggle.svelte";
   import { selectedOption, clickedYear } from "../../stores";
 
-  export let data;
   export let screenHeight;
+  export let showingData;
 
   let expandedHeight = screenHeight * 0.95;
   let collapsedHeight = 50;
 
-  let showingData = data.find((d) => d.type === "parantheses")?.years || [];
-  $: showingData = data.find((d) => d.type === $selectedOption)?.years || [];
+  // let showingData = data.find((d) => d.type === "parantheses")?.years || [];
+  // $: showingData = data.find((d) => d.type === $selectedOption)?.years || [];
 
   $: expandedHeight = screenHeight * 0.95;
 

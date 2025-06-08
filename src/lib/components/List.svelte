@@ -11,14 +11,19 @@
   import YearsSongList from "./YearsSongList.svelte";
   import ParenthesesToggle from "./ParenthesesToggle.svelte";
 
-  export let data;
+  export let showingData;
   export let screenWidth;
 
   let showingSongList = false;
   let buttonText = "Show songs";
 
-  let showingData = data.find((d) => d.type === "parentheses")?.years || [];
-  $: showingData = data.find((d) => d.type === $selectedOption)?.years || [];
+  // let showingData = data.find((d) => d.type === "parentheses")?.years || [];
+  // $: if ($includeKeywordsParantheses && $selectedOption === "parentheses") {
+  //   showingData =
+  //     data.find((item) => item.type === "parantheses_no_keywords")?.years || [];
+  // } else {
+  //   showingData = data.find((d) => d.type === $selectedOption)?.years || [];
+  // }
 
   $: buttonText = showingSongList ? "Hide songs" : "Show songs";
 
