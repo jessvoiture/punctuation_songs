@@ -14,9 +14,6 @@
   let expandedHeight = screenHeight * 0.95;
   let collapsedHeight = 50;
 
-  // let showingData = data.find((d) => d.type === "parantheses")?.years || [];
-  // $: showingData = data.find((d) => d.type === $selectedOption)?.years || [];
-
   $: expandedHeight = screenHeight * 0.95;
 
   let isDrawerExpanded = false;
