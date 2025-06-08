@@ -5,7 +5,7 @@
 
   import List from "./List.svelte";
   import YearsSongList from "./YearsSongList.svelte";
-  import Insight from "./Insight.svelte";
+  import ParenthesesToggle from "./ParenthesesToggle.svelte";
   import { selectedOption, clickedYear } from "../../stores";
 
   export let data;
@@ -68,8 +68,6 @@
 
   {#if isDrawerExpanded}
     <div class="drawer-content">
-      <Insight />
-
       <div class="song-list-wrapper">
         {#each showingData as year}
           <YearsSongList {year} />
@@ -139,5 +137,11 @@
     z-index: 10; /* Ensure it sits behind the drawer */
     opacity: 1;
     pointer-events: none; /* Prevent interaction when invisible */
+  }
+
+  .song-list-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
   }
 </style>

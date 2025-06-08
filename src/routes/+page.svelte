@@ -4,6 +4,8 @@
   import List from "$lib/components/List.svelte";
   import Title from "$lib/components/Title.svelte";
   import ListDrawer from "$lib/components/ListDrawer.svelte";
+  import { selectedOption, includeKeywordsParantheses } from "../stores.js";
+  import { slide } from "svelte/transition";
 
   export let data;
 

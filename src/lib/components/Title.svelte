@@ -1,6 +1,11 @@
 <script>
+  import { slide } from "svelte/transition";
   import Dropdown from "./Dropdown.svelte";
-  import { selectedOption, selectedMetric } from "../../stores";
+  import {
+    selectedOption,
+    selectedMetric,
+    includeKeywordsParantheses,
+  } from "../../stores";
 
   export let screenWidth;
 
@@ -38,6 +43,14 @@
       {/if}
       new charting songs per year in the Billboard Hot 100 with {$selectedOption}
     </h2>
+
+    {#if ($selectedOption === "parentheses") & (screenWidth < 860)}
+      <label transition:slide>
+        <input type="checkbox" bind:checked={$includeKeywordsParantheses} />
+        Hide songs where parentheses are used for attribution, feature credit, or
+        version
+      </label>
+    {/if}
   </div>
 {/if}
 

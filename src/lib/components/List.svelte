@@ -9,7 +9,7 @@
     includeKeywordsParantheses,
   } from "../../stores";
   import YearsSongList from "./YearsSongList.svelte";
-  import Insight from "./Insight.svelte";
+  import ParenthesesToggle from "./ParenthesesToggle.svelte";
 
   export let data;
   export let screenWidth;
@@ -50,7 +50,7 @@
     <div class="details-header">
       <div id="commentary" class="body-text">Intelligent insight.</div>
 
-      <Insight />
+      <ParenthesesToggle />
 
       <button on:click={toggleSongList} class="toggle-button">
         {buttonText}
