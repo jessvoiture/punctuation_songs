@@ -27,6 +27,8 @@
     mouseX.set(event.clientX);
     mouseY.set(event.clientY);
     isDataHovered.set(true);
+
+    console.log(d);
   };
 
   const handleFocus = function (event, d) {

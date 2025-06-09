@@ -60,7 +60,14 @@
   );
   $: yMax = max($tweenedY);
 
-  $: showingData = data.find((d) => d.type === $selectedOption)?.years || [];
+  $: if ($includeKeywordsParantheses && $selectedOption === "parentheses") {
+    showingData =
+      data.find((item) => item.type === "parantheses_no_keywords")?.years || [];
+  } else {
+    showingData =
+      data.find((item) => item.type === $selectedOption)?.years || [];
+  }
+
   $: yExtent = extent(showingData.map((d) => d.year));
 
   $: xScale = scaleLinear().domain([1958, 2026]).range([0, innerWidth]);
@@ -90,6 +97,7 @@
         tweenedY.set(selectedData.years.map((d) => d.count_with_punc));
       }
     }
+    console.log(selectedData);
   }
 </script>
 
