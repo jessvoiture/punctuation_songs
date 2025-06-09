@@ -25,8 +25,9 @@
   export let screenWidth;
   export let screenHeight;
 
-  let tweenedY;
-  let yMax;
+  // let tweenedYPercent;
+  // let tweenedYCount;
+  let yMax = 0;
   let height;
   let width;
   let innerWidth;
@@ -34,7 +35,6 @@
   let yticks;
   let xticks;
   let showingData = data;
-  let yExtent;
 
   $: if (screenWidth <= 860) {
     height = screenHeight - 240;
@@ -48,16 +48,38 @@
   $: innerWidth = width - padding.left - padding.right;
   $: innerHeight = height - padding.top - padding.bottom;
 
-  $: tweenedY = tweened(
+  const tweenedYPercent = tweened(
     data
       .find((item) => item.type == "parentheses")
       .years.map((d) => d.percent_with_punc),
     { duration: 2000, easing: cubicInOut },
   );
-  $: yMax = max($tweenedY);
+
+  const tweenedYCount = tweened(
+    data.find((item) => item.type == "parentheses").years.map(() => 0),
+    { duration: 2000, easing: cubicInOut },
+  );
 
   $: showingData = data.find((d) => d.type === $selectedOption)?.years || [];
-  $: yExtent = extent(showingData.map((d) => d.year));
+
+  $: selectedData =
+    $includeKeywordsParantheses && $selectedOption === "parentheses"
+      ? data.find((item) => item.type === "parantheses_no_keywords")
+      : data.find((item) => item.type === $selectedOption);
+
+  $: if (selectedData) {
+    if ($selectedMetric == "Percent") {
+      const values = selectedData.years.map((d) => d.percent_with_punc);
+      tweenedYPercent.set(values);
+      tweenedYCount.set(values.map(() => 0));
+      yMax = max(values);
+    } else if ($selectedMetric == "Number") {
+      const values = selectedData.years.map((d) => d.count_with_punc);
+      tweenedYCount.set(values);
+      tweenedYPercent.set(values.map(() => 0));
+      yMax = max(values);
+    }
+  }
 
   $: xScale = scaleLinear().domain([1958, 2026]).range([0, innerWidth]);
 
@@ -67,26 +89,6 @@
 
   $: yticks = yScale.ticks(3);
   $: xticks = xScale.ticks(4);
-
-  $: {
-    let selectedData;
-
-    if ($includeKeywordsParantheses && $selectedOption === "parentheses") {
-      selectedData = data.find(
-        (item) => item.type === "parantheses_no_keywords",
-      );
-    } else {
-      selectedData = data.find((item) => item.type === $selectedOption);
-    }
-
-    if (selectedData) {
-      if ($selectedMetric == "Percent") {
-        tweenedY.set(selectedData.years.map((d) => d.percent_with_punc));
-      } else if ($selectedMetric == "Number") {
-        tweenedY.set(selectedData.years.map((d) => d.count_with_punc));
-      }
-    }
-  }
 </script>
 
 <div class="bar-chart">
@@ -109,7 +111,7 @@
         <g class="bars" transform={`translate(${padding.left}, 0)`}>
           {#if $selectedMetric == "Percent"}
             <Bars
-              tweenedY={$tweenedY}
+              tweenedY={$tweenedYPercent}
               {xScale}
               {yScale}
               {showingData}
@@ -118,7 +120,7 @@
             />
           {:else if $selectedMetric == "Number"}
             <StackedBars
-              tweenedY={$tweenedY}
+              tweenedY={$tweenedYCount}
               {xScale}
               {showingData}
               {innerWidth}

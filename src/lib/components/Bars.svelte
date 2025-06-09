@@ -55,8 +55,6 @@
 {#each showingData as d, i}
   <!-- svelte-ignore a11y_no_noninteractive_element_interactions -->
   <rect
-    in:slide={{ delay: 500 + j * 100 }}
-    out:fade={{ duration: 800 }}
     x={xScale(d.year)}
     y={yScale(tweenedY[i])}
     id={d.year}
