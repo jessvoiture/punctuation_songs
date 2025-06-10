@@ -9,21 +9,12 @@
     includeKeywordsParantheses,
   } from "../../stores";
   import YearsSongList from "./YearsSongList.svelte";
-  import ParenthesesToggle from "./ParenthesesToggle.svelte";
 
   export let showingData;
   export let screenWidth;
 
   let showingSongList = false;
   let buttonText = "Show songs";
-
-  // let showingData = data.find((d) => d.type === "parentheses")?.years || [];
-  // $: if ($includeKeywordsParantheses && $selectedOption === "parentheses") {
-  //   showingData =
-  //     data.find((item) => item.type === "parantheses_no_keywords")?.years || [];
-  // } else {
-  //   showingData = data.find((d) => d.type === $selectedOption)?.years || [];
-  // }
 
   $: buttonText = showingSongList ? "Hide songs" : "Show songs";
 
@@ -54,8 +45,6 @@
     <!-- this is for intelligent insight and the expand song list button -->
     <div class="details-header">
       <div id="commentary" class="body-text">Intelligent insight.</div>
-
-      <ParenthesesToggle />
 
       <button on:click={toggleSongList} class="toggle-button">
         {buttonText}

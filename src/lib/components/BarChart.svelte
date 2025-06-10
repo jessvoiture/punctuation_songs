@@ -44,7 +44,7 @@
     }
     width = 0.9 * screenWidth;
   } else {
-    height = 0.75 * screenHeight;
+    height = 0.72 * screenHeight;
     width = 0.6 * screenWidth;
   }
 
