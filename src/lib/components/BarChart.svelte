@@ -37,7 +37,6 @@
 
   $: if (screenWidth <= 860) {
     if ($selectedOption === "parentheses") {
-      console.log("yep");
       height = screenHeight - 280;
     } else {
       height = screenHeight - 240;
@@ -97,7 +96,6 @@
         tweenedY.set(selectedData.years.map((d) => d.count_with_punc));
       }
     }
-    console.log(selectedData);
   }
 </script>
 
