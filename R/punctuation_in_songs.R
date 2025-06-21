@@ -43,6 +43,7 @@ ggplot(count_unique_songs_per_year, aes(x = year, y = count_new_songs_in_year)) 
     title = "New charting songs per year"
   )
 
+
 song_length <- df %>%
   mutate(song_char_count = str_count(title_og)) %>%
   group_by(year) %>%
@@ -430,26 +431,6 @@ ggplot(ellipses_pct, aes(x = year, y = percent_with_punc)) +
   theme_minimal() +
   labs(title = 'Billboard charting songs with ... in them')
 
-df_all_punctuation <- data.frame(
-  year = c(1958:2025),
-  parantheses_pct = parantheses_pct$percent_with_punc, 
-  parantheses_no_keywords_pct = parantheses_no_keywords_pct$percent_with_punc,
-  exclamation_pct = exclamation_pct$percent_with_punc,
-  question_pct = question_pct$percent_with_punc,
-  apostrophe_pct = apostrophe_pct$percent_with_punc,
-  period_pct = period_pct$percent_with_punc,
-  comma_pct = comma_pct$percent_with_punc,
-  usd_pct = usd_pct$percent_with_punc,
-  amper_pct = amper_pct$percent_with_punc,
-  dash_pct = dash_pct$percent_with_punc,
-  slash_pct = slash_pct$percent_with_punc,
-  asterisk_pct = asterisk_pct$percent_with_punc,
-  quote_pct = quote_pct$percent_with_punc,
-  colon_pct = colon_pct$percent_with_punc,
-  ellipses_pct = ellipses_pct$percent_with_punc
-) %>%
-  mutate(across(everything(), ~replace_na(., 0)))
-
 df_songs <- rbind(
   parantheses, parantheses_no_keywords, exclamation, question, apostrophe, 
   period, comma, usd, amper, dash, slash, 
@@ -466,7 +447,8 @@ df_all <- df_pcts %>%
   left_join(df_songs, by =c("year", "type"))
 
 nested_json <- df_all %>%
-  group_by(type, year, count_with_punc, percent_with_punc) %>%
+  left_join(count_unique_songs_per_year, by ="year") %>%
+  group_by(type, year, count_with_punc, percent_with_punc, count_new_songs_in_year) %>%
   summarise(
     songs = list(
       lapply(seq_along(title), function(i) list(
@@ -486,6 +468,7 @@ nested_json <- df_all %>%
         year = unbox(year[i]),
         percent_with_punc = unbox(percent_with_punc[i]),
         count_with_punc = unbox(count_with_punc[i]),
+        count_new_songs_in_year = unbox(count_new_songs_in_year[i]),
         songs = songs[[i]]
       ))
     ),

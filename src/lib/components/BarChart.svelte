@@ -25,9 +25,6 @@
   export let screenWidth;
   export let screenHeight;
 
-  // let tweenedYPercent;
-  // let tweenedYCount;
-  let yMax = 0;
   let height;
   let width;
   let innerWidth;
@@ -35,6 +32,24 @@
   let yticks;
   let xticks;
   let showingData = data;
+
+  const maxSongsPerYear = Math.max(
+    ...data.flatMap((item) => item.years.map((y) => y.songs.length)),
+  );
+
+  console.log("Max songs per year:", maxSongsPerYear);
+
+  const yMax = tweened(
+    max(
+      data
+        .find((item) => item.type === "parentheses")
+        .years.map((d) => d.percent_with_punc),
+    ),
+    {
+      duration: 1000,
+      easing: cubicInOut,
+    },
+  );
 
   $: if (screenWidth <= 860) {
     height = screenHeight - 240;
@@ -44,48 +59,30 @@
     width = 0.6 * screenWidth;
   }
 
-  let padding = { top: 20, right: 0, bottom: 30, left: 40 };
+  let padding = { top: 40, right: 0, bottom: 30, left: 40 };
   $: innerWidth = width - padding.left - padding.right;
   $: innerHeight = height - padding.top - padding.bottom;
 
-  const tweenedYPercent = tweened(
-    data
-      .find((item) => item.type == "parentheses")
-      .years.map((d) => d.percent_with_punc),
-    { duration: 2000, easing: cubicInOut },
-  );
+  $: if ($includeKeywordsParantheses && $selectedOption === "parentheses") {
+    showingData =
+      data.find((item) => item.type === "parantheses_no_keywords")?.years || [];
+  } else {
+    showingData =
+      data.find((item) => item.type === $selectedOption)?.years || [];
+  }
 
-  const tweenedYCount = tweened(
-    data.find((item) => item.type == "parentheses").years.map(() => 0),
-    { duration: 2000, easing: cubicInOut },
-  );
-
-  $: showingData = data.find((d) => d.type === $selectedOption)?.years || [];
-
-  $: selectedData =
-    $includeKeywordsParantheses && $selectedOption === "parentheses"
-      ? data.find((item) => item.type === "parantheses_no_keywords")
-      : data.find((item) => item.type === $selectedOption);
-
-  $: if (selectedData) {
+  $: if (showingData.length > 0) {
     if ($selectedMetric == "Percent") {
-      const values = selectedData.years.map((d) => d.percent_with_punc);
-      tweenedYPercent.set(values);
-      tweenedYCount.set(values.map(() => 0));
-      yMax = max(values);
+      const values = showingData.map((d) => d.percent_with_punc);
+      yMax.set(max(values));
     } else if ($selectedMetric == "Number") {
-      const values = selectedData.years.map((d) => d.count_with_punc);
-      tweenedYCount.set(values);
-      tweenedYPercent.set(values.map(() => 0));
-      yMax = max(values);
+      const values = showingData.map((d) => d.count_with_punc);
+      yMax.set(max(values));
     }
   }
 
-  $: xScale = scaleLinear().domain([1958, 2026]).range([0, innerWidth]);
-
-  $: yScale = scaleLinear()
-    .domain([0, yMax * 1.2])
-    .range([innerHeight, 0]);
+  $: xScale = scaleLinear().domain([1958, 2025]).range([0, innerWidth]);
+  $: yScale = scaleLinear().domain([0, $yMax]).range([innerHeight, 0]);
 
   $: yticks = yScale.ticks(3);
   $: xticks = xScale.ticks(4);
@@ -109,24 +106,21 @@
         </g>
 
         <g class="bars" transform={`translate(${padding.left}, 0)`}>
-          {#if $selectedMetric == "Percent"}
-            <Bars
-              tweenedY={$tweenedYPercent}
-              {xScale}
-              {yScale}
-              {showingData}
-              {innerWidth}
-              {innerHeight}
-            />
-          {:else if $selectedMetric == "Number"}
-            <StackedBars
-              tweenedY={$tweenedYCount}
-              {xScale}
-              {showingData}
-              {innerWidth}
-              {innerHeight}
-            />
-          {/if}
+          <foreignObject x="0" y="0" width={innerWidth} height={innerHeight}>
+            <div
+              xmlns="http://www.w3.org/1999/xhtml"
+              style="margin:0; padding:0; background:none; width:100%; height:100%;"
+            >
+              <StackedBars
+                {xScale}
+                {yScale}
+                {showingData}
+                {innerWidth}
+                {innerHeight}
+                {maxSongsPerYear}
+              />
+            </div>
+          </foreignObject>
         </g>
       </g>
     </svg>
