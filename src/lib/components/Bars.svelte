@@ -97,6 +97,7 @@
     transition:
       opacity 0.2s ease-in-out,
       fill 0.2s ease-in-out;
+    cursor: pointer;
   }
 
   .hovered {
