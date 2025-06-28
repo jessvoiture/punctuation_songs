@@ -55,3 +55,12 @@ h2 {
 label {
   font-family: sans-serif;
 }
+
+#main-layout,
+#app,
+.page-container,
+etc {
+  height: 100%;
+  display: flex;
+  flex-direction: column; /* if needed */
+}

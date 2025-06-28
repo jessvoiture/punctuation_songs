@@ -44,6 +44,7 @@
     display: flex;
     justify-content: center;
     width: 100%;
+    height: 100%;
     align-content: flex-start;
     gap: 10%;
     max-width: 100%;

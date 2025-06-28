@@ -9,10 +9,15 @@
     includeKeywordsParantheses,
   } from "../../stores";
   import YearsSongList from "./YearsSongList.svelte";
+  import { insight } from "../../utils/insight.js";
+  import { highlightBySelectedOption } from "../../utils/highlightRegex.js";
 
   export let showingData;
   export let screenWidth;
 
+  $: selectedInsight = insight.find((d) => d.type === $selectedOption);
+
+  console.log(selectedInsight);
   let showingSongList = false;
   let buttonText = "Show songs";
 
@@ -26,6 +31,10 @@
 
   function toggleSongList() {
     showingSongList = !showingSongList;
+
+    if (showingSongList) {
+      scrollToYear(1958);
+    }
   }
 
   function scrollToYear(year) {
@@ -41,73 +50,45 @@
 </script>
 
 <div class="details-wrapper">
-  <div class="details">
-    <!-- this is for intelligent insight and the expand song list button -->
-    <div class="details-header">
-      <div id="commentary" class="body-text">Intelligent insight.</div>
+  <div id="commentary" class="body-text">
+    {@html selectedInsight.copy}
+  </div>
 
-      <button on:click={toggleSongList} class="toggle-button">
-        {buttonText}
-        <i class="material-icons chevron" class:opened={showingSongList}>
-          keyboard_arrow_down
-        </i>
-      </button>
-    </div>
+  <div class="button-wrapper">
+    <button on:click={toggleSongList} class="toggle-button">
+      {buttonText}
+      <i class="material-icons chevron" class:opened={showingSongList}>
+        keyboard_arrow_down
+      </i>
+    </button>
+  </div>
 
-    <!-- this is the song list -->
-    <!-- if clause is inside so that div takes up space -->
-    <div class="song-list-wrapper">
-      {#if showingSongList}
-        <div class="body-text list" transition:fade>
-          <!-- for each year -->
-          {#each showingData as year}
-            <YearsSongList {year} {screenWidth} />
-          {/each}
-        </div>
-      {/if}
-    </div>
+  <div class="song-list-wrapper">
+    {#if showingSongList}
+      <div class="body-text list" transition:fade>
+        {#each showingData as year}
+          <YearsSongList {year} {screenWidth} />
+        {/each}
+      </div>
+    {/if}
   </div>
 </div>
 
 <style>
   .details-wrapper {
-    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: auto;
     font-family: sans-serif;
-    font-size: 14px;
-    display: flex;
-    flex-direction: column;
-    align-content: flex-start;
-    justify-content: flex-start;
-    align-items: flex-start;
-    height: 100%;
-    flex-grow: 1;
-    overflow: hidden;
-  }
-
-  .details-header {
-    position: sticky;
-    top: 0;
-    padding-bottom: 16px;
-    background-color: #fff;
     font-size: 16px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    padding-right: 80px;
-  }
-
-  .details {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+    line-height: 20px;
+    padding-right: 40px;
   }
 
   .song-list-wrapper {
+    flex-grow: 1;
     margin-bottom: 48px;
-    overflow-y: auto;
-    max-height: 100%;
-    padding-right: 40px;
   }
 
   .list {
@@ -116,20 +97,27 @@
     gap: 24px;
   }
 
+  .button-wrapper {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 10;
+    padding: 16px 0px;
+  }
+
   .toggle-button {
     background: none;
     border: none;
-    font-size: 14px;
+    font-size: 16px;
+    line-height: 20px;
     font-family: sans-serif;
     display: flex;
     align-items: center;
-    gap: 8px;
-    cursor: pointer;
     gap: 4px;
+    cursor: pointer;
     padding: 4px 8px;
     border-radius: 8px;
-    justify-content: space-between;
-    width: 120px;
   }
 
   .toggle-button:hover {
@@ -139,8 +127,6 @@
   .chevron {
     font-size: 16px;
     color: inherit;
-    background: none;
-    border: none;
     transition: transform 0.5s ease;
   }
 

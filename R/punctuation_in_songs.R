@@ -203,7 +203,15 @@ ggplot(colon_pct, aes(x = year, y = percent_with_punc)) +
 comma <- df %>%
   filter(str_detect(title, ",")) %>%
   select(title, performer, title_og, performer_og, chart_week, year) %>%
-  mutate(type = "comma")
+  mutate(type = "comma") %>%
+  # group_by(performer) %>%
+  # summarise(count= n())
+  # separate_wider_delim(title, delim = ",", names = c("first", "second"), too_many = "drop") %>%
+  # mutate_all(str_trim) %>%
+  # mutate(repeats = if_else(first == second, T, F)) %>%
+  # filter(repeats) %>%
+  # group_by(year) %>%
+  # summarise(count = n())
  
 comma_pct <- comma %>%
   group_by(year, type) %>%
@@ -245,29 +253,6 @@ ggplot(period_pct, aes(x = year, y = percent_with_punc)) +
   geom_col() +
   theme_minimal() +
   labs(title = "Billboard charting songs with . in them")
-
-usd <- df %>%
-  filter(str_detect(title, "\\$")) %>%
-  select(title, performer, title_og, performer_og, chart_week, year) %>%
-  mutate(type = "usd")
-
-usd_pct <- usd %>%
-  group_by(year, type) %>%
-  summarise(count_with_punc = n()) %>%
-  ungroup() %>%
-  left_join(count_unique_songs_per_year, by = "year") %>%
-  mutate(percent_with_punc = count_with_punc / count_new_songs_in_year * 100) %>%
-  complete(year = full_seq(1958:2025, 1), 
-           fill = list(
-             percent_with_punc = 0, 
-             count_with_punc = 0,
-             type = "usd")) %>%
-  select(year, type, count_with_punc, percent_with_punc)
-
-ggplot(usd_pct, aes(x = year, y = percent_with_punc)) +
-  geom_col() +
-  theme_minimal() +
-  labs(title = "Billboard charting songs with $ in them")
 
 amper <- df %>%
   filter(str_detect(title, "\\&")) %>%
