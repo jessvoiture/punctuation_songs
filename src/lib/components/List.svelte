@@ -10,14 +10,12 @@
   } from "../../stores";
   import YearsSongList from "./YearsSongList.svelte";
   import { insight } from "../../utils/insight.js";
-  import { highlightBySelectedOption } from "../../utils/highlightRegex.js";
 
   export let showingData;
   export let screenWidth;
 
   $: selectedInsight = insight.find((d) => d.type === $selectedOption);
 
-  console.log(selectedInsight);
   let showingSongList = false;
   let buttonText = "Show songs";
 

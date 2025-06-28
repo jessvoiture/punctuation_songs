@@ -6,6 +6,7 @@
   import List from "./List.svelte";
   import YearsSongList from "./YearsSongList.svelte";
   import ParenthesesToggle from "./ParenthesesToggle.svelte";
+  import { insight } from "../../utils/insight.js";
   import { selectedOption, clickedYear } from "../../stores";
 
   export let screenHeight;
@@ -14,6 +15,7 @@
   let expandedHeight = screenHeight * 0.95;
   let collapsedHeight = 50;
 
+  $: selectedInsight = insight.find((d) => d.type === $selectedOption);
   $: expandedHeight = screenHeight * 0.95;
 
   let isDrawerExpanded = false;
@@ -65,6 +67,10 @@
 
   {#if isDrawerExpanded}
     <div class="drawer-content">
+      <div id="commentary" class="body-text">
+        {@html selectedInsight.copy}
+      </div>
+
       <div class="song-list-wrapper">
         {#each showingData as year}
           <YearsSongList {year} />
