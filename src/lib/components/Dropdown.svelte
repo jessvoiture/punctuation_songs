@@ -4,8 +4,8 @@
 </script>
 
 <select bind:value={$value}>
-  {#each options as option}
-    <option value={option}>{option}</option>
+  {#each options as d}
+    <option value={d.option}>{d.displayOption}</option>
   {/each}
 </select>
 

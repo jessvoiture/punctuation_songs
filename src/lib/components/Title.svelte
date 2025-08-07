@@ -11,22 +11,25 @@
   export let screenWidth;
 
   const punc_options = [
-    "parentheses",
-    "apostrophe",
-    "comma",
-    "period",
-    "exclamation",
-    "question",
-    "slash",
-    "dash",
-    "ellipses",
-    "colons",
-    "quote",
-    "asterisk",
-    "ampersand",
+    { option: "parentheses", displayOption: "parentheses" },
+    { option: "apostrophe", displayOption: "an apostrophe" },
+    { option: "comma", displayOption: "a comma" },
+    { option: "period", displayOption: "a period" },
+    { option: "exclamation", displayOption: "an exclamation mark" },
+    { option: "question", displayOption: "a question mark" },
+    { option: "slash", displayOption: "a slash" },
+    { option: "dash", displayOption: "a dash" },
+    { option: "ellipses", displayOption: "ellipses" },
+    { option: "colons", displayOption: "a colon" },
+    { option: "quote", displayOption: "a quote" },
+    { option: "asterisk", displayOption: "an asterisk" },
+    { option: "ampersand", displayOption: "an ampersand" },
   ];
 
-  const metric_options = ["Percent", "Number"];
+  const metric_options = [
+    { option: "Percent", displayOption: "Percent" },
+    { option: "Number", displayOption: "Number" },
+  ];
 </script>
 
 {#if screenWidth > 0}
