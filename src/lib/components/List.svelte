@@ -131,4 +131,8 @@
   .opened {
     transform: rotate(-180deg);
   }
+
+  #commentary {
+    color: #636363;
+  }
 </style>

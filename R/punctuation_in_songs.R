@@ -155,9 +155,12 @@ ggplot(exclamation_pct, aes(x = year, y = percent_with_punc)) +
   labs(title = "Billboard charting songs with ! in them")
 
 apostrophe <- df %>%
-  filter(str_detect(title, "'")) %>%
+  # filter(str_detect(title, "'")) %>%
+  filter(str_detect(title, "taylor's")) %>%
   select(title, performer, title_og, performer_og, chart_week, year) %>%
-  mutate(type = "apostrophe")
+  mutate(type = "apostrophe") %>%
+  group_by(year) %>%
+  summarise(count = n())
 
 apostrophe_pct <- apostrophe %>%
   group_by(year, type) %>%
@@ -234,7 +237,8 @@ ggplot(comma_pct, aes(x = year, y = percent_with_punc)) +
 period <- df %>%
   filter(str_detect(title, "\\.")) %>%
   select(title, performer,title_og, performer_og,  chart_week, year) %>%
-  mutate(type = "period")
+  mutate(type = "period") %>%
+  mutate(contains_usa = str_detect(title, "U\\.S\\.A\\."))
 
 period_pct <- period %>%
   group_by(year, type) %>%
@@ -256,6 +260,7 @@ ggplot(period_pct, aes(x = year, y = percent_with_punc)) +
 
 amper <- df %>%
   filter(str_detect(title, "\\&")) %>%
+  # filter(str_detect(title, " and ")) %>%
   select(title, performer, title_og, performer_og, chart_week, year) %>%
   mutate(type = "ampersand")
 
@@ -301,7 +306,9 @@ ggplot(hash_pct, aes(x = year, y = percent_with_punc)) +
   labs(title = "Billboard charting songs with # in them")
 
 dash <- df %>%
-  filter(str_detect(title, "-")) %>%
+  filter(str_detect(title, "[-–—]")) %>%
+  # filter(!(str_detect(title, "- part") | str_detect(title, "- pt") 
+  #        | str_detect(title, "-pt") | str_detect(title, "-part"))) %>%
   select(title, performer, title_og, performer_og, chart_week, year) %>%
   mutate(type = "dash")
 

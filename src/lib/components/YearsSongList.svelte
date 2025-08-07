@@ -24,6 +24,7 @@
   <!-- svelte-ignore a11y_mouse_events_have_key_events -->
   <div
     class="year-group"
+    id={`year-${year.year}`}
     on:mouseover={() => onMouseover(year.year)}
     on:mouseout={onMouseout}
     class:hovered={($hoveredDataYear === year.year) & isScreenWide}
@@ -66,9 +67,10 @@
   }
 
   .song-item {
-    gap: 4px;
+    gap: 2px;
     display: flex;
     flex-direction: column;
+    font-size: 14px;
   }
 
   .song-performer {
@@ -83,6 +85,7 @@
     border-radius: 8px;
     background-color: #fff;
     transition: background-color 0.3s ease;
+    scroll-margin-top: 52px;
   }
 
   .hovered {
