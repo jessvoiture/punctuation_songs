@@ -9,8 +9,8 @@ export const insight = [
   },
   {
     type: "apostrophe",
-    copy: `Much like the surge in the appearance of parentheses in the 1980s and 90s, apostrophe usage boomed due to songs putting soundtrack attribution in the titles. In the 1980s, as soundtrack albums gained in popularity song titles used quotation marks to stylise the film name, such as Madonna’s <span style="font-style: italic; color: black;">Don't Cry For Me Argentina (From "Evita").</span> In this time, soundtrack albums saw a massive rise in popularity, driven by the commercial synergy between movie studios and their music publishing divisions. Music became a powerful promotional tool for films, with major hits like Prince’s <span style="font-style: italic; color: black;">Purple Rain</span> and Christopher Cross’s <span style="font-style: italic; color: black;">“Arthur’s Theme”.</span><br /><br />
-     The trend exploded in the 1990s, which some have dubbed the <a href="https://www.huffingtonpost.co.uk/entry/90s-last-decade-great-soundtracks_n_6268074ae4b0ea625c0d0597">“last great decade for film soundtracks”.</a> Todd “Stereo” Williams in conversation with Candice Frederick, writing for HuffPost, notes that the success of film soundtracks in the 90s can be attributed to, “a cross-pollination of Black labels really coming to the fore, Black filmmakers coming to the fore and hip-hop coming to the fore.”`,
+    copy: `Apostrophes are fairly common in song titles, as they are in general, though their usage has dropped off since the turn of the century. This is largely due to less songs featuring contractions.  <br /><br />
+    The uptick in apostrophe frequency in 2021 and 2023 is thanks to Taylor Swift’s re-recordings which feature the distinctive and iconic tag “(Taylor’s Version)”. Taylor’s versions of songs accounted for 35 (43%) and 41 (50%) of all songs with apostrophes in 2021 and 2023 respectively.`,
   },
   {
     type: "comma",
