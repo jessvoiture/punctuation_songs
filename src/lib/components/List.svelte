@@ -48,7 +48,6 @@
   }
 </script>
 
-<!-- <div class="details-wrapper"> -->
 <!-- svelte-ignore a11y_no_static_element_interactions -->
 <!-- svelte-ignore a11y_click_events_have_key_events -->
 <div class="tabs">
@@ -82,8 +81,6 @@
     </div>
   {/if}
 </div>
-
-<!-- </div> -->
 
 <style>
   .song-list-wrapper {

@@ -71,15 +71,6 @@
   {#if isDrawerExpanded}
     <div class="drawer-content">
       <List {showingData} {screenWidth} />
-      <!-- <div id="commentary" class="body-text">
-        {@html selectedInsight.copy}
-      </div>
-
-      <div class="song-list-wrapper">
-        {#each showingData as year}
-          <YearsSongList {year} />
-        {/each}
-      </div> -->
     </div>
   {/if}
 </div>
@@ -145,11 +136,5 @@
     z-index: 10; /* Ensure it sits behind the drawer */
     opacity: 1;
     pointer-events: none; /* Prevent interaction when invisible */
-  }
-
-  .song-list-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
   }
 </style>
