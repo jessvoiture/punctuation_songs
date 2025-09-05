@@ -45,7 +45,7 @@
       {:else}
         Number of
       {/if}
-      new charting songs per year in the Billboard Hot 100 with {$selectedOption}
+      new charting songs in the Billboard Hot 100 per year
     </h2>
 
     <ParenthesesToggle />
