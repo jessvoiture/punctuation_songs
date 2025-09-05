@@ -11,6 +11,7 @@
 
   export let screenHeight;
   export let showingData;
+  export let screenWidth;
 
   let expandedHeight = screenHeight * 0.95;
   let collapsedHeight = 50;
@@ -45,6 +46,8 @@
       }
     }, 500);
   }
+
+  console.log($drawerHeight);
 </script>
 
 {#if isDrawerExpanded}
@@ -67,7 +70,8 @@
 
   {#if isDrawerExpanded}
     <div class="drawer-content">
-      <div id="commentary" class="body-text">
+      <List {showingData} {screenWidth} />
+      <!-- <div id="commentary" class="body-text">
         {@html selectedInsight.copy}
       </div>
 
@@ -75,7 +79,7 @@
         {#each showingData as year}
           <YearsSongList {year} />
         {/each}
-      </div>
+      </div> -->
     </div>
   {/if}
 </div>
@@ -95,12 +99,13 @@
   }
 
   .drawer-content {
-    padding: 8px 20px 20px 20px;
+    padding: 0px 20px 20px 20px;
     overflow-y: auto;
     max-height: calc(95vh - 60px);
     display: flex;
     flex-direction: column;
     gap: 24px;
+    background-color: #fff;
   }
 
   .drawer-label {

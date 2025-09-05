@@ -18,6 +18,7 @@
 
   let showingSongList = false;
   let buttonText = "Show songs";
+  let activeTab = "words";
 
   $: buttonText = showingSongList ? "Hide songs" : "Show songs";
 
@@ -28,7 +29,7 @@
   });
 
   function toggleSongList() {
-    showingSongList = !showingSongList;
+    activeTab = "songs";
 
     if (showingSongList) {
       scrollToYear(1958);
@@ -36,7 +37,7 @@
   }
 
   function scrollToYear(year) {
-    showingSongList = true;
+    activeTab = "songs";
 
     setTimeout(() => {
       const element = document.getElementById(`year-${year}`);
@@ -47,43 +48,44 @@
   }
 </script>
 
-<div class="details-wrapper">
-  <div id="commentary" class="body-text">
-    {@html selectedInsight.copy}
+<!-- <div class="details-wrapper"> -->
+<!-- svelte-ignore a11y_no_static_element_interactions -->
+<!-- svelte-ignore a11y_click_events_have_key_events -->
+<div class="tabs">
+  <div
+    class="tab {activeTab === 'words' ? 'active' : ''}"
+    on:click={() => (activeTab = "words")}
+  >
+    Words
   </div>
 
-  <div class="button-wrapper">
-    <button on:click={toggleSongList} class="toggle-button">
-      {buttonText}
-      <i class="material-icons chevron" class:opened={showingSongList}>
-        keyboard_arrow_down
-      </i>
-    </button>
+  <div
+    class="tab {activeTab === 'songs' ? 'active' : ''}"
+    on:click={() => (activeTab = "songs")}
+  >
+    Songs
   </div>
+</div>
 
-  <div class="song-list-wrapper">
-    {#if showingSongList}
+<div class="content">
+  {#if activeTab === "words"}
+    <div id="commentary" class="body-text">
+      {@html selectedInsight.copy}
+    </div>
+  {:else if activeTab === "songs"}
+    <div class="song-list-wrapper">
       <div class="body-text list" transition:fade>
         {#each showingData as year}
           <YearsSongList {year} {screenWidth} />
         {/each}
       </div>
-    {/if}
-  </div>
+    </div>
+  {/if}
 </div>
 
-<style>
-  .details-wrapper {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    overflow: auto;
-    font-family: sans-serif;
-    font-size: 16px;
-    line-height: 20px;
-    padding-right: 40px;
-  }
+<!-- </div> -->
 
+<style>
   .song-list-wrapper {
     flex-grow: 1;
     margin-bottom: 48px;
@@ -95,44 +97,36 @@
     gap: 24px;
   }
 
-  .button-wrapper {
-    width: 100%;
-    position: sticky;
-    top: 0;
-    background-color: white;
-    z-index: 10;
-    padding: 16px 0px;
-  }
-
-  .toggle-button {
-    background: none;
-    border: none;
-    font-size: 16px;
-    line-height: 20px;
-    font-family: sans-serif;
-    display: flex;
-    align-items: center;
-    gap: 4px;
-    cursor: pointer;
-    padding: 4px 8px;
-    border-radius: 8px;
-  }
-
-  .toggle-button:hover {
-    background-color: #f6f6f6;
-  }
-
-  .chevron {
-    font-size: 16px;
-    color: inherit;
-    transition: transform 0.5s ease;
-  }
-
-  .opened {
-    transform: rotate(-180deg);
-  }
-
   #commentary {
     color: #636363;
+    font-size: 14px;
+    line-height: 125%;
+  }
+
+  .content {
+    padding-bottom: 48px;
+  }
+
+  .tabs {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+  }
+  .tab {
+    padding: 8px 12px;
+    cursor: pointer;
+    border-bottom: 2px solid #fff;
+    border-radius: 8px 8px 0px 0px;
+    font-size: 16px;
+  }
+  .tab.active {
+    border-bottom: 4px solid #ddd;
+  }
+
+  .tab:hover {
+    background-color: #f6f6f6;
   }
 </style>

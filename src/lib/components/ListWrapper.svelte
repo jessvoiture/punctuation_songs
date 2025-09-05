@@ -17,7 +17,22 @@
 </script>
 
 {#if screenWidth >= 860}
-  <List {showingData} {screenWidth} />
+  <div class="details-wrapper">
+    <List {showingData} {screenWidth} />
+  </div>
 {:else if screenWidth < 860}
   <ListDrawer {showingData} {screenHeight} />
 {/if}
+
+<style>
+  .details-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: auto;
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    padding-right: 40px;
+  }
+</style>
