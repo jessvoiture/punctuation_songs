@@ -36,11 +36,7 @@
   let yExtent;
 
   $: if (screenWidth <= 860) {
-    if ($selectedOption === "parentheses") {
-      height = screenHeight - 280;
-    } else {
-      height = screenHeight - 240;
-    }
+    height = screenHeight - 300;
     width = 0.9 * screenWidth;
   } else {
     height = 0.72 * screenHeight;
