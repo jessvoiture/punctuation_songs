@@ -49,23 +49,27 @@
   }
 </script>
 
-<!-- svelte-ignore a11y_no_static_element_interactions -->
-<!-- svelte-ignore a11y_click_events_have_key_events -->
 <div class="tabs-wrapper">
   <div class="tabs">
-    <div
+    <button
       class="tab {activeTab === 'words' ? 'active' : ''}"
+      role="tab"
+      aria-selected={activeTab === "words"}
+      tabindex={activeTab === "words" ? 0 : -1}
       on:click={() => (activeTab = "words")}
     >
       Words
-    </div>
+    </button>
 
-    <div
+    <button
       class="tab {activeTab === 'songs' ? 'active' : ''}"
+      role="tab"
+      aria-selected={activeTab === "songs"}
+      tabindex={activeTab === "songs" ? 0 : -1}
       on:click={() => (activeTab = "songs")}
     >
       Songs
-    </div>
+    </button>
   </div>
 
   {#if activeTab === "songs"}
@@ -108,8 +112,9 @@
   }
 
   .content {
-    padding-bottom: 48px;
+    padding: 8px 0px 48px 0px;
     overflow-y: auto;
+    scrollbar-width: none;
   }
 
   .tabs-wrapper {
@@ -131,6 +136,8 @@
   .tab {
     padding: 8px 12px;
     cursor: pointer;
+    border: none;
+    background-color: #fff;
     border-bottom: 2px solid #fff;
     border-radius: 8px 8px 0px 0px;
     font-size: 16px;
