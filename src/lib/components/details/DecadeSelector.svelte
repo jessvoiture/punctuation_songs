@@ -14,7 +14,15 @@
     <div class="blur" id="left"></div>
     <div class="decade-buttons">
       {#each decades as decade}
-        <button on:click={() => scrollToYear(decade)}>{decade}s</button>
+        <button
+          on:click={() => {
+            const targetYear = yearsWithSongs
+              .filter((y) => Math.floor(y.year / 10) * 10 === decade)
+              .map((y) => y.year)
+              .sort((a, b) => a - b)[0];
+            if (targetYear) scrollToYear(targetYear);
+          }}>{decade}s</button
+        >
       {/each}
     </div>
     <div class="blur" id="right"></div>
