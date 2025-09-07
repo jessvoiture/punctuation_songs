@@ -30,28 +30,28 @@
   }
 
   .label {
-    flex: 0 0 auto; /* fixed width for label */
+    flex: 0 0 auto;
     overflow: hidden;
   }
 
   .decade-buttons-wrapper {
     position: relative;
-    overflow: hidden; /* hide scroll overflow for blur effect */
-    flex: 1 1 auto; /* take remaining space */
+    overflow: hidden;
+    flex: 1 1 auto;
   }
 
   .decade-buttons {
     display: flex;
     gap: 8px;
-    overflow-x: auto; /* enable horizontal scrolling */
+    overflow-x: auto;
     padding: 0px 24px 0px 8px;
     flex-wrap: nowrap;
     white-space: nowrap;
-    scrollbar-width: none; /* hide scrollbar in Firefox */
+    scrollbar-width: none;
   }
 
   .decade-buttons::-webkit-scrollbar {
-    display: none; /* hide scrollbar in Chrome/Safari */
+    display: none;
   }
 
   .decade-buttons button {
