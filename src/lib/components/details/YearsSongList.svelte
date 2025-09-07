@@ -59,7 +59,6 @@
 
 <style>
   .song-list {
-    /* max-width: 350px; */
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -89,7 +88,7 @@
     border-radius: 8px;
     background-color: #fff;
     transition: background-color 0.3s ease;
-    scroll-margin-top: 52px;
+    scroll-margin-top: 0px;
   }
 
   .hovered {

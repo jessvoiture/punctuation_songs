@@ -89,8 +89,8 @@
     z-index: 10000;
   }
   .drawer-content {
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 16px;
+    padding-left: 16px;
     overflow-y: auto;
     max-height: calc(95vh - 60px);
     display: flex;
@@ -122,7 +122,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 15px 20px;
+    padding: 16px 20px;
     cursor: pointer;
   }
 

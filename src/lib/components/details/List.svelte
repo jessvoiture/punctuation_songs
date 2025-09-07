@@ -9,12 +9,11 @@
     includeKeywordsParantheses,
   } from "../../../stores";
   import YearsSongList from "../details/YearsSongList.svelte";
+  import DecadeSelector from "../details/DecadeSelector.svelte";
   import { insight } from "../../../utils/insight.js";
 
   export let showingData;
   export let screenWidth;
-
-  console.log(showingData);
 
   $: selectedInsight = insight.find((d) => d.type === $selectedOption);
 
@@ -70,9 +69,7 @@
   </div>
 
   {#if activeTab === "songs"}
-    <div class="decade-selector">
-      <button class="toggle-button" on:click={toggleSongList}> test </button>
-    </div>
+    <DecadeSelector {showingData} {scrollToYear} />
   {/if}
 </div>
 
@@ -112,12 +109,13 @@
 
   .content {
     padding-bottom: 48px;
+    overflow-y: auto;
   }
 
   .tabs-wrapper {
     display: flex;
     gap: 0.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 8px;
     position: sticky;
     top: 0;
     background-color: #fff;
@@ -143,9 +141,5 @@
 
   .tab:hover {
     background-color: #f6f6f6;
-  }
-
-  .decade-selector {
-    padding-bottom: 8px;
   }
 </style>
