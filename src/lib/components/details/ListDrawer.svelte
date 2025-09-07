@@ -5,9 +5,9 @@
 
   import List from "./List.svelte";
   import YearsSongList from "./YearsSongList.svelte";
-  import ParenthesesToggle from "./ParenthesesToggle.svelte";
-  import { insight } from "../../utils/insight.js";
-  import { selectedOption, clickedYear } from "../../stores";
+  import ParenthesesToggle from "../ParenthesesToggle.svelte";
+  import { insight } from "../../../utils/insight.js";
+  import { selectedOption, clickedYear } from "../../../stores";
 
   export let screenHeight;
   export let showingData;

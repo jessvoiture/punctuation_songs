@@ -15,7 +15,7 @@
     mouseY,
     clickedYear,
     includeKeywordsParantheses,
-  } from "../../stores";
+  } from "../../../stores";
   import Tooltip from "./Tooltip.svelte";
   import Bars from "./Bars.svelte";
   import YAxis from "./YAxis.svelte";

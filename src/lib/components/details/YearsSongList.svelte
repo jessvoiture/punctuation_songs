@@ -1,6 +1,10 @@
 <script>
-  import { hoveredDataYear, selectedOption, isDataHovered } from "../../stores";
-  import { highlightBySelectedOption } from "../../utils/highlightRegex.js";
+  import {
+    hoveredDataYear,
+    selectedOption,
+    isDataHovered,
+  } from "../../../stores";
+  import { highlightBySelectedOption } from "../../../utils/highlightRegex.js";
 
   export let year;
   export let screenWidth;

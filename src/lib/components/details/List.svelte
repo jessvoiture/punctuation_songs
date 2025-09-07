@@ -7,12 +7,14 @@
     clickedYear,
     hoveredDataYear,
     includeKeywordsParantheses,
-  } from "../../stores";
-  import YearsSongList from "./YearsSongList.svelte";
-  import { insight } from "../../utils/insight.js";
+  } from "../../../stores";
+  import YearsSongList from "../details/YearsSongList.svelte";
+  import { insight } from "../../../utils/insight.js";
 
   export let showingData;
   export let screenWidth;
+
+  console.log(showingData);
 
   $: selectedInsight = insight.find((d) => d.type === $selectedOption);
 
@@ -50,20 +52,28 @@
 
 <!-- svelte-ignore a11y_no_static_element_interactions -->
 <!-- svelte-ignore a11y_click_events_have_key_events -->
-<div class="tabs">
-  <div
-    class="tab {activeTab === 'words' ? 'active' : ''}"
-    on:click={() => (activeTab = "words")}
-  >
-    Words
+<div class="tabs-wrapper">
+  <div class="tabs">
+    <div
+      class="tab {activeTab === 'words' ? 'active' : ''}"
+      on:click={() => (activeTab = "words")}
+    >
+      Words
+    </div>
+
+    <div
+      class="tab {activeTab === 'songs' ? 'active' : ''}"
+      on:click={() => (activeTab = "songs")}
+    >
+      Songs
+    </div>
   </div>
 
-  <div
-    class="tab {activeTab === 'songs' ? 'active' : ''}"
-    on:click={() => (activeTab = "songs")}
-  >
-    Songs
-  </div>
+  {#if activeTab === "songs"}
+    <div class="decade-selector">
+      <button class="toggle-button" on:click={toggleSongList}> test </button>
+    </div>
+  {/if}
 </div>
 
 <div class="content">
@@ -104,14 +114,22 @@
     padding-bottom: 48px;
   }
 
-  .tabs {
+  .tabs-wrapper {
     display: flex;
     gap: 0.5rem;
     margin-bottom: 1rem;
     position: sticky;
     top: 0;
     background-color: #fff;
+    display: flex;
+    flex-direction: column;
   }
+
+  .tabs {
+    display: flex;
+    flex-direction: row;
+  }
+
   .tab {
     padding: 8px 12px;
     cursor: pointer;
@@ -125,5 +143,9 @@
 
   .tab:hover {
     background-color: #f6f6f6;
+  }
+
+  .decade-selector {
+    padding-bottom: 8px;
   }
 </style>

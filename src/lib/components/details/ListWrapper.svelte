@@ -1,5 +1,5 @@
 <script>
-  import { selectedOption, includeKeywordsParantheses } from "../../stores";
+  import { selectedOption, includeKeywordsParantheses } from "../../../stores";
   import List from "./List.svelte";
   import ListDrawer from "./ListDrawer.svelte";
 

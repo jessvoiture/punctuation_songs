@@ -7,7 +7,7 @@
     mouseX,
     mouseY,
     clickedYear,
-  } from "../../stores";
+  } from "../../../stores";
 
   export let tweenedY;
   export let xScale;

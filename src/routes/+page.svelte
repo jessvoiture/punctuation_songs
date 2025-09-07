@@ -1,10 +1,8 @@
 <script>
   import { browser } from "$app/environment";
-  import BarChart from "$lib/components/BarChart.svelte";
-  import List from "$lib/components/List.svelte";
+  import BarChart from "$lib/components/chart/BarChart.svelte";
   import Title from "$lib/components/Title.svelte";
-  import ListDrawer from "$lib/components/ListDrawer.svelte";
-  import ListWrapper from "$lib/components/ListWrapper.svelte";
+  import ListWrapper from "$lib/components/details/ListWrapper.svelte";
   import { selectedOption, includeKeywordsParantheses } from "../stores.js";
   import { slide } from "svelte/transition";
 

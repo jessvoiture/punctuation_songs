@@ -1,5 +1,5 @@
 <script>
-  import { hoveredData, mouseX, mouseY } from "../../stores";
+  import { hoveredData, mouseX, mouseY } from "../../../stores";
 
   let tooltipWidth = 250;
   let tooltipHeight = 150;

@@ -1,5 +1,5 @@
 <script>
-  import { selectedMetric } from "../../stores";
+  import { selectedMetric } from "../../../stores";
   export let yScale;
   export let yticks;
   export let width;
