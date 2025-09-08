@@ -4,17 +4,19 @@
   import Title from "$lib/components/Title.svelte";
   import ListWrapper from "$lib/components/details/ListWrapper.svelte";
   import { selectedOption, includeKeywordsParantheses } from "../stores.js";
-  import { slide } from "svelte/transition";
 
   export let data;
 
   let punctuation = data.punctuation;
   let songs = data.songs;
+  let isMobile = false;
 
   let y = 0;
 
   let screenWidth;
   let screenHeight;
+
+  $: isMobile = screenWidth < 750 ? true : false;
 
   function resize() {
     screenWidth = window.innerWidth;
@@ -31,10 +33,10 @@
 <div class="container">
   <div class="chart-wrapper">
     <Title {screenWidth} />
-    <BarChart data={songs} {screenWidth} {screenHeight} />
+    <BarChart data={songs} {screenWidth} {screenHeight} {isMobile} />
   </div>
 
-  <ListWrapper {screenWidth} data={songs} {screenHeight} />
+  <ListWrapper {screenWidth} data={songs} {screenHeight} {isMobile} />
 </div>
 
 <style>
@@ -60,7 +62,7 @@
   }
 
   /* small screens */
-  @media (max-width: 860px) {
+  @media (max-width: 750px) {
     .container {
       display: flex;
       justify-content: start;
@@ -84,7 +86,7 @@
   }
 
   /* big screens */
-  @media (min-width: 861px) {
+  @media (min-width: 750px) {
     .container {
       align-items: flex-start;
       flex-direction: row;

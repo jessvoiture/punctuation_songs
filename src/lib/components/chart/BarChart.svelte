@@ -23,6 +23,7 @@
   export let data;
   export let screenWidth;
   export let screenHeight;
+  export let isMobile;
 
   let tweenedY;
   let yMax;
@@ -35,7 +36,7 @@
   let showingData = data;
   let yExtent;
 
-  $: if (screenWidth <= 860) {
+  $: if (isMobile) {
     height = screenHeight - 300;
     width = 0.9 * screenWidth;
   } else {
@@ -120,6 +121,7 @@
           paddingLeft={padding.left}
           {innerWidth}
           {innerHeight}
+          {isMobile}
         />
       </g>
     </svg>
@@ -129,6 +131,6 @@
 <!-- Tooltip -->
 {#if ($hoveredData != undefined) & $isDataHovered}
   <div transition:fade={{ duration: 300, easing: cubicOut }}>
-    <Tooltip {screenHeight} {screenWidth} data={showingData} />
+    <Tooltip {screenHeight} {screenWidth} data={showingData} {isMobile} />
   </div>
 {/if}

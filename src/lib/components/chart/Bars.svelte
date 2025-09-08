@@ -16,6 +16,7 @@
   export let paddingLeft;
   export let innerWidth;
   export let innerHeight;
+  export let isMobile;
 
   let rectWidth;
 
@@ -68,23 +69,23 @@
       aria-label="{d.percent_with_punc}% of songs in {d.year} contain {$selectedOption}."
       role="graphics-object"
       on:mouseover={function (event) {
-        handleMouseover(event, d);
+        if (!isMobile) handleMouseover(event, d);
       }}
       on:mouseout={function () {
-        handleMouseout();
+        if (!isMobile) handleMouseout();
       }}
       on:focus={function (event) {
-        handleFocus(event, d);
+        if (!isMobile) handleFocus(event, d);
       }}
       on:blur={function () {
-        handleMouseout();
+        if (!isMobile) handleMouseout();
       }}
       on:click={function (event) {
-        onClick(event, d);
+        if (!isMobile) onClick(event, d);
       }}
       on:keydown={function (event) {
         if (event.key === "Enter" || event.key === " ") {
-          onClick(d);
+          if (!isMobile) onClick(d);
         }
       }}
     />

@@ -6,6 +6,7 @@
   export let screenHeight;
   export let screenWidth;
   export let data;
+  export let isMobile;
 
   let showingData = data.find((d) => d.type === "parentheses")?.years || [];
   $: if ($includeKeywordsParantheses && $selectedOption === "parentheses") {
@@ -16,11 +17,11 @@
   }
 </script>
 
-{#if screenWidth >= 860}
+{#if !isMobile}
   <div class="details-wrapper">
     <List {showingData} {screenWidth} />
   </div>
-{:else if screenWidth < 860}
+{:else if isMobile}
   <ListDrawer {showingData} {screenHeight} />
 {/if}
 

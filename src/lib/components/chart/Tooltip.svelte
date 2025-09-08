@@ -14,6 +14,8 @@
 
   let tooltipWidth = 250;
   let tooltipHeight = 150;
+  let left = $mouseX + 8;
+  let top = $mouseY - 60;
 
   let extentData = [0, 100];
   let filteredData = [];
@@ -36,16 +38,14 @@
 
   $: xScale = scaleLinear().domain(extentData).range([0, barcodeWidth]);
 
-  // $: xticks = xScale.ticks(3);
-
   $: domain = xScale.domain();
   $: xticks = [domain[0], (domain[0] + domain[1]) / 2, domain[1]];
 </script>
 
 <div
   class="tooltip"
-  style="left: {$mouseX + 8}px; 
-          top: {$mouseY - 60}px;"
+  style="left: {left}px; 
+          top: {top}px;"
 >
   <div class="tooltip-content">
     <div class="tooltip-header">
