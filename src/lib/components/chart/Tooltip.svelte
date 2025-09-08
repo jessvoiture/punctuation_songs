@@ -36,7 +36,10 @@
 
   $: xScale = scaleLinear().domain(extentData).range([0, barcodeWidth]);
 
-  $: xticks = xScale.ticks(3);
+  // $: xticks = xScale.ticks(3);
+
+  $: domain = xScale.domain();
+  $: xticks = [domain[0], (domain[0] + domain[1]) / 2, domain[1]];
 </script>
 
 <div
@@ -85,8 +88,7 @@
           <g transform={`translate(${padding}, 68)`}>
             {#each xticks as d}
               <text x={xScale(d)} y="12" text-anchor="middle" font-size="12">
-                {d}
-                {#if $selectedMetric == "Percent"}%{/if}
+                {d}{#if $selectedMetric == "Percent"}%{/if}
               </text>
             {/each}
           </g>
