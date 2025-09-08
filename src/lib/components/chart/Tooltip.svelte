@@ -14,8 +14,8 @@
 
   let tooltipWidth = 250;
   let tooltipHeight = 150;
-  let left = $mouseX + 8;
-  let top = $mouseY - 60;
+  $: left = $mouseX + 8;
+  $: top = $mouseY - 60;
 
   let extentData = [0, 100];
   let filteredData = [];
