@@ -10,6 +10,7 @@
   } from "../../../stores";
   import YearsSongList from "../details/YearsSongList.svelte";
   import DecadeSelector from "../details/DecadeSelector.svelte";
+  import AudioPlayer from "../AudioPlay.svelte";
   import { insight } from "../../../utils/insight.js";
 
   export let showingData;
@@ -80,7 +81,19 @@
 <div class="content">
   {#if activeTab === "words"}
     <div id="commentary" class="body-text">
-      {@html selectedInsight.copy}
+      {#each selectedInsight.copy as part}
+        {#if part.kind === "text"}
+          <span>{@html part.value}</span>
+        {:else if part.kind === "highlight"}
+          <span
+            style="background-color:#bee5f3; padding:1px 4px; border-radius:4px;"
+          >
+            {part.value}
+          </span>
+        {:else if part.kind === "audio"}
+          <AudioPlayer src={part.src} song={part.song} />
+        {/if}
+      {/each}
     </div>
   {:else if activeTab === "songs"}
     <div class="song-list-wrapper">
@@ -106,9 +119,9 @@
   }
 
   #commentary {
-    color: #636363;
-    font-size: 14px;
-    line-height: 125%;
+    color: #000000;
+    font-size: 15px;
+    line-height: 20px;
   }
 
   .content {
