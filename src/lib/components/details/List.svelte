@@ -86,7 +86,8 @@
           <span>{@html part.value}</span>
         {:else if part.kind === "highlight"}
           <span
-            style="background-color:#bee5f3; padding:1px 4px; border-radius:4px;"
+            style="background-color:#bee5f3; padding:1px 4px; border-radius:4px; -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;"
           >
             {part.value}
           </span>
