@@ -5,61 +5,94 @@ export const insight = [
       {
         kind: "text",
         value:
-          "In the 1960s and 70s, the appearance of parentheses was fairly common, with around 1 out of 12 songs having them. They were often used as a stylistic tool for clarity and marketability, to break up a song title or include hooks to make it more recognizable and easier to search. For example Four Tops’ ",
+          "In the 1960s and 1970s, it was fairly common for song titles to include parentheses—roughly one in every twelve songs did.  They were often used as a stylistic tool for clarity and marketability, to break up a song title or include hooks to make it more recognizable/ easier to search. For example Four Tops’",
       },
       {
         kind: "audio",
         song: "I Can’t Help Myself (Sugar Pie Honey Bunch)",
-        src: "/songs/output.mp3",
-      },
-      { kind: "text", value: " released in 1965 or The Four Season’s " },
-      {
-        kind: "audio",
-        song: "December, 1963 (Oh What a Night!)",
-        src: "/songs/output.mp3",
+        src: "/songs/30_sugar_pie_honey_bunch.mp3",
       },
       {
         kind: "text",
-        value:
-          " both include arguably the more catchy part of the chorus in the title.<br /><br />",
-      },
-      {
-        kind: "text",
-        value:
-          "In the 1980s, increasingly more songs used parentheses for attribution to a film soundtrack, such as Bob Seger’s ",
+        value: " released in 1965 or Rupert Holmes' 1979 classic ",
       },
       {
         kind: "audio",
-        song: `Shakedown (From "Beverly Hills Cop II")`,
-        src: "/songs/output.mp3",
-      },
-      { kind: "text", value: "." },
-      {
-        kind: "text",
-        value:
-          " In this time, soundtrack albums saw a massive rise in popularity, driven by the commercial synergy between movie studios and their music publishing divisions. Music became a powerful promotional tool for films, with major hits like Prince’s ",
-      },
-      { kind: "audio", song: `Purple Rain`, src: "/songs/output.mp3" },
-      { kind: "text", value: " and Christopher Cross’s " },
-      { kind: "audio", song: `Arthur’s Theme`, src: "/songs/output.mp3" },
-      { kind: "text", value: "." },
-      { kind: "text", value: "<br /><br />" },
-      {
-        kind: "text",
-        value: `The trend exploded in the 1990s, which some have dubbed the <a href="https://www.huffingtonpost.co.uk/entry/90s-last-decade-great-soundtracks_n_6268074ae4b0ea625c0d0597">“last great decade for film soundtracks”.</a> Todd “Stereo” Williams in conversation with Candice Frederick, writing for HuffPost, notes that the success of film soundtracks in the 90s can be attributed to, “a cross-pollination of Black labels really coming to the fore, Black filmmakers coming to the fore and hip-hop coming to the fore.” The decade saw many artists and rappers featuring in films, including Whitney Houston in `,
-      },
-      { kind: "audio", song: `The Bodyguard`, src: "/songs/output.mp3" },
-      { kind: "text", value: " and " },
-      { kind: "audio", song: `The Preacher’s Wife`, src: "/songs/output.mp3" },
-      {
-        kind: "text",
-        value:
-          " for which she also recorded the highly successful soundtrack albums.<br /><br />",
+        song: "Escape (The Piña Colada Song)",
+        src: "/songs/30_escape.mp3",
       },
       {
         kind: "text",
         value:
-          "The use of parentheses for both of the aforementioned purposes began to fade in the 2000s. With the rise of the internet, searchability made the need to include the hook in the title less important, and platforms like Napster allowed users to cherry-pick singles and curate playlists instead of buying the whole soundtrack album. <br /><br />",
+          " both place arguably the catchiest or most memorable part inside the parentheses<br /><br />",
+      },
+      {
+        kind: "text",
+        value:
+          "In the 1980s, the use of parentheses in song titles surged, largely due to attribution to film soundtracks. The trend of incorporating pop music into film grew out of New Hollywood in the 1970s, which had emerged to appeal to a younger, more educated, and more affluent audience, reshaping how studios approached filmmaking and distribution. Before the 1970s, soundtracks were largely confined to musicals; with New Hollywood, however, pop music began to feature more prominently in films, both to attract younger audiences and to serve as a promotional tool.<br /><br />",
+      },
+      {
+        kind: "text",
+        value:
+          "In 1981, MTV revolutionized music marketing by popularizing the music video, pushing pop music into a visual medium. Videos that combined film clips with soundtrack songs became effective advertisements for the films themselves—consider Bob Seger’s ",
+      },
+      {
+        kind: "audio",
+        song: `Shakedown`,
+        src: "/songs/30_shakedown.mp3",
+      },
+      { kind: "text", value: " from Beverly Hills Cop II or Berlin’s " },
+      {
+        kind: "audio",
+        song: `Take My Breath Away`,
+        src: "/songs/30_take_my_breath.mp3",
+      },
+      {
+        kind: "text",
+        value:
+          " from Top Gun, both of which intercut performance footage with scenes from their respective films. The rise of such cross-promotional practices was further fueled by the growing synergy between movie studios and their music publishing divisions. <br /><br />",
+      },
+      {
+        kind: "text",
+        value:
+          "The trend exploded in the 1990s. At this point, the U.S. music market was driven by album sales rather than singles, and the soundtrack album emerged as a standalone art form that could exist independently of its film. Some were dominated by a single artist—such as Saturday Night Fever or Purple Rain—while others compiled new and pre-existing tracks by various artists. Compilation albums, already huge in the 1980s and 1990s (the era of Now That’s What I Call Music!) offered access to multiple pop stars on a single record; multi-artist soundtracks were simply an extension of this trend. The soundtrack for Pretty Woman, Don’t Be a Menace, and Batman Forever, for example, featured performances from a roster of major artists of the time (though some songs on the soundtrack do not actually appear in the film).<br /><br />",
+      },
+      {
+        kind: "text",
+        value:
+          '<a href="https://www.huffingtonpost.co.uk/entry/90s-last-decade-great-soundtracks_n_6268074ae4b0ea625c0d0597" target="_blank">As Todd “Stereo” Williams notes,</a> in conversation with Candice Frederickx for HuffPost, the success of 1990s film soundtracks stemmed from “a cross-pollination of Black labels really coming to the fore, Black filmmakers coming to the fore, and hip-hop coming to the fore.” Indeed, films from Black directors, such as Do the Right Thing, Boyz n the Hood, and Waiting To Exhale, produced iconic soundtracks which showcased hip-hop and R&B music. The decade also saw a growing number of artists starring in films and contributing to their soundtracks, notably Whitney Houston in The Bodyguard and Madonna in Evita, reflecting the deepening crossover between music and cinema.<br /><br />',
+      },
+      {
+        kind: "text",
+        value:
+          "The use of parentheses for both stylistic and marketing purposes began to decline in the 2000s. As internet searchability improved, including a hook or subtitle in a song title became unnecessary. The rise of Napster and, later, streaming platforms shifted music consumption toward individual tracks and curated playlists, rather than full soundtrack albums, effectively reverting the US market to a song-oriented model. Although film music remains culturally significant—with hits like ",
+      },
+      {
+        kind: "audio",
+        song: `See You Again`,
+        src: "/songs/30_see_you_again.mp3",
+      },
+      { kind: "text", value: " from Furious 7 and " },
+      {
+        kind: "audio",
+        song: `Dance the Night`,
+        src: "/songs/30_dance_the_night.mp3",
+      },
+      {
+        kind: "text",
+        value:
+          " from Barbie—the soundtrack album as a cohesive format has largely waned in popularity.<br></br>",
+      },
+      {
+        kind: "text",
+        value:
+          "It is worth noting that not all soundtrack titles included attribution to their films. For example, hugely successful soundtrack albums from Purple Rain, The Crow, and Footloose, among others, omit the film’s title from their song names. Similarly, pre-existing tracks featured on soundtrack albums without re-release do not bear any cinematic reference. Moreover, under Billboard’s charting rules, songs not commercially issued as singles were ineligible for the Hot 100—meaning tracks like Will Smith’s ",
+      },
+      { kind: "audio", song: `Men in Black`, src: "/songs/30_mib.mp3" },
+      {
+        kind: "text",
+        value:
+          ", despite heavy radio play, never officially charted. By the 2000s, the practice of including film attribution in song titles had largely disappeared.<br></br>",
       },
       {
         kind: "text",
