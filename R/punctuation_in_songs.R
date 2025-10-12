@@ -25,11 +25,17 @@ df <- df %>%
     "the children's marching song (nick nack taddy whack)" ~ "the children's marching song (nick nack paddy whack)",
     .default = title
   )) %>%
-  group_by(title, performer) %>%
-  filter(chart_week == min(chart_week)) %>%
-  ungroup() %>%
-  mutate(year = year(chart_week),
-         month_year = as.Date(format(chart_week, "%Y-%m-01"))) %>%
+  group_by(title, title_og, performer, performer_og) %>%
+  summarise(
+    weeks_on_chart = max(wks_on_chart),
+    debut_pos = first(current_week[order(chart_week)]),
+    debut_week = min(chart_week),
+    peak_pos = min(current_week),
+    peak_pos_week = chart_week[which.min(current_week)],
+    .groups = "drop"
+  ) %>%
+  mutate(year = year(debut_week),
+         month_year = as.Date(format(debut_week, "%Y-%m-01"))) %>%
   mutate(title = str_replace_all(title, "\\.\\s*\\.\\s*\\.", "..."))
 
 count_unique_songs_per_year <- df %>%
@@ -205,16 +211,20 @@ ggplot(colon_pct, aes(x = year, y = percent_with_punc)) +
 
 comma <- df %>%
   filter(str_detect(title, ",")) %>%
-  select(title, performer, title_og, performer_og, chart_week, year) %>%
-  mutate(type = "comma") %>%
+  # select(title, performer, title_og, performer_og, chart_week, peak_pos, year) %>%
+  mutate(type = "comma") 
   # group_by(performer) %>%
   # summarise(count= n())
   # separate_wider_delim(title, delim = ",", names = c("first", "second"), too_many = "drop") %>%
   # mutate_all(str_trim) %>%
-  # mutate(repeats = if_else(first == second, T, F)) %>%
-  # filter(repeats) %>%
+  # mutate(repeats = first == second) %>%
   # group_by(year) %>%
-  # summarise(count = n())
+  # summarise(
+  #   count = sum(repeats, na.rm = TRUE),
+  #   total = n(),
+  #   percent = 100 * count / total
+  # )
+
  
 comma_pct <- comma %>%
   group_by(year, type) %>%
@@ -332,7 +342,7 @@ ggplot(dash_pct, aes(x = year, y = percent_with_punc)) +
 
 slash <- df %>%
   filter(str_detect(title, "/")) %>%
-  select(title, performer, title_og, performer_og, chart_week, year) %>%
+  # select(title, performer, title_og, performer_og, chart_week, year) %>%
   mutate(type = "slash")
 
 slash_pct <- slash %>%
@@ -421,6 +431,32 @@ ggplot(ellipses_pct, aes(x = year, y = percent_with_punc)) +
   geom_col() +
   theme_minimal() +
   labs(title = 'Billboard charting songs with ... in them')
+
+swears <- df %>%
+  filter(str_detect(title, "u\\.s\\.a\\."))
+  # select(title, performer, title_og, performer_og, chart_week, year) %>%
+
+ellipses_pct <- ellipses %>%
+  group_by(year, type) %>%
+  summarise(count_with_punc = n()) %>%
+  ungroup() %>%
+  left_join(count_unique_songs_per_year, by = "year") %>%
+  mutate(percent_with_punc = count_with_punc / count_new_songs_in_year * 100) %>%
+  complete(year = full_seq(1958:2025, 1), 
+           fill = list(
+             percent_with_punc = 0, 
+             count_with_punc = 0,
+             type = "ellipses")) %>%
+  select(year, type, count_with_punc, percent_with_punc)
+
+ggplot(ellipses_pct, aes(x = year, y = percent_with_punc)) +
+  geom_col() +
+  theme_minimal() +
+  labs(title = 'Billboard charting songs with ... in them')
+
+
+# put it all together -----------------------------------------------------
+
 
 df_all_punctuation <- data.frame(
   year = c(1958:2025),
