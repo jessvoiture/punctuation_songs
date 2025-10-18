@@ -66,7 +66,7 @@
 
   $: yExtent = extent(showingData.map((d) => d.year));
 
-  $: xScale = scaleLinear().domain([1958, 2026]).range([0, innerWidth]);
+  $: xScale = scaleLinear().domain([1958, 2025]).range([0, innerWidth]);
 
   $: yScale = scaleLinear()
     .domain([0, yMax * 1.2])

@@ -9,6 +9,8 @@
   export let isMobile;
 
   let showingData = data.find((d) => d.type === "parentheses")?.years || [];
+  let showingData24 = showingData.filter((d) => Number(d.year) <= 2024);
+
   $: if ($includeKeywordsParantheses && $selectedOption === "parentheses") {
     showingData =
       data.find((item) => item.type === "parantheses_no_keywords")?.years || [];
@@ -19,10 +21,10 @@
 
 {#if !isMobile}
   <div class="details-wrapper">
-    <List {showingData} {screenWidth} />
+    <List showingData={showingData24} {screenWidth} />
   </div>
 {:else if isMobile}
-  <ListDrawer {showingData} {screenHeight} />
+  <ListDrawer showingData={showingData24} {screenHeight} />
 {/if}
 
 <style>
