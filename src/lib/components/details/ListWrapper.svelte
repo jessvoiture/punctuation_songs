@@ -12,10 +12,10 @@
   let showingData24 = showingData.filter((d) => Number(d.year) <= 2024);
 
   $: if ($includeKeywordsParantheses && $selectedOption === "parentheses") {
-    showingData =
+    showingData24 =
       data.find((item) => item.type === "parantheses_no_keywords")?.years || [];
   } else {
-    showingData = data.find((d) => d.type === $selectedOption)?.years || [];
+    showingData24 = data.find((d) => d.type === $selectedOption)?.years || [];
   }
 </script>
 
