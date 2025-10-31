@@ -5,12 +5,12 @@ export const insight = [
       {
         kind: "text",
         value:
-          "In the 1960s and 1970s, it was fairly common for song titles to include parentheses—roughly one in every twelve songs did.  They were often used as a stylistic tool for clarity and marketability, to break up a song title or include hooks to make it more recognizable/ easier to search. For example Four Tops’",
+          "In the 1960s and 1970s, it was fairly common for song titles to include parentheses—roughly one in every twelve songs did.  They were often used as a stylistic tool for clarity and marketability, to break up a song title or include hooks to make it more recognizable/ easier to search. For example Four Tops’ ",
       },
       {
         kind: "audio",
         song: "I Can’t Help Myself (Sugar Pie Honey Bunch)",
-        src: "/songs/30_sugar_pie_honey_bunch.mp3",
+        uri: "6b6IMqP565TbtFFZg9iFf3",
       },
       {
         kind: "text",
@@ -19,7 +19,7 @@ export const insight = [
       {
         kind: "audio",
         song: "Escape (The Piña Colada Song)",
-        src: "/songs/30_escape.mp3",
+        uri: "5IMtdHjJ1OtkxbGe4zfUxQ",
       },
       {
         kind: "text",
@@ -29,7 +29,21 @@ export const insight = [
       {
         kind: "text",
         value:
-          "In the 1980s, the use of parentheses in song titles surged, largely due to attribution to film soundtracks. The trend of incorporating pop music into film grew out of New Hollywood in the 1970s, which had emerged to appeal to a younger, more educated, and more affluent audience, reshaping how studios approached filmmaking and distribution. Before the 1970s, soundtracks were largely confined to musicals; with New Hollywood, however, pop music began to feature more prominently in films, both to attract younger audiences and to serve as a promotional tool.<br /><br />",
+          "Beginning in the 1980s, there was a noticeable trend of song titles referencing the soundtracks they came from, following the pattern, ",
+      },
+      {
+        kind: "highlight",
+        value: "Song Title (From “Film Title”)",
+      },
+      {
+        kind: "text",
+        value:
+          ". Consequently, the use of quotation marks and parentheses in the ’80s and ’90s follows a very similar surge.<br></br>",
+      },
+      {
+        kind: "text",
+        value:
+          "The trend of incorporating pop music into film grew out of New Hollywood in the 1970s, which had emerged to appeal to a younger, more educated, and more affluent audience, reshaping how studios approached filmmaking and distribution. Before the 1970s, soundtracks were largely confined to musicals; with New Hollywood, however, pop music began to feature more prominently in films, both to attract younger audiences and to serve as a promotional tool.<br /><br />",
       },
       {
         kind: "text",
@@ -39,13 +53,13 @@ export const insight = [
       {
         kind: "audio",
         song: `Shakedown`,
-        src: "/songs/30_shakedown.mp3",
+        uri: "303oOLP2Jf6M4rke52qItM",
       },
       { kind: "text", value: " from Beverly Hills Cop II or Berlin’s " },
       {
         kind: "audio",
         song: `Take My Breath Away`,
-        src: "/songs/30_take_my_breath.mp3",
+        uri: "15MJ5NThPjj6xhPcts8MiY",
       },
       {
         kind: "text",
@@ -70,13 +84,13 @@ export const insight = [
       {
         kind: "audio",
         song: `See You Again`,
-        src: "/songs/30_see_you_again.mp3",
+        uri: "2JzZzZUQj3Qff7wapcbKjc",
       },
       { kind: "text", value: " from Furious 7 and " },
       {
         kind: "audio",
         song: `Dance the Night`,
-        src: "/songs/30_dance_the_night.mp3",
+        uri: "11C4y2Yz1XbHmaQwO06s9f",
       },
       {
         kind: "text",
@@ -88,7 +102,7 @@ export const insight = [
         value:
           "It is worth noting that not all soundtrack titles included attribution to their films. For example, hugely successful soundtrack albums from Purple Rain, The Crow, and Footloose, among others, omit the film’s title from their song names. Similarly, pre-existing tracks featured on soundtrack albums without re-release do not bear any cinematic reference. Moreover, under Billboard’s charting rules, songs not commercially issued as singles were ineligible for the Hot 100—meaning tracks like Will Smith’s ",
       },
-      { kind: "audio", song: `Men in Black`, src: "/songs/30_mib.mp3" },
+      { kind: "audio", song: `Men in Black`, uri: "3Dq2FHZ73hBUG815MoapQu" },
       {
         kind: "text",
         value:
@@ -118,7 +132,7 @@ export const insight = [
       {
         kind: "text",
         value:
-          "Apostrophes are fairly common in song titles, as they are in general, though their usage has dropped off since the turn of the century. This is largely due to less songs featuring contractions.  <br /><br />",
+          "Apostrophes are fairly common in song titles, as they are in general, though their usage has dropped off since the turn of the century. This is largely due to fewer songs featuring contractions.  <br /><br />",
       },
       {
         kind: "text",
@@ -142,12 +156,11 @@ export const insight = [
       {
         kind: "text",
         value:
-          "Comma usage in songs seemed to have fallen out of fashion after it's height in the 60s and 70s. At its peak around 1 in 20 songs charting on the Hot 100 had a comma in it; in 2025, around only 1 in 100 songs featured a comma.<br /><br /> ",
+          "Comma usage in songs seemed to have fallen out of fashion after its height in the 60s and 70s. At its peak around 1 in 20 songs charting on the Hot 100 had a comma in it; in 2025, around only 1 in 100 songs featured a comma.<br /><br /> ",
       },
       {
         kind: "text",
-        value:
-          "Comma usage in titles mainly falls into three patterns: <br> </br> ",
+        value: "Two usage patterns of note: <br> </br> ",
       },
       {
         kind: "text",
@@ -156,7 +169,7 @@ export const insight = [
       {
         kind: "audio",
         song: `Sugar, Sugar`,
-        src: "/songs/30_sugar_sugar.mp3",
+        uri: "3iSws76HjaU7k49EqJVTfF",
       },
       {
         kind: "text",
@@ -166,7 +179,7 @@ export const insight = [
       {
         kind: "audio",
         song: `Jealousy, Jealousy`,
-        src: "/songs/30_jealousy_jealousy.mp3",
+        uri: "0MMyJUC3WNnFS1lit5pTjk",
       },
       {
         kind: "text",
@@ -176,7 +189,7 @@ export const insight = [
       {
         kind: "audio",
         song: `Knowing Me, Knowing You`,
-        src: "/songs/30_knowing_me_knowing_you.mp3",
+        uri: "798cuJeotvXP8UVa8GJPnD",
       },
       {
         kind: "text",
@@ -194,7 +207,7 @@ export const insight = [
       {
         kind: "audio",
         song: `Hello, Dolly!`,
-        src: "/songs/output.mp3",
+        uri: "63kd4m3VFxcJjPVVtbVNAu",
       },
       {
         kind: "text",
@@ -203,7 +216,7 @@ export const insight = [
       {
         kind: "audio",
         song: `Help Me, Rhonda`,
-        src: "/songs/output.mp3",
+        uri: "1pGNIN1wr7rcsDONmHLNRd",
       },
       {
         kind: "text",
@@ -217,7 +230,7 @@ export const insight = [
       {
         kind: "audio",
         song: `Girl, So Confusing`,
-        src: "/songs/output.mp3",
+        uri: "7srqyRb5plksW5k65itXDB",
       },
       {
         kind: "text",
@@ -226,11 +239,11 @@ export const insight = [
       {
         kind: "audio",
         song: `So long, London`,
-        src: "/songs/output.mp3",
+        uri: "0mWVScJbxO3tbXuiZOxYZE",
       },
       {
         kind: "text",
-        value: `— their frequency has certainly diminished. It's possible that vocatives matched the conversational, personal, and youthful tone of much 60s–70s pop, soul, and rock music, making them more frequent than in later decades dominated by more abstract, hook-driven, or dance-oriented titles`,
+        value: `— their frequency has certainly diminished. It's possible that vocatives reflected the more personal and conversational tone of the 60s–70s, whereas they might feel out of place in the more dance-oriented titles that emerged in the 80s`,
       },
     ],
   },
@@ -239,7 +252,7 @@ export const insight = [
     copy: [
       {
         kind: "text",
-        value: `The use of the period in Billboard song titles has remained relatively consistent over the past seventy years, and among end-of-sentence punctuation marks, it is the most frequently employed form. <br /><br /> `,
+        value: `There isn't any particular trend in period use over time, but among end-of-sentence punctuation marks, it is the most frequently employed form. <br /><br /> `,
       },
       {
         kind: "text",
@@ -256,7 +269,7 @@ export const insight = [
       {
         kind: "audio",
         song: `Please Mr. Postman`,
-        src: "/songs/30_please_mr_post.mp3",
+        uri: "5fNDP3NTdE69szQHUl4fFr",
       },
       {
         kind: "text",
@@ -265,11 +278,27 @@ export const insight = [
       {
         kind: "audio",
         song: `Mr. Brightside`,
-        src: "/songs/30_mr_brightside.mp3",
+        uri: "003vvx7Niy0yvhvHt4a68B",
       },
       {
         kind: "text",
-        value: `— account for 84 songs, representing approximately 18% of all titles featuring at least one period. Related forms, such as Ms. and Mrs., appear far less frequently, occurring in only 4 and 10 titles, respectively.<br /><br />`,
+        value: `— account for 84 songs, representing approximately 18% of all titles featuring at least one period. Related forms, such as `,
+      },
+      {
+        kind: "highlight",
+        value: `Ms.`,
+      },
+      {
+        kind: "text",
+        value: ` and `,
+      },
+      {
+        kind: "highlight",
+        value: `Mrs.`,
+      },
+      {
+        kind: "text",
+        value: `, appear far less frequently, occurring in only 4 and 10 titles, respectively.<br /><br />`,
       },
       {
         kind: "text",
@@ -278,7 +307,7 @@ export const insight = [
       {
         kind: "audio",
         song: `DAMN.`,
-        src: "/songs/30_humble.mp3",
+        uri: "7KXjTSCq5nL1LoYtL7XAwS",
       },
       {
         kind: "text",
@@ -291,7 +320,7 @@ export const insight = [
     copy: [
       {
         kind: "text",
-        value: `Across Billboard chart history, there has been an infrequent usage of end-of-sentence punctuation in song titles. Among these forms of punctuation, the exclamation mark is the rarest, appearing in only 192 instances out of approximately 32,000 charting songs.<br></br>1963 was a record year for the number of songs with an exclamation mark, with 12 songs.`,
+        value: `Across Billboard chart history, there has been an infrequent usage of end-of-sentence punctuation in song titles. Among these forms of punctuation, the exclamation mark is the rarest, appearing in only 192 instances out of approximately 32,000 charting songs.<br></br>1963 was a record year for the number of songs with an exclamation mark: 12 songs.`,
       },
     ],
   },
@@ -300,7 +329,7 @@ export const insight = [
     copy: [
       {
         kind: "text",
-        value: `Across Billboard chart history, there has been an infrequent usage of end-of-sentence punctuation in song titles. The usage of the question mark has been fairly consistent.`,
+        value: `Question marks aren't used particularly frequently, and there isn't any particular trend in how much they're used or why.`,
       },
     ],
   },
@@ -322,7 +351,7 @@ export const insight = [
       {
         kind: "audio",
         song: `Something`,
-        src: "/songs/30_something.mp3",
+        uri: "0pNeVovbiZHkulpGeOx1Gj",
       },
       {
         kind: "text",
@@ -331,7 +360,7 @@ export const insight = [
       {
         kind: "audio",
         song: `Come Together`,
-        src: "/songs/30_come_together.mp3",
+        uri: "2EqlS6tkEnglzr7tkKAAYD",
       },
       {
         kind: "text",
@@ -348,7 +377,7 @@ export const insight = [
       {
         kind: "audio",
         song: `Bicycle Race`,
-        src: "/songs/30_bicycle.mp3",
+        uri: "5ipOo1CD7gAwzKAMEXUBp9",
       },
       {
         kind: "text",
@@ -357,7 +386,7 @@ export const insight = [
       {
         kind: "audio",
         song: `Fat Bottomed Girls`,
-        src: "/songs/30_fbg.mp3",
+        uri: "4igIYHF3B5VBxEafHauVo3",
       },
       {
         kind: "text",
@@ -366,7 +395,7 @@ export const insight = [
       {
         kind: "audio",
         song: `It's Too Late`,
-        src: "/songs/30_its_too_late.mp3",
+        uri: "12q3V8ShACq2PSWINMc2rC",
       },
       {
         kind: "text",
@@ -375,7 +404,7 @@ export const insight = [
       {
         kind: "audio",
         song: `I Feel The Earth Move`,
-        src: "/songs/30_i_feel_the_earth_move.mp3",
+        uri: "1BWsOxeMx83OrKGCV4gxly",
       },
       {
         kind: "text",
@@ -388,7 +417,7 @@ export const insight = [
       {
         kind: "audio",
         song: `Maggie May`,
-        src: "/songs/30_maggie_may.mp3",
+        uri: "6rovOdp3HgK1DeAMYDzoA7",
       },
       {
         kind: "text",
@@ -397,7 +426,7 @@ export const insight = [
       {
         kind: "audio",
         song: `Reason to Believe`,
-        src: "/songs/30_reason_to_believe.mp3",
+        uri: "3rGuoVKM5CwEo7eHyeXYIB",
       },
       {
         kind: "text",
@@ -423,7 +452,7 @@ export const insight = [
       {
         kind: "audio",
         song: `Before You Walk Out of My Life`,
-        src: "/songs/30_before_you_walk.mp3",
+        uri: "6xrvubhznLOcEO3AM6XBN2",
       },
       {
         kind: "text",
@@ -432,7 +461,7 @@ export const insight = [
       {
         kind: "audio",
         song: `Like This and Like That`,
-        src: "/songs/30_like_this_and.mp3",
+        uri: "6a6DtE4sVwF1TY4YA0yiuB",
       },
       {
         kind: "text",
@@ -441,7 +470,7 @@ export const insight = [
       {
         kind: "audio",
         song: `Woo-Hah!! Got You All in Check`,
-        src: "/songs/30_woo_hah.mp3",
+        uri: "09WxJCWFMWAxTHBLLelpDS",
       },
       {
         kind: "text",
@@ -450,7 +479,7 @@ export const insight = [
       {
         kind: "audio",
         song: `Everything Remains Raw`,
-        src: "/songs/30_everything_remains_raw.mp3",
+        uri: "4M8SdMmrvx001Au6aZFchJ",
       },
       {
         kind: "text",
@@ -471,7 +500,7 @@ export const insight = [
       {
         kind: "audio",
         song: `Survivor/I Will Survive`,
-        src: "/songs/30_survive.mp3",
+        uri: "6m2qba8pt0oa13nBLA2Nt2",
       },
       {
         kind: "text",
@@ -484,21 +513,58 @@ export const insight = [
     copy: [
       {
         kind: "text",
-        value: `The dash is on the decline from their (relatively) small height in 1961. This is somewhat in part due to its use to designate versions of songs, with “- Pt” or “- Part” or its derivatives. There were 67 instances (17%) of a dash being used in this manner, all of which occurred before 1987. Also fairly common in the 60s and 70s was the use of dashes to link parts of a compound phrase in a rhythmic or playful way, such as `,
-      },
-      {
-        kind: "audio",
-        song: `Super-cali-fragil-istic-expi-ali-docious`,
-        src: "/songs/output.mp3",
+        value: `Dash usage has declined since its peak in the early 60s.`,
       },
       {
         kind: "text",
-        value: ` by Julie Andrews released in 1965 or Stevie Wonder’s 1968 song  `,
+        value: `This is somewhat in part due to its use to designate versions of songs, with `,
+      },
+      {
+        kind: "highlight",
+        value: `- Pt`,
+      },
+      {
+        kind: "text",
+        value: `, `,
+      },
+      {
+        kind: "highlight",
+        value: `- Part`,
+      },
+      {
+        kind: "text",
+        value: `, or its derivatives. There were 67 instances (17%) of a dash being used in this manner, all of which occurred before 1987.<br /><br /> `,
+      },
+      {
+        kind: "text",
+        value: `The influence of scat singing is evident in several titles, such as Rivington's 1962 track `,
+      },
+      {
+        kind: "audio",
+        song: `Papa-Oom-Mow-Mow`,
+        uri: "0As6CEEV5d6tOEFhSx444J",
+      },
+      {
+        kind: "text",
+        value: `, Stevie Wonder’s 1968 song, `,
       },
       {
         kind: "audio",
         song: `Shoo-Be-Doo-Be-Doo-Da-Day`,
-        src: "/songs/output.mp3",
+        uri: "3Cqr3l72XDpazdFiQQpFHh",
+      },
+      {
+        kind: "text",
+        value: ` , and 1994’s `,
+      },
+      {
+        kind: "audio",
+        song: `Scatman (Ski-Ba-Bop-Ba-Dop-Bop)`,
+        uri: "623rRTKwGmgjH6sjE9uWLh",
+      },
+      {
+        kind: "text",
+        value: ` by Scatman John. Scat singing is a form of vocal improvisation in jazz where singers use nonsensical syllables to mimic instrumental sounds and create rhythmic melodies. It was a major influence on later styles such as bebop and doo-wop, which rose to prominence in the 1940s and 1950s. `,
       },
       {
         kind: "text",
@@ -506,16 +572,29 @@ export const insight = [
       },
       {
         kind: "text",
-        value: `Using hyphens between letters and numbers, such as Nat King Cole’s 1964 classic `,
+        value: `Another common use case for dashes is to separate numbers or individual letters of a word. It would be remiss not to mention Nat King Cole’s 1964 classic, `,
       },
       {
         kind: "audio",
         song: `L-O-V-E`,
-        src: "/songs/output.mp3",
+        uri: "4QxDOjgpYtQDxxbWPuEJOy",
       },
       {
         kind: "text",
-        value: ` is also a fairly popular use case.`,
+        value: `, undoubtedly the most famous example of this kind. Gloria Estafan and the Miami Sound Machine’s `,
+      },
+      {
+        kind: "audio",
+        song: `1-2-3`,
+        uri: "1pZWORSXTFlZnrfxChRBaz",
+      },
+      {
+        kind: "text",
+        value: ` from 1988 also reflects the same pattern of use.<br></br>`,
+      },
+      {
+        kind: "text",
+        value: `Most dashes used in song titles function as a hyphen or en-dash; there are no instances of an em-dash. Like many other of the punctuation marks, the dash has fallen out of fashion. In 2024, just two new charting songs featured a dash compared to 29 at it's peack in 1961. GenAI's, such as ChatGPT, affinity for the dash—the em-dash in particular—has made many cautious about their use for fear of being mischaracterised as AI-written. At a time when authenticity and songwriting is highly valued It is plausible, therefore, that the trend of infrequent dash usage continues.`,
       },
     ],
   },
@@ -556,46 +635,90 @@ export const insight = [
     copy: [
       {
         kind: "text",
-        value: `In the 1980s, increasingly more songs used parentheses for attribution to a film soundtrack, such as Bob Seger’s `,
+        value:
+          "Beginning in the 1980s, there was a noticeable trend of song titles referencing the soundtracks they came from, following the pattern, ",
       },
       {
-        kind: "audio",
-        song: `Shakedown (From "Beverly Hills Cop II")`,
-        src: "/songs/output.mp3",
+        kind: "highlight",
+        value: "Song Title (From “Film Title”)",
       },
-      {
-        kind: "text",
-        value: `. In this time, soundtrack albums saw a massive rise in popularity, driven by the commercial synergy between movie studios and their music publishing divisions. Music became a powerful promotional tool for films, with major hits like `,
-      },
-      {
-        kind: "audio",
-        song: `Prince’s Purple Rain`,
-        src: "/songs/output.mp3",
-      },
-      {
-        kind: "text",
-        value: ` and Christopher Cross’s `,
-      },
-      {
-        kind: "audio",
-        song: `Arthur’s Theme`,
-        src: "/songs/output.mp3",
-      },
-      {
-        kind: "text",
-        value: `.<br /><br />`,
-      },
-      {
-        kind: "text",
-        value: `The trend exploded in the 1990s, which some have dubbed the <a href="https://www.huffingtonpost.co.uk/entry/90s-last-decade-great-soundtracks_n_6268074ae4b0ea625c0d0597">“last great decade for film soundtracks”.</a> Todd “Stereo” Williams in conversation with Candice Frederick, writing for HuffPost, notes that the success of film soundtracks in the 90s can be attributed to, “a cross-pollination of Black labels really coming to the fore, Black filmmakers coming to the fore and hip-hop coming to the fore.” The decade saw many artists and rappers featuring in films, including Whitney Houston in `,
-      },
-      { kind: "audio", song: `The Bodyguard`, src: "/songs/output.mp3" },
-      { kind: "text", value: " and " },
-      { kind: "audio", song: `The Preacher’s Wife`, src: "/songs/output.mp3" },
       {
         kind: "text",
         value:
-          " for which she also recorded the highly successful soundtrack albums. ",
+          ". Consequently, the use of quotation marks and parentheses in the ’80s and ’90s follows a very similar surge.<br></br>",
+      },
+      {
+        kind: "text",
+        value:
+          "The trend of incorporating pop music into film grew out of New Hollywood in the 1970s, which had emerged to appeal to a younger, more educated, and more affluent audience, reshaping how studios approached filmmaking and distribution. Before the 1970s, soundtracks were largely confined to musicals; with New Hollywood, however, pop music began to feature more prominently in films, both to attract younger audiences and to serve as a promotional tool.<br /><br />",
+      },
+      {
+        kind: "text",
+        value:
+          "In 1981, MTV revolutionized music marketing by popularizing the music video, pushing pop music into a visual medium. Videos that combined film clips with soundtrack songs became effective advertisements for the films themselves—consider Bob Seger’s ",
+      },
+      {
+        kind: "audio",
+        song: `Shakedown`,
+        uri: "303oOLP2Jf6M4rke52qItM",
+      },
+      { kind: "text", value: " from Beverly Hills Cop II or Berlin’s " },
+      {
+        kind: "audio",
+        song: `Take My Breath Away`,
+        uri: "15MJ5NThPjj6xhPcts8MiY",
+      },
+      {
+        kind: "text",
+        value:
+          " from Top Gun, both of which intercut performance footage with scenes from their respective films. The rise of such cross-promotional practices was further fueled by the growing synergy between movie studios and their music publishing divisions. <br /><br />",
+      },
+      {
+        kind: "text",
+        value:
+          "The trend exploded in the 1990s. At this point, the U.S. music market was driven by album sales rather than singles, and the soundtrack album emerged as a standalone art form that could exist independently of its film. Some were dominated by a single artist—such as Saturday Night Fever or Purple Rain—while others compiled new and pre-existing tracks by various artists. Compilation albums, already huge in the 1980s and 1990s (the era of Now That’s What I Call Music!) offered access to multiple pop stars on a single record; multi-artist soundtracks were simply an extension of this trend. The soundtrack for Pretty Woman, Don’t Be a Menace, and Batman Forever, for example, featured performances from a roster of major artists of the time (though some songs on the soundtrack do not actually appear in the film).<br /><br />",
+      },
+      {
+        kind: "text",
+        value:
+          '<a href="https://www.huffingtonpost.co.uk/entry/90s-last-decade-great-soundtracks_n_6268074ae4b0ea625c0d0597" target="_blank">As Todd “Stereo” Williams notes,</a> in conversation with Candice Frederickx for HuffPost, the success of 1990s film soundtracks stemmed from “a cross-pollination of Black labels really coming to the fore, Black filmmakers coming to the fore, and hip-hop coming to the fore.” Indeed, films from Black directors, such as Do the Right Thing, Boyz n the Hood, and Waiting To Exhale, produced iconic soundtracks which showcased hip-hop and R&B music. The decade also saw a growing number of artists starring in films and contributing to their soundtracks, notably Whitney Houston in The Bodyguard and Madonna in Evita, reflecting the deepening crossover between music and cinema.<br /><br />',
+      },
+      {
+        kind: "text",
+        value:
+          "The use of parentheses for both stylistic and marketing purposes began to decline in the 2000s. As internet searchability improved, including a hook or subtitle in a song title became unnecessary. The rise of Napster and, later, streaming platforms shifted music consumption toward individual tracks and curated playlists, rather than full soundtrack albums, effectively reverting the US market to a song-oriented model. Although film music remains culturally significant—with hits like ",
+      },
+      {
+        kind: "audio",
+        song: `See You Again`,
+        uri: "2JzZzZUQj3Qff7wapcbKjc",
+      },
+      { kind: "text", value: " from Furious 7 and " },
+      {
+        kind: "audio",
+        song: `Dance the Night`,
+        uri: "11C4y2Yz1XbHmaQwO06s9f",
+      },
+      {
+        kind: "text",
+        value:
+          " from Barbie—the soundtrack album as a cohesive format has largely waned in popularity.<br></br>",
+      },
+      {
+        kind: "text",
+        value:
+          "It is worth noting that not all soundtrack titles included attribution to their films. For example, hugely successful soundtrack albums from Purple Rain, The Crow, and Footloose, among others, omit the film’s title from their song names. Similarly, pre-existing tracks featured on soundtrack albums without re-release do not bear any cinematic reference. Moreover, under Billboard’s charting rules, songs not commercially issued as singles were ineligible for the Hot 100—meaning tracks like Will Smith’s ",
+      },
+      { kind: "audio", song: `Men in Black`, uri: "3Dq2FHZ73hBUG815MoapQu" },
+      {
+        kind: "text",
+        value:
+          ", despite heavy radio play, never officially charted. <br></br>",
+      },
+      {
+        kind: "text",
+        value:
+          "By the 2000s, the practice of including film attribution in song titles had largely disappeared. Since then, quotation marks have been used sparsely in titles, and purely for stylistic choices.",
       },
     ],
   },
@@ -606,7 +729,7 @@ export const insight = [
         kind: "text",
         value: `The use of asterisks in pop music, while generally quite limited, gained traction in the late 1990s. With the notable exception of the `,
       },
-      { kind: "audio", song: `M*A*S*H`, src: "/songs/30_mash.mp3" },
+      { kind: "audio", song: `M*A*S*H`, uri: "2AXp6rYOxKL0KWZbiiTXA0" },
       {
         kind: "text",
         value: ` theme song in 1970, significant instances of asterisks in song titles and lyrics did not emerge until the mid-1990s, after which they were employed almost exclusively as a tool of censorship. The rise in profanity in song titles reflects a broader cultural trend, of a growing <a href="https://www.theguardian.com/media/2024/jan/06/swearing-is-becoming-more-widely-acceptable-linguistics-experts-claim">tolerance of and desensitization to explicit language and content.</a>  <br /><br />`,
@@ -622,7 +745,7 @@ export const insight = [
       {
         kind: "audio",
         song: `Fuck tha Police`,
-        src: "/songs/30_f_tha_police.mp3",
+        uri: "5n8Aro6j1bEGIy7Tpo7FV7",
       },
       {
         kind: "text",
@@ -638,7 +761,7 @@ export const insight = [
       },
       {
         kind: "text",
-        value: `The rise of streaming platforms has significantly increased the prevalence of explicit content in popular music. Unlike radio, services such as Spotify, Apple Music, and YouTube are not subject to FCC broadcast indecency regulations, allowing artists to include profanity and graphic themes without fear of censorship or fines. This lack of regulation also removes the need for cleaner, radio edits. Furthermore, because Billboard now incorporates streaming data alongside sales and airplay, explicit tracks can chart in their original form, demonstrating that uncensored content no longer hinders commercial success and, in some cases, actively drives it.<br></br>`,
+        value: `The rise of streaming platforms, however, has largely removed these barriers. Unlike radio, services such as Spotify, Apple Music, and YouTube are not subject to FCC broadcast indecency regulations, allowing artists to include profanity and graphic themes without fear of censorship or fines. This lack of regulation also diminishes the need for cleaner, radio edits. Furthermore, because Billboard now incorporates streaming data alongside sales and airplay, explicit tracks can chart in their original form; uncensored content no longer hinders commercial success and, in some cases, actively drives it.<br></br>`,
       },
       {
         kind: "text",
@@ -647,7 +770,7 @@ export const insight = [
       {
         kind: "audio",
         song: `Sweet * Honey * Buckin'`,
-        src: "/songs/30_sweet_honey_buckin.mp3",
+        uri: "7CA0mEKqEZ0WFAIlTS4uEl",
       },
       {
         kind: "text",
@@ -660,7 +783,7 @@ export const insight = [
     copy: [
       {
         kind: "text",
-        value: `The ampersand is not widely used, the full spelling, “and”, is by far more common, used about 3 times as often.`,
+        value: `The ampersand is not widely used. The full spelling, “and”, is by far more common, used about 3 times as often.`,
       },
     ],
   },
