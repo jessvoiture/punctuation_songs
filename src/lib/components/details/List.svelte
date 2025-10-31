@@ -11,6 +11,7 @@
   import YearsSongList from "../details/YearsSongList.svelte";
   import DecadeSelector from "../details/DecadeSelector.svelte";
   import AudioPlayer from "../AudioPlay.svelte";
+  import SpotifyPlayer from "$lib/components/SpotifyPlayer.svelte";
   import { insight } from "../../../utils/insight.js";
 
   export let showingData;
@@ -78,6 +79,8 @@
   {/if}
 </div>
 
+<div id="embed-iframe" style="display: none; visibility: hidden;"></div>
+
 <div class="content">
   {#if activeTab === "words"}
     <div id="commentary" class="body-text">
@@ -86,13 +89,13 @@
           <span>{@html part.value}</span>
         {:else if part.kind === "highlight"}
           <span
-            style="background-color:#bee5f3; padding:1px 4px; border-radius:4px; -webkit-box-decoration-break: clone;
+            style="background-color:#bee5f3; padding:1px 6px; border-radius:3px; -webkit-box-decoration-break: clone;
     box-decoration-break: clone;"
           >
             {part.value}
           </span>
         {:else if part.kind === "audio"}
-          <AudioPlayer src={part.src} song={part.song} />
+          <SpotifyPlayer spotifyUri={part.uri} name={part.song} />
         {/if}
       {/each}
     </div>
@@ -122,7 +125,7 @@
   #commentary {
     color: #000000;
     font-size: 15px;
-    line-height: 20px;
+    line-height: 22px;
   }
 
   .content {

@@ -16,3 +16,10 @@ export const isDrawerExpanded = writable(false);
 export const includeKeywordsParantheses = writable(false);
 
 export const currentAudio = writable(null);
+
+export const isPlaying = writable(false);
+export const activeController = writable(null);
+export const activeUri = writable(null);
+
+// ...existing code...
+export const spotifyCurrentTrack = writable(null); // newly added

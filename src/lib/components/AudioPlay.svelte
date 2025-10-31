@@ -3,6 +3,7 @@
 
   export let src = "/songs/output.mp3";
   export let song = "song";
+  export let uri = "7iN1s7xHE4ifF5povM6A48";
 
   let audio;
   let isPlaying = false;
