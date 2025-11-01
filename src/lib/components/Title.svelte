@@ -35,7 +35,7 @@
 {#if screenWidth > 0}
   <div class="header">
     <h1 class="title">
-      <Dropdown value={selectedMetric} options={metric_options} /> of songs with
+      <Dropdown value={selectedMetric} options={metric_options} /> song titles with
       <Dropdown value={selectedOption} options={punc_options} />
     </h1>
 
