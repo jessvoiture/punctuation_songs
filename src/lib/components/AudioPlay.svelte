@@ -1,9 +1,11 @@
 <script>
-  import { currentAudio } from "../../stores";
+  import { onDestroy } from "svelte";
+  import { currentAudio, selectedOption } from "../../stores";
 
-  export let src = "/songs/output.mp3";
-  export let song = "song";
-  export let uri = "7iN1s7xHE4ifF5povM6A48";
+  export let src;
+  export let song;
+
+  console.log(src);
 
   let audio;
   let isPlaying = false;
@@ -59,11 +61,22 @@
       audio.pause();
     }
   }
+
+  onDestroy(() => {
+    // if this component is unmounted, stop the audio
+    if (audio) {
+      audio.pause();
+    }
+    // clear the store if it points to this audio
+    if ($currentAudio === audio) {
+      currentAudio.set(null);
+    }
+  });
 </script>
 
 <audio
   bind:this={audio}
-  {src}
+  src={`/songs/${src}`}
   preload="metadata"
   on:play={onPlay}
   on:pause={onPause}

@@ -4,7 +4,6 @@
   import Title from "$lib/components/Title.svelte";
   import ListWrapper from "$lib/components/details/ListWrapper.svelte";
   import { selectedOption, includeKeywordsParantheses } from "../stores.js";
-  import SpotifyPlayer from "$lib/components/SpotifyPlayer.svelte";
 
   export let data;
 
@@ -30,10 +29,6 @@
 </script>
 
 <svelte:window on:resize={resize} bind:scrollY={y} />
-<!-- 
-<SpotifyPlayer name="Song 1" spotifyUri="1hKdDCpiI9mqz1jVHRKG0E" />
-<SpotifyPlayer name="Song 2" spotifyUri="1xzi1Jcr7mEi9K2RfzLOqS" />
-<SpotifyPlayer name="Song 3" spotifyUri="0VjIjW4GlUZAMYd2vXMi3b" /> -->
 
 <div class="container">
   <div class="chart-wrapper">
@@ -43,12 +38,6 @@
 
   <ListWrapper {screenWidth} data={songs} {screenHeight} {isMobile} />
 </div>
-
-<div
-  id="embed-iframe"
-  style="display:none; visibility:hidden;"
-  aria-hidden="true"
-></div>
 
 <style>
   .container {

@@ -21,7 +21,7 @@
     { option: "dash", displayOption: "a dash" },
     { option: "ellipses", displayOption: "ellipses" },
     { option: "colons", displayOption: "a colon" },
-    { option: "quote", displayOption: "a quote" },
+    { option: "quote", displayOption: "quotation marks" },
     { option: "asterisk", displayOption: "an asterisk" },
     { option: "ampersand", displayOption: "an ampersand" },
   ];

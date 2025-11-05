@@ -10,6 +10,7 @@ export const insight = [
       {
         kind: "audio",
         song: "I Can’t Help Myself (Sugar Pie Honey Bunch)",
+        src: "30_sugar_pie_honey_bunch.mp3",
         uri: "6b6IMqP565TbtFFZg9iFf3",
       },
       {
@@ -19,6 +20,7 @@ export const insight = [
       {
         kind: "audio",
         song: "Escape (The Piña Colada Song)",
+        src: "30_escape.mp3",
         uri: "5IMtdHjJ1OtkxbGe4zfUxQ",
       },
       {
@@ -54,11 +56,13 @@ export const insight = [
         kind: "audio",
         song: `Shakedown`,
         uri: "303oOLP2Jf6M4rke52qItM",
+        src: "30_shakedown.mp3",
       },
       { kind: "text", value: " from Beverly Hills Cop II or Berlin’s " },
       {
         kind: "audio",
         song: `Take My Breath Away`,
+        src: "30_take_my_breath.mp3",
         uri: "15MJ5NThPjj6xhPcts8MiY",
       },
       {
@@ -84,12 +88,14 @@ export const insight = [
       {
         kind: "audio",
         song: `See You Again`,
+        src: "30_see_you_again.mp3",
         uri: "2JzZzZUQj3Qff7wapcbKjc",
       },
       { kind: "text", value: " from Furious 7 and " },
       {
         kind: "audio",
         song: `Dance the Night`,
+        src: "30_dance_the_night.mp3",
         uri: "11C4y2Yz1XbHmaQwO06s9f",
       },
       {
@@ -102,7 +108,12 @@ export const insight = [
         value:
           "It is worth noting that not all soundtrack titles included attribution to their films. For example, hugely successful soundtrack albums from Purple Rain, The Crow, and Footloose, among others, omit the film’s title from their song names. Similarly, pre-existing tracks featured on soundtrack albums without re-release do not bear any cinematic reference. Moreover, under Billboard’s charting rules, songs not commercially issued as singles were ineligible for the Hot 100—meaning tracks like Will Smith’s ",
       },
-      { kind: "audio", song: `Men in Black`, uri: "3Dq2FHZ73hBUG815MoapQu" },
+      {
+        kind: "audio",
+        song: `Men in Black`,
+        uri: "3Dq2FHZ73hBUG815MoapQu",
+        src: "30_mib.mp3",
+      },
       {
         kind: "text",
         value:
@@ -169,6 +180,7 @@ export const insight = [
       {
         kind: "audio",
         song: `Sugar, Sugar`,
+        src: "30_sugar_sugar.mp3",
         uri: "3iSws76HjaU7k49EqJVTfF",
       },
       {
@@ -179,6 +191,7 @@ export const insight = [
       {
         kind: "audio",
         song: `Jealousy, Jealousy`,
+        src: "30_jealousy_jealousy.mp3",
         uri: "0MMyJUC3WNnFS1lit5pTjk",
       },
       {
@@ -189,6 +202,7 @@ export const insight = [
       {
         kind: "audio",
         song: `Knowing Me, Knowing You`,
+        src: "30_knowing_me_knowing_you.mp3",
         uri: "798cuJeotvXP8UVa8GJPnD",
       },
       {
@@ -207,6 +221,7 @@ export const insight = [
       {
         kind: "audio",
         song: `Hello, Dolly!`,
+        src: "30_hello_dolly.mp3",
         uri: "63kd4m3VFxcJjPVVtbVNAu",
       },
       {
@@ -216,6 +231,7 @@ export const insight = [
       {
         kind: "audio",
         song: `Help Me, Rhonda`,
+        src: "30_help_me_rhonda.mp3",
         uri: "1pGNIN1wr7rcsDONmHLNRd",
       },
       {
@@ -230,6 +246,7 @@ export const insight = [
       {
         kind: "audio",
         song: `Girl, So Confusing`,
+        src: "30_girl_so_confusing.mp3",
         uri: "7srqyRb5plksW5k65itXDB",
       },
       {
@@ -239,6 +256,7 @@ export const insight = [
       {
         kind: "audio",
         song: `So long, London`,
+        src: "30_so_long_london.mp3",
         uri: "0mWVScJbxO3tbXuiZOxYZE",
       },
       {
@@ -269,6 +287,7 @@ export const insight = [
       {
         kind: "audio",
         song: `Please Mr. Postman`,
+        src: "30_please_mr_post.mp3",
         uri: "5fNDP3NTdE69szQHUl4fFr",
       },
       {
@@ -278,6 +297,7 @@ export const insight = [
       {
         kind: "audio",
         song: `Mr. Brightside`,
+        src: "30_mr_brightside.mp3",
         uri: "003vvx7Niy0yvhvHt4a68B",
       },
       {
@@ -307,6 +327,7 @@ export const insight = [
       {
         kind: "audio",
         song: `DAMN.`,
+        src: "30_humble.mp3",
         uri: "7KXjTSCq5nL1LoYtL7XAwS",
       },
       {
@@ -346,11 +367,12 @@ export const insight = [
       },
       {
         kind: "text",
-        value: `A prominent example of this is The Beatles’ double A-side`,
+        value: `A prominent example of this is The Beatles’ double A-side `,
       },
       {
         kind: "audio",
         song: `Something`,
+        src: "30_something.mp3",
         uri: "0pNeVovbiZHkulpGeOx1Gj",
       },
       {
@@ -360,6 +382,7 @@ export const insight = [
       {
         kind: "audio",
         song: `Come Together`,
+        src: "30_come_together.mp3",
         uri: "2EqlS6tkEnglzr7tkKAAYD",
       },
       {
@@ -377,6 +400,7 @@ export const insight = [
       {
         kind: "audio",
         song: `Bicycle Race`,
+        src: "30_bicycle.mp3",
         uri: "5ipOo1CD7gAwzKAMEXUBp9",
       },
       {
@@ -386,6 +410,7 @@ export const insight = [
       {
         kind: "audio",
         song: `Fat Bottomed Girls`,
+        src: "30_fbg.mp3",
         uri: "4igIYHF3B5VBxEafHauVo3",
       },
       {
@@ -404,6 +429,7 @@ export const insight = [
       {
         kind: "audio",
         song: `I Feel The Earth Move`,
+        src: "30_i_feel_the_earth_move.mp3",
         uri: "1BWsOxeMx83OrKGCV4gxly",
       },
       {
@@ -417,6 +443,7 @@ export const insight = [
       {
         kind: "audio",
         song: `Maggie May`,
+        src: "30_maggie_may.mp3",
         uri: "6rovOdp3HgK1DeAMYDzoA7",
       },
       {
@@ -426,6 +453,7 @@ export const insight = [
       {
         kind: "audio",
         song: `Reason to Believe`,
+        src: "30_reason_to_believe.mp3",
         uri: "3rGuoVKM5CwEo7eHyeXYIB",
       },
       {
@@ -452,6 +480,7 @@ export const insight = [
       {
         kind: "audio",
         song: `Before You Walk Out of My Life`,
+        src: "30_before_you_walk.mp3",
         uri: "6xrvubhznLOcEO3AM6XBN2",
       },
       {
@@ -461,6 +490,7 @@ export const insight = [
       {
         kind: "audio",
         song: `Like This and Like That`,
+        src: "30_like_this_and.mp3",
         uri: "6a6DtE4sVwF1TY4YA0yiuB",
       },
       {
@@ -470,6 +500,7 @@ export const insight = [
       {
         kind: "audio",
         song: `Woo-Hah!! Got You All in Check`,
+        src: "30_woo_hah.mp3",
         uri: "09WxJCWFMWAxTHBLLelpDS",
       },
       {
@@ -479,6 +510,7 @@ export const insight = [
       {
         kind: "audio",
         song: `Everything Remains Raw`,
+        src: "30_everything_remains_raw.mp3",
         uri: "4M8SdMmrvx001Au6aZFchJ",
       },
       {
@@ -500,6 +532,7 @@ export const insight = [
       {
         kind: "audio",
         song: `Survivor/I Will Survive`,
+        src: "30_survive.mp3",
         uri: "6m2qba8pt0oa13nBLA2Nt2",
       },
       {
@@ -542,6 +575,7 @@ export const insight = [
       {
         kind: "audio",
         song: `Papa-Oom-Mow-Mow`,
+        src: "30_papa.mp3",
         uri: "0As6CEEV5d6tOEFhSx444J",
       },
       {
@@ -551,6 +585,7 @@ export const insight = [
       {
         kind: "audio",
         song: `Shoo-Be-Doo-Be-Doo-Da-Day`,
+        src: "30_shoo.mp3",
         uri: "3Cqr3l72XDpazdFiQQpFHh",
       },
       {
@@ -560,6 +595,7 @@ export const insight = [
       {
         kind: "audio",
         song: `Scatman (Ski-Ba-Bop-Ba-Dop-Bop)`,
+        src: "30_scatman.mp3",
         uri: "623rRTKwGmgjH6sjE9uWLh",
       },
       {
@@ -577,6 +613,7 @@ export const insight = [
       {
         kind: "audio",
         song: `L-O-V-E`,
+        src: "30_love.mp3",
         uri: "4QxDOjgpYtQDxxbWPuEJOy",
       },
       {
@@ -586,6 +623,7 @@ export const insight = [
       {
         kind: "audio",
         song: `1-2-3`,
+        src: "30_123.mp3",
         uri: "1pZWORSXTFlZnrfxChRBaz",
       },
       {
@@ -660,12 +698,14 @@ export const insight = [
       {
         kind: "audio",
         song: `Shakedown`,
+        src: "30_shakedown.mp3",
         uri: "303oOLP2Jf6M4rke52qItM",
       },
       { kind: "text", value: " from Beverly Hills Cop II or Berlin’s " },
       {
         kind: "audio",
         song: `Take My Breath Away`,
+        src: "30_take_my_breath.mp3",
         uri: "15MJ5NThPjj6xhPcts8MiY",
       },
       {
@@ -691,12 +731,14 @@ export const insight = [
       {
         kind: "audio",
         song: `See You Again`,
+        src: "30_see_you_again.mp3",
         uri: "2JzZzZUQj3Qff7wapcbKjc",
       },
       { kind: "text", value: " from Furious 7 and " },
       {
         kind: "audio",
         song: `Dance the Night`,
+        src: "30_dance_the_night.mp3",
         uri: "11C4y2Yz1XbHmaQwO06s9f",
       },
       {
@@ -709,7 +751,12 @@ export const insight = [
         value:
           "It is worth noting that not all soundtrack titles included attribution to their films. For example, hugely successful soundtrack albums from Purple Rain, The Crow, and Footloose, among others, omit the film’s title from their song names. Similarly, pre-existing tracks featured on soundtrack albums without re-release do not bear any cinematic reference. Moreover, under Billboard’s charting rules, songs not commercially issued as singles were ineligible for the Hot 100—meaning tracks like Will Smith’s ",
       },
-      { kind: "audio", song: `Men in Black`, uri: "3Dq2FHZ73hBUG815MoapQu" },
+      {
+        kind: "audio",
+        song: `Men in Black`,
+        uri: "3Dq2FHZ73hBUG815MoapQu",
+        src: "30_mib.mp3",
+      },
       {
         kind: "text",
         value:
@@ -729,7 +776,12 @@ export const insight = [
         kind: "text",
         value: `The use of asterisks in pop music, while generally quite limited, gained traction in the late 1990s. With the notable exception of the `,
       },
-      { kind: "audio", song: `M*A*S*H`, uri: "2AXp6rYOxKL0KWZbiiTXA0" },
+      {
+        kind: "audio",
+        song: `M*A*S*H`,
+        uri: "2AXp6rYOxKL0KWZbiiTXA0",
+        src: "30_mash.mp3",
+      },
       {
         kind: "text",
         value: ` theme song in 1970, significant instances of asterisks in song titles and lyrics did not emerge until the mid-1990s, after which they were employed almost exclusively as a tool of censorship. The rise in profanity in song titles reflects a broader cultural trend, of a growing <a href="https://www.theguardian.com/media/2024/jan/06/swearing-is-becoming-more-widely-acceptable-linguistics-experts-claim">tolerance of and desensitization to explicit language and content.</a>  <br /><br />`,
@@ -746,6 +798,7 @@ export const insight = [
         kind: "audio",
         song: `Fuck tha Police`,
         uri: "5n8Aro6j1bEGIy7Tpo7FV7",
+        src: "30_f_tha_police.mp3",
       },
       {
         kind: "text",
@@ -771,6 +824,7 @@ export const insight = [
         kind: "audio",
         song: `Sweet * Honey * Buckin'`,
         uri: "7CA0mEKqEZ0WFAIlTS4uEl",
+        src: "30_sweet_honey_buckin.mp3",
       },
       {
         kind: "text",

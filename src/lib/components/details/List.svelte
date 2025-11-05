@@ -10,8 +10,7 @@
   } from "../../../stores";
   import YearsSongList from "../details/YearsSongList.svelte";
   import DecadeSelector from "../details/DecadeSelector.svelte";
-  import AudioPlayer from "../AudioPlay.svelte";
-  import SpotifyPlayer from "$lib/components/SpotifyPlayer.svelte";
+  import AudioPlay from "$lib/components/AudioPlay.svelte";
   import { insight } from "../../../utils/insight.js";
 
   export let showingData;
@@ -79,8 +78,6 @@
   {/if}
 </div>
 
-<div id="embed-iframe" style="display: none; visibility: hidden;"></div>
-
 <div class="content">
   {#if activeTab === "words"}
     <div id="commentary" class="body-text">
@@ -95,7 +92,7 @@
             {part.value}
           </span>
         {:else if part.kind === "audio"}
-          <SpotifyPlayer spotifyUri={part.uri} name={part.song} />
+          <AudioPlay src={part.src} song={part.song} />
         {/if}
       {/each}
     </div>
