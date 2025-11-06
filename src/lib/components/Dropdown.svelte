@@ -10,11 +10,6 @@
 </select>
 
 <style>
-  select {
-    font-size: 24px;
-    font-weight: bold;
-  }
-
   option {
     font-size: 14px;
     color: #000;
