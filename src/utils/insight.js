@@ -420,6 +420,7 @@ export const insight = [
       {
         kind: "audio",
         song: `It's Too Late`,
+        src: "30_its_too_late.mp3",
         uri: "12q3V8ShACq2PSWINMc2rC",
       },
       {
