@@ -36,7 +36,7 @@
   <div class="header">
     <h1 class="title">
       <Dropdown value={selectedMetric} options={metric_options} /> of song titles
-      containing
+      with
       <Dropdown value={selectedOption} options={punc_options} />
     </h1>
 
