@@ -110,8 +110,7 @@
     vertical-align: baseline; /* wraps with text */
     text-decoration: none; /* remove link underline */
     color: #000;
-    padding-left: 6px;
-    padding-right: 6px;
+    padding: 1px 6px;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
   }
