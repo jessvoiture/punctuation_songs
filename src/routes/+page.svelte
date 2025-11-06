@@ -30,14 +30,16 @@
 
 <svelte:window on:resize={resize} bind:scrollY={y} />
 
-<div class="container">
-  <div class="chart-wrapper">
-    <Title {screenWidth} />
-    <BarChart data={songs} {screenWidth} {screenHeight} {isMobile} />
-  </div>
+{#if screenWidth > 0}
+  <div class="container">
+    <div class="chart-wrapper">
+      <Title {screenWidth} />
+      <BarChart data={songs} {screenWidth} {screenHeight} {isMobile} />
+    </div>
 
-  <ListWrapper {screenWidth} data={songs} {screenHeight} {isMobile} />
-</div>
+    <ListWrapper {screenWidth} data={songs} {screenHeight} {isMobile} />
+  </div>
+{/if}
 
 <style>
   .container {
