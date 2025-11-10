@@ -33,7 +33,7 @@
 {#if screenWidth > 0}
   <div class="container">
     <div class="chart-wrapper">
-      <Title {screenWidth} />
+      <Title {screenWidth} {isMobile} />
       <BarChart data={songs} {screenWidth} {screenHeight} {isMobile} />
     </div>
 

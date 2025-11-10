@@ -7,27 +7,43 @@
   import YearsSongList from "./YearsSongList.svelte";
   import ParenthesesToggle from "../ParenthesesToggle.svelte";
   import { insight } from "../../../utils/insight.js";
-  import { selectedOption, clickedYear } from "../../../stores";
+  import { selectedOption, clickedYear, drawerState } from "../../../stores";
 
   export let screenHeight;
   export let showingData;
   export let screenWidth;
 
   let expandedHeight = screenHeight * 0.95;
+  let middleHeight = screenHeight * 0.4;
   let collapsedHeight = 50;
 
   $: selectedInsight = insight.find((d) => d.type === $selectedOption);
   $: expandedHeight = screenHeight * 0.95;
+  $: middleHeight = screenHeight * 0.4;
 
   let isDrawerExpanded = false;
+
   let drawerHeight = tweened(collapsedHeight, {
-    duration: 300,
+    duration: 200,
     easing: cubicOut,
   });
 
-  function toggleDrawer() {
-    isDrawerExpanded = !isDrawerExpanded;
-    drawerHeight.set(isDrawerExpanded ? expandedHeight : collapsedHeight);
+  function fullyOpenDrawer() {
+    isDrawerExpanded = true;
+    drawerHeight.set(expandedHeight);
+    drawerState.set("open");
+  }
+
+  function fullyCloseDrawer() {
+    isDrawerExpanded = false;
+    drawerHeight.set(collapsedHeight);
+    drawerState.set("closed");
+  }
+
+  function paritallyOpenDrawer() {
+    isDrawerExpanded = false;
+    drawerHeight.set(middleHeight);
+    drawerState.set("middle");
   }
 
   $: clickedYear.subscribe((year) => {
@@ -47,26 +63,34 @@
     }, 500);
   }
 
-  console.log($drawerHeight);
+  const buttonConfigs = {
+    open: [
+      { icon: "expand_less", action: paritallyOpenDrawer },
+      { icon: "keyboard_double_arrow_down", action: fullyCloseDrawer },
+    ],
+    middle: [
+      { icon: "expand_more", action: fullyCloseDrawer },
+      { icon: "expand_less", action: fullyOpenDrawer },
+    ],
+    closed: [
+      { icon: "expand_less", action: paritallyOpenDrawer },
+      { icon: "keyboard_double_arrow_up", action: fullyOpenDrawer },
+    ],
+  };
 </script>
 
-{#if isDrawerExpanded}
+{#if $drawerState === "open"}
   <div class="overlay" transition:fade></div>
 {/if}
 
 <div class="drawer" style="height: {$drawerHeight}px;">
-  <button
-    class="drawer-toggle"
-    on:click={toggleDrawer}
-    aria-expanded={isDrawerExpanded}
-  >
-    <span class="drawer-label"
-      >{isDrawerExpanded ? "Hide Details" : "Show Details"}</span
-    >
-    <i class="material-icons toggle-icon" class:expanded={isDrawerExpanded}>
-      expand_less
-    </i>
-  </button>
+  <div class="drawer-actions">
+    {#each buttonConfigs[$drawerState] as btn}
+      <button class="drawer-toggle" on:click={btn.action}>
+        <i class="material-icons toggle-icon">{btn.icon}</i>
+      </button>
+    {/each}
+  </div>
 
   {#if isDrawerExpanded}
     <div class="drawer-content">
@@ -88,6 +112,15 @@
     font-family: sans-serif;
     z-index: 10000;
   }
+
+  .drawer-actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    border-bottom: 1px solid #ddd;
+    background-color: #f9f9f9;
+  }
+
   .drawer-content {
     padding-right: 16px;
     padding-left: 16px;

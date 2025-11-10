@@ -15,6 +15,7 @@
     mouseY,
     clickedYear,
     includeKeywordsParantheses,
+    drawerState,
   } from "../../../stores";
   import Tooltip from "./Tooltip.svelte";
   import Bars from "./Bars.svelte";
@@ -36,17 +37,37 @@
   let showingData = data;
   let yExtent;
 
-  $: if (isMobile) {
-    height = screenHeight - 300;
-    width = 0.9 * screenWidth;
-  } else {
-    height = 0.72 * screenHeight;
-    width = 0.6 * screenWidth;
+  const tweenedHeight = tweened(200, {
+    duration: 300,
+    easing: cubicOut,
+  });
+
+  $: {
+    let targetH;
+    let targetW;
+
+    if (isMobile) {
+      targetW = 0.9 * screenWidth;
+
+      if ($drawerState != "closed") {
+        targetH = 0.6 * screenHeight - 180;
+      } else {
+        targetH = screenHeight - 250;
+      }
+    } else {
+      targetW = 0.6 * screenWidth;
+      targetH = 0.72 * screenHeight;
+    }
+
+    width = targetW;
+    tweenedHeight.set(targetH);
   }
+
+  $: console.log($tweenedHeight);
 
   let padding = { top: 20, right: 0, bottom: 30, left: 40 };
   $: innerWidth = width - padding.left - padding.right;
-  $: innerHeight = height - padding.top - padding.bottom;
+  $: innerHeight = $tweenedHeight - padding.top - padding.bottom;
 
   $: tweenedY = tweened(
     data
@@ -97,8 +118,8 @@
 </script>
 
 <div class="bar-chart">
-  {#if showingData.length > 0 && width > 0 && height > 0}
-    <svg {width} {height}>
+  {#if showingData.length > 0 && width > 0 && $tweenedHeight > 0}
+    <svg {width} height={$tweenedHeight}>
       <g transform={`translate(0, ${padding.top})`}>
         <YAxis {yScale} {yticks} {width} />
 

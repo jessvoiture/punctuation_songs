@@ -6,9 +6,11 @@
     selectedOption,
     selectedMetric,
     includeKeywordsParantheses,
+    drawerState,
   } from "../../stores";
 
   export let screenWidth;
+  export let isMobile;
 
   const punc_options = [
     { option: "parentheses", displayOption: "parentheses" },
@@ -34,20 +36,22 @@
 
 {#if screenWidth > 0}
   <div class="header">
-    <h1 class="title">
+    <!-- {#if ($drawerState == "closed") | !isMobile} -->
+    <h1 class="title" transition:slide>
       <Dropdown value={selectedMetric} options={metric_options} /> of song titles
       with
       <Dropdown value={selectedOption} options={punc_options} />
     </h1>
 
-    <h2>
+    <!-- <h2 transition:slide>
       {#if $selectedMetric === "Percent"}
         Percent of
       {:else}
         Number of
       {/if}
       new charting songs in the Billboard Hot 100 per year
-    </h2>
+    </h2> -->
+    <!-- {/if} -->
 
     <ParenthesesToggle />
   </div>

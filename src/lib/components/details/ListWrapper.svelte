@@ -2,6 +2,7 @@
   import { selectedOption, includeKeywordsParantheses } from "../../../stores";
   import List from "./List.svelte";
   import ListDrawer from "./ListDrawer.svelte";
+  import DrawerMobile from "./DrawerMobile.svelte";
 
   export let screenHeight;
   export let screenWidth;
@@ -24,7 +25,8 @@
     <List showingData={showingData24} {screenWidth} />
   </div>
 {:else if isMobile}
-  <ListDrawer showingData={showingData24} {screenHeight} />
+  <!-- <ListDrawer showingData={showingData24} {screenHeight} /> -->
+  <DrawerMobile showingData={showingData24} {screenHeight} {screenWidth} />
 {/if}
 
 <style>
