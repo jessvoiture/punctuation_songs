@@ -61,6 +61,8 @@
     gap: 24px;
     flex-basis: auto;
     width: fit-content;
+    overscroll-behavior: none;
+    touch-action: none;
   }
 
   /* small screens */
