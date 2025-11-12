@@ -22,11 +22,16 @@
 
 {#if !isMobile}
   <div class="details-wrapper">
-    <List showingData={showingData24} {screenWidth} />
+    <List showingData={showingData24} {screenWidth} {isMobile} />
   </div>
 {:else if isMobile}
   <!-- <ListDrawer showingData={showingData24} {screenHeight} /> -->
-  <DrawerMobile showingData={showingData24} {screenHeight} {screenWidth} />
+  <DrawerMobile
+    showingData={showingData24}
+    {screenHeight}
+    {screenWidth}
+    {isMobile}
+  />
 {/if}
 
 <style>

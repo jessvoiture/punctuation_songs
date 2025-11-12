@@ -12,6 +12,7 @@
   export let screenHeight;
   export let showingData;
   export let screenWidth;
+  export let isMobile;
 
   let expandedHeight = screenHeight * 0.95;
   let middleHeight = screenHeight * 0.4;
@@ -94,7 +95,7 @@
 
   {#if isDrawerExpanded}
     <div class="drawer-content">
-      <List {showingData} {screenWidth} />
+      <List {showingData} {screenWidth} {isMobile} />
     </div>
   {/if}
 </div>

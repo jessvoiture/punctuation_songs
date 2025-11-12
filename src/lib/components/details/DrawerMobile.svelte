@@ -10,6 +10,7 @@
   export let screenHeight = window.innerHeight;
   export let showingData;
   export let screenWidth;
+  export let isMobile;
 
   let partialRatio = 0.42;
   let fullRatio = 0.95;
@@ -91,7 +92,7 @@
   </div>
 
   <div class="drawer-content">
-    <List {showingData} {screenWidth} />
+    <List {showingData} {screenWidth} {isMobile} />
   </div>
 </div>
 

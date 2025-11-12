@@ -7,22 +7,22 @@
     clickedYear,
     hoveredDataYear,
     includeKeywordsParantheses,
+    drawerState,
   } from "../../../stores";
   import YearsSongList from "../details/YearsSongList.svelte";
   import DecadeSelector from "../details/DecadeSelector.svelte";
   import AudioPlay from "$lib/components/AudioPlay.svelte";
   import { insight } from "../../../utils/insight.js";
+  import RenderCommentary from "./RenderCommentary.svelte";
 
   export let showingData;
   export let screenWidth;
+  export let isMobile;
 
   $: selectedInsight = insight.find((d) => d.type === $selectedOption);
 
   let showingSongList = false;
-  let buttonText = "Show songs";
   let activeTab = "words";
-
-  $: buttonText = showingSongList ? "Hide songs" : "Show songs";
 
   $: clickedYear.subscribe((year) => {
     if (year) {
@@ -78,34 +78,21 @@
   {/if}
 </div>
 
-<div class="content">
-  {#if activeTab === "words"}
-    <div id="commentary" class="body-text">
-      {#each selectedInsight.copy as part}
-        {#if part.kind === "text"}
-          <span>{@html part.value}</span>
-        {:else if part.kind === "highlight"}
-          <span
-            style="background-color:#bee5f3; padding:1px 6px; border-radius:3px; -webkit-box-decoration-break: clone;
-    box-decoration-break: clone;"
-          >
-            {part.value}
-          </span>
-        {:else if part.kind === "audio"}
-          <AudioPlay src={part.src} song={part.song} />
-        {/if}
-      {/each}
-    </div>
-  {:else if activeTab === "songs"}
-    <div class="song-list-wrapper">
-      <div class="body-text list" transition:fade>
-        {#each showingData as year}
-          <YearsSongList {year} {screenWidth} />
-        {/each}
+{#if !isMobile || $drawerState !== "closed"}
+  <div class="content">
+    {#if activeTab === "words"}
+      <RenderCommentary {selectedInsight} />
+    {:else if activeTab === "songs"}
+      <div class="song-list-wrapper">
+        <div class="body-text list" transition:fade>
+          {#each showingData as year}
+            <YearsSongList {year} {screenWidth} />
+          {/each}
+        </div>
       </div>
-    </div>
-  {/if}
-</div>
+    {/if}
+  </div>
+{/if}
 
 <style>
   .song-list-wrapper {
@@ -117,12 +104,6 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
-  }
-
-  #commentary {
-    color: #000000;
-    font-size: 15px;
-    line-height: 22px;
   }
 
   .content {
