@@ -20,19 +20,19 @@
   }
 </script>
 
-{#if !isMobile}
-  <div class="details-wrapper">
+<div class="details-wrapper">
+  {#if !isMobile}
     <List showingData={showingData24} {screenWidth} {isMobile} />
-  </div>
-{:else if isMobile}
-  <!-- <ListDrawer showingData={showingData24} {screenHeight} /> -->
-  <DrawerMobile
-    showingData={showingData24}
-    {screenHeight}
-    {screenWidth}
-    {isMobile}
-  />
-{/if}
+  {:else if isMobile}
+    <!-- <ListDrawer showingData={showingData24} {screenHeight} /> -->
+    <DrawerMobile
+      showingData={showingData24}
+      {screenHeight}
+      {screenWidth}
+      {isMobile}
+    />
+  {/if}
+</div>
 
 <style>
   .details-wrapper {
