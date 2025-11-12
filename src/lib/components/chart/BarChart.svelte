@@ -16,6 +16,7 @@
     clickedYear,
     includeKeywordsParantheses,
     drawerState,
+    drawerHeight,
   } from "../../../stores";
   import Tooltip from "./Tooltip.svelte";
   import Bars from "./Bars.svelte";
@@ -50,10 +51,16 @@
       targetW = 0.9 * screenWidth;
 
       if ($drawerState != "closed") {
-        targetH = 0.6 * screenHeight - 180;
+        targetH = screenHeight - $drawerHeight - 160;
       } else {
-        targetH = screenHeight - 250;
+        targetH = screenHeight - $drawerHeight - 160;
       }
+
+      // if ($drawerState != "closed") {
+      //   targetH = 0.6 * screenHeight - 180;
+      // } else {
+      //   targetH = screenHeight - 250;
+      // }
     } else {
       targetW = 0.6 * screenWidth;
       targetH = 0.72 * screenHeight;

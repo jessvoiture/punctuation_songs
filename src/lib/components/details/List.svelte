@@ -51,27 +51,29 @@
 </script>
 
 <div class="tabs-wrapper">
-  <div class="tabs">
-    <button
-      class="tab {activeTab === 'words' ? 'active' : ''}"
-      role="tab"
-      aria-selected={activeTab === "words"}
-      tabindex={activeTab === "words" ? 0 : -1}
-      on:click={() => (activeTab = "words")}
-    >
-      Words
-    </button>
+  {#if !isMobile || $drawerState !== "closed"}
+    <div class="tabs">
+      <button
+        class="tab {activeTab === 'words' ? 'active' : ''}"
+        role="tab"
+        aria-selected={activeTab === "words"}
+        tabindex={activeTab === "words" ? 0 : -1}
+        on:click={() => (activeTab = "words")}
+      >
+        Words
+      </button>
 
-    <button
-      class="tab {activeTab === 'songs' ? 'active' : ''}"
-      role="tab"
-      aria-selected={activeTab === "songs"}
-      tabindex={activeTab === "songs" ? 0 : -1}
-      on:click={() => (activeTab = "songs")}
-    >
-      Songs
-    </button>
-  </div>
+      <button
+        class="tab {activeTab === 'songs' ? 'active' : ''}"
+        role="tab"
+        aria-selected={activeTab === "songs"}
+        tabindex={activeTab === "songs" ? 0 : -1}
+        on:click={() => (activeTab = "songs")}
+      >
+        Songs
+      </button>
+    </div>
+  {/if}
 
   {#if activeTab === "songs"}
     <DecadeSelector {showingData} {scrollToYear} />

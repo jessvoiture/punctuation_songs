@@ -15,7 +15,7 @@
   let partialRatio = 0.42;
   let fullRatio = 0.95;
 
-  const closed = 75;
+  const closed = 60;
   let half = screenHeight * partialRatio;
   let full = screenHeight * fullRatio;
 
@@ -88,7 +88,17 @@
 
 <div class="drawer" style="height: {$pos}px;">
   <div class="handle" on:pointerdown={handlePointerDown}>
-    <div class="handle-bar"></div>
+    {#if $drawerState !== "closed"}
+      <div class="handle-bar"></div>
+    {/if}
+
+    {#if $drawerState === "closed"}
+      <button id="see_more_button" on:click={openHalf}>
+        See details
+
+        <i class="material-icons">keyboard_arrow_up</i>
+      </button>
+    {/if}
   </div>
 
   <div class="drawer-content">
@@ -135,5 +145,19 @@
     height: 5px;
     background: #ccc;
     border-radius: 999px;
+  }
+
+  #see_more_button {
+    display: flex;
+    width: 100%;
+    padding: 8px 28px;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    background-color: #fff;
+    border-bottom: 2px solid #fff;
+    border-radius: 8px 8px 0px 0px;
+    font-size: 16px;
   }
 </style>
