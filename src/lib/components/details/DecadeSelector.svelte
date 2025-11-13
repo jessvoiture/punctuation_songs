@@ -31,7 +31,7 @@
 
 <style>
   .decade-selector {
-    padding: 8px 12px;
+    padding: 0px 12px;
     display: flex;
     align-items: center;
     gap: 4px;
