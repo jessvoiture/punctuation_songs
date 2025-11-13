@@ -22,7 +22,7 @@
   $: selectedInsight = insight.find((d) => d.type === $selectedOption);
 
   let showingSongList = false;
-  let activeTab = "words";
+  let activeTab = "analysis";
 
   $: clickedYear.subscribe((year) => {
     if (year) {
@@ -54,13 +54,13 @@
   {#if !isMobile || $drawerState !== "closed"}
     <div class="tabs" transition:crossfade>
       <button
-        class="tab {activeTab === 'words' ? 'active' : ''}"
+        class="tab {activeTab === 'analysis' ? 'active' : ''}"
         role="tab"
-        aria-selected={activeTab === "words"}
-        tabindex={activeTab === "words" ? 0 : -1}
-        on:click={() => (activeTab = "words")}
+        aria-selected={activeTab === "analysis"}
+        tabindex={activeTab === "analysis" ? 0 : -1}
+        on:click={() => (activeTab = "analysis")}
       >
-        Words
+        Analysis
       </button>
 
       <button
@@ -72,6 +72,16 @@
       >
         Songs
       </button>
+
+      <button
+        class="tab {activeTab === 'about' ? 'active' : ''}"
+        role="tab"
+        aria-selected={activeTab === "about"}
+        tabindex={activeTab === "about" ? 0 : -1}
+        on:click={() => (activeTab = "about")}
+      >
+        About
+      </button>
     </div>
   {/if}
 
@@ -82,7 +92,7 @@
 
 {#if !isMobile || $drawerState !== "closed"}
   <div class="content">
-    {#if activeTab === "words"}
+    {#if activeTab === "analysis"}
       <RenderCommentary {selectedInsight} />
     {:else if activeTab === "songs"}
       <div class="song-list-wrapper">
@@ -91,6 +101,16 @@
             <YearsSongList {year} {screenWidth} />
           {/each}
         </div>
+      </div>
+    {:else if activeTab === "about"}
+      <div class="body-text">
+        The project explores the use of punctuation in titles of songs appearing
+        in the Billboard Hot 100 charts between 1958 and 2024. Historic
+        Billboard Hot 100 data was sourced from <a
+          href="https://github.com/utdata/rwd-billboard-data0"
+          target="_blank"
+          rel="noopener noreferrer">UT-Austin School of Journalism and Media</a
+        >. Songs only appear once, in the year they first entered the charts.
       </div>
     {/if}
   </div>
