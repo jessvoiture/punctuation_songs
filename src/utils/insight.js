@@ -1,6 +1,12 @@
 export const insight = [
   {
     type: "parentheses",
+    tldr: [
+      "Parentheses were commonly used in song titles during the 1960s and 1970s for stylistic and marketing purposes.",
+      "In the 1980/90s, there was a trend of including film soundtrack references in song titles, following the pattern 'Song Title (From “Film Title”)'. This trend was driven by the growing integration of pop music into films and the popularity of soundtrack albums as standalone art forms.",
+      "The use of parentheses in song titles declined in the 2000s as internet searchability improved and music consumption shifted towards individual tracks and curated playlists.",
+      "Taylor Swift's re-recordings in the 2020s led to a resurgence of parentheses in song titles, due to the use of '(Taylor’s Version)' and '(From the Vault)'.",
+    ],
     copy: [
       {
         kind: "text",
@@ -356,6 +362,12 @@ export const insight = [
   },
   {
     type: "slash",
+    tldr: [
+      "Billboard implemented a rule in 1969 which stipulated that if both sides of a single received significant airplay they were combined into one entry on the Hot 100 chart (separated by a slash)",
+      "By the 1990s, labels feared singles sales were cannibalizing album sales and thus reduced singles available for sale. At the same time, however, new multi-track formats blurred the lines of A/B sides and allowed labels to market singles as mini EPs or promotional packages.",
+      "These practices led to different marketing strategies—one focused on albums and another on singles",
+      "After Billboard removed the rule in 1998, the slash lost its chart-based function and became purely stylistic",
+    ],
     copy: [
       {
         kind: "text",

@@ -5,6 +5,17 @@
 </script>
 
 <div id="commentary" class="body-text">
+  {#if selectedInsight.tldr ?? [].length > 0}
+    <div id="tldr">
+      <strong>TLDR</strong>
+      <ul>
+        {#each selectedInsight.tldr as li}
+          <li>{li}</li>
+        {/each}
+      </ul>
+    </div>
+  {/if}
+
   {#each selectedInsight.copy as part}
     {#if part.kind === "text"}
       <span>{@html part.value}</span>
@@ -26,5 +37,16 @@
     color: #000000;
     font-size: 15px;
     line-height: 22px;
+  }
+
+  #tldr {
+    background-color: #f6f6f6;
+    margin: 16px 0px;
+    padding: 12px 16px;
+    border-radius: 4px;
+  }
+
+  ul {
+    padding-left: 16px;
   }
 </style>
