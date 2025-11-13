@@ -56,11 +56,7 @@
         targetH = screenHeight - $drawerHeight - 160;
       }
 
-      // if ($drawerState != "closed") {
-      //   targetH = 0.6 * screenHeight - 180;
-      // } else {
-      //   targetH = screenHeight - 250;
-      // }
+      targetH = Math.max(targetH, 0.25 * screenHeight);
     } else {
       targetW = 0.6 * screenWidth;
       targetH = 0.72 * screenHeight;
