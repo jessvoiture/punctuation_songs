@@ -137,12 +137,27 @@
   .tabs-wrapper {
     display: flex;
     gap: 0.5rem;
-    margin-bottom: 8px;
     position: sticky;
+    padding-bottom: 4px;
     top: 0;
     background-color: #fff;
     display: flex;
     flex-direction: column;
+  }
+
+  .tabs-wrapper::after {
+    content: "";
+    position: absolute;
+    bottom: -20px; /* match padding-bottom */
+    left: 0;
+    width: 100%;
+    height: 20px; /* adjust fade length */
+    pointer-events: none;
+    background: linear-gradient(
+      to bottom,
+      rgb(255, 255, 255),
+      rgba(255, 255, 255, 0)
+    );
   }
 
   .tabs {
