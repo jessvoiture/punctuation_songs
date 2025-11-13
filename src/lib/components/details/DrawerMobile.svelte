@@ -1,6 +1,7 @@
 <script>
   import { spring } from "svelte/motion";
   import { drawerHeight, drawerState } from "../../../stores";
+  import { slide, fade, crossfade } from "svelte/transition";
 
   import List from "./List.svelte";
   import YearsSongList from "./YearsSongList.svelte";
@@ -93,7 +94,7 @@
     {/if}
 
     {#if $drawerState === "closed"}
-      <button id="see_more_button" on:click={openHalf}>
+      <button id="see_more_button" on:click={openHalf} transition:crossfade>
         See details
 
         <i class="material-icons">keyboard_arrow_up</i>

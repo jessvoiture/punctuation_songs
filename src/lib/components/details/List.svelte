@@ -1,5 +1,5 @@
 <script>
-  import { fade, slide } from "svelte/transition";
+  import { fade, slide, crossfade } from "svelte/transition";
   import {
     selectedOption,
     isDataHovered,
@@ -52,7 +52,7 @@
 
 <div class="tabs-wrapper">
   {#if !isMobile || $drawerState !== "closed"}
-    <div class="tabs">
+    <div class="tabs" transition:crossfade>
       <button
         class="tab {activeTab === 'words' ? 'active' : ''}"
         role="tab"
