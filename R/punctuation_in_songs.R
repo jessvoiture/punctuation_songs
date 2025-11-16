@@ -5,12 +5,15 @@ require(janitor)
 require(stringr)
 require(jsonlite)
 
+
+# read in data ------------------------------------------------------------
+
+
 years_which_might_be_in_paratheses <- as.character(1940:2024)
 
-df <- read_csv("data/hot-100-current.csv") 
+df_raw <- read_csv("data/hot-100-current.csv") 
 
-df <- df %>%
-  mutate(parantheses_content = str_match(title, "\\(([^)]+)\\)")[,2]) %>%
+df <- df_raw %>%
   mutate(title_og = title,
          performer_og = performer) %>%
   mutate(title = tolower(title),
@@ -36,17 +39,39 @@ df <- df %>%
   ) %>%
   mutate(year = year(debut_week),
          month_year = as.Date(format(debut_week, "%Y-%m-01"))) %>%
-  mutate(title = str_replace_all(title, "\\.\\s*\\.\\s*\\.", "..."))
+  mutate(title = str_replace_all(title, "\\.\\s*\\.\\s*\\.", "...")) %>%
+  mutate(parantheses_content = str_match(title, "\\(([^)]+)\\)")[,2]) 
+
+
+# general -----------------------------------------------------------------
+
 
 count_unique_songs_per_year <- df %>%
   group_by(year) %>%
   summarise(count_new_songs_in_year = n(), .groups = "drop_last") 
 
-ggplot(count_unique_songs_per_year, aes(x = year, y = count_new_songs_in_year)) +
-  geom_col() +
+ggplot(count_unique_songs_per_year %>% filter(year <= 2024), aes(x = year, y = count_new_songs_in_year)) +
+  geom_col(fill = "#58b8db", alpha = 0.6) +
   theme_minimal() +
-  labs(
-    title = "New charting songs per year"
+  # labs(
+  #   title = "New charting songs per year"
+  # ) +
+  scale_y_continuous(
+    breaks = c(0, 200, 400, 600),
+    labels = c("0", "200", "400", "600"),
+    # expand = c(0,0)
+  ) +
+  scale_x_continuous(
+    expand = c(0.05,0),
+    breaks = c(1960, 1980, 2000, 2020)
+  ) +
+  theme(
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor = element_blank(),
+    axis.title = element_blank(),
+    axis.text.x = element_text(margin = margin(0,0,0,0)),
+    axis.ticks.length = unit(0, "cm"),
+    text = element_text(size = 24, color = "black")
   )
 
 song_length <- df %>%
@@ -60,9 +85,11 @@ ggplot(song_length, aes(x = year, y = avg_song_length)) +
   labs(title = "Average song length in characters")
 
 
+# punc --------------------------------------------------------------------
+
+
 parantheses <- df %>%
   filter(!is.na(parantheses_content)) %>%
-  select(title, performer, title_og, performer_og, chart_week, year) %>%
   mutate(type = "parentheses")
   
 parantheses_pct <- parantheses %>%
@@ -76,7 +103,7 @@ parantheses_pct <- parantheses %>%
              percent_with_punc = 0, 
              count_with_punc = 0,
              type = "parentheses")) %>%
-  select(year, type, count_with_punc, percent_with_punc)
+  select(year, type, count_with_punc, percent_with_punc) 
 
 ggplot(parantheses_pct, aes(x = year, y = percent_with_punc)) +
   geom_col() +
@@ -92,8 +119,8 @@ parantheses_no_keywords <- parantheses %>%
     ) | parantheses_content %in% years_which_might_be_in_paratheses
   ) %>%
   filter(!has_keywords) %>%
-  select(title, performer, title_og, performer_og, chart_week, year) %>%
-  mutate(type = "parantheses_no_keywords")
+  mutate(type = "parantheses_no_keywords") %>%
+  select(-has_keywords)
 
 parantheses_no_keywords_pct <- parantheses_no_keywords %>%
   group_by(year, type) %>%
@@ -116,7 +143,6 @@ ggplot(parantheses_no_keywords_pct, aes(x = year, y = percent_with_punc)) +
 
 question <- df %>%
   filter(str_detect(title, "\\?")) %>%
-  select(title, performer, title_og, performer_og, chart_week, year) %>%
   mutate(type = "question")
 
 question_pct <- question %>%
@@ -139,7 +165,6 @@ ggplot(question_pct, aes(x = year, y = percent_with_punc)) +
 
 exclamation <- df %>%
   filter(str_detect(title, "\\!")) %>%
-  select(title, performer, title_og, performer_og, chart_week, year) %>%
   mutate(type = "exclamation")
 
 exclamation_pct <- exclamation %>%
@@ -161,12 +186,11 @@ ggplot(exclamation_pct, aes(x = year, y = percent_with_punc)) +
   labs(title = "Billboard charting songs with ! in them")
 
 apostrophe <- df %>%
-  # filter(str_detect(title, "'")) %>%
-  filter(str_detect(title, "taylor's")) %>%
-  select(title, performer, title_og, performer_og, chart_week, year) %>%
-  mutate(type = "apostrophe") %>%
-  group_by(year) %>%
-  summarise(count = n())
+  filter(str_detect(title, "'")) %>%
+  # filter(str_detect(title, "taylor's")) %>%
+  mutate(type = "apostrophe") 
+  # group_by(year) %>%
+  # summarise(count = n())
 
 apostrophe_pct <- apostrophe %>%
   group_by(year, type) %>%
@@ -188,7 +212,6 @@ ggplot(apostrophe_pct, aes(x = year, y = percent_with_punc)) +
 
 colon <- df %>%
   filter(str_detect(title, ":") | str_detect(title, ";")) %>%
-  select(title, performer, title_og, performer_og, chart_week, year) %>%
   mutate(type = "colons")
 
 colon_pct <- colon %>%
@@ -211,7 +234,6 @@ ggplot(colon_pct, aes(x = year, y = percent_with_punc)) +
 
 comma <- df %>%
   filter(str_detect(title, ",")) %>%
-  # select(title, performer, title_og, performer_og, chart_week, peak_pos, year) %>%
   mutate(type = "comma") 
   # group_by(performer) %>%
   # summarise(count= n())
@@ -246,9 +268,8 @@ ggplot(comma_pct, aes(x = year, y = percent_with_punc)) +
 
 period <- df %>%
   filter(str_detect(title, "\\.")) %>%
-  select(title, performer,title_og, performer_og,  chart_week, year) %>%
-  mutate(type = "period") %>%
-  mutate(contains_usa = str_detect(title, "U\\.S\\.A\\."))
+  mutate(type = "period") 
+  # mutate(contains_usa = str_detect(title, "U\\.S\\.A\\."))
 
 period_pct <- period %>%
   group_by(year, type) %>%
@@ -271,7 +292,6 @@ ggplot(period_pct, aes(x = year, y = percent_with_punc)) +
 amper <- df %>%
   filter(str_detect(title, "\\&")) %>%
   # filter(str_detect(title, " and ")) %>%
-  select(title, performer, title_og, performer_og, chart_week, year) %>%
   mutate(type = "ampersand")
 
 amper_pct <- amper %>%
@@ -293,8 +313,7 @@ ggplot(amper_pct, aes(x = year, y = percent_with_punc)) +
   labs(title = "Billboard charting songs with & in them")
 
 hash <- df %>%
-  filter(str_detect(title, "#")) %>%
-  select(title, performer, title_og, performer_og, chart_week, year) %>%
+  filter(str_detect(title, "\\$")) %>%
   mutate(type = "hash")
 
 hash_pct <- hash %>%
@@ -319,7 +338,6 @@ dash <- df %>%
   filter(str_detect(title, "[-–—]")) %>%
   # filter(!(str_detect(title, "- part") | str_detect(title, "- pt") 
   #        | str_detect(title, "-pt") | str_detect(title, "-part"))) %>%
-  select(title, performer, title_og, performer_og, chart_week, year) %>%
   mutate(type = "dash")
 
 dash_pct <- dash %>%
@@ -365,7 +383,6 @@ ggplot(slash_pct, aes(x = year, y = percent_with_punc)) +
 
 asterisk <- df %>%
   filter(str_detect(title, "\\*")) %>%
-  select(title, performer, title_og, performer_og, chart_week, year) %>%
   mutate(type = "asterisk")
 
 asterisk_pct <- asterisk %>%
@@ -388,7 +405,6 @@ ggplot(asterisk_pct, aes(x = year, y = percent_with_punc)) +
 
 quote <- df %>%
   filter(str_detect(title, '"')) %>%
-  select(title, performer, title_og, performer_og, chart_week, year) %>%
   mutate(type = "quote")
 
 quote_pct <- quote %>%
@@ -411,7 +427,6 @@ ggplot(quote_pct, aes(x = year, y = percent_with_punc)) +
 
 ellipses <- df %>%
   filter(str_detect(title, fixed('...'))) %>%
-  select(title, performer, title_og, performer_og, chart_week, year) %>%
   mutate(type = "ellipses")
 
 ellipses_pct <- ellipses %>%
@@ -480,13 +495,13 @@ df_all_punctuation <- data.frame(
 
 df_songs <- rbind(
   parantheses, parantheses_no_keywords, exclamation, question, apostrophe, 
-  period, comma, usd, amper, dash, slash, 
+  period, comma, amper, dash, slash, 
   asterisk, quote, colon, ellipses
 )
 
 df_pcts <- rbind(
   parantheses_pct, parantheses_no_keywords_pct, exclamation_pct, question_pct, apostrophe_pct,
-  period_pct, comma_pct, usd_pct, amper_pct, dash_pct, slash_pct,
+  period_pct, comma_pct, amper_pct, dash_pct, slash_pct,
   asterisk_pct, quote_pct, colon_pct, ellipses_pct
 )
 
@@ -502,7 +517,11 @@ nested_json <- df_all %>%
         performer = unbox(performer[i]),
         title_og = unbox(title_og[i]),
         performer_og = unbox(performer_og[i]),
-        chart_week = unbox(chart_week[i])
+        debut_week = unbox(debut_week[i]),
+        debut_pos = unbox(debut_pos[i]),
+        peak_pos_week = unbox(peak_pos_week[i]),
+        peak_pos = unbox(peak_pos[i]),
+        weeks_on_chart = unbox(weeks_on_chart[i])
       ))
     ),
     .groups = "drop"
@@ -524,4 +543,4 @@ nested_json <- df_all %>%
 # export ------------------------------------------------------------------
 
 
-write_json(nested_json, path = "punctuation_songs.json", pretty = TRUE, auto_unbox = TRUE)
+write_json(nested_json, path = "punctuation_songs_2.json", pretty = TRUE, auto_unbox = TRUE)
