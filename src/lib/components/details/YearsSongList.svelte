@@ -51,6 +51,10 @@
           <div class="song-performer">
             {song.performer_og}
           </div>
+
+          <!-- <div class="stats">
+            Peak position: {song.peak_pos}
+          </div> -->
         </div>
       {/each}
     </div>
