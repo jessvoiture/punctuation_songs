@@ -125,6 +125,14 @@
           src="/count_songs_per_year.png"
           alt="A vertical bar chart showing the number of new songs entering the Billboard Hot 100 charts each year from 1958 to 2024. The trend has a U-shape: the number of songs peaks in the 1960s with over 700 new songs charting in the Hot 100, then declines, reaching a low of 288 in 2001. Since then early 2000s the number of new charting songs has generally increased. In 2024 there were 629 new songs entering the charts."
         />
+
+        <div class="body-text">
+          Using the year a song first debuts on the chart is not always
+          reflective of the year it was published. Many songs have found chart
+          success years after release. For example, Running Up That Hill (A Deal
+          with God) by Kate Bush released in 1985 didn't chart on the Hot 100
+          until 2022, after being featured in Stranger Things.
+        </div>
       </div>
     {/if}
   </div>
@@ -143,7 +151,7 @@
   }
 
   .content {
-    padding: 8px 0px 48px 0px;
+    padding: 8px 8px 48px 8px;
     overflow-y: auto;
     scrollbar-width: none;
   }
@@ -199,6 +207,6 @@
   .body-text-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 32px;
   }
 </style>
