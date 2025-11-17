@@ -22,8 +22,8 @@
 
   // main spring for drawer position
   const pos = spring(closed, {
-    stiffness: 0.2,
-    damping: 0.5,
+    stiffness: 0.4,
+    damping: 0.7,
   });
 
   // keep global stores synced
