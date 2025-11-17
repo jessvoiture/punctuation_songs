@@ -22,8 +22,8 @@
 
   // main spring for drawer position
   const pos = spring(closed, {
-    stiffness: 0.4,
-    damping: 0.7,
+    stiffness: 0.1,
+    damping: 0.5,
   });
 
   // keep global stores synced
@@ -85,10 +85,49 @@
     document.removeEventListener("pointermove", handlePointerMove);
     document.removeEventListener("pointerup", handlePointerUp);
   }
+
+  function handleTouchStart(e) {
+    if (e.touches.length !== 1) return;
+    dragging = true;
+    startY = e.touches[0].clientY;
+    startPos = $pos;
+
+    document.addEventListener("touchmove", handleTouchMove, { passive: false });
+    document.addEventListener("touchend", handleTouchEnd);
+  }
+
+  function handleTouchMove(e) {
+    if (!dragging) return;
+    e.preventDefault(); // prevent scrolling the page
+
+    const dy = e.touches[0].clientY - startY;
+    const next = startPos - dy;
+    const clamped = Math.min(full, Math.max(closed, next));
+    pos.set(clamped, { hard: true });
+  }
+
+  function handleTouchEnd() {
+    dragging = false;
+    const h = $pos;
+
+    const fullThreshold = (full + half) / 2;
+    const halfThreshold = (half + closed) / 2;
+
+    if (h > fullThreshold) pos.set(full);
+    else if (h < halfThreshold) pos.set(closed);
+    else pos.set(half);
+
+    document.removeEventListener("touchmove", handleTouchMove);
+    document.removeEventListener("touchend", handleTouchEnd);
+  }
 </script>
 
 <div class="drawer" style="height: {$pos}px;">
-  <div class="handle" on:pointerdown={handlePointerDown}>
+  <div
+    class="handle"
+    on:pointerdown={handlePointerDown}
+    on:touchstart={handleTouchStart}
+  >
     {#if $drawerState !== "closed"}
       <div class="handle-bar"></div>
     {/if}
