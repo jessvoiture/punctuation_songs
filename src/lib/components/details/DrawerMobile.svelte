@@ -122,12 +122,13 @@
   }
 </script>
 
-<div class="drawer" style="height: {$pos}px;">
-  <div
-    class="handle"
-    on:pointerdown={handlePointerDown}
-    on:touchstart={handleTouchStart}
-  >
+<div
+  class="drawer"
+  style="height: {$pos}px;"
+  on:pointerdown={handlePointerDown}
+  on:touchstart={handleTouchStart}
+>
+  <div class="handle">
     {#if $drawerState !== "closed"}
       <div class="handle-bar"></div>
     {/if}
