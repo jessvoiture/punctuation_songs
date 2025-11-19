@@ -51,17 +51,11 @@
   let dragging = false;
   let startY = 0;
   let startPos = 0;
-  let lastY = 0;
-  let lastTime = 0;
-  let velocity = 0;
 
-  // --- POINTER EVENTS ---
   function handlePointerDown(e) {
     dragging = true;
     startY = e.clientY;
     startPos = $pos;
-    lastY = startY;
-    lastTime = Date.now();
 
     document.addEventListener("pointermove", handlePointerMove);
     document.addEventListener("pointerup", handlePointerUp);
@@ -70,17 +64,11 @@
   function handlePointerMove(e) {
     if (!dragging) return;
 
-    const y = e.clientY;
-    const dy = y - startY;
+    const dy = e.clientY - startY;
     const next = startPos - dy;
+
     const clamped = Math.min(full, Math.max(closed, next));
     pos.set(clamped, { hard: true });
-
-    // Track velocity
-    const now = Date.now();
-    velocity = (lastY - y) / (now - lastTime + 1); // px/ms
-    lastY = y;
-    lastTime = now;
   }
 
   function handlePointerUp() {
@@ -90,29 +78,19 @@
     const fullThreshold = (full + half) / 2;
     const halfThreshold = (half + closed) / 2;
 
-    // Use velocity to bias the snap
-    if (velocity > 1.5) {
-      pos.set(full);
-    } else if (velocity < -1.5) {
-      pos.set(closed);
-    } else {
-      if (h > fullThreshold) pos.set(full);
-      else if (h < halfThreshold) pos.set(closed);
-      else pos.set(half);
-    }
+    if (h > fullThreshold) pos.set(full);
+    else if (h < halfThreshold) pos.set(closed);
+    else pos.set(half);
 
     document.removeEventListener("pointermove", handlePointerMove);
     document.removeEventListener("pointerup", handlePointerUp);
   }
 
-  // --- TOUCH EVENTS ---
   function handleTouchStart(e) {
     if (e.touches.length !== 1) return;
     dragging = true;
     startY = e.touches[0].clientY;
     startPos = $pos;
-    lastY = startY;
-    lastTime = Date.now();
 
     document.addEventListener("touchmove", handleTouchMove, { passive: false });
     document.addEventListener("touchend", handleTouchEnd);
@@ -122,17 +100,10 @@
     if (!dragging) return;
     e.preventDefault(); // prevent scrolling the page
 
-    const y = e.touches[0].clientY;
-    const dy = y - startY;
+    const dy = e.touches[0].clientY - startY;
     const next = startPos - dy;
     const clamped = Math.min(full, Math.max(closed, next));
     pos.set(clamped, { hard: true });
-
-    // Track velocity
-    const now = Date.now();
-    velocity = (lastY - y) / (now - lastTime + 1); // px/ms
-    lastY = y;
-    lastTime = now;
   }
 
   function handleTouchEnd() {
@@ -142,16 +113,9 @@
     const fullThreshold = (full + half) / 2;
     const halfThreshold = (half + closed) / 2;
 
-    // Use velocity to bias the snap
-    if (velocity > 1.5) {
-      pos.set(full);
-    } else if (velocity < -1.5) {
-      pos.set(closed);
-    } else {
-      if (h > fullThreshold) pos.set(full);
-      else if (h < halfThreshold) pos.set(closed);
-      else pos.set(half);
-    }
+    if (h > fullThreshold) pos.set(full);
+    else if (h < halfThreshold) pos.set(closed);
+    else pos.set(half);
 
     document.removeEventListener("touchmove", handleTouchMove);
     document.removeEventListener("touchend", handleTouchEnd);
@@ -159,13 +123,13 @@
 </script>
 
 <div class="drawer" style="height: {$pos}px;">
-  <div class="handle">
+  <div
+    class="handle"
+    on:pointerdown={handlePointerDown}
+    on:touchstart={handleTouchStart}
+  >
     {#if $drawerState !== "closed"}
-      <div
-        class="handle-bar"
-        on:pointerdown={handlePointerDown}
-        on:touchstart={handleTouchStart}
-      ></div>
+      <div class="handle-bar"></div>
     {/if}
 
     {#if $drawerState === "closed"}
@@ -178,7 +142,18 @@
   </div>
 
   <div class="drawer-content">
-    <List {showingData} {screenWidth} {isMobile} />
+    <List
+      {showingData}
+      {screenWidth}
+      {isMobile}
+      {handlePointerDown}
+      {handlePointerMove}
+      {handlePointerUp}
+      {handleTouchStart}
+      {handleTouchEnd}
+      {handleTouchMove}
+      {openHalf}
+    />
   </div>
 </div>
 
