@@ -91,9 +91,9 @@
     const halfThreshold = (half + closed) / 2;
 
     // Use velocity to bias the snap
-    if (velocity > 0.5) {
+    if (velocity > 0.2) {
       pos.set(full);
-    } else if (velocity < -0.5) {
+    } else if (velocity < -0.2) {
       pos.set(closed);
     } else {
       if (h > fullThreshold) pos.set(full);
@@ -143,9 +143,9 @@
     const halfThreshold = (half + closed) / 2;
 
     // Use velocity to bias the snap
-    if (velocity > 0.5) {
+    if (velocity > 0.2) {
       pos.set(full);
-    } else if (velocity < -0.5) {
+    } else if (velocity < -0.2) {
       pos.set(closed);
     } else {
       if (h > fullThreshold) pos.set(full);
