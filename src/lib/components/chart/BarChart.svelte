@@ -66,8 +66,6 @@
     tweenedHeight.set(targetH);
   }
 
-  $: console.log($tweenedHeight);
-
   let padding = { top: 20, right: 0, bottom: 30, left: 40 };
   $: innerWidth = width - padding.left - padding.right;
   $: innerHeight = $tweenedHeight - padding.top - padding.bottom;

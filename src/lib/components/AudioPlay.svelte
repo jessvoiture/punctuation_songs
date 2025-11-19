@@ -5,8 +5,6 @@
   export let src;
   export let song;
 
-  console.log(src);
-
   let audio;
   let isPlaying = false;
   let progress = 0;
