@@ -88,7 +88,7 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
-    padding: 8px 0px;
+    padding: 8px 8px;
     border-radius: 8px;
     background-color: #fff;
     transition: background-color 0.3s ease;

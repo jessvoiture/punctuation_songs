@@ -100,12 +100,10 @@
     {#if activeTab === "analysis"}
       <RenderCommentary {selectedInsight} />
     {:else if activeTab === "songs"}
-      <div class="song-list-wrapper">
-        <div class="body-text list" transition:fade>
-          {#each showingData as year}
-            <YearsSongList {year} {screenWidth} />
-          {/each}
-        </div>
+      <div class="song-list" transition:fade>
+        {#each showingData as year}
+          <YearsSongList {year} {screenWidth} />
+        {/each}
       </div>
     {:else if activeTab === "about"}
       <div class="body-text-wrapper">
@@ -144,26 +142,21 @@
 {/if}
 
 <style>
-  .song-list-wrapper {
-    flex-grow: 1;
-    margin-bottom: 48px;
-  }
-
-  .list {
+  .song-list {
     display: flex;
     flex-direction: column;
     gap: 24px;
   }
 
   .content {
-    padding: 8px 8px 48px 8px;
+    padding: 16px 8px 48px 8px;
     overflow-y: auto;
     scrollbar-width: none;
   }
 
   .tabs-wrapper {
     display: flex;
-    gap: 0.5rem;
+    gap: 12px;
     position: sticky;
     padding-bottom: 4px;
     top: 0;
@@ -212,6 +205,6 @@
   .body-text-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 24px;
   }
 </style>

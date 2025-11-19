@@ -41,7 +41,7 @@
 
   #tldr {
     background-color: #f6f6f6;
-    margin: 16px 0px;
+    margin: 0 0 16px 0;
     padding: 12px 16px;
     border-radius: 4px;
   }
