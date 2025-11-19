@@ -23,6 +23,11 @@
 
   let showingSongList = false;
   let activeTab = "analysis";
+  let contentEl;
+
+  $: if (contentEl && activeTab) {
+    contentEl.scrollTop = 0;
+  }
 
   $: clickedYear.subscribe((year) => {
     if (year) {
@@ -91,7 +96,7 @@
 </div>
 
 {#if !isMobile || $drawerState !== "closed"}
-  <div class="content">
+  <div class="content" bind:this={contentEl}>
     {#if activeTab === "analysis"}
       <RenderCommentary {selectedInsight} />
     {:else if activeTab === "songs"}
