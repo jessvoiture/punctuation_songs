@@ -142,18 +142,7 @@
   </div>
 
   <div class="drawer-content">
-    <List
-      {showingData}
-      {screenWidth}
-      {isMobile}
-      {handlePointerDown}
-      {handlePointerMove}
-      {handlePointerUp}
-      {handleTouchStart}
-      {handleTouchEnd}
-      {handleTouchMove}
-      {openHalf}
-    />
+    <List {showingData} {screenWidth} {isMobile} />
   </div>
 </div>
 
@@ -185,7 +174,7 @@
 
   .handle {
     width: 100%;
-    padding: 12px 0 12px 0;
+    padding: 20px 0 20px 0;
     display: flex;
     justify-content: center;
     cursor: grab;

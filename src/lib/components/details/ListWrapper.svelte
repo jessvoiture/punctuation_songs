@@ -24,7 +24,6 @@
   {#if !isMobile}
     <List showingData={showingData24} {screenWidth} {isMobile} />
   {:else if isMobile}
-    <!-- <ListDrawer showingData={showingData24} {screenHeight} /> -->
     <DrawerMobile
       showingData={showingData24}
       {screenHeight}
