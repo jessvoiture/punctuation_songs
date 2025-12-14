@@ -52,10 +52,18 @@
   let startY = 0;
   let startPos = 0;
 
+  let lastY = 0;
+  let lastTime = 0;
+  let velocity = 0;
+
   function handlePointerDown(e) {
     dragging = true;
-    startY = e.clientY;
+
+    startY = lastY = e.clientY;
     startPos = $pos;
+
+    lastTime = performance.now();
+    velocity = 0;
 
     document.addEventListener("pointermove", handlePointerMove);
     document.addEventListener("pointerup", handlePointerUp);
@@ -64,8 +72,17 @@
   function handlePointerMove(e) {
     if (!dragging) return;
 
-    const dy = e.clientY - startY;
+    const now = performance.now();
+    const y = e.clientY;
+
+    const dy = y - startY;
     const next = startPos - dy;
+
+    const dt = now - lastTime;
+    if (dt > 0) velocity = (y - lastY) / dt;
+
+    lastY = y;
+    lastTime = now;
 
     const clamped = Math.min(full, Math.max(closed, next));
     pos.set(clamped, { hard: true });
@@ -73,61 +90,32 @@
 
   function handlePointerUp() {
     dragging = false;
+
     const h = $pos;
+    const speed = velocity;
 
-    const fullThreshold = (full + half) / 2;
-    const halfThreshold = (half + closed) / 2;
+    const SWIPE_VELOCITY = 0.4; // lower = easier swipe
 
-    if (h > fullThreshold) pos.set(full);
-    else if (h < halfThreshold) pos.set(closed);
-    else pos.set(half);
+    if (speed < -SWIPE_VELOCITY) {
+      pos.set(full);
+    } else if (speed > SWIPE_VELOCITY) {
+      pos.set(closed);
+    } else {
+      const fullThreshold = (full + half) / 2;
+      const halfThreshold = (half + closed) / 2;
+
+      if (h > fullThreshold) pos.set(full);
+      else if (h < halfThreshold) pos.set(closed);
+      else pos.set(half);
+    }
 
     document.removeEventListener("pointermove", handlePointerMove);
     document.removeEventListener("pointerup", handlePointerUp);
   }
-
-  function handleTouchStart(e) {
-    if (e.touches.length !== 1) return;
-    dragging = true;
-    startY = e.touches[0].clientY;
-    startPos = $pos;
-
-    document.addEventListener("touchmove", handleTouchMove, { passive: false });
-    document.addEventListener("touchend", handleTouchEnd);
-  }
-
-  function handleTouchMove(e) {
-    if (!dragging) return;
-    e.preventDefault(); // prevent scrolling the page
-
-    const dy = e.touches[0].clientY - startY;
-    const next = startPos - dy;
-    const clamped = Math.min(full, Math.max(closed, next));
-    pos.set(clamped, { hard: true });
-  }
-
-  function handleTouchEnd() {
-    dragging = false;
-    const h = $pos;
-
-    const fullThreshold = (full + half) / 2;
-    const halfThreshold = (half + closed) / 2;
-
-    if (h > fullThreshold) pos.set(full);
-    else if (h < halfThreshold) pos.set(closed);
-    else pos.set(half);
-
-    document.removeEventListener("touchmove", handleTouchMove);
-    document.removeEventListener("touchend", handleTouchEnd);
-  }
 </script>
 
 <div class="drawer" style="height: {$pos}px;">
-  <div
-    class="handle"
-    on:pointerdown={handlePointerDown}
-    on:touchstart={handleTouchStart}
-  >
+  <div class="handle" on:pointerdown={handlePointerDown}>
     {#if $drawerState !== "closed"}
       <div class="handle-bar"></div>
     {/if}
@@ -178,6 +166,7 @@
     display: flex;
     justify-content: center;
     cursor: grab;
+    touch-action: none;
   }
 
   .handle-bar {
