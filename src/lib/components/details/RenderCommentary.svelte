@@ -7,7 +7,7 @@
 <div id="commentary" class="body-text">
   {#if selectedInsight.tldr ?? [].length > 0}
     <div id="tldr">
-      <strong>TLDR</strong>
+      <strong>Overview</strong>
       <ul>
         {#each selectedInsight.tldr as li}
           <li>{li}</li>

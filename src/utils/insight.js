@@ -363,10 +363,10 @@ export const insight = [
   {
     type: "slash",
     tldr: [
-      "Billboard implemented a rule in 1969 which stipulated that if both sides of a single received significant airplay they were combined into one entry on the Hot 100 chart (separated by a slash)",
-      "By the 1990s, labels feared singles sales were cannibalizing album sales and thus reduced singles available for sale. At the same time, however, new multi-track formats blurred the lines of A/B sides and allowed labels to market singles as mini EPs or promotional packages.",
-      "These practices led to different marketing strategies—one focused on albums and another on singles",
-      "After Billboard removed the rule in 1998, the slash lost its chart-based function and became purely stylistic",
+      "Slashes took off after Billboard’s 1969 rule change that merged double A-sides with strong airplay into one chart entry, creating slash-separated titles like Come Together/Something.",
+      "As albums became the dominant commercial unit and singles were mainly promo tools, true double-sided hits became rarer, leading to fewer slashed titles.",
+      "New single formats (12-inch, CD, cassette) turned singles into multi-track packages, reviving double A-sides and slash titles as part of aggressive promotional strategies.",
+      "Billboard dropped the physical-single requirement, charting songs individually; with no need to merge tracks, slashed song titles effectively disappeared.",
     ],
     copy: [
       {
@@ -375,11 +375,11 @@ export const insight = [
       },
       {
         kind: "text",
-        value: `During the early years of the Billboard Hot 100, songs released on a single were charted separately. However, a policy change in late 1969 stipulated that when both sides of a single received substantial airplay, they would be combined <a href="https://www.billboard.com/music/music-news/chart-beat-chat-152-1045881/" target="_blank" >into a single chart entry,</a> with the two titles separated by a slash.`,
+        value: `During the early years of the Billboard Hot 100, songs released on a single were charted separately. However, a policy change in late 1969 stipulated that when both sides of a single received substantial airplay, they would be combined <a href="https://www.billboard.com/music/music-news/chart-beat-chat-152-1045881/" target="_blank" >into a single chart entry,</a> with the two titles separated by a slash. `,
       },
       {
         kind: "text",
-        value: `A prominent example of this is The Beatles’ double A-side `,
+        value: ` A prominent example of this is The Beatles’ double A-side `,
       },
       {
         kind: "audio",
@@ -399,11 +399,7 @@ export const insight = [
       },
       {
         kind: "text",
-        value: `. Initially charting separately at #3 and #7, respectively, the two tracks were merged following the rule change and collectively rose to #1 as Come Together/Something.`,
-      },
-      {
-        kind: "text",
-        value: `.  <br /><br /> `,
+        value: `. Initially charting separately at #3 and #7, respectively, the two tracks were merged following the rule change and collectively rose to #1 as Come Together/Something.<br /><br />`,
       },
       {
         kind: "text",
@@ -475,13 +471,16 @@ export const insight = [
       },
       {
         kind: "text",
-        value: `For decades, Billboard maintained a rule that a song was ineligible for the Hot 100 unless it was available for purchase as a physical single. This meant that tracks promoted exclusively to radio could not chart. By the 1990s, record labels—concerned that singles were cannibalizing album sales—reduced the number of singles released or manipulated release schedules, often <a href="https://billboardchartrewind.wordpress.com/2018/12/01/december-5th-1998-the-anniversary-of-airplay-only-tracks-on-the-hot-100/" target="_blank">delaying the availability of singles until radio airplay had peaked.</a> This practice frequently resulted in artificially strong chart debuts.<br /><br />`,
+        value: `In the latter half of the 20th century, particularly in the 60s and 70s, the album, rather than the song, was <a href="https://www.nytimes.com/1991/01/13/arts/pop-view-the-incredible-shrinking-career-of-a-pop-star.html">the fundamental unit of pop,</a> especially in the US market. This era was largely facilitated by technological advancements—notably the invention of the LP which could hold more music—and driven by rock artists who popularised concept albums. Singles were largely used as bait to promote album sales rather than standalone successes, potentially explaining the drop in slashed titles throughout the 70s.<br /><br />`,
       },
       {
         kind: "text",
-        value: `This trend in the U.S. sharply contrasted with other markets, where physical sales and singles culture remained central to the music industry. In the UK, the Singles Chart carried immense cultural weight, shaping the careers of artists and the strategies of record labels far more than the Billboard Hot 100 did in the US. British DJ and club scenes also celebrated remixes as an art form. Meanwhile, in America, singles functioned mostly as promotional tools meant to push album sales rather than as hits in their own right.<br /><br />`,
+        value: `In the 80s and 90s, however, the album era showed signs of erosion; by the turn of the century, the song had largely returned as the unit of pop. This transition was driven by the emergence of MTV in the 80s, which emphasised and rewarded blockbuster hits, as well as the advent of more single-oriented genres, like punk and disco.<br /><br />`,
       },
-
+      {
+        kind: "text",
+        value: `Record labels, concerned that singles were cannibalizing album sales (which were more profitable), reduced the number of singles released or manipulated release schedules to achieve an <a href="https://billboardchartrewind.wordpress.com/2018/12/01/december-5th-1998-the-anniversary-of-airplay-only-tracks-on-the-hot-100">artificially strong chart debut.</a> Billboard maintained a rule that a song was ineligible for the Hot 100 unless it was available for purchase as a physical single.<br /><br />`,
+      },
       {
         kind: "text",
         value: `Around the same time, however, the transition from 7-inch vinyl to 12-inch singles, CDs, and cassettes expanded the capacity of singles to include multiple tracks. This technological shift began to render the traditional distinction between A-sides and B-sides increasingly irrelevant. Singles were now marketed in the US more like mini-EPs or promotional packages. The inclusion of several songs or remixes provided radio stations with more material to promote and simultaneously supported broader album marketing strategies.<br /><br />`,
@@ -559,11 +558,11 @@ export const insight = [
     copy: [
       {
         kind: "text",
-        value: `Dash usage has declined since its peak in the early 60s.`,
+        value: `Dash usage has declined since its peak in the early 60s. `,
       },
       {
         kind: "text",
-        value: `This is somewhat in part due to its use to designate versions of songs, with `,
+        value: `This is perhaps somewhat attributable to fewer songs including `,
       },
       {
         kind: "highlight",
@@ -579,7 +578,7 @@ export const insight = [
       },
       {
         kind: "text",
-        value: `, or its derivatives. There were 67 instances (17%) of a dash being used in this manner, all of which occurred before 1987.<br /><br /> `,
+        value: `, or its derivatives as part of the title. There were 67 instances (17%) of a dash being used in this manner, all of which occurred before 1987.<br /><br /> `,
       },
       {
         kind: "text",
@@ -617,7 +616,7 @@ export const insight = [
       },
       {
         kind: "text",
-        value: `.<br /><br />`,
+        value: `<br /><br />`,
       },
       {
         kind: "text",
@@ -643,10 +642,10 @@ export const insight = [
         kind: "text",
         value: ` from 1988 also reflects the same pattern of use.<br></br>`,
       },
-      {
-        kind: "text",
-        value: `Most dashes used in song titles function as a hyphen or en-dash; there are no instances of an em-dash. Like many other of the punctuation marks, the dash has fallen out of fashion. In 2024, just two new charting songs featured a dash compared to 29 at it's peack in 1961. GenAI's, such as ChatGPT, affinity for the dash—the em-dash in particular—has made many cautious about their use for fear of being mischaracterised as AI-written. At a time when authenticity and songwriting is highly valued It is plausible, therefore, that the trend of infrequent dash usage continues.`,
-      },
+      // {
+      //   kind: "text",
+      //   value: `Most dashes used in song titles function as a hyphen or en-dash; there are no instances of an em-dash. Like many other of the punctuation marks, the dash has fallen out of fashion. In 2024, just two new charting songs featured a dash compared to 29 at it's peack in 1961. GenAI's, such as ChatGPT, affinity for the dash—the em-dash in particular—has made many cautious about their use for fear of being mischaracterised as AI-written. At a time when authenticity and songwriting is highly valued It is plausible, therefore, that the trend of infrequent dash usage continues.`,
+      // },
     ],
   },
   {
@@ -675,7 +674,7 @@ export const insight = [
     copy: [
       {
         kind: "text",
-        value: `Colons and semicolons are uncommon in song titles; the maximum number of new charting songs per year featuring the grammatical workhorse is just 2. Out of all songs which have ever charted on the Hot 100, just 25 contained either a colon or semi-colon.<br /><br />
+        value: `Colons and semicolons are uncommon in song titles, reaching a peak of 2 in 1996. Out of all songs which have ever charted on the Hot 100, just 25 contained either a colon or semi-colon.<br /><br />
     Colons have generally been used as expected: for emoticons, time, Bible verses, or when a movie franchise spawns too many sequels, the colon becomes essential to tell them apart.<br /><br />
     There is perhaps little need for either colon varieties: the average length of all Billboard charting songs is just 16 characters (and it is on the decline)`,
       },
@@ -683,6 +682,10 @@ export const insight = [
   },
   {
     type: "quote",
+    tldr: [
+      "As pop songs increasingly doubled as film promotion, titles began explicitly referencing their movies using parentheses and quotation marks, triggering a sharp rise in quotation mark usage.",
+      "By the 2000s, film attribution in song titles had largely vanished; quotation marks persisted only as occasional stylistic choices",
+    ],
     copy: [
       {
         kind: "text",
@@ -784,6 +787,11 @@ export const insight = [
   },
   {
     type: "asterisk",
+    tldr: [
+      "Aside from rare outliers like the MASH* theme in 1970, asterisks were virtually nonexistent in song titles until the mid-to-late 1990s.",
+      "As profanity and explicit themes became more common—especially in hip-hop and hard rock—asterisks emerged primarily as a way to mask offensive words for radio, charts, and retail.",
+      "With streaming platforms bypassing FCC restrictions and Billboard counting uncensored streams, asterisks have become largely unnecessary, surviving mostly as stylistic exceptions rather than tools of censorship.",
+    ],
     copy: [
       {
         kind: "text",
@@ -850,7 +858,7 @@ export const insight = [
     copy: [
       {
         kind: "text",
-        value: `The ampersand is not widely used. The full spelling, “and”, is by far more common, used about 3 times as often.`,
+        value: `The ampersand is not widely used. The full spelling, “and”, is used about three times as often.`,
       },
     ],
   },
