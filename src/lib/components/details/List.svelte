@@ -48,8 +48,10 @@
 
     setTimeout(() => {
       const element = document.getElementById(`year-${year}`);
-      if (element) {
-        element.scrollIntoView({ behavior: "smooth", block: "start" });
+      if (element && contentEl) {
+        // Get the element's position relative to the scroll container
+        const top = element.offsetTop;
+        contentEl.scrollTo({ top: top - 140, behavior: "smooth" });
       }
     }, 500);
   }
@@ -65,7 +67,7 @@
         tabindex={activeTab === "analysis" ? 0 : -1}
         on:click={() => (activeTab = "analysis")}
       >
-        Analysis
+        Thoughts
       </button>
 
       <button
