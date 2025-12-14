@@ -10,21 +10,20 @@
   } from "../../stores";
 
   export let screenWidth;
-  export let isMobile;
 
   const punc_options = [
     { option: "parentheses", displayOption: "parentheses" },
+    { option: "asterisk", displayOption: "an asterisk" },
+    { option: "slash", displayOption: "a slash" },
     { option: "apostrophe", displayOption: "an apostrophe" },
-    { option: "comma", displayOption: "a comma" },
     { option: "period", displayOption: "a period" },
+    { option: "dash", displayOption: "a dash" },
+    { option: "comma", displayOption: "a comma" },
     { option: "exclamation", displayOption: "an exclamation mark" },
     { option: "question", displayOption: "a question mark" },
-    { option: "slash", displayOption: "a slash" },
-    { option: "dash", displayOption: "a dash" },
     { option: "ellipses", displayOption: "ellipses" },
     { option: "colons", displayOption: "a colon" },
     { option: "quote", displayOption: "quotation marks" },
-    { option: "asterisk", displayOption: "an asterisk" },
     { option: "ampersand", displayOption: "an ampersand" },
   ];
 
