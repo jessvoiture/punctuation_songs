@@ -91,7 +91,7 @@
     const speed = velocity;
 
     const FAST = 0.8; // strong flick
-    const MED = 0.2; // light flick
+    const MED = 0.1; // light flick
 
     const state = currentSnap(h);
 
@@ -203,7 +203,7 @@
   #see_more_button {
     display: flex;
     width: 100%;
-    padding: 8px 28px;
+    padding: 0px 28px 8px 28px;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
