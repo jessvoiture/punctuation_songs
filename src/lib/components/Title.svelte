@@ -37,7 +37,7 @@
   <div class="header">
     <!-- {#if ($drawerState == "closed") | !isMobile} -->
     <h1 class="title" transition:slide>
-      [ UPDATED ]
+      [ again ]
       <Dropdown value={selectedMetric} options={metric_options} /> of song titles
       with
       <Dropdown value={selectedOption} options={punc_options} />
