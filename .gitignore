@@ -4,4 +4,16 @@ R/.RData
 R/.Ruserdata
 .Rproj.user
 node_modules
-.svelte-kit
+.svelte-kit/
+
+# Svelte / SvelteKit
+.svelte-kit/
+**/.svelte-kit/
+vite.config.ts.timestamp-*
+internal.js
+ambient.d.ts
+
+# build output
+dist/
+build/
+.svelte-kit/generated/server/internal.js
