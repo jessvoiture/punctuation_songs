@@ -90,7 +90,7 @@
     const h = $pos;
     const speed = velocity;
 
-    const SWIPE_VELOCITY = 0.6; // lower = easier to swipe
+    const SWIPE_VELOCITY = 0.8; // lower = easier to swipe
 
     if (speed < -SWIPE_VELOCITY) {
       pos.set(full);
