@@ -20,13 +20,11 @@
   let half = screenHeight * partialRatio;
   let full = screenHeight * fullRatio;
 
-  // main spring for drawer position
   const pos = spring(closed, {
     stiffness: 0.1,
     damping: 0.5,
   });
 
-  // keep global stores synced
   $: drawerHeight.set($pos);
 
   $: {
@@ -36,7 +34,6 @@
     else drawerState.set("partial");
   }
 
-  // this can be called externally through bind:this
   export function openHalf() {
     pos.set(half);
   }
@@ -47,7 +44,6 @@
     pos.set(closed);
   }
 
-  // dragging logic
   let dragging = false;
   let startY = 0;
   let startPos = 0;
@@ -94,7 +90,7 @@
     const h = $pos;
     const speed = velocity;
 
-    const SWIPE_VELOCITY = 0.4; // lower = easier swipe
+    const SWIPE_VELOCITY = 0.6; // lower = easier to swipe
 
     if (speed < -SWIPE_VELOCITY) {
       pos.set(full);
