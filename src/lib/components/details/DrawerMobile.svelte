@@ -90,23 +90,51 @@
     const h = $pos;
     const speed = velocity;
 
-    const SWIPE_VELOCITY = 0.8; // lower = easier to swipe
+    const FAST = 0.6; // strong flick
+    const MED = 0.25; // light flick
 
-    if (speed < -SWIPE_VELOCITY) {
-      pos.set(full);
-    } else if (speed > SWIPE_VELOCITY) {
-      pos.set(closed);
-    } else {
-      const fullThreshold = (full + half) / 2;
-      const halfThreshold = (half + closed) / 2;
+    const state = currentSnap(h);
 
-      if (h > fullThreshold) pos.set(full);
-      else if (h < halfThreshold) pos.set(closed);
-      else pos.set(half);
+    // -------- FULL --------
+    if (state === "full") {
+      if (speed > FAST)
+        pos.set(closed); // fast down → close
+      else if (speed > MED)
+        pos.set(half); // soft down → half
+      else pos.set(full);
+    }
+
+    // -------- CLOSED --------
+    else if (state === "closed") {
+      if (speed < -FAST)
+        pos.set(full); // fast up → open
+      else if (speed < -MED)
+        pos.set(half); // soft up → half
+      else pos.set(closed);
+    }
+
+    // -------- HALF --------
+    else {
+      if (speed < -FAST) pos.set(full);
+      else if (speed > FAST) pos.set(closed);
+      else {
+        const fullThreshold = (full + half) / 2;
+        const halfThreshold = (half + closed) / 2;
+
+        if (h > fullThreshold) pos.set(full);
+        else if (h < halfThreshold) pos.set(closed);
+        else pos.set(half);
+      }
     }
 
     document.removeEventListener("pointermove", handlePointerMove);
     document.removeEventListener("pointerup", handlePointerUp);
+  }
+
+  function currentSnap(pos) {
+    if (pos >= (full + half) / 2) return "full";
+    if (pos <= (half + closed) / 2) return "closed";
+    return "half";
   }
 </script>
 
