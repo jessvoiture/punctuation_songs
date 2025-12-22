@@ -9,7 +9,7 @@ export const load = async ({ fetch }) => {
   };
 
   const fetchSongs = async () => {
-    const res = await fetch("/data/punctuation_songs_2.json");
+    const res = await fetch("/data/punctuation_songs_3.json");
     if (!res.ok) {
       throw new Error("Failed to fetch punctuation song data");
     }

@@ -426,6 +426,7 @@ ggplot(quote_pct, aes(x = year, y = percent_with_punc)) +
   labs(title = 'Billboard charting songs with " in them')
 
 ellipses <- df %>%
+  mutate(title_og = str_replace(title_og, "\\.\\s*\\.\\s*\\.", "...")) %>%
   filter(str_detect(title, fixed('...'))) %>%
   mutate(type = "ellipses")
 
