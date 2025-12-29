@@ -22,8 +22,8 @@
   let full = screenHeight * fullRatio;
 
   const pos = spring(closed, {
-    stiffness: 0.2,
-    damping: 0.3,
+    stiffness: 0.3,
+    damping: 0.7,
   });
 
   $: drawerHeight.set($pos);
