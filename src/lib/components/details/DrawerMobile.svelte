@@ -22,8 +22,8 @@
   let full = screenHeight * fullRatio;
 
   const pos = spring(closed, {
-    stiffness: 0.1,
-    damping: 0.5,
+    stiffness: 0.2,
+    damping: 0.3,
   });
 
   $: drawerHeight.set($pos);
@@ -91,7 +91,7 @@
     const h = $pos;
     const speed = velocity;
 
-    const FAST = 0.95; // strong flick
+    const FAST = 0.92; // strong flick
     const MED = 0.1; // light flick
 
     const state = currentSnap(h);
