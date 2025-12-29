@@ -31,10 +31,26 @@
 
 <style>
   .decade-selector {
-    padding: 0px 12px;
+    padding: 12px 12px 12px 12px;
     display: flex;
     align-items: center;
     gap: 4px;
+    position: relative;
+  }
+
+  .decade-selector::after {
+    content: "";
+    position: absolute;
+    bottom: -24px;
+    left: 0;
+    width: 100%;
+    height: 24px;
+    pointer-events: none;
+    background: linear-gradient(
+      to bottom,
+      rgb(255, 255, 255),
+      rgba(255, 255, 255, 0)
+    );
   }
 
   .label {

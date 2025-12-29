@@ -18,3 +18,5 @@ export const isPlaying = writable(false);
 export const isDrawerExpanded = writable(false);
 export const drawerState = writable("closed");
 export const drawerHeight = writable(0);
+
+export const activeTab = writable("analysis");

@@ -2,7 +2,7 @@
   import { browser } from "$app/environment";
   import BarChart from "$lib/components/chart/BarChart.svelte";
   import Title from "$lib/components/Title.svelte";
-  import ListWrapper from "$lib/components/details/ListWrapper.svelte";
+  import ContentWrapper from "$lib/components/details/ContentWrapper.svelte";
   import { selectedOption, includeKeywordsParantheses } from "../stores.js";
 
   export let data;
@@ -37,7 +37,7 @@
       <BarChart data={songs} {screenWidth} {screenHeight} {isMobile} />
     </div>
 
-    <ListWrapper {screenWidth} data={songs} {screenHeight} {isMobile} />
+    <ContentWrapper {screenWidth} data={songs} {screenHeight} {isMobile} />
   </div>
 {/if}
 

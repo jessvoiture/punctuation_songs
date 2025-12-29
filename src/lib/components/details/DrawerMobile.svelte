@@ -3,9 +3,10 @@
   import { drawerHeight, drawerState } from "../../../stores";
   import { slide, fade, crossfade } from "svelte/transition";
 
-  import List from "./List.svelte";
+  import Content from "./Content.svelte";
   import YearsSongList from "./YearsSongList.svelte";
   import ParenthesesToggle from "../ParenthesesToggle.svelte";
+  import Tabs from "./Tabs.svelte";
   import { insight } from "../../../utils/insight.js";
 
   export let screenHeight = window.innerHeight;
@@ -142,6 +143,7 @@
   <div class="handle" on:pointerdown={handlePointerDown}>
     {#if $drawerState !== "closed"}
       <div class="handle-bar"></div>
+      <Tabs {isMobile} {showingData} />
     {/if}
 
     {#if $drawerState === "closed"}
@@ -154,7 +156,7 @@
   </div>
 
   <div class="drawer-content">
-    <List {showingData} {screenWidth} {isMobile} />
+    <Content {showingData} {screenWidth} {isMobile} />
   </div>
 </div>
 
@@ -174,8 +176,8 @@
   }
 
   .drawer-content {
-    padding-right: 16px;
-    padding-left: 16px;
+    padding-right: 8px;
+    padding-left: 8px;
     overflow-y: auto;
     max-height: calc(95vh - 60px);
     display: flex;
@@ -186,11 +188,15 @@
 
   .handle {
     width: 100%;
-    padding: 20px 0 20px 0;
+    padding: 12px 12px 0px 12px;
     display: flex;
     justify-content: center;
     cursor: grab;
     touch-action: none;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    gap: 8px;
   }
 
   .handle-bar {
