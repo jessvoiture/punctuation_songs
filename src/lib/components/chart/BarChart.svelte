@@ -48,7 +48,7 @@
     let targetW;
 
     if (isMobile) {
-      targetW = 0.9 * screenWidth;
+      targetW = screenWidth - 24;
 
       targetH = screenHeight - $drawerHeight - 160;
 

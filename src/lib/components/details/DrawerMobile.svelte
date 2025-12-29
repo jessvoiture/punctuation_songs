@@ -91,7 +91,7 @@
     const h = $pos;
     const speed = velocity;
 
-    const FAST = 0.8; // strong flick
+    const FAST = 0.95; // strong flick
     const MED = 0.1; // light flick
 
     const state = currentSnap(h);
@@ -188,7 +188,8 @@
 
   .handle {
     width: 100%;
-    padding: 12px 12px 0px 12px;
+    box-sizing: border-box;
+    padding: 16px 12px 16px 12px;
     display: flex;
     justify-content: center;
     cursor: grab;
@@ -209,7 +210,6 @@
   #see_more_button {
     display: flex;
     width: 100%;
-    padding: 0px 28px 8px 28px;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;

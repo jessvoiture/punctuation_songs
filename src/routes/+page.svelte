@@ -85,7 +85,7 @@
       gap: 12px;
       flex-basis: auto;
       width: fit-content;
-      max-width: 90%;
+      max-width: calc(100vw - 24px);
     }
   }
 

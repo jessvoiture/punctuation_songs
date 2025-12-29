@@ -31,7 +31,7 @@
 
 <style>
   .decade-selector {
-    padding: 12px 12px 12px 12px;
+    padding: 6px 12px 12px 12px;
     display: flex;
     align-items: center;
     gap: 4px;
@@ -41,10 +41,10 @@
   .decade-selector::after {
     content: "";
     position: absolute;
-    bottom: -24px;
+    bottom: -16px;
     left: 0;
     width: 100%;
-    height: 24px;
+    height: 16px;
     pointer-events: none;
     background: linear-gradient(
       to bottom,
