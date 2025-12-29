@@ -22,7 +22,7 @@
   let full = screenHeight * fullRatio;
 
   const pos = spring(closed, {
-    stiffness: 0.3,
+    stiffness: 0.1,
     damping: 0.7,
   });
 
