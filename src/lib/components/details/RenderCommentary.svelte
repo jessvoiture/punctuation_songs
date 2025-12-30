@@ -42,11 +42,15 @@
   #tldr {
     background-color: #f6f6f6;
     margin: 0 0 16px 0;
-    padding: 12px 16px;
+    padding: 16px 16px;
     border-radius: 4px;
   }
 
   ul {
     padding-left: 16px;
+  }
+
+  li:not(:last-child) {
+    margin-bottom: 8px;
   }
 </style>

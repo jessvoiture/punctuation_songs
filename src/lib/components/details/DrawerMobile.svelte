@@ -189,7 +189,7 @@
   .handle {
     width: 100%;
     box-sizing: border-box;
-    padding: 16px 12px 16px 12px;
+    padding: 16px 12px 4px 12px;
     display: flex;
     justify-content: center;
     cursor: grab;
