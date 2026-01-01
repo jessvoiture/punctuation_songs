@@ -15,7 +15,7 @@
   let tooltipWidth = 250;
   let tooltipHeight = 150;
   $: left = $mouseX + 8;
-  $: top = $mouseY - 60;
+  $: top = $mouseY - 100;
 
   let extentData = [0, 100];
   let filteredData = [];
@@ -49,9 +49,12 @@
 >
   <div class="tooltip-content">
     <div class="tooltip-header">
-      {$hoveredData.year}: {$hoveredData.count_with_punc} songs ({Math.round(
-        $hoveredData.percent_with_punc * 10,
-      ) / 10}% of charting songs)
+      <div id="tooltip-year">{$hoveredData.year}</div>
+      <div id="tooltip-value">
+        {$hoveredData.count_with_punc} songs ({Math.round(
+          $hoveredData.percent_with_punc * 10,
+        ) / 10}% of charting songs)
+      </div>
     </div>
 
     <div class="barcode-wrapper">
@@ -115,10 +118,25 @@
     border: 1px solid #ccc;
   }
 
+  .tooltip-header {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+  }
+
+  #tooltip-value {
+    color: #8c8c8c;
+  }
+
+  #tooltip-year {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
   .tooltip-content {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 24px;
     margin: 0;
     padding: 8px 12px;
     width: 250px;
