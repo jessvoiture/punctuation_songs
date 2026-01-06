@@ -35,6 +35,19 @@ export const insight = [
           " both place arguably the catchiest or most memorable part inside the parentheses<br /><br />",
       },
       {
+        kind: "image",
+        images: [
+          {
+            src: "/images/escape.jpeg",
+            alt: "vinyl cover of Escape (The Pina Colada Song)",
+          },
+          {
+            src: "/images/december1963.jpeg",
+            alt: "vinyl cover of December 1963 (Oh, What a Night)",
+          },
+        ],
+      },
+      {
         kind: "text",
         value:
           "Beginning in the 1980s, there was a noticeable trend of song titles referencing the soundtracks they came from, following the pattern, ",
@@ -77,6 +90,19 @@ export const insight = [
           " from Top Gun, both of which intercut performance footage with scenes from their respective films. The rise of such cross-promotional practices was further fueled by the growing synergy between movie studios and their music publishing divisions. <br /><br />",
       },
       {
+        kind: "image",
+        images: [
+          {
+            src: "/images/shakedown.jpg",
+            alt: "vinyl cover of the Beverly Hills Cop II soundtrack featuring Shakedown",
+          },
+          {
+            src: "/images/topgun.jpg",
+            alt: "vinyl cover of the Top Gun soundtrack featuring Take My Breath Away",
+          },
+        ],
+      },
+      {
         kind: "text",
         value:
           "The trend exploded in the 1990s. At this point, the U.S. music market was driven by album sales rather than singles, and the soundtrack album emerged as a standalone art form that could exist independently of its film. Some were dominated by a single artist—such as Saturday Night Fever or Purple Rain—while others compiled new and pre-existing tracks by various artists. Compilation albums, already huge in the 1980s and 1990s (the era of Now That’s What I Call Music!) offered access to multiple pop stars on a single record; multi-artist soundtracks were simply an extension of this trend. The soundtrack for Pretty Woman, Don’t Be a Menace, and Batman Forever, for example, featured performances from a roster of major artists of the time (though some songs on the soundtrack do not actually appear in the film).<br /><br />",
@@ -110,6 +136,19 @@ export const insight = [
           " from Barbie—the soundtrack album as a cohesive format has largely waned in popularity.<br></br>",
       },
       {
+        kind: "image",
+        images: [
+          {
+            src: "/images/barbie.jpg",
+            alt: "vinyl cover of the Barbie soundtrack featuring Dance the Night",
+          },
+          {
+            src: "/images/furious7.png",
+            alt: "vinyl cover of the Furious 7 soundtrack featuring See You Again",
+          },
+        ],
+      },
+      {
         kind: "text",
         value:
           "It is worth noting that not all soundtrack titles included attribution to their films. For example, hugely successful soundtrack albums from Purple Rain, The Crow, and Footloose, among others, omit the film’s title from their song names. Similarly, pre-existing tracks featured on soundtrack albums without re-release do not bear any cinematic reference. Moreover, under Billboard’s charting rules, songs not commercially issued as singles were ineligible for the Hot 100—meaning tracks like Will Smith’s ",
@@ -140,6 +179,23 @@ export const insight = [
       {
         kind: "highlight",
         value: `(From the Vault)`,
+      },
+      {
+        kind: "text",
+        value: `<br></br>`,
+      },
+      {
+        kind: "image",
+        images: [
+          {
+            src: "/images/tv_2.png",
+            alt: "album cover of Fearless (Taylor's Version)",
+          },
+          {
+            src: "/images/tv_1.png",
+            alt: "album cover of 1989 (Taylor's Version)",
+          },
+        ],
       },
     ],
   },
@@ -221,6 +277,19 @@ export const insight = [
           " While repetition continues to play a vital role in pop songs' lyrical structure, the appearance of repetition in the song title was far more common in the 60s and 70s. <br /><br />",
       },
       {
+        kind: "image",
+        images: [
+          {
+            src: "/images/knowingmeknowingyou.jpg",
+            alt: "Knowing Me Knowing You by ABBA record cover",
+          },
+          {
+            src: "/images/jealousyjealousy.jpeg",
+            alt: "Sour by Olivia Rodrigo record cover",
+          },
+        ],
+      },
+      {
         kind: "text",
         value: `2. Vocatives or interjections where a person or exclamation is addressed. For example, Louis Armstrong’s 1964 single,`,
       },
@@ -267,7 +336,20 @@ export const insight = [
       },
       {
         kind: "text",
-        value: `— their frequency has certainly diminished. It's possible that vocatives reflected the more personal and conversational tone of the 60s–70s, whereas they might feel out of place in the more dance-oriented titles that emerged in the 80s`,
+        value: `— their frequency has certainly diminished. It's possible that vocatives reflected the more personal and conversational tone of the 60s–70s, whereas they might feel out of place in the more dance-oriented titles that emerged in the 80s<br></br>`,
+      },
+      {
+        kind: "image",
+        images: [
+          {
+            src: "/images/rhonda.jpg",
+            alt: "Help Me, Rhonda by The Beach Boys record cover",
+          },
+          {
+            src: "/images/girlconfusing.webp",
+            alt: "Girl, So Confusing by Charli XCX record cover",
+          },
+        ],
       },
     ],
   },
@@ -325,6 +407,19 @@ export const insight = [
       {
         kind: "text",
         value: `, appear far less frequently, occurring in only 4 and 10 titles, respectively.<br /><br />`,
+      },
+      {
+        kind: "image",
+        images: [
+          {
+            src: "/images/mrpostman.jpeg",
+            alt: "Please Mr. Postman by The Marvelettes record cover",
+          },
+          {
+            src: "/images/mrbrightside.jpg",
+            alt: "Mr. Brightside by The Killers record cover",
+          },
+        ],
       },
       {
         kind: "text",
@@ -400,6 +495,24 @@ export const insight = [
       {
         kind: "text",
         value: `. Initially charting separately at #3 and #7, respectively, the two tracks were merged following the rule change and collectively rose to #1 as Come Together/Something.<br /><br />`,
+      },
+      {
+        kind: "image",
+        direction: "column",
+        images: [
+          {
+            src: "/images/beatles-old.jpg",
+            alt: "vinyl cover of Escape (The Pina Colada Song)",
+            caption:
+              "Billboard Hot 100, week ending <a href='https://www.worldradiohistory.com/Archive-All-Music/Billboard/60s/1969/Billboard%201969-11-22.pdf#page=70' target='_blank'>22 Nov 1969</a>",
+          },
+          {
+            src: "/images/beatles-new.jpg",
+            alt: "vinyl cover of December 1963 (Oh, What a Night)",
+            caption:
+              "Billboard Hot 100, week ending <a href='https://www.worldradiohistory.com/Archive-All-Music/Billboard/60s/1969/BB-1969-11-29.pdf#page=90' target='_blank'>29 Nov 1969</a>",
+          },
+        ],
       },
       {
         kind: "text",
@@ -530,6 +643,19 @@ export const insight = [
         value: `. These releases reflect how, by the mid-1990s, the single had evolved from a simple two-sided product into a multi-track promotional tool designed to maximize exposure across radio, clubs, and retail. This new promotional strategy likely contributed to the resurgence of double-listed songs in the mid-1990s.<br /><br />`,
       },
       {
+        kind: "image",
+        images: [
+          {
+            src: "/images/beforeyouwalk.jpg",
+            alt: "Before You Walk Out of My Life by Monica record cover",
+          },
+          {
+            src: "/images/likethislikethat.jpg",
+            alt: "Like This Like That by Monica record cover",
+          },
+        ],
+      },
+      {
         kind: "text",
         value: `In 1998, Billboard eliminated the long-standing requirement that a song be released as a physical single to qualify for the Hot 100. This decision effectively transformed the chart from a singles-based ranking into one centered on individual tracks. From that point forward, each song was charted independently.<br /><br />`,
       },
@@ -617,6 +743,19 @@ export const insight = [
       {
         kind: "text",
         value: `<br /><br />`,
+      },
+      {
+        kind: "image",
+        images: [
+          {
+            src: "/images/Shoobedoobedoodaday.jpg",
+            alt: "Shoo-Be-Doo-Be-Doo-Da-Day by Stevie Wonder record cover",
+          },
+          {
+            src: "/images/love.jpeg",
+            alt: "L-O-V-E by Nat King Cole record cover",
+          },
+        ],
       },
       {
         kind: "text",
@@ -824,6 +963,19 @@ export const insight = [
       {
         kind: "text",
         value: ` directly protested police brutality and racial profiling, later becoming an anthem of the 1992 LA riots and remaining influential to both pop culture and political expression. At the time of release, however, the track faced strong criticism, including from the FBI, which accused it of glamorizing violence.<br /><br />`,
+      },
+      {
+        kind: "image",
+        images: [
+          {
+            src: "/images/nwa.jpg",
+            alt: "album cover of Straight Outta Compton by NWA which features the Parental Advisory label",
+          },
+          {
+            src: "/images/workbitch.png",
+            alt: "album cover of Work Bitch by Britney Spears. The I and T in Bitch are replaced by asterisks",
+          },
+        ],
       },
       {
         kind: "text",

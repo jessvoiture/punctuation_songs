@@ -28,6 +28,19 @@
       </span>
     {:else if part.kind === "audio"}
       <AudioPlay src={part.src} song={part.song} />
+    {:else if part.kind === "image"}
+      <div class="image-container {part.direction || 'row'}">
+        {#each part.images as img}
+          <div class="image-wrapper">
+            <p>{@html img.caption}</p>
+            <img
+              class={img.class ? img.class : "half-width"}
+              src={img.src}
+              alt={img.alt}
+            />
+          </div>
+        {/each}
+      </div>
     {/if}
   {/each}
 </div>
@@ -52,5 +65,35 @@
 
   li:not(:last-child) {
     margin-bottom: 8px;
+  }
+
+  .image-container {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 24px;
+  }
+
+  .image-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+  }
+
+  .column {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .image-wrapper {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  p {
+    margin: 0px;
+    color: #757575;
+    font-style: italic;
   }
 </style>
