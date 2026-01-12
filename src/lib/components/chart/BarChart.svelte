@@ -50,8 +50,10 @@
     if (isMobile) {
       targetW = screenWidth - 24;
 
+      // when the drawer is closed the subtitle is visible
       if ($drawerState == "closed") {
-        targetH = screenHeight - $drawerHeight - 200;
+        targetH = screenHeight - $drawerHeight - 220;
+        // when the drawer is open the subtitle is hidden
       } else {
         targetH = screenHeight - $drawerHeight - 160;
       }
