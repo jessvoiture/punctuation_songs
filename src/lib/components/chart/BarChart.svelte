@@ -50,7 +50,11 @@
     if (isMobile) {
       targetW = screenWidth - 24;
 
-      targetH = screenHeight - $drawerHeight - 160;
+      if ($drawerState == "closed") {
+        targetH = screenHeight - $drawerHeight - 200;
+      } else {
+        targetH = screenHeight - $drawerHeight - 160;
+      }
 
       targetH = Math.max(targetH, 0.25 * screenHeight);
     } else {

@@ -42,15 +42,17 @@
       <Dropdown value={selectedOption} options={punc_options} />
     </h1>
 
-    <!-- <h2 transition:slide>
-      {#if $selectedMetric === "Percent"}
-        Percent of
-      {:else}
-        Number of
-      {/if}
-      new charting songs in the Billboard Hot 100 per year
-    </h2> -->
-    <!-- {/if} -->
+    {#if $drawerState == "closed"}
+      <h2 transition:slide>
+        Yearly
+        {#if $selectedMetric === "Percent"}
+          percent
+        {:else}
+          number
+        {/if}
+        of new entries on the Billboard Hot 100
+      </h2>
+    {/if}
 
     <ParenthesesToggle />
   </div>
