@@ -453,10 +453,10 @@ export const insight = [
   {
     type: "slash",
     tldr: [
-      "Slashes took off after Billboard’s 1969 rule change that merged double A-sides with strong airplay into one chart entry, creating slash-separated titles like Come Together/Something.",
+      "Slashes in titles rose after Billboard’s 1969 rule change that merged sides of a single into one chart entry if both had strong airplay, creating slash-separated titles like Come Together/Something.",
       "As albums became the dominant commercial unit and singles were mainly promo tools, true double-sided hits became rarer, leading to fewer slashed titles.",
-      "New single formats (12-inch, CD, cassette) turned singles into multi-track packages, reviving double A-sides and slash titles as part of aggressive promotional strategies.",
-      "Billboard dropped the physical-single requirement, charting songs individually; with no need to merge tracks, slashed song titles effectively disappeared.",
+      "New single formats (12-inch, CD, cassette) turned singles into multi-track packages, reviving double A-sides and slash titles as part of promotional strategies.",
+      "Billboard dropped the rule and began charting songs individually; with no need to merge tracks, slashed song titles effectively disappeared.",
     ],
     copy: [
       {
@@ -823,8 +823,17 @@ export const insight = [
     copy: [
       {
         kind: "text",
+        value: `<span style="font-style: italic; color: #757575;">Note: The trend in quotation marks is related to a trend in parantheses usage, so the words are nearly identical.</span> <br></br>`,
+      },
+      {
+        kind: "text",
         value:
-          "Beginning in the 1980s, there was a noticeable trend of song titles referencing the soundtracks they came from, following the pattern, ",
+          "Beginning in the 1980s, there was a spike in song titles referencing the soundtracks they came from, following the pattern, ",
+      },
+      {
+        kind: "text",
+        value:
+          "Beginning in the 1980s, there was a spike in song titles referencing the soundtracks they came from, following the pattern, ",
       },
       {
         kind: "highlight",
@@ -833,25 +842,28 @@ export const insight = [
       {
         kind: "text",
         value:
-          ". Consequently, the use of quotation marks and parentheses in the ’80s and ’90s follows a very similar surge.<br></br>",
+          ". Consequently, the use of quotation marks and parentheses in the ’80s and ’90s follows a similar surge.<br></br>",
       },
       {
         kind: "text",
         value:
-          "The trend of incorporating pop music into film grew out of New Hollywood in the 1970s, which had emerged to appeal to a younger, more educated, and more affluent audience, reshaping how studios approached filmmaking and distribution. Before the 1970s, soundtracks were mostly limited to musicals; with New Hollywood, however, pop music began to feature more prominently in films, both to attract younger audiences and to serve as a promotional tool.<br /><br />",
+          "The inclusion of pop music in film grew out of New Hollywood in the 1970s, which had emerged to appeal to a younger audience and reshaped how studios approached filmmaking and marketing. Before the 1970s, soundtracks were, for the most part, limited to musicals; with New Hollywood, however, pop music began to feature more prominently in films, both to attract younger audiences and to serve as a promotional tool.<br /><br />",
       },
       {
         kind: "text",
         value:
-          "In 1981, MTV revolutionized music marketing by popularizing the music video, pushing pop music into a visual medium. Videos that combined film clips with soundtrack songs became effective advertisements for the films themselves—consider Bob Seger’s ",
+          "In 1981, MTV pushed pop music into a visual medium. Movie tie-in music videos, which included film clips or imagery in a song's music video, could serve as impactful music videos as well as effective advertisements for the films themselves. The music video for Prince's ",
       },
       {
         kind: "audio",
-        song: `Shakedown`,
-        src: "30_shakedown.mp3",
+        song: `Batdance`,
         uri: "303oOLP2Jf6M4rke52qItM",
+        src: "30_batdance.mp3",
       },
-      { kind: "text", value: " from Beverly Hills Cop II or Berlin’s " },
+      {
+        kind: "text",
+        value: `, from the film Batman, features characters and storylines from the franchise, with Prince's costume nodding to Two-Face. Similarly, Berlin’s `,
+      },
       {
         kind: "audio",
         song: `Take My Breath Away`,
@@ -861,12 +873,17 @@ export const insight = [
       {
         kind: "text",
         value:
-          " from Top Gun, both of which intercut performance footage with scenes from their respective films. The rise of such cross-promotional practices was further fueled by the growing synergy between movie studios and their music publishing divisions. <br /><br />",
+          " from Top Gun intercuts performance footage with scenes from the film. The rise of such cross-promotional practices was further fueled by the growing synergy between movie studios and their music publishing divisions. <br /><br />",
+      },
+      {
+        kind: "youtube",
+        embed:
+          '<iframe src="https://www.youtube.com/embed/ulOLYnOthIw?si=Ge3y0qZwT9JBejgM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
       },
       {
         kind: "text",
         value:
-          "The trend exploded in the 1990s. At this point, the U.S. music market was driven by album sales rather than singles, and the soundtrack album emerged as a standalone art form that could exist independently of its film. Some were dominated by a single artist—such as Saturday Night Fever or Purple Rain—while others compiled new and pre-existing tracks by various artists. Compilation albums, already huge in the 1980s and 1990s (the era of Now That’s What I Call Music!) offered access to multiple pop stars on a single record; multi-artist soundtracks were simply an extension of this trend. The soundtrack for Pretty Woman, Don’t Be a Menace, and Batman Forever, for example, featured performances from a roster of major artists of the time (though some songs on the soundtrack do not actually appear in the film).<br /><br />",
+          "The trend exploded in the 1990s. At this point, the U.S. music market was driven by album sales rather than singles, and the soundtrack album emerged as a standalone art form that could exist independently of its film. Some were the product of a single artist while others compiled new and existing tracks by various artists. Compilation albums, already huge in the 1980s and 1990s (the era of Now That’s What I Call Music!) offered access to multiple pop stars on a single record; multi-artist soundtracks were simply an extension of this trend. The soundtrack for Pretty Woman, Don’t Be a Menace, and Batman Forever, for example, featured performances from a roster of major artists of the time.<br /><br />",
       },
       {
         kind: "text",
@@ -876,7 +893,7 @@ export const insight = [
       {
         kind: "text",
         value:
-          "The use of parentheses for both stylistic and marketing purposes began to decline in the 2000s. As internet searchability improved, including a hook or subtitle in a song title became unnecessary. The rise of Napster and, later, streaming platforms shifted music consumption toward individual tracks and curated playlists, rather than full soundtrack albums, effectively reverting the US market to a song-oriented model. Although film music remains culturally significant—with hits like ",
+          "The pattern of Song Title (From “Film Title”) dropped off in the late 90s. The rise of Napster and, later, streaming platforms shifted music consumption toward individual tracks and curated playlists, rather than full soundtrack albums, effectively reverting the US market to a song-oriented model. Although music made for film remains culturally significant—with hits like ",
       },
       {
         kind: "audio",
@@ -897,9 +914,22 @@ export const insight = [
           " from Barbie—the soundtrack album as a cohesive format has waned in popularity.<br></br>",
       },
       {
+        kind: "image",
+        images: [
+          {
+            src: "/images/barbie.jpg",
+            alt: "vinyl cover of the Barbie soundtrack featuring Dance the Night",
+          },
+          {
+            src: "/images/furious7.png",
+            alt: "vinyl cover of the Furious 7 soundtrack featuring See You Again",
+          },
+        ],
+      },
+      {
         kind: "text",
         value:
-          "It is worth noting that not all soundtrack titles included attribution to their films. For example, hugely successful soundtrack albums from Purple Rain, The Crow, and Footloose, among others, omit the film’s title from their song names. Similarly, pre-existing tracks featured on soundtrack albums without re-release do not bear any cinematic reference. Moreover, under Billboard’s charting rules, songs not commercially issued as singles were ineligible for the Hot 100—meaning tracks like Will Smith’s ",
+          "It is worth noting that not all soundtrack titles included attribution to their films. For example, hugely successful soundtrack albums from Purple Rain, The Crow, and Footloose, among others, omit the film’s title from their song names. Similarly, pre-existing tracks featured on soundtrack albums without re-release don't often reference the film in the title. Moreover, under Billboard’s charting rules, songs not commercially issued as singles were ineligible for the Hot 100—meaning tracks like Will Smith’s ",
       },
       {
         kind: "audio",
@@ -910,21 +940,15 @@ export const insight = [
       {
         kind: "text",
         value:
-          ", despite heavy radio play, never officially charted. <br></br>",
-      },
-      {
-        kind: "text",
-        value:
-          "By the 2000s, the practice of including film attribution in song titles had disappeared. Since then, quotation marks have been used sparsely in titles, and purely for stylistic choices.",
+          ", despite heavy radio play, never officially charted. By the 2000s, the practice of including film attribution in song titles had disappeared. Since then, quotation marks have been used sparingly and for stylistic purposes.<br></br>",
       },
     ],
   },
   {
     type: "asterisk",
     tldr: [
-      "Aside from rare outliers like the MASH* theme in 1970, asterisks were virtually nonexistent in song titles until the mid-to-late 1990s.",
-      "As profanity and explicit themes became more common—especially in hip-hop and hard rock—asterisks emerged primarily as a way to mask offensive words for radio, charts, and retail.",
-      "With streaming platforms bypassing FCC restrictions and Billboard counting uncensored streams, asterisks have become largely unnecessary, surviving mostly as stylistic exceptions rather than tools of censorship.",
+      "Aside from rare outliers like the M*A*S*H theme in 1970, asterisks weren't seen in song titles until the mid-to-late 1990s.",
+      "As profanity and explicit themes became more common—especially in hip-hop and hard rock—asterisks emerged primarily as a way to censor offensive words.",
     ],
     copy: [
       {
