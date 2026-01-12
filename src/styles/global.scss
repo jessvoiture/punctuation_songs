@@ -92,3 +92,11 @@ body {
 img {
   width: 100%;
 }
+
+iframe {
+  top: 0;
+  left: 0;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+}

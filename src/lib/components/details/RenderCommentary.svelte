@@ -41,6 +41,10 @@
           </div>
         {/each}
       </div>
+    {:else if part.kind === "youtube"}
+      <div class="embed-container">
+        {@html part.embed}
+      </div>
     {/if}
   {/each}
 </div>
@@ -78,6 +82,11 @@
     flex-direction: column;
     gap: 4px;
     width: 100%;
+  }
+
+  .embed-container {
+    width: 100%;
+    margin-bottom: 24px;
   }
 
   .column {

@@ -11,7 +11,7 @@ export const insight = [
       {
         kind: "text",
         value:
-          "In the 1960s and 1970s, it was fairly common for song titles to include parentheses—roughly one in every twelve songs did.  They were often used as a stylistic tool for clarity and marketability, to break up a song title or include hooks to make it more recognizable/ easier to search. For example Four Tops’ ",
+          "In the 1960s and 1970s, it was fairly common for song titles to include parentheses—roughly one in every twelve songs did.  They were often used as a stylistic tool for clarity and marketability, to break up a song title or include hooks to make it more recognizable. For example Four Tops’ ",
       },
       {
         kind: "audio",
@@ -32,7 +32,7 @@ export const insight = [
       {
         kind: "text",
         value:
-          " both place arguably the catchiest or most memorable part inside the parentheses<br /><br />",
+          " both place a memorable lyric inside the parentheses<br /><br />",
       },
       {
         kind: "image",
@@ -50,7 +50,7 @@ export const insight = [
       {
         kind: "text",
         value:
-          "Beginning in the 1980s, there was a noticeable trend of song titles referencing the soundtracks they came from, following the pattern, ",
+          "Beginning in the 1980s, there was a spike in song titles referencing the soundtracks they came from, following the pattern, ",
       },
       {
         kind: "highlight",
@@ -59,25 +59,28 @@ export const insight = [
       {
         kind: "text",
         value:
-          ". Consequently, the use of quotation marks and parentheses in the ’80s and ’90s follows a very similar surge.<br></br>",
+          ". Consequently, the use of quotation marks and parentheses in the ’80s and ’90s follows a similar surge.<br></br>",
       },
       {
         kind: "text",
         value:
-          "The trend of incorporating pop music into film grew out of New Hollywood in the 1970s, which had emerged to appeal to a younger, more educated, and more affluent audience, reshaping how studios approached filmmaking and distribution. Before the 1970s, soundtracks were largely confined to musicals; with New Hollywood, however, pop music began to feature more prominently in films, both to attract younger audiences and to serve as a promotional tool.<br /><br />",
+          "The inclusion of pop music in film grew out of New Hollywood in the 1970s, which had emerged to appeal to a younger audience and reshaped how studios approached filmmaking and marketing. Before the 1970s, soundtracks were, for the most part, limited to musicals; with New Hollywood, however, pop music began to feature more prominently in films, both to attract younger audiences and to serve as a promotional tool.<br /><br />",
       },
       {
         kind: "text",
         value:
-          "In 1981, MTV revolutionized music marketing by popularizing the music video, pushing pop music into a visual medium. Videos that combined film clips with soundtrack songs became effective advertisements for the films themselves—consider Bob Seger’s ",
+          "In 1981, MTV pushed pop music into a visual medium. Movie tie-in music videos, which included film clips or imagery in a song's music video, could serve as impactful music videos as well as effective advertisements for the films themselves. The music video for Prince's ",
       },
       {
         kind: "audio",
-        song: `Shakedown`,
+        song: `Batdance`,
         uri: "303oOLP2Jf6M4rke52qItM",
-        src: "30_shakedown.mp3",
+        src: "30_batdance.mp3",
       },
-      { kind: "text", value: " from Beverly Hills Cop II or Berlin’s " },
+      {
+        kind: "text",
+        value: `, from the film Batman, features characters and storylines from the franchise, with Prince's costume nodding to Two-Face. Similarly, Berlin’s `,
+      },
       {
         kind: "audio",
         song: `Take My Breath Away`,
@@ -87,25 +90,17 @@ export const insight = [
       {
         kind: "text",
         value:
-          " from Top Gun, both of which intercut performance footage with scenes from their respective films. The rise of such cross-promotional practices was further fueled by the growing synergy between movie studios and their music publishing divisions. <br /><br />",
+          " from Top Gun intercuts performance footage with scenes from the film. The rise of such cross-promotional practices was further fueled by the growing synergy between movie studios and their music publishing divisions. <br /><br />",
       },
       {
-        kind: "image",
-        images: [
-          {
-            src: "/images/shakedown.jpg",
-            alt: "vinyl cover of the Beverly Hills Cop II soundtrack featuring Shakedown",
-          },
-          {
-            src: "/images/topgun.jpg",
-            alt: "vinyl cover of the Top Gun soundtrack featuring Take My Breath Away",
-          },
-        ],
+        kind: "youtube",
+        embed:
+          '<iframe src="https://www.youtube.com/embed/ulOLYnOthIw?si=Ge3y0qZwT9JBejgM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
       },
       {
         kind: "text",
         value:
-          "The trend exploded in the 1990s. At this point, the U.S. music market was driven by album sales rather than singles, and the soundtrack album emerged as a standalone art form that could exist independently of its film. Some were dominated by a single artist—such as Saturday Night Fever or Purple Rain—while others compiled new and pre-existing tracks by various artists. Compilation albums, already huge in the 1980s and 1990s (the era of Now That’s What I Call Music!) offered access to multiple pop stars on a single record; multi-artist soundtracks were simply an extension of this trend. The soundtrack for Pretty Woman, Don’t Be a Menace, and Batman Forever, for example, featured performances from a roster of major artists of the time (though some songs on the soundtrack do not actually appear in the film).<br /><br />",
+          "The trend exploded in the 1990s. At this point, the U.S. music market was driven by album sales rather than singles, and the soundtrack album emerged as a standalone art form that could exist independently of its film. Some were the product of a single artist while others compiled new and existing tracks by various artists. Compilation albums, already huge in the 1980s and 1990s (the era of Now That’s What I Call Music!) offered access to multiple pop stars on a single record; multi-artist soundtracks were simply an extension of this trend. The soundtrack for Pretty Woman, Don’t Be a Menace, and Batman Forever, for example, featured performances from a roster of major artists of the time.<br /><br />",
       },
       {
         kind: "text",
@@ -115,7 +110,7 @@ export const insight = [
       {
         kind: "text",
         value:
-          "The use of parentheses for both stylistic and marketing purposes began to decline in the 2000s. As internet searchability improved, including a hook or subtitle in a song title became unnecessary. The rise of Napster and, later, streaming platforms shifted music consumption toward individual tracks and curated playlists, rather than full soundtrack albums, effectively reverting the US market to a song-oriented model. Although film music remains culturally significant—with hits like ",
+          "The use of parentheses for both stylistic and marketing purposes began to decline in the 2000s. The internet helped audiences search for music, so including a memorable hook or additional context in parantheses became less necessary. The rise of Napster and, later, streaming platforms shifted music consumption toward individual tracks and curated playlists, rather than full soundtrack albums, effectively reverting the US market to a song-oriented model. Although music made for film remains culturally significant—with hits like ",
       },
       {
         kind: "audio",
@@ -133,7 +128,7 @@ export const insight = [
       {
         kind: "text",
         value:
-          " from Barbie—the soundtrack album as a cohesive format has largely waned in popularity.<br></br>",
+          " from Barbie—the soundtrack album as a cohesive format has waned in popularity.<br></br>",
       },
       {
         kind: "image",
@@ -151,7 +146,7 @@ export const insight = [
       {
         kind: "text",
         value:
-          "It is worth noting that not all soundtrack titles included attribution to their films. For example, hugely successful soundtrack albums from Purple Rain, The Crow, and Footloose, among others, omit the film’s title from their song names. Similarly, pre-existing tracks featured on soundtrack albums without re-release do not bear any cinematic reference. Moreover, under Billboard’s charting rules, songs not commercially issued as singles were ineligible for the Hot 100—meaning tracks like Will Smith’s ",
+          "It is worth noting that not all soundtrack titles included attribution to their films. For example, hugely successful soundtrack albums from Purple Rain, The Crow, and Footloose, among others, omit the film’s title from their song names. Similarly, pre-existing tracks featured on soundtrack albums without re-release don't often reference the film in the title. Moreover, under Billboard’s charting rules, songs not commercially issued as singles were ineligible for the Hot 100—meaning tracks like Will Smith’s ",
       },
       {
         kind: "audio",
@@ -162,11 +157,11 @@ export const insight = [
       {
         kind: "text",
         value:
-          ", despite heavy radio play, never officially charted. By the 2000s, the practice of including film attribution in song titles had largely disappeared.<br></br>",
+          ", despite heavy radio play, never officially charted. By the 2000s, the practice of including film attribution in song titles had disappeared.<br></br>",
       },
       {
         kind: "text",
-        value: `Parentheses saw a resurgence in the 2020s thanks almost entirely to Taylor Swift: in 2021, 35 of 53 (66%) charting songs with parentheses, and in 2023, 42 of 54 (78%), were due to her re-recordings, which feature the distinctive tags `,
+        value: `Parentheses saw a resurgence in the 2020s thanks almost entirely to Taylor Swift: of the songs with parantheses 35 of 53 (66%) in 2021, and 42 of 54 (78%) in 2023, were Swift's re-recordings, which feature the distinctive tags `,
       },
       {
         kind: "highlight",
@@ -205,12 +200,12 @@ export const insight = [
       {
         kind: "text",
         value:
-          "Apostrophes are fairly common in song titles, as they are in general, though their usage has dropped off since the turn of the century. This is largely due to fewer songs featuring contractions.  <br /><br />",
+          "Apostrophes are fairly common in song titles, though their usage has dropped off since the turn of the century. This is mainly due to fewer songs featuring contractions.  <br /><br />",
       },
       {
         kind: "text",
         value:
-          "The uptick in apostrophe frequency in 2021 and 2023 is thanks to Taylor Swift’s re-recordings which feature the distinctive and iconic tag, ",
+          "The uptick in apostrophe frequency in 2021 and 2023 is thanks to Taylor Swift’s re-recordings which feature the distinctive tag, ",
       },
       {
         kind: "highlight",
@@ -229,7 +224,7 @@ export const insight = [
       {
         kind: "text",
         value:
-          "Comma usage in songs seemed to have fallen out of fashion after its height in the 60s and 70s. At its peak around 1 in 20 songs charting on the Hot 100 had a comma in it; in 2025, around only 1 in 100 songs featured a comma.<br /><br /> ",
+          "Comma usage has fallen since it's height in the 60s and 70s. At its peak around 1 in 20 songs charting on the Hot 100 featured a comma; in 2025, just over 1 in 100 songs featured a comma.<br /><br /> ",
       },
       {
         kind: "text",
@@ -316,7 +311,7 @@ export const insight = [
       {
         kind: "text",
         value:
-          "While song titles with vocatives and injections still appear in recent charts—see Charli XCX's, ",
+          "While song titles with vocatives and injections still appear in recent charts, like Charli XCX's, ",
       },
       {
         kind: "audio",
@@ -336,7 +331,7 @@ export const insight = [
       },
       {
         kind: "text",
-        value: `— their frequency has certainly diminished. It's possible that vocatives reflected the more personal and conversational tone of the 60s–70s, whereas they might feel out of place in the more dance-oriented titles that emerged in the 80s<br></br>`,
+        value: `, their frequency has certainly diminished. It's possible that vocatives reflected the more personal and conversational tone of the 60s–70s, whereas they might feel out of place in the more dance-oriented titles that emerged in the 80s<br></br>`,
       },
       {
         kind: "image",
@@ -358,11 +353,11 @@ export const insight = [
     copy: [
       {
         kind: "text",
-        value: `There isn't any particular trend in period use over time, but among end-of-sentence punctuation marks, it is the most frequently employed form. <br /><br /> `,
+        value: `There isn't any particular trend in period use over time, but among end-of-sentence punctuation marks it is the most frequently employed form. <br /><br /> `,
       },
       {
         kind: "text",
-        value: `Its most common function is in the abbreviation of honorifics, particularly Mister, which is conventionally rendered as `,
+        value: `Its most common function of periods in song titles is in the abbreviation of honorifics, particularly Mister, which is conventionally rendered as `,
       },
       {
         kind: "highlight",
@@ -390,7 +385,7 @@ export const insight = [
       },
       {
         kind: "text",
-        value: `— account for 84 songs, representing approximately 18% of all titles featuring at least one period. Related forms, such as `,
+        value: `— account for 84 songs or 18% of all titles featuring a period. Related forms, such as `,
       },
       {
         kind: "highlight",
@@ -442,7 +437,7 @@ export const insight = [
     copy: [
       {
         kind: "text",
-        value: `Across Billboard chart history, there has been an infrequent usage of end-of-sentence punctuation in song titles. Among these forms of punctuation, the exclamation mark is the rarest, appearing in only 192 instances out of approximately 32,000 charting songs.<br></br>1963 was a record year for the number of songs with an exclamation mark: 12 songs.`,
+        value: `The exclamation mark is the least used end-of-sentence punctuation mark; out of the approximately 32,000 songs which have appeared on the Billboard Hot 100, the exclamation mark appears in just 192 songs.<br></br>`,
       },
     ],
   },
@@ -466,7 +461,7 @@ export const insight = [
     copy: [
       {
         kind: "text",
-        value: `The presence of slashes in song titles is largely a byproduct of the physical music era and Billboard’s inconsistent rules regarding how to represent dual-sided releases.<br /><br />`,
+        value: `The presence of slashes in song titles is a byproduct of the physical music era and Billboard’s changing rules regarding how to represent dual-sided releases.<br /><br />`,
       },
       {
         kind: "text",
@@ -558,45 +553,45 @@ export const insight = [
         kind: "text",
         value: `. <br> </br> `,
       },
+      // {
+      //   kind: "text",
+      //   value: `It was relatively rare for both sides of a single to receive significant airplay, as B-sides were typically made up of less commercially viable material—often album outtakes or alternate mixes not intended as standalone hits. Occasionally, however, a B-side would unexpectedly gain popularity. For example, Rod Stewart’s 1971 track `,
+      // },
+      // {
+      //   kind: "audio",
+      //   song: `Maggie May`,
+      //   src: "30_maggie_may.mp3",
+      //   uri: "6rovOdp3HgK1DeAMYDzoA7",
+      // },
+      // {
+      //   kind: "text",
+      //   value: ` was originally released as the B-side to `,
+      // },
+      // {
+      //   kind: "audio",
+      //   song: `Reason to Believe`,
+      //   src: "30_reason_to_believe.mp3",
+      //   uri: "3rGuoVKM5CwEo7eHyeXYIB",
+      // },
+      // {
+      //   kind: "text",
+      //   value: ` but eventually became the more popular side thanks to radio play.<br /><br />`,
+      // },
       {
         kind: "text",
-        value: `It was relatively rare for both sides of a single to receive significant airplay, as B-sides were typically made up of less commercially viable material—often album outtakes or alternate mixes not intended as standalone hits. Occasionally, however, a B-side would unexpectedly gain popularity. For example, Rod Stewart’s 1971 track `,
-      },
-      {
-        kind: "audio",
-        song: `Maggie May`,
-        src: "30_maggie_may.mp3",
-        uri: "6rovOdp3HgK1DeAMYDzoA7",
-      },
-      {
-        kind: "text",
-        value: ` was originally released as the B-side to `,
-      },
-      {
-        kind: "audio",
-        song: `Reason to Believe`,
-        src: "30_reason_to_believe.mp3",
-        uri: "3rGuoVKM5CwEo7eHyeXYIB",
-      },
-      {
-        kind: "text",
-        value: ` but eventually became the more popular side thanks to radio play.<br /><br />`,
-      },
-      {
-        kind: "text",
-        value: `In the latter half of the 20th century, particularly in the 60s and 70s, the album, rather than the song, was <a href="https://www.nytimes.com/1991/01/13/arts/pop-view-the-incredible-shrinking-career-of-a-pop-star.html">the fundamental unit of pop,</a> especially in the US market. This era was largely facilitated by technological advancements—notably the invention of the LP which could hold more music—and driven by rock artists who popularised concept albums. Singles were largely used as bait to promote album sales rather than standalone successes, potentially explaining the drop in slashed titles throughout the 70s.<br /><br />`,
-      },
-      {
-        kind: "text",
-        value: `In the 80s and 90s, however, the album era showed signs of erosion; by the turn of the century, the song had largely returned as the unit of pop. This transition was driven by the emergence of MTV in the 80s, which emphasised and rewarded blockbuster hits, as well as the advent of more single-oriented genres, like punk and disco.<br /><br />`,
+        value: `In the latter half of the 20th century, particularly in the 60s and 70s, the album, rather than the song, was <a href="https://www.nytimes.com/1991/01/13/arts/pop-view-the-incredible-shrinking-career-of-a-pop-star.html" target="_blank">the fundamental unit of pop,</a> especially in the US market. This era was facilitated by technological advancements—notably the invention of the LP which could hold more music—and driven by rock artists who popularised concept albums. Singles were used as bait to promote album sales rather than standalone successes, potentially explaining the drop in slashed titles throughout the 70s.<br /><br />`,
       },
       {
         kind: "text",
-        value: `Record labels, concerned that singles were cannibalizing album sales (which were more profitable), reduced the number of singles released or manipulated release schedules to achieve an <a href="https://billboardchartrewind.wordpress.com/2018/12/01/december-5th-1998-the-anniversary-of-airplay-only-tracks-on-the-hot-100">artificially strong chart debut.</a> Billboard maintained a rule that a song was ineligible for the Hot 100 unless it was available for purchase as a physical single.<br /><br />`,
+        value: `In the 80s and 90s, however, the album era showed signs of erosion; the song was emerging as the new unit of pop. This transition was driven by the emergence of MTV in the 80s, which rewarded blockbuster hits, as well as the advent of more single-oriented genres, like punk and disco.<br /><br />`,
       },
       {
         kind: "text",
-        value: `Around the same time, however, the transition from 7-inch vinyl to 12-inch singles, CDs, and cassettes expanded the capacity of singles to include multiple tracks. This technological shift began to render the traditional distinction between A-sides and B-sides increasingly irrelevant. Singles were now marketed in the US more like mini-EPs or promotional packages. The inclusion of several songs or remixes provided radio stations with more material to promote and simultaneously supported broader album marketing strategies.<br /><br />`,
+        value: `Record labels, concerned that singles were cannibalizing album sales (which were more profitable), reduced the number of singles released as well as manipulated release schedules to achieve an <a href="https://billboardchartrewind.wordpress.com/2018/12/01/december-5th-1998-the-anniversary-of-airplay-only-tracks-on-the-hot-100" target="_blank">artificially strong chart debut.</a> Billboard maintained a rule that a song was ineligible for the Hot 100 unless it was available for purchase as a physical single.<br /><br />`,
+      },
+      {
+        kind: "text",
+        value: `Around the same time, however, the transition from 7-inch vinyl to 12-inch singles, CDs, and cassettes expanded the capacity of singles to include multiple tracks. These new mediums began to render the traditional distinction between A-sides and B-sides increasingly irrelevant. Singles were now marketed in the US more like mini-EPs or promotional packages. The inclusion of several songs or remixes provided radio stations with more material to promote and simultaneously supported broader album marketing strategies.<br /><br />`,
       },
       {
         kind: "text",
@@ -640,7 +635,7 @@ export const insight = [
       },
       {
         kind: "text",
-        value: `. These releases reflect how, by the mid-1990s, the single had evolved from a simple two-sided product into a multi-track promotional tool designed to maximize exposure across radio, clubs, and retail. This new promotional strategy likely contributed to the resurgence of double-listed songs in the mid-1990s.<br /><br />`,
+        value: `. These releases reflect how, by the mid-1990s, the single had evolved from a simple two-sided product into a multi-track promotional tool. This new promotional strategy likely contributed to the resurgence of double-listed songs in the mid-1990s.<br /><br />`,
       },
       {
         kind: "image",
@@ -657,15 +652,15 @@ export const insight = [
       },
       {
         kind: "text",
-        value: `In 1998, Billboard eliminated the long-standing requirement that a song be released as a physical single to qualify for the Hot 100. This decision effectively transformed the chart from a singles-based ranking into one centered on individual tracks. From that point forward, each song was charted independently.<br /><br />`,
+        value: `In 1998, Billboard eliminated the long-standing requirement that a song be released as a physical single to qualify for the Hot 100. This decision effectively transformed the chart from a singles-based ranking into one centered on individual tracks. From that point forward, each song charted independently.<br /><br />`,
       },
       {
         kind: "text",
-        value: `Ever since, the slash has only been used at the hands of the artist.<br /><br />`,
+        value: `Ever since, the slash has only been used for artistic purposes.<br /><br />`,
       },
       {
         kind: "text",
-        value: `From 2009 to 2012, the TV show Glee, sparked a brief but noticeable resurgence of slash titles thanks to its popular mashups—blending two songs into a single performance and labeling them with slashes, such as `,
+        value: `From 2009 to 2012, the TV show Glee, sparked a brief but noticeable resurgence of slashed titles thanks to its popular mashups: blending two songs into a single performance and labeling them with slashes, such as `,
       },
       {
         kind: "audio",
@@ -704,7 +699,7 @@ export const insight = [
       },
       {
         kind: "text",
-        value: `, or its derivatives as part of the title. There were 67 instances (17%) of a dash being used in this manner, all of which occurred before 1987.<br /><br /> `,
+        value: `, or its derivatives in the title. There were 67 instances (17% of all titles with a dash) of a dash being used in this manner, all of which occurred before 1987.<br /><br /> `,
       },
       {
         kind: "text",
@@ -759,7 +754,7 @@ export const insight = [
       },
       {
         kind: "text",
-        value: `Another common use case for dashes is to separate numbers or individual letters of a word. It would be remiss not to mention Nat King Cole’s 1964 classic, `,
+        value: `Another common use case for dashes is to separate numbers or individual letters of a word. Nat King Cole’s 1964 classic, `,
       },
       {
         kind: "audio",
@@ -769,18 +764,18 @@ export const insight = [
       },
       {
         kind: "text",
-        value: `, undoubtedly the most famous example of this kind. Gloria Estafan and the Miami Sound Machine’s `,
+        value: `, is perhaps the most famous example of this kind.`,
       },
-      {
-        kind: "audio",
-        song: `1-2-3`,
-        src: "30_123.mp3",
-        uri: "1pZWORSXTFlZnrfxChRBaz",
-      },
-      {
-        kind: "text",
-        value: ` from 1988 also reflects the same pattern of use.<br></br>`,
-      },
+      // {
+      //   kind: "audio",
+      //   song: `1-2-3`,
+      //   src: "30_123.mp3",
+      //   uri: "1pZWORSXTFlZnrfxChRBaz",
+      // },
+      // {
+      //   kind: "text",
+      //   value: ` from 1988 also reflects the same pattern of use.<br></br>`,
+      // },
       // {
       //   kind: "text",
       //   value: `Most dashes used in song titles function as a hyphen or en-dash; there are no instances of an em-dash. Like many other of the punctuation marks, the dash has fallen out of fashion. In 2024, just two new charting songs featured a dash compared to 29 at it's peack in 1961. GenAI's, such as ChatGPT, affinity for the dash—the em-dash in particular—has made many cautious about their use for fear of being mischaracterised as AI-written. At a time when authenticity and songwriting is highly valued It is plausible, therefore, that the trend of infrequent dash usage continues.`,
@@ -792,7 +787,7 @@ export const insight = [
     copy: [
       {
         kind: "text",
-        value: `1996 was ellipsis’ big year with a whopping 7 songs titles. This surge is due to songs from two film soundtracks both of whose title includes ellipses: `,
+        value: `1996 was ellipsis’ big year with a whopping 7 songs titles. This surge can be attributed to two film soundtracks both of whose title includes ellipses: `,
       },
       {
         kind: "highlight",
@@ -814,7 +809,7 @@ export const insight = [
       {
         kind: "text",
         value: `Colons and semicolons are uncommon in song titles, reaching a peak of 2 in 1996. Out of all songs which have ever charted on the Hot 100, just 25 contained either a colon or semi-colon.<br /><br />
-    Colons have generally been used as expected: for emoticons, time, Bible verses, or when a movie franchise spawns too many sequels, the colon becomes essential to tell them apart.<br /><br />
+    Colons have generally been used as expected: to form eyes in emoticons, time, Bible verses, or when a movie franchise spawns too many sequels, the colon becomes essential to tell them apart.<br /><br />
     There is perhaps little need for either colon varieties: the average length of all Billboard charting songs is just 16 characters (and it is on the decline)`,
       },
     ],
@@ -843,7 +838,7 @@ export const insight = [
       {
         kind: "text",
         value:
-          "The trend of incorporating pop music into film grew out of New Hollywood in the 1970s, which had emerged to appeal to a younger, more educated, and more affluent audience, reshaping how studios approached filmmaking and distribution. Before the 1970s, soundtracks were largely confined to musicals; with New Hollywood, however, pop music began to feature more prominently in films, both to attract younger audiences and to serve as a promotional tool.<br /><br />",
+          "The trend of incorporating pop music into film grew out of New Hollywood in the 1970s, which had emerged to appeal to a younger, more educated, and more affluent audience, reshaping how studios approached filmmaking and distribution. Before the 1970s, soundtracks were mostly limited to musicals; with New Hollywood, however, pop music began to feature more prominently in films, both to attract younger audiences and to serve as a promotional tool.<br /><br />",
       },
       {
         kind: "text",
@@ -899,7 +894,7 @@ export const insight = [
       {
         kind: "text",
         value:
-          " from Barbie—the soundtrack album as a cohesive format has largely waned in popularity.<br></br>",
+          " from Barbie—the soundtrack album as a cohesive format has waned in popularity.<br></br>",
       },
       {
         kind: "text",
@@ -920,7 +915,7 @@ export const insight = [
       {
         kind: "text",
         value:
-          "By the 2000s, the practice of including film attribution in song titles had largely disappeared. Since then, quotation marks have been used sparsely in titles, and purely for stylistic choices.",
+          "By the 2000s, the practice of including film attribution in song titles had disappeared. Since then, quotation marks have been used sparsely in titles, and purely for stylistic choices.",
       },
     ],
   },
@@ -944,11 +939,11 @@ export const insight = [
       },
       {
         kind: "text",
-        value: ` theme song in 1970, significant instances of asterisks in song titles and lyrics did not emerge until the mid-1990s, after which they were employed almost exclusively as a tool of censorship. The rise in profanity in song titles reflects a broader cultural trend, of a growing <a href="https://www.theguardian.com/media/2024/jan/06/swearing-is-becoming-more-widely-acceptable-linguistics-experts-claim">tolerance of and desensitization to explicit language and content.</a>  <br /><br />`,
+        value: ` theme song in 1970, asterisks weren't used in song titles until the mid-1990s, after which they were employed primarily to censor words. The rise in profanity in song titles reflects perhaps a broader cultural trend, of a growing <a href="https://www.theguardian.com/media/2024/jan/06/swearing-is-becoming-more-widely-acceptable-linguistics-experts-claim">tolerance of and desensitization to explicit language and content.</a>  <br /><br />`,
       },
       {
         kind: "text",
-        value: `In the 1980s, rock continued to dominate mainstream charts while hip-hop entered its so-called golden age, and both genres increasingly incorporated mature themes. Hard rock and glam metal frequently pushed boundaries through lyrics centered on sex, drugs, and partying, while hip-hop emerged with stark portrayals of urban life and pointed social commentary. <br /><br />`,
+        value: `In the 1980s, rock continued to dominate charts while hip-hop entered its so-called golden age. Both genres incorporated more mature themes and used profanity as a form of artistic expression.<br /><br />`,
       },
       {
         kind: "text",
@@ -972,36 +967,40 @@ export const insight = [
             alt: "album cover of Straight Outta Compton by NWA which features the Parental Advisory label",
           },
           {
-            src: "/images/workbitch.png",
-            alt: "album cover of Work Bitch by Britney Spears. The I and T in Bitch are replaced by asterisks",
+            src: "/images/fyou.png",
+            alt: "album cover of Fuck You! by Cee Lo Green. The U and C in Fuck are replaced by asterisks",
           },
         ],
       },
       {
         kind: "text",
-        value: `The controversy surrounding such works fueled efforts by the Parents Music Resource Center (PMRC), which successfully advocated for the introduction of the “Parental Advisory” label in 1990 to flag material deemed inappropriate for younger audiences. Yet, this intervention may have had unintended consequences. As <a href="https://numero.com/en/culture/parental-advisory-the-secret-history-of-musics-most-controversial-logo-2/">Alexis Thibault notes in Numero</a>, the label often heightened young listeners’ interest in the very albums it sought to restrict, exemplifying the “Barbra Streisand effect.”<br ><br />`,
+        value: `The controversy surrounding such works fueled efforts by the Parents Music Resource Center (PMRC), which successfully advocated for the introduction of the “Parental Advisory” label in 1990 to flag material deemed inappropriate for younger audiences. Yet, this intervention may have had unintended consequences. As <a href="https://numero.com/en/culture/parental-advisory-the-secret-history-of-musics-most-controversial-logo-2/">Alexis Thibault notes in Numero</a>, the label often heightened young listeners’ interest in the very records it sought to restrict, exemplifying the “Barbra Streisand effect.”<br ><br />`,
       },
       {
         kind: "text",
-        value: `Despite these cultural shifts toward normalization of explicit content, broadcast restrictions remained significant in the US. The Federal Communications Commission (FCC) maintained strict limitations on profanity in radio airplay, compelling artists to release “clean” versions of their songs in order to access mainstream promotion and commercial success.<br></br>`,
-      },
-      {
-        kind: "text",
-        value: `The rise of streaming platforms, however, has largely removed these barriers. Unlike radio, services such as Spotify, Apple Music, and YouTube are not subject to FCC broadcast indecency regulations, allowing artists to include profanity and graphic themes without fear of censorship or fines. This lack of regulation also diminishes the need for cleaner, radio edits. Furthermore, because Billboard now incorporates streaming data alongside sales and airplay, explicit tracks can chart in their original form; uncensored content no longer hinders commercial success and, in some cases, actively drives it.<br></br>`,
-      },
-      {
-        kind: "text",
-        value: `* `,
+        value: `Explicit language began to crop up in other pop genres as well, reflecting changing attitudes to explicit content as well as the growing influence of rock, hip-hop, and rap on mainstream culture. Consider Cee Lo Green's 2010 hit `,
       },
       {
         kind: "audio",
-        song: `Sweet * Honey * Buckin'`,
-        uri: "7CA0mEKqEZ0WFAIlTS4uEl",
-        src: "30_sweet_honey_buckin.mp3",
+        song: `Fuck You!`,
+        uri: "5n8Aro6j1bEGIy7Tpo7FV7",
+        src: "30_fyou.mp3",
       },
       {
         kind: "text",
-        value: ` from Beyoncé's Grammy winning album Cowboy Carter, is the only instance of asterisk usage not being used to censor a word after the 90s.`,
+        value: `, a song which <a href="https://www.billboard.com/music/music-news/cee-lo-green-fuck-you-1068731/" target="_blank">Billboard described</a> as "a ’60s Motown hit and as expletive-laden as an early Eminem"— and which of course could not be played on the radio.<br></br>`,
+      },
+      {
+        kind: "text",
+        value: `Indeed, despite cultural shifts toward normalization of explicit content, broadcast restrictions around language remained strict in the US. The Federal Communications Commission (FCC) maintained limitations on profanity in radio airplay, compelling artists to release “clean” versions of their songs in order to access mainstream promotion and commercial success. Fuck You! was changed to Forget You in the radio edit.<br></br>`,
+      },
+      {
+        kind: "text",
+        value: `The rise of streaming platforms, however, has removed these barriers. Unlike radio, streaming services are not subject to FCC broadcast regulations, allowing artists to include profanity and graphic themes without fear of censorship. Given more relaxed attitudes toward explicit content, it is likely that asterisk usage is here to stay.<br></br>`,
+      },
+      {
+        kind: "text",
+        value: `It's worth noting that some title censorship seems to be added by Billboard. Summer Walker's Constant Bullshit, for example, appears as Constant Bulls**t on the Hot 100.`,
       },
     ],
   },

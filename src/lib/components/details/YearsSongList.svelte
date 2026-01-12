@@ -52,9 +52,9 @@
             {song.performer_og}
           </div>
 
-          <!-- <div class="stats">
+          <div class="stats">
             Peak position: {song.peak_pos}
-          </div> -->
+          </div>
         </div>
       {/each}
     </div>
