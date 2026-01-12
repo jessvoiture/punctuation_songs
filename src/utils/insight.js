@@ -998,7 +998,7 @@ export const insight = [
       },
       {
         kind: "text",
-        value: `The controversy surrounding such works fueled efforts by the Parents Music Resource Center (PMRC), which successfully advocated for the introduction of the “Parental Advisory” label in 1990 to flag material deemed inappropriate for younger audiences. Yet, this intervention may have had unintended consequences. As <a href="https://numero.com/en/culture/parental-advisory-the-secret-history-of-musics-most-controversial-logo-2/">Alexis Thibault notes in Numero</a>, the label often heightened young listeners’ interest in the very records it sought to restrict, exemplifying the “Barbra Streisand effect.”<br ><br />`,
+        value: `The controversy surrounding such works fueled efforts by the Parents Music Resource Center (PMRC), which successfully advocated for the introduction of the “Parental Advisory” label in 1990 to flag material deemed inappropriate for younger audiences. Yet, this intervention may have had unintended consequences. As <a href="https://numero.com/en/culture/parental-advisory-the-secret-history-of-musics-most-controversial-logo-2/">Alexis Thibault notes in Numero</a>, the label often heightened young listeners’ interest in the very records it sought to restrict.”<br ><br />`,
       },
       {
         kind: "text",
