@@ -483,7 +483,7 @@ df_all_punctuation <- data.frame(
   apostrophe_pct = apostrophe_pct$percent_with_punc,
   period_pct = period_pct$percent_with_punc,
   comma_pct = comma_pct$percent_with_punc,
-  usd_pct = usd_pct$percent_with_punc,
+  # usd_pct = usd_pct$percent_with_punc,
   amper_pct = amper_pct$percent_with_punc,
   dash_pct = dash_pct$percent_with_punc,
   slash_pct = slash_pct$percent_with_punc,
@@ -543,5 +543,62 @@ nested_json <- df_all %>%
 
 # export ------------------------------------------------------------------
 
-
 write_json(nested_json, path = "punctuation_songs_2.json", pretty = TRUE, auto_unbox = TRUE)
+
+
+
+# facets ------------------------------------------------------------------
+
+df_long <- df_all_punctuation %>%
+  pivot_longer(
+    cols = contains("pct"),
+    values_to = "pct",
+    names_to = "punc"
+  ) %>%
+  mutate(punc = str_remove(punc, "_pct")) %>%
+  mutate(punc = recode(
+    punc,
+    "parantheses_no_keywords" = "Parentheses*",
+    "exclamation" = "exclamation mark",
+    "question" = "question mark",
+    "quote" = "quatation marks"
+  )) %>%
+  filter(punc != "parantheses", punc != "amper") %>%
+  mutate(punc = str_to_title(punc)) %>%
+  mutate(punc = factor(punc, levels = c(
+    "Parentheses*", "Asterisk", 'Slash', "Dash", 
+    "Comma", "Quatation Marks",  "Apostrophe", "Period",  
+    "Question Mark","Exclamation Mark", "Ellipses", "Colon"
+  )))
+
+ggplot(df_long, aes(x = year, y = pct)) +
+  geom_col(fill = "#58b8db", alpha = 0.7, width = 0.95) +
+  facet_wrap(~punc, ncol = 4, scales = "free_y") +
+  theme_minimal() +
+  scale_y_continuous(
+    labels = function(x) paste0(x, "%"),
+    expand = c(0,0)
+  ) +
+  scale_x_continuous(
+    breaks = c(1960, 1980, 2000, 2020),
+    expand = c(0,0)
+  ) +
+  theme(
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank(),
+    panel.grid.minor.y = element_blank(),
+    strip.text.x = element_text(hjust = 0),
+    strip.text = element_text(face = "bold"),
+    axis.title = element_blank(),
+    panel.spacing.x = unit(2, "lines"),
+    panel.spacing.y = unit(2, "lines"),
+    plot.title = element_text(
+      hjust = -0.5,                 
+      margin = margin(l = 0)      
+    )
+  ) +
+  labs(
+    title = "Prevalence of punctuation marks in song titles over time",
+    subtitle = "Yearly percent of new entries on the Billboard Hot 100",
+    caption = "* excludes songs which use parentheses for film attribution, feature credit, or version"
+  )
