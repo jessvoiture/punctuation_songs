@@ -573,7 +573,7 @@ df_long <- df_all_punctuation %>%
 
 ggplot(df_long, aes(x = year, y = pct)) +
   geom_col(fill = "#58b8db", alpha = 0.7, width = 0.95) +
-  facet_wrap(~punc, ncol = 4, scales = "free_y") +
+  facet_wrap(~punc, ncol = 3, scales = "free_y") +
   theme_minimal() +
   scale_y_continuous(
     labels = function(x) paste0(x, "%"),
@@ -588,17 +588,38 @@ ggplot(df_long, aes(x = year, y = pct)) +
     panel.grid.minor.x = element_blank(),
     panel.grid.minor.y = element_blank(),
     strip.text.x = element_text(hjust = 0),
-    strip.text = element_text(face = "bold"),
+    strip.text = element_text(
+      face = "bold", 
+      size = 18, 
+      margin = margin(b = 12)),
     axis.title = element_blank(),
+    axis.text = element_text(
+      size = 18
+    ),
+    axis.text.x = element_text(margin = margin(t = 8)),
     panel.spacing.x = unit(2, "lines"),
     panel.spacing.y = unit(2, "lines"),
+    plot.title.position = "plot",
+    plot.caption.position = "plot",
     plot.title = element_text(
-      hjust = -0.5,                 
+      hjust = 0,     
+      face = "bold",
+      size = 28,
       margin = margin(l = 0)      
+    ),
+    plot.subtitle = element_text(
+      hjust = 0,     
+      size = 24,
+      margin = margin(l = 0, b =32, t = 12)      
+    ),
+    plot.caption = element_text(
+      hjust = 0,     
+      size = 20,
+      margin = margin(l = 0, t =32)      
     )
   ) +
   labs(
     title = "Prevalence of punctuation marks in song titles over time",
-    subtitle = "Yearly percent of new entries on the Billboard Hot 100",
-    caption = "* excludes songs which use parentheses for film attribution, feature credit, or version"
+    subtitle = "Yearly percent of new entries on the Billboard Hot 100 with the punctuation\nmark in the title",
+    caption = "Source: UT-Austin School of Journalism and Media. * excludes songs which use parentheses for film attribution, feature credit, or version"
   )
