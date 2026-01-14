@@ -1,7 +1,7 @@
 <div class="body-text-wrapper">
   <div class="body-text">
     Historic Billboard Hot 100 data was sourced from <a
-      href="https://github.com/utdata/rwd-billboard-data0"
+      href="https://github.com/utdata/rwd-billboard-data"
       target="_blank"
       rel="noopener noreferrer">UT-Austin School of Journalism and Media</a
     >. Songs only appear once, in the year they first entered the charts in an
