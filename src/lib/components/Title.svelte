@@ -44,13 +44,12 @@
 
     {#if $drawerState == "closed"}
       <h2 transition:slide>
-        Yearly
         {#if $selectedMetric === "Percent"}
-          percent
+          Percent
         {:else}
           number
         {/if}
-        of new entries on the Billboard Hot 100
+        of new entries on the Billboard Hot 100 each year
       </h2>
     {/if}
 
