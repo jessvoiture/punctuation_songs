@@ -401,7 +401,7 @@ export const insight = [
       },
       {
         kind: "text",
-        value: `, appear far less frequently, occurring in only 4 and 10 titles, respectively.<br /><br />`,
+        value: `, appear far less frequently, occurring in only 3 and 10 titles, respectively.<br /><br />`,
       },
       {
         kind: "image",
