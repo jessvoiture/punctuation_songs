@@ -268,8 +268,12 @@ ggplot(comma_pct, aes(x = year, y = percent_with_punc)) +
 
 period <- df %>%
   filter(str_detect(title, "\\.")) %>%
+  filter(!str_detect(title, fixed('...'))) %>%
   mutate(type = "period") 
   # mutate(contains_usa = str_detect(title, "U\\.S\\.A\\."))
+
+ms <- period %>%
+  filter(str_detect(title, "mrs. "))
 
 period_pct <- period %>%
   group_by(year, type) %>%
@@ -561,13 +565,13 @@ df_long <- df_all_punctuation %>%
     "parantheses_no_keywords" = "Parentheses*",
     "exclamation" = "exclamation mark",
     "question" = "question mark",
-    "quote" = "quatation marks"
+    "quote" = "quotation marks"
   )) %>%
   filter(punc != "parantheses", punc != "amper") %>%
   mutate(punc = str_to_title(punc)) %>%
   mutate(punc = factor(punc, levels = c(
     "Parentheses*", "Asterisk", 'Slash', "Dash", 
-    "Comma", "Quatation Marks",  "Apostrophe", "Period",  
+    "Comma", "Quotation Marks",  "Apostrophe", "Period",  
     "Question Mark","Exclamation Mark", "Ellipses", "Colon"
   )))
 
@@ -587,6 +591,9 @@ ggplot(df_long, aes(x = year, y = pct)) +
     panel.grid.major.x = element_blank(),
     panel.grid.minor.x = element_blank(),
     panel.grid.minor.y = element_blank(),
+    plot.margin = margin(
+      t = 16, l = 16, b = 12, r = 16
+    ),
     strip.text.x = element_text(hjust = 0),
     strip.text = element_text(
       face = "bold", 
@@ -620,6 +627,6 @@ ggplot(df_long, aes(x = year, y = pct)) +
   ) +
   labs(
     title = "Prevalence of punctuation marks in song titles over time",
-    subtitle = "Yearly percent of new entries on the Billboard Hot 100 with the punctuation\nmark in the title",
-    caption = "Source: UT-Austin School of Journalism and Media. * excludes songs which use parentheses for film attribution, feature credit, or version"
+    subtitle = "Yearly percent of new entries on the Billboard Hot 100 with the\npunctuation mark in the title",
+    caption = "Data from UT-Austin School of Journalism and Media. * excludes songs which use\nparentheses for film attribution, feature credit, or version"
   )
