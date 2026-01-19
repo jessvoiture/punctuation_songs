@@ -269,6 +269,7 @@ ggplot(comma_pct, aes(x = year, y = percent_with_punc)) +
 period <- df %>%
   filter(str_detect(title, "\\.")) %>%
   filter(!str_detect(title, fixed('...'))) %>%
+  distinct(performer, title, .keep_all = T) %>%
   mutate(type = "period") 
   # mutate(contains_usa = str_detect(title, "U\\.S\\.A\\."))
 
@@ -547,7 +548,7 @@ nested_json <- df_all %>%
 
 # export ------------------------------------------------------------------
 
-write_json(nested_json, path = "punctuation_songs_2.json", pretty = TRUE, auto_unbox = TRUE)
+write_json(nested_json, path = "punctuation_songs_5.json", pretty = TRUE, auto_unbox = TRUE)
 
 
 

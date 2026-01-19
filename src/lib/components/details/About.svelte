@@ -30,7 +30,7 @@
     can find the code and data on <a
       href="https://github.com/jessvoiture/punctuation_songs"
       target="_blank">GitHub</a
-    >. It was created by me,
+    >. It was created by
     <a href="https://jessvoiture.github.io/home/" target="_blank">Jess Carr</a>.
     If you have feedback or questions, feel free to send me a message at
     <a href="mailto:someone@example.com">jessicascarr989@gmail.com</a>
