@@ -33,8 +33,8 @@
     >. It was created by
     <a href="https://jessvoiture.github.io/home/" target="_blank">Jess Carr</a>.
     If you have feedback or questions, feel free to send me a message at
-    <a href="mailto:someone@example.com">jessicascarr989@gmail.com</a>
-    . Thank you so much for visiting!
+    <a href="mailto:someone@example.com">jessicascarr989@gmail.com</a>. Thank
+    you so much for visiting!
   </div>
 
   <div class="body-text">Last updated 14 Jan 2026.</div>
