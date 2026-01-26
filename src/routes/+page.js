@@ -22,3 +22,5 @@ export const load = async ({ fetch }) => {
     songs: await fetchSongs(),
   };
 };
+
+export const ssr = false;
